@@ -1,0 +1,41 @@
+name: Publish MariaSM to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get website source
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Extract complete source project
+        run: unzip -q mariasm-site.zip -d source
+      - name: Build static pages
+        run: node source/mariasm-site/scripts/build.mjs
+      - name: Check pages and local links
+        run: node source/mariasm-site/scripts/check.mjs
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website only
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: source/mariasm-site/docs
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v5
+
