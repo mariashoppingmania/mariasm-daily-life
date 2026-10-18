@@ -24,7 +24,9 @@ jobs:
         with:
           node-version: '22'
       - name: Extract complete source project
-        run: unzip -q mariasm-site.zip -d source
+        run: |
+          unzip -q mariasm-site.zip -d source
+          cp -R updates/. source/mariasm-site/
       - name: Build static pages
         run: node source/mariasm-site/scripts/build.mjs
       - name: Check pages and local links
