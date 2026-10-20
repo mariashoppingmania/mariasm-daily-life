@@ -1,232 +1,523 @@
 {
-  "checkedOn": "2026-10-11",
-  "source": "vidIQ channel videos: @mariasmmania",
-  "scope": "Long-form videos, excluding Shorts and live streams.",
+  "checkedOn": "2026-10-20",
+  "source": "YouTube public Videos tab and individual video metadata: @mariasmmania",
+  "scope": "Long-form video selections, excluding Shorts and live streams.",
   "latest": [
     {
+      "id": "_zegYJcXG44",
+      "title": "Shoe Haul Birkenstock Puma Converse Stradivarius Thong Sandals",
+      "viewCount": 14,
+      "seconds": 537,
+      "publishedAt": "2026-10-20T02:33:03-07:00",
+      "source": "https://www.youtube.com/watch?v=_zegYJcXG44"
+    },
+    {
       "id": "f0ri1G_-GNQ",
-      "videoId": "f0ri1G_-GNQ",
       "title": "Here are some Asos Amazon Skincare Jewelries Haul plus a Sea Day Escapade! &Unboxings",
-      "publishedAt": "2026-10-17T13:08:54Z",
-      "duration": "29:23",
-      "viewsLabel": "21",
+      "viewCount": 40,
+      "seconds": 1762,
+      "publishedAt": "2026-10-17T06:08:54-07:00",
       "source": "https://www.youtube.com/watch?v=f0ri1G_-GNQ"
     },
     {
       "id": "CJgpKWXriRo",
-      "videoId": "CJgpKWXriRo",
       "title": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
-      "publishedAt": "2026-10-16T14:12:42Z",
-      "duration": "12:47",
-      "viewsLabel": "28",
+      "viewCount": 44,
+      "seconds": 767,
+      "publishedAt": "2026-10-16T07:12:42-07:00",
       "source": "https://www.youtube.com/watch?v=CJgpKWXriRo"
     },
     {
       "id": "TvY5nf7LMJM",
-      "videoId": "TvY5nf7LMJM",
       "title": "Spent the Day With Me .. today at the Sea... so much relaxing!..🌊🌏❤️",
-      "publishedAt": "2026-10-10T11:33:40Z",
-      "duration": "7:18",
-      "viewsLabel": "40",
+      "viewCount": 40,
+      "seconds": 438,
+      "publishedAt": "2026-10-10T04:33:40-07:00",
       "source": "https://www.youtube.com/watch?v=TvY5nf7LMJM"
     },
     {
       "id": "Wm4ZHxwCpmA",
-      "videoId": "Wm4ZHxwCpmA",
       "title": "Asos Haul Fashion Accessories Fragrances Skincare",
-      "publishedAt": "2026-10-01T13:27:00Z",
-      "duration": "19:24",
-      "viewsLabel": "16",
+      "viewCount": 17,
+      "seconds": 1164,
+      "publishedAt": "2026-10-01T06:27:00-07:00",
       "source": "https://www.youtube.com/watch?v=Wm4ZHxwCpmA"
     },
     {
       "id": "fMcqWl3-0Oo",
-      "videoId": "fMcqWl3-0Oo",
       "title": "Styling my Crop Jacket Gilet and Trench Coats.. love them! 🧥👓",
-      "publishedAt": "2026-09-21T09:41:23Z",
-      "duration": "4:01",
-      "viewsLabel": "40",
+      "viewCount": 40,
+      "seconds": 240,
+      "publishedAt": "2026-09-21T02:41:23-07:00",
       "source": "https://www.youtube.com/watch?v=fMcqWl3-0Oo"
     },
     {
       "id": "mQjqFDblWHY",
-      "videoId": "mQjqFDblWHY",
       "title": "Let us  Enjoy the Sea today... is still summer here!  So good!..🌊🌏🏖❤️",
-      "publishedAt": "2026-09-19T11:26:46Z",
-      "duration": "11:21",
-      "viewsLabel": "13",
+      "viewCount": 13,
+      "seconds": 681,
+      "publishedAt": "2026-09-19T04:26:46-07:00",
       "source": "https://www.youtube.com/watch?v=mQjqFDblWHY"
     },
     {
       "id": "Rq5tY4YZF2I",
-      "videoId": "Rq5tY4YZF2I",
       "title": "Asos Haul + an Amazon find",
-      "publishedAt": "2026-09-15T14:17:27Z",
-      "duration": "11:10",
-      "viewsLabel": "16",
+      "viewCount": 16,
+      "seconds": 670,
+      "publishedAt": "2026-09-15T07:17:27-07:00",
       "source": "https://www.youtube.com/watch?v=Rq5tY4YZF2I"
     },
     {
       "id": "s68jNW-dHTU",
-      "videoId": "s68jNW-dHTU",
       "title": "My Summer 2026.. Treasured it!",
-      "publishedAt": "2026-09-08T18:11:36Z",
-      "duration": "21:19",
-      "viewsLabel": "54",
+      "viewCount": 54,
+      "seconds": 1279,
+      "publishedAt": "2026-09-08T11:11:36-07:00",
       "source": "https://www.youtube.com/watch?v=s68jNW-dHTU"
     },
     {
       "id": "sYeFLrOmYlg",
-      "videoId": "sYeFLrOmYlg",
       "title": "Full Review of my Lorenz Watch Festina Watch Just Cavalli Watch",
-      "publishedAt": "2026-09-06T13:53:42Z",
-      "duration": "13:21",
-      "viewsLabel": "48",
+      "viewCount": 49,
+      "seconds": 801,
+      "publishedAt": "2026-09-06T06:53:42-07:00",
       "source": "https://www.youtube.com/watch?v=sYeFLrOmYlg"
-    },
-    {
-      "id": "XBo2_20HtTo",
-      "videoId": "XBo2_20HtTo",
-      "title": "A Very Cozy Relaxing Day At Sea",
-      "publishedAt": "2026-09-05T14:33:12Z",
-      "duration": "5:31",
-      "viewsLabel": "14",
-      "source": "https://www.youtube.com/watch?v=XBo2_20HtTo"
     }
   ],
   "popular": [
     {
-      "videoId": "HZEMQNZ0bkc",
+      "id": "HZEMQNZ0bkc",
       "title": "My Birkenstock Collection with mod shots [ Gizeh, Madrid, Arizona and with Valentino collab ]",
-      "publishedAt": "2022-07-22T14:27:06Z",
-      "thumbnail": "https://i.ytimg.com/vi/HZEMQNZ0bkc/maxresdefault.jpg",
-      "viewCount": 6871,
-      "likeCount": 94,
-      "commentCount": 21,
-      "duration": "PT6M23S",
-      "vph": null,
-      "breakoutScore": 161.6705882352941,
-      "id": "HZEMQNZ0bkc"
+      "viewCount": 6904,
+      "seconds": 382,
+      "publishedAt": "2022-07-22T07:27:06-07:00",
+      "source": "https://www.youtube.com/watch?v=HZEMQNZ0bkc"
     },
     {
-      "videoId": "ejHebPFdSw0",
+      "id": "ejHebPFdSw0",
       "title": "Timex Harborside Coast Watch 43mm TW2V91700UK the 100m Water Resistant 330ft so good guys 🎉🎄❤️🌊🤩",
-      "publishedAt": "2024-12-11T10:40:00Z",
-      "thumbnail": "https://i.ytimg.com/vi/ejHebPFdSw0/maxresdefault.jpg",
-      "viewCount": 3936,
-      "likeCount": 59,
-      "commentCount": 6,
-      "duration": "PT10M44S",
-      "vph": 0.3442437923250564,
-      "breakoutScore": 92.61176470588235,
-      "id": "ejHebPFdSw0"
+      "viewCount": 4075,
+      "seconds": 644,
+      "publishedAt": "2024-12-11T02:40:00-08:00",
+      "source": "https://www.youtube.com/watch?v=ejHebPFdSw0"
     },
     {
-      "videoId": "5cAgzxjrbjs",
+      "id": "5cAgzxjrbjs",
       "title": "Timex North Expedition TW2V65800 the substitution of my solar watch that they couldnt repair is 👌",
-      "publishedAt": "2025-04-03T10:31:06Z",
-      "thumbnail": "https://i.ytimg.com/vi/5cAgzxjrbjs/maxresdefault.jpg",
-      "viewCount": 3521,
-      "likeCount": 39,
-      "commentCount": 3,
-      "duration": "PT8M6S",
-      "vph": null,
-      "breakoutScore": 82.84705882352941,
-      "id": "5cAgzxjrbjs"
+      "viewCount": 3757,
+      "seconds": 486,
+      "publishedAt": "2025-04-03T03:31:06-07:00",
+      "source": "https://www.youtube.com/watch?v=5cAgzxjrbjs"
     },
     {
-      "videoId": "xRZgKgrpdK8",
+      "id": "xRZgKgrpdK8",
       "title": "H&M try on haul october 2022 styling dungarees or overalls",
-      "publishedAt": "2022-10-06T12:31:48Z",
-      "thumbnail": "https://i.ytimg.com/vi/xRZgKgrpdK8/maxresdefault.jpg",
       "viewCount": 3385,
-      "likeCount": 18,
-      "commentCount": 8,
-      "duration": "PT8M20S",
-      "vph": null,
-      "breakoutScore": 79.6470588235294,
-      "id": "xRZgKgrpdK8"
+      "seconds": 500,
+      "publishedAt": "2022-10-06T05:31:48-07:00",
+      "source": "https://www.youtube.com/watch?v=xRZgKgrpdK8"
     },
     {
-      "videoId": "vpOR1y082h4",
+      "id": "vpOR1y082h4",
       "title": "Timex Expedition Titanium Automatic 41mm Eco Friendly Leather Strap Watch TW2V54000QY 200m 20ATM WR👌",
-      "publishedAt": "2025-01-16T07:42:37Z",
-      "thumbnail": "https://i.ytimg.com/vi/vpOR1y082h4/maxresdefault.jpg",
-      "viewCount": 2855,
-      "likeCount": 58,
-      "commentCount": 17,
-      "duration": "PT14M30S",
-      "vph": 0.17443091582848066,
-      "breakoutScore": 67.17647058823529,
-      "id": "vpOR1y082h4"
+      "viewCount": 2881,
+      "seconds": 869,
+      "publishedAt": "2025-01-15T23:42:37-08:00",
+      "source": "https://www.youtube.com/watch?v=vpOR1y082h4"
     },
     {
-      "videoId": "BxunymAKbEw",
+      "id": "BxunymAKbEw",
       "title": "Timex Expedition North Sierra Solar Tw2v64500 so cool so Nice guys very simple yet pragmatic🎁⌚️",
-      "publishedAt": "2025-04-03T12:51:21Z",
-      "thumbnail": "https://i.ytimg.com/vi/BxunymAKbEw/maxresdefault.jpg",
-      "viewCount": 2635,
-      "likeCount": 34,
-      "commentCount": 10,
-      "duration": "PT15M44S",
-      "vph": 0.18022095035272195,
-      "breakoutScore": 62,
-      "id": "BxunymAKbEw"
+      "viewCount": 2651,
+      "seconds": 943,
+      "publishedAt": "2025-04-03T05:51:21-07:00",
+      "source": "https://www.youtube.com/watch?v=BxunymAKbEw"
     },
     {
-      "videoId": "Ebn7bAPNS6o",
+      "id": "Ebn7bAPNS6o",
       "title": "The Luxury Side of Venezia..shop till we drop ❤️",
-      "publishedAt": "2023-04-27T08:48:42Z",
-      "thumbnail": "https://i.ytimg.com/vi/Ebn7bAPNS6o/maxresdefault.jpg",
       "viewCount": 2486,
-      "likeCount": 29,
-      "commentCount": 3,
-      "duration": "PT4M1S",
-      "vph": null,
-      "breakoutScore": 58.49411764705882,
-      "id": "Ebn7bAPNS6o"
+      "seconds": 240,
+      "publishedAt": "2023-04-27T01:48:42-07:00",
+      "source": "https://www.youtube.com/watch?v=Ebn7bAPNS6o"
     },
     {
-      "videoId": "2Gh1UhCs4NA",
+      "id": "2Gh1UhCs4NA",
       "title": "Timex Watch In Comparison TW2V03600 Vs TW2T75400 Timex North Expedition Vs Timex Navi Xl ❤️🔥🕘",
-      "publishedAt": "2024-09-04T06:28:05Z",
-      "thumbnail": "https://i.ytimg.com/vi/2Gh1UhCs4NA/maxresdefault.jpg",
-      "viewCount": 2330,
-      "likeCount": 26,
-      "commentCount": 8,
-      "duration": "PT6M33S",
-      "vph": null,
-      "breakoutScore": 54.8235294117647,
-      "id": "2Gh1UhCs4NA"
+      "viewCount": 2366,
+      "seconds": 392,
+      "publishedAt": "2024-09-03T23:28:05-07:00",
+      "source": "https://www.youtube.com/watch?v=2Gh1UhCs4NA"
     },
     {
-      "videoId": "m9YDtAU7osg",
+      "id": "m9YDtAU7osg",
       "title": "Comparison between Timex Navi & Timex Harborside Coast both are valuable but HCW is heavy 🕔😍❤️HRecom",
-      "publishedAt": "2025-01-10T16:28:22Z",
-      "thumbnail": "https://i.ytimg.com/vi/m9YDtAU7osg/maxresdefault.jpg",
-      "viewCount": 2112,
-      "likeCount": 23,
-      "commentCount": 2,
-      "duration": "PT13M35S",
-      "vph": 0.10788064269319052,
-      "breakoutScore": 49.694117647058825,
-      "id": "m9YDtAU7osg"
+      "viewCount": 2146,
+      "seconds": 814,
+      "publishedAt": "2025-01-10T08:28:22-08:00",
+      "source": "https://www.youtube.com/watch?v=m9YDtAU7osg"
     },
     {
-      "videoId": "sQmQbfNAPGE",
+      "id": "sQmQbfNAPGE",
       "title": "My Birkenstock Collection with mod shots [Gizeh, Madrid,Arizona, Birkenstock collab with Valentino]",
-      "publishedAt": "2022-07-22T04:49:32Z",
-      "thumbnail": "https://i.ytimg.com/vi/sQmQbfNAPGE/maxresdefault.jpg",
       "viewCount": 1519,
-      "likeCount": 32,
-      "commentCount": 11,
-      "duration": "PT4M11S",
-      "vph": null,
-      "breakoutScore": 35.741176470588236,
-      "id": "sQmQbfNAPGE"
+      "seconds": 251,
+      "publishedAt": "2022-07-21T21:49:32-07:00",
+      "source": "https://www.youtube.com/watch?v=sQmQbfNAPGE"
     }
   ],
-  "latestCheckedOn": "2026-10-18",
-  "latestSource": "https://www.youtube.com/@mariasmmania/videos",
-  "popularCheckedOn": "2026-10-11"
+  "catalogue": [
+    {
+      "id": "Wm4ZHxwCpmA",
+      "title": "Asos Haul Fashion Accessories Fragrances Skincare",
+      "viewCount": 17,
+      "seconds": 1164,
+      "publishedAt": "2026-10-01T06:27:00-07:00",
+      "source": "https://www.youtube.com/watch?v=Wm4ZHxwCpmA"
+    },
+    {
+      "id": "fMcqWl3-0Oo",
+      "title": "Styling my Crop Jacket Gilet and Trench Coats.. love them! 🧥👓",
+      "viewCount": 40,
+      "seconds": 240,
+      "publishedAt": "2026-09-21T02:41:23-07:00",
+      "source": "https://www.youtube.com/watch?v=fMcqWl3-0Oo"
+    },
+    {
+      "id": "mQjqFDblWHY",
+      "title": "Let us  Enjoy the Sea today... is still summer here!  So good!..🌊🌏🏖❤️",
+      "viewCount": 13,
+      "seconds": 681,
+      "publishedAt": "2026-09-19T04:26:46-07:00",
+      "source": "https://www.youtube.com/watch?v=mQjqFDblWHY"
+    },
+    {
+      "id": "Rq5tY4YZF2I",
+      "title": "Asos Haul + an Amazon find",
+      "viewCount": 16,
+      "seconds": 670,
+      "publishedAt": "2026-09-15T07:17:27-07:00",
+      "source": "https://www.youtube.com/watch?v=Rq5tY4YZF2I"
+    },
+    {
+      "id": "s68jNW-dHTU",
+      "title": "My Summer 2026.. Treasured it!",
+      "viewCount": 54,
+      "seconds": 1279,
+      "publishedAt": "2026-09-08T11:11:36-07:00",
+      "source": "https://www.youtube.com/watch?v=s68jNW-dHTU"
+    },
+    {
+      "id": "sYeFLrOmYlg",
+      "title": "Full Review of my Lorenz Watch Festina Watch Just Cavalli Watch",
+      "viewCount": 49,
+      "seconds": 801,
+      "publishedAt": "2026-09-06T06:53:42-07:00",
+      "source": "https://www.youtube.com/watch?v=sYeFLrOmYlg"
+    },
+    {
+      "id": "XBo2_20HtTo",
+      "title": "A Very Cozy Relaxing Day At Sea",
+      "viewCount": 14,
+      "seconds": 330,
+      "publishedAt": "2026-09-05T07:33:12-07:00",
+      "source": "https://www.youtube.com/watch?v=XBo2_20HtTo"
+    },
+    {
+      "id": "YkWf1_TxTYk",
+      "title": "Styling Athletic Shorts with Basic Tops",
+      "viewCount": 77,
+      "seconds": 265,
+      "publishedAt": "2026-08-31T07:50:08-07:00",
+      "source": "https://www.youtube.com/watch?v=YkWf1_TxTYk"
+    },
+    {
+      "id": "uCzQAp__l3I",
+      "title": "Styling Basics Skirts Tops",
+      "viewCount": 19,
+      "seconds": 377,
+      "publishedAt": "2026-08-31T01:47:34-07:00",
+      "source": "https://www.youtube.com/watch?v=uCzQAp__l3I"
+    },
+    {
+      "id": "Dp2PrDbxu74",
+      "title": "Suppliments That Saved My Life In This Menopausal Stages... Highly Recommend!",
+      "viewCount": 13,
+      "seconds": 898,
+      "publishedAt": "2026-08-27T01:46:18-07:00",
+      "source": "https://www.youtube.com/watch?v=Dp2PrDbxu74"
+    },
+    {
+      "id": "8CJruHzK4Wo",
+      "title": "Huge Asos Fashion Haul for the End of Summer 2026 so pretty Fits! Keeping them All!🎁💯🏖",
+      "viewCount": 35,
+      "seconds": 739,
+      "publishedAt": "2026-08-26T03:31:04-07:00",
+      "source": "https://www.youtube.com/watch?v=8CJruHzK4Wo"
+    },
+    {
+      "id": "k1AtJQhucWk",
+      "title": "Huge Fashion Shoes Accessories Asos Haul.. keeping them all!.. love love these Fits!💯❤️🎁",
+      "viewCount": 8,
+      "seconds": 1397,
+      "publishedAt": "2026-08-18T12:57:03-07:00",
+      "source": "https://www.youtube.com/watch?v=k1AtJQhucWk"
+    },
+    {
+      "id": "hI-SwD8D0uc",
+      "title": "My Entire Summer Recap 2026... I dont want summer ends...",
+      "viewCount": 30,
+      "seconds": 640,
+      "publishedAt": "2026-08-15T03:23:41-07:00",
+      "source": "https://www.youtube.com/watch?v=hI-SwD8D0uc"
+    },
+    {
+      "id": "eTcsr5x7rl0",
+      "title": "An Update for my Snoopy Timex Watch and A Full Review for my Citizen Ladys Watch",
+      "viewCount": 73,
+      "seconds": 613,
+      "publishedAt": "2026-08-08T07:56:51-07:00",
+      "source": "https://www.youtube.com/watch?v=eTcsr5x7rl0"
+    },
+    {
+      "id": "nF6HOA-NMaI",
+      "title": "Accessories Mini Haul Hats Hairclips Progressive Glasses Transitions",
+      "viewCount": 13,
+      "seconds": 575,
+      "publishedAt": "2026-08-08T04:53:39-07:00",
+      "source": "https://www.youtube.com/watch?v=nF6HOA-NMaI"
+    },
+    {
+      "id": "gl2JPGr-BSQ",
+      "title": "Grocery Run.. Shopping..",
+      "viewCount": 3,
+      "seconds": 334,
+      "publishedAt": "2026-08-01T01:04:09-07:00",
+      "source": "https://www.youtube.com/watch?v=gl2JPGr-BSQ"
+    },
+    {
+      "id": "7gAHxAEocIA",
+      "title": "Asos Haul from Dresses Tank Tops to Coprispalla or Cover Up in the Cold Season",
+      "viewCount": 41,
+      "seconds": 425,
+      "publishedAt": "2026-07-24T02:57:32-07:00",
+      "source": "https://www.youtube.com/watch?v=7gAHxAEocIA"
+    },
+    {
+      "id": "yvZqrwIiaG4",
+      "title": "Flower Knows Berry Enchanted Garden Set... so pretty guys! ❤️💯🎁",
+      "viewCount": 407,
+      "seconds": 453,
+      "publishedAt": "2026-07-23T22:43:37-07:00",
+      "source": "https://www.youtube.com/watch?v=yvZqrwIiaG4"
+    },
+    {
+      "id": "FlMLCXyvUvc",
+      "title": "Full Unboxing of Flower Knows Berry Set.. So So Pretty!",
+      "viewCount": 68,
+      "seconds": 366,
+      "publishedAt": "2026-07-23T04:24:39-07:00",
+      "source": "https://www.youtube.com/watch?v=FlMLCXyvUvc"
+    },
+    {
+      "id": "M0sWygJfgjk",
+      "title": "Sephora Haul Tom Ford Eau De Soleil Blanc Acqua Di Gio Profondo One Size On Till Dawn Si Parfum",
+      "viewCount": 16,
+      "seconds": 723,
+      "publishedAt": "2026-07-20T07:04:15-07:00",
+      "source": "https://www.youtube.com/watch?v=M0sWygJfgjk"
+    },
+    {
+      "id": "C0VrF3GeB2E",
+      "title": "Seaside Life.. Lets enjoy the Sea... Relax...",
+      "viewCount": 34,
+      "seconds": 474,
+      "publishedAt": "2026-07-18T07:22:06-07:00",
+      "source": "https://www.youtube.com/watch?v=C0VrF3GeB2E"
+    },
+    {
+      "id": "3q34j70fxC0",
+      "title": "So Good To Be Here... Lets Enjoy The Sea!...🌊🏖❤️💯👌",
+      "viewCount": 12,
+      "seconds": 162,
+      "publishedAt": "2026-07-18T01:40:02-07:00",
+      "source": "https://www.youtube.com/watch?v=3q34j70fxC0"
+    },
+    {
+      "id": "fRKoHtyhL0s",
+      "title": "My Summer Essentials and Revolution MakeUp GRWM",
+      "viewCount": 14,
+      "seconds": 830,
+      "publishedAt": "2026-07-12T23:54:49-07:00",
+      "source": "https://www.youtube.com/watch?v=fRKoHtyhL0s"
+    },
+    {
+      "id": "uGyPBV8DfA0",
+      "title": "MakeUp Skincare Haul Revolution MakeUp",
+      "viewCount": 20,
+      "seconds": 547,
+      "publishedAt": "2026-07-12T04:25:46-07:00",
+      "source": "https://www.youtube.com/watch?v=uGyPBV8DfA0"
+    },
+    {
+      "id": "8WNw6kQvY1g",
+      "title": "My everyday Jewelries ... love wearing them this summer! 🌊🏖❤️🎁💯",
+      "viewCount": 17,
+      "seconds": 565,
+      "publishedAt": "2026-07-12T01:42:18-07:00",
+      "source": "https://www.youtube.com/watch?v=8WNw6kQvY1g"
+    },
+    {
+      "id": "lUv24LyW7f8",
+      "title": "APM MONACO Earrings Plus a MakeUp Get Ready With Me the OG",
+      "viewCount": 22,
+      "seconds": 472,
+      "publishedAt": "2026-07-10T07:28:40-07:00",
+      "source": "https://www.youtube.com/watch?v=lUv24LyW7f8"
+    },
+    {
+      "id": "uvS1EkOqeL0",
+      "title": "SOTC Updated Watch Collection 2026",
+      "viewCount": 126,
+      "seconds": 650,
+      "publishedAt": "2026-07-06T03:11:14-07:00",
+      "source": "https://www.youtube.com/watch?v=uvS1EkOqeL0"
+    },
+    {
+      "id": "RM1LSmcVMu8",
+      "title": "My Ocean Time... Relax!🌊🏖🐟🍷❤️",
+      "viewCount": 13,
+      "seconds": 132,
+      "publishedAt": "2026-07-03T23:27:41-07:00",
+      "source": "https://www.youtube.com/watch?v=RM1LSmcVMu8"
+    },
+    {
+      "id": "j3kQrTfJT3g",
+      "title": "Stroili Oro Purchases.. Citizen Sapphire Mother Of Pearl Lady Watch Ruby Gold Ring",
+      "viewCount": 28,
+      "seconds": 625,
+      "publishedAt": "2026-06-30T02:11:28-07:00",
+      "source": "https://www.youtube.com/watch?v=j3kQrTfJT3g"
+    },
+    {
+      "id": "xyjuF-YX-CA",
+      "title": "Collective Haul Asos Dress Bikinis Firmoo Progressive Glasses Adina Eden Jewelries 🎁👌❤️🍹",
+      "viewCount": 75,
+      "seconds": 1029,
+      "publishedAt": "2026-06-29T02:30:46-07:00",
+      "source": "https://www.youtube.com/watch?v=xyjuF-YX-CA"
+    },
+    {
+      "id": "HZEMQNZ0bkc",
+      "title": "My Birkenstock Collection with mod shots [ Gizeh, Madrid, Arizona and with Valentino collab ]",
+      "viewCount": 6904,
+      "seconds": 382,
+      "publishedAt": "2022-07-22T07:27:06-07:00",
+      "source": "https://www.youtube.com/watch?v=HZEMQNZ0bkc"
+    },
+    {
+      "id": "ejHebPFdSw0",
+      "title": "Timex Harborside Coast Watch 43mm TW2V91700UK the 100m Water Resistant 330ft so good guys 🎉🎄❤️🌊🤩",
+      "viewCount": 4075,
+      "seconds": 644,
+      "publishedAt": "2024-12-11T02:40:00-08:00",
+      "source": "https://www.youtube.com/watch?v=ejHebPFdSw0"
+    },
+    {
+      "id": "5cAgzxjrbjs",
+      "title": "Timex North Expedition TW2V65800 the substitution of my solar watch that they couldnt repair is 👌",
+      "viewCount": 3757,
+      "seconds": 486,
+      "publishedAt": "2025-04-03T03:31:06-07:00",
+      "source": "https://www.youtube.com/watch?v=5cAgzxjrbjs"
+    },
+    {
+      "id": "xRZgKgrpdK8",
+      "title": "H&M try on haul october 2022 styling dungarees or overalls",
+      "viewCount": 3385,
+      "seconds": 500,
+      "publishedAt": "2022-10-06T05:31:48-07:00",
+      "source": "https://www.youtube.com/watch?v=xRZgKgrpdK8"
+    },
+    {
+      "id": "vpOR1y082h4",
+      "title": "Timex Expedition Titanium Automatic 41mm Eco Friendly Leather Strap Watch TW2V54000QY 200m 20ATM WR👌",
+      "viewCount": 2881,
+      "seconds": 869,
+      "publishedAt": "2025-01-15T23:42:37-08:00",
+      "source": "https://www.youtube.com/watch?v=vpOR1y082h4"
+    },
+    {
+      "id": "BxunymAKbEw",
+      "title": "Timex Expedition North Sierra Solar Tw2v64500 so cool so Nice guys very simple yet pragmatic🎁⌚️",
+      "viewCount": 2651,
+      "seconds": 943,
+      "publishedAt": "2025-04-03T05:51:21-07:00",
+      "source": "https://www.youtube.com/watch?v=BxunymAKbEw"
+    },
+    {
+      "id": "Ebn7bAPNS6o",
+      "title": "The Luxury Side of Venezia..shop till we drop ❤️",
+      "viewCount": 2486,
+      "seconds": 240,
+      "publishedAt": "2023-04-27T01:48:42-07:00",
+      "source": "https://www.youtube.com/watch?v=Ebn7bAPNS6o"
+    },
+    {
+      "id": "2Gh1UhCs4NA",
+      "title": "Timex Watch In Comparison TW2V03600 Vs TW2T75400 Timex North Expedition Vs Timex Navi Xl ❤️🔥🕘",
+      "viewCount": 2366,
+      "seconds": 392,
+      "publishedAt": "2024-09-03T23:28:05-07:00",
+      "source": "https://www.youtube.com/watch?v=2Gh1UhCs4NA"
+    },
+    {
+      "id": "m9YDtAU7osg",
+      "title": "Comparison between Timex Navi & Timex Harborside Coast both are valuable but HCW is heavy 🕔😍❤️HRecom",
+      "viewCount": 2146,
+      "seconds": 814,
+      "publishedAt": "2025-01-10T08:28:22-08:00",
+      "source": "https://www.youtube.com/watch?v=m9YDtAU7osg"
+    },
+    {
+      "id": "sQmQbfNAPGE",
+      "title": "My Birkenstock Collection with mod shots [Gizeh, Madrid,Arizona, Birkenstock collab with Valentino]",
+      "viewCount": 1519,
+      "seconds": 251,
+      "publishedAt": "2022-07-21T21:49:32-07:00",
+      "source": "https://www.youtube.com/watch?v=sQmQbfNAPGE"
+    },
+    {
+      "id": "TvY5nf7LMJM",
+      "title": "Spent the Day With Me .. today at the Sea... so much relaxing!..🌊🌏❤️",
+      "viewCount": 40,
+      "seconds": 438,
+      "publishedAt": "2026-10-10T04:33:40-07:00",
+      "source": "https://www.youtube.com/watch?v=TvY5nf7LMJM"
+    },
+    {
+      "id": "f0ri1G_-GNQ",
+      "title": "Here are some Asos Amazon Skincare Jewelries Haul plus a Sea Day Escapade! &Unboxings",
+      "viewCount": 40,
+      "seconds": 1762,
+      "publishedAt": "2026-10-17T06:08:54-07:00",
+      "source": "https://www.youtube.com/watch?v=f0ri1G_-GNQ"
+    },
+    {
+      "id": "CJgpKWXriRo",
+      "title": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
+      "viewCount": 44,
+      "seconds": 767,
+      "publishedAt": "2026-10-16T07:12:42-07:00",
+      "source": "https://www.youtube.com/watch?v=CJgpKWXriRo"
+    },
+    {
+      "id": "_zegYJcXG44",
+      "title": "Shoe Haul Birkenstock Puma Converse Stradivarius Thong Sandals",
+      "viewCount": 14,
+      "seconds": 537,
+      "publishedAt": "2026-10-20T02:33:03-07:00",
+      "source": "https://www.youtube.com/watch?v=_zegYJcXG44"
+    }
+  ]
 }
