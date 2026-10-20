@@ -6,3 +6,16 @@
 @media(max-width:420px){.halloween .halloween-banner{margin-inline:20px;padding:22px;grid-template-columns:1fr}.halloween-art{position:absolute;width:78px;height:70px;right:12px;top:8px;opacity:.6}.halloween-banner .eyebrow{padding-right:45px}.halloween-banner h2{max-width:235px}.halloween-banner p:last-child{max-width:100%}}
 @media(prefers-reduced-motion:reduce){.halloween-art *{animation:none!important}}
 .halloween .brand{position:relative}.halloween .brand::after{position:absolute;left:calc(100% + 8px);top:5px;margin:0}
+
+/* Little pumpkin companions throughout the journal. */
+.halloween .new-section,.halloween #watch,.halloween #finds,.halloween #daily-life,.halloween #photo-diary,.halloween #about,.halloween #contact{position:relative}
+.halloween .new-section::before,.halloween #watch::before,.halloween #finds::before,.halloween #photo-diary::before,.halloween #about::before,.halloween #contact::before{content:'🎃';position:absolute;right:48px;top:22px;font-size:33px;line-height:1;pointer-events:none;transform:rotate(12deg)}
+.halloween #watch::before{right:auto;left:48px;top:10px;font-size:27px;transform:rotate(-12deg)}
+.halloween #finds::before{top:20px;font-size:40px}
+.halloween #photo-diary::before{font-size:30px;transform:rotate(-10deg)}
+.halloween #about::before{top:12px;font-size:36px}
+.halloween #contact::before{top:18px;right:26px;font-size:38px}
+.halloween .ribbon::before,.halloween .ribbon::after{content:'🎃';font-size:21px;line-height:1;pointer-events:none}
+.halloween .ranking-section .section-head>div::after{content:'🎃 🎃';display:block;font-size:25px;letter-spacing:8px;margin-top:17px;line-height:1}
+.halloween .footer-bottom::before{content:'🎃';font-size:22px;pointer-events:none}
+@media(max-width:740px){.halloween .new-section::before,.halloween #finds::before,.halloween #photo-diary::before{right:24px;top:12px;font-size:25px}.halloween #watch::before{left:auto;right:24px;top:12px;font-size:23px}.halloween #about::before{right:24px;font-size:25px}.halloween #contact::before{font-size:25px;top:12px;right:18px}.halloween .ribbon::before,.halloween .ribbon::after{font-size:16px}.halloween .ranking-section .section-head>div::after{font-size:22px}}
