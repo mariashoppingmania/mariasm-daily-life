@@ -4,52 +4,83 @@
   "email": "mariashoppingmania@gmail.com",
   "youtube": "https://www.youtube.com/@mariasmmania",
   "canva": "https://mariasmmania.my.canva.site",
-  "verifiedOn": "2026-10-20",
+  "verifiedOn": "2026-10-23",
   "videos": [
+    {
+      "id": "NtALSpi56iI",
+      "category": "Shopping finds",
+      "filter": "shopping",
+      "description": "",
+      "title": "Asos Amazon Fashion Haul & Try On Denim Shorts Sweater Tops",
+      "originalTitle": "Asos Amazon Fashion Haul & Try On Denim Shorts Sweater Tops",
+      "duration": "11:46",
+      "viewsLabel": "4",
+      "image": "https://img.youtube.com/vi/NtALSpi56iI/hqdefault.jpg",
+      "source": "https://www.youtube.com/watch?v=NtALSpi56iI",
+      "publishedLabel": "5 hours ago",
+      "metricsCheckedOn": "2026-10-23"
+    },
+    {
+      "id": "-5YZyENmFWM",
+      "category": "Watches & accessories",
+      "filter": "accessories",
+      "description": "",
+      "title": "An Update of my Watch Collection 3 More Ladys Watch Lorenz Festina Just Cavalli",
+      "originalTitle": "An Update of my Watch Collection 3 More Ladys Watch Lorenz Festina Just Cavalli",
+      "duration": "11:23",
+      "viewsLabel": "8",
+      "image": "https://img.youtube.com/vi/-5YZyENmFWM/hqdefault.jpg",
+      "source": "https://www.youtube.com/watch?v=-5YZyENmFWM",
+      "publishedLabel": "1 day ago",
+      "metricsCheckedOn": "2026-10-23"
+    },
     {
       "id": "_zegYJcXG44",
       "category": "Shopping finds",
       "filter": "shopping",
       "description": "A new shoe haul featuring Birkenstock, Puma, Converse and Stradivarius thong sandals.",
-      "image": "https://i.ytimg.com/vi/_zegYJcXG44/hqdefault.jpg",
+      "image": "https://img.youtube.com/vi/_zegYJcXG44/hqdefault.jpg",
       "title": "Shoe Haul Birkenstock Puma Converse Stradivarius Thong Sandals",
       "originalTitle": "Shoe Haul Birkenstock Puma Converse Stradivarius Thong Sandals",
-      "viewsLabel": "14",
+      "viewsLabel": "48",
       "viewCount": 14,
       "duration": "8:57",
       "publishedAt": "2026-10-20T09:33:03Z",
       "publishedLabel": "20 Oct 2026",
-      "source": "https://www.youtube.com/watch?v=_zegYJcXG44"
+      "source": "https://www.youtube.com/watch?v=_zegYJcXG44",
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "f0ri1G_-GNQ",
       "category": "Beauty & fragrance",
       "filter": "beauty",
       "description": "ASOS and Amazon finds, skincare, jewellery and a relaxing escape to the sea.",
-      "image": "https://i.ytimg.com/vi/f0ri1G_-GNQ/hqdefault.jpg",
+      "image": "https://img.youtube.com/vi/f0ri1G_-GNQ/hqdefault.jpg",
       "title": "Here are some Asos Amazon Skincare Jewelries Haul plus a Sea Day Escapade! &Unboxings",
       "originalTitle": "Here are some Asos Amazon Skincare Jewelries Haul plus a Sea Day Escapade! &Unboxings",
-      "duration": "29:22",
-      "viewsLabel": "40",
+      "duration": "29:23",
+      "viewsLabel": "52",
       "publishedLabel": "17 Oct 2026",
       "publishedAt": "2026-10-17T13:08:54Z",
       "source": "https://www.youtube.com/watch?v=f0ri1G_-GNQ",
-      "viewCount": 40
+      "viewCount": 40,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "CJgpKWXriRo",
       "category": "Daily life & travel",
       "filter": "life",
       "description": "A seaside escape to enjoy a little peace, freedom and time away from everyday life.",
-      "image": "https://i.ytimg.com/vi/CJgpKWXriRo/hqdefault.jpg",
+      "image": "https://img.youtube.com/vi/CJgpKWXriRo/hqdefault.jpg",
       "title": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
       "originalTitle": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
       "duration": "12:47",
-      "viewsLabel": "44",
+      "viewsLabel": "48",
       "publishedLabel": "16 Oct 2026",
       "publishedAt": "2026-10-16T14:12:42Z",
       "source": "https://www.youtube.com/watch?v=CJgpKWXriRo",
-      "viewCount": 44
+      "viewCount": 44,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "TvY5nf7LMJM",
@@ -59,12 +90,13 @@
       "title": "Spent the Day With Me .. today at the Sea... so much relaxing!..🌊🌏❤️",
       "originalTitle": "Spent the Day With Me .. today at the Sea... so much relaxing!..🌊🌏❤️",
       "duration": "7:18",
-      "viewsLabel": "40",
+      "viewsLabel": "43",
       "publishedLabel": "10 Oct 2026",
       "publishedAt": "2026-10-10T11:33:40Z",
       "source": "https://www.youtube.com/watch?v=TvY5nf7LMJM",
-      "image": "https://i.ytimg.com/vi/TvY5nf7LMJM/hqdefault.jpg",
-      "viewCount": 40
+      "image": "https://img.youtube.com/vi/TvY5nf7LMJM/hqdefault.jpg",
+      "viewCount": 40,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "Wm4ZHxwCpmA",
@@ -72,14 +104,15 @@
       "originalTitle": "Asos Haul Fashion Accessories Fragrances Skincare",
       "category": "Beauty & fragrance",
       "filter": "beauty",
-      "image": "video-Wm4ZHxwCpmA.webp",
+      "image": "https://img.youtube.com/vi/Wm4ZHxwCpmA/hqdefault.jpg",
       "duration": "19:24",
       "viewsLabel": "17",
       "publishedLabel": "1 Oct 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=Wm4ZHxwCpmA",
       "publishedAt": "2026-10-01T13:27:00Z",
-      "viewCount": 17
+      "viewCount": 17,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "fMcqWl3-0Oo",
@@ -87,14 +120,15 @@
       "originalTitle": "Styling my Crop Jacket Gilet and Trench Coats.. love them! 🧥👓",
       "category": "Personal style",
       "filter": "style",
-      "image": "video-fMcqWl3-0Oo.webp",
-      "duration": "4:00",
+      "image": "https://img.youtube.com/vi/fMcqWl3-0Oo/hqdefault.jpg",
+      "duration": "4:01",
       "viewsLabel": "40",
       "publishedLabel": "21 Sep 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=fMcqWl3-0Oo",
       "publishedAt": "2026-09-21T09:41:23Z",
-      "viewCount": 40
+      "viewCount": 40,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "mQjqFDblWHY",
@@ -102,14 +136,15 @@
       "originalTitle": "Let us  Enjoy the Sea today... is still summer here!  So good!..🌊🌏🏖❤️",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-mQjqFDblWHY.webp",
+      "image": "https://img.youtube.com/vi/mQjqFDblWHY/hqdefault.jpg",
       "duration": "11:21",
       "viewsLabel": "13",
       "publishedLabel": "19 Sep 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=mQjqFDblWHY",
       "publishedAt": "2026-09-19T11:26:46Z",
-      "viewCount": 13
+      "viewCount": 13,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "Rq5tY4YZF2I",
@@ -117,14 +152,15 @@
       "originalTitle": "Asos Haul + an Amazon find",
       "category": "Shopping finds",
       "filter": "shopping",
-      "image": "video-Rq5tY4YZF2I.webp",
+      "image": "https://img.youtube.com/vi/Rq5tY4YZF2I/hqdefault.jpg",
       "duration": "11:10",
       "viewsLabel": "16",
       "publishedLabel": "15 Sep 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=Rq5tY4YZF2I",
       "publishedAt": "2026-09-15T14:17:27Z",
-      "viewCount": 16
+      "viewCount": 16,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "s68jNW-dHTU",
@@ -132,14 +168,15 @@
       "originalTitle": "My Summer 2026.. Treasured it!",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-s68jNW-dHTU.webp",
+      "image": "https://img.youtube.com/vi/s68jNW-dHTU/hqdefault.jpg",
       "duration": "21:19",
       "viewsLabel": "54",
       "publishedLabel": "8 Sep 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=s68jNW-dHTU",
       "publishedAt": "2026-09-08T18:11:36Z",
-      "viewCount": 54
+      "viewCount": 54,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "sYeFLrOmYlg",
@@ -147,14 +184,15 @@
       "originalTitle": "Full Review of my Lorenz Watch Festina Watch Just Cavalli Watch",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-sYeFLrOmYlg.webp",
+      "image": "https://img.youtube.com/vi/sYeFLrOmYlg/hqdefault.jpg",
       "duration": "13:21",
       "viewsLabel": "49",
       "publishedLabel": "6 Sep 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=sYeFLrOmYlg",
       "publishedAt": "2026-09-06T13:53:42Z",
-      "viewCount": 49
+      "viewCount": 49,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "XBo2_20HtTo",
@@ -162,14 +200,15 @@
       "originalTitle": "A Very Cozy Relaxing Day At Sea",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-XBo2_20HtTo.webp",
-      "duration": "5:30",
+      "image": "https://img.youtube.com/vi/XBo2_20HtTo/hqdefault.jpg",
+      "duration": "5:31",
       "viewsLabel": "14",
       "publishedLabel": "5 Sep 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=XBo2_20HtTo",
       "publishedAt": "2026-09-05T14:33:12Z",
-      "viewCount": 14
+      "viewCount": 14,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "YkWf1_TxTYk",
@@ -177,14 +216,15 @@
       "originalTitle": "Styling Athletic Shorts with Basic Tops",
       "category": "Personal style",
       "filter": "style",
-      "image": "video-YkWf1_TxTYk.webp",
-      "duration": "4:25",
+      "image": "https://img.youtube.com/vi/YkWf1_TxTYk/hqdefault.jpg",
+      "duration": "4:26",
       "viewsLabel": "77",
       "publishedLabel": "31 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=YkWf1_TxTYk",
       "publishedAt": "2026-08-31T14:50:08Z",
-      "viewCount": 77
+      "viewCount": 77,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "uCzQAp__l3I",
@@ -192,14 +232,15 @@
       "originalTitle": "Styling Basics Skirts Tops",
       "category": "Personal style",
       "filter": "style",
-      "image": "video-uCzQAp__l3I.webp",
-      "duration": "6:17",
+      "image": "https://img.youtube.com/vi/uCzQAp__l3I/hqdefault.jpg",
+      "duration": "6:18",
       "viewsLabel": "19",
       "publishedLabel": "31 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=uCzQAp__l3I",
       "publishedAt": "2026-08-31T08:47:34Z",
-      "viewCount": 19
+      "viewCount": 19,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "Dp2PrDbxu74",
@@ -207,14 +248,15 @@
       "originalTitle": "Suppliments That Saved My Life In This Menopausal Stages... Highly Recommend!",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-Dp2PrDbxu74.webp",
+      "image": "https://img.youtube.com/vi/Dp2PrDbxu74/hqdefault.jpg",
       "duration": "14:58",
       "viewsLabel": "13",
       "publishedLabel": "27 Aug 2026",
       "description": "Maria shares a personal experience. This video is not medical or treatment advice.",
       "source": "https://www.youtube.com/watch?v=Dp2PrDbxu74",
       "publishedAt": "2026-08-27T08:46:18Z",
-      "viewCount": 13
+      "viewCount": 13,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "8CJruHzK4Wo",
@@ -222,14 +264,15 @@
       "originalTitle": "Huge Asos Fashion Haul for the End of Summer 2026 so pretty Fits! Keeping them All!🎁💯🏖",
       "category": "Shopping finds",
       "filter": "shopping",
-      "image": "video-8CJruHzK4Wo.webp",
+      "image": "https://img.youtube.com/vi/8CJruHzK4Wo/hqdefault.jpg",
       "duration": "12:19",
       "viewsLabel": "35",
       "publishedLabel": "26 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=8CJruHzK4Wo",
       "publishedAt": "2026-08-26T10:31:04Z",
-      "viewCount": 35
+      "viewCount": 35,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "k1AtJQhucWk",
@@ -237,14 +280,15 @@
       "originalTitle": "Huge Fashion Shoes Accessories Asos Haul.. keeping them all!.. love love these Fits!💯❤️🎁",
       "category": "Shopping finds",
       "filter": "shopping",
-      "image": "video-k1AtJQhucWk.webp",
-      "duration": "23:17",
-      "viewsLabel": "8",
+      "image": "https://img.youtube.com/vi/k1AtJQhucWk/hqdefault.jpg",
+      "duration": "23:18",
+      "viewsLabel": "9",
       "publishedLabel": "18 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=k1AtJQhucWk",
       "publishedAt": "2026-08-18T19:57:03Z",
-      "viewCount": 8
+      "viewCount": 8,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "hI-SwD8D0uc",
@@ -252,14 +296,15 @@
       "originalTitle": "My Entire Summer Recap 2026... I dont want summer ends...",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-hI-SwD8D0uc.webp",
+      "image": "https://img.youtube.com/vi/hI-SwD8D0uc/hqdefault.jpg",
       "duration": "10:40",
       "viewsLabel": "30",
       "publishedLabel": "15 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=hI-SwD8D0uc",
       "publishedAt": "2026-08-15T10:23:41Z",
-      "viewCount": 30
+      "viewCount": 30,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "eTcsr5x7rl0",
@@ -267,14 +312,15 @@
       "originalTitle": "An Update for my Snoopy Timex Watch and A Full Review for my Citizen Ladys Watch",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-eTcsr5x7rl0.webp",
+      "image": "https://img.youtube.com/vi/eTcsr5x7rl0/hqdefault.jpg",
       "duration": "10:13",
-      "viewsLabel": "73",
+      "viewsLabel": "74",
       "publishedLabel": "8 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=eTcsr5x7rl0",
       "publishedAt": "2026-08-08T14:56:51Z",
-      "viewCount": 73
+      "viewCount": 73,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "nF6HOA-NMaI",
@@ -282,14 +328,15 @@
       "originalTitle": "Accessories Mini Haul Hats Hairclips Progressive Glasses Transitions",
       "category": "Shopping finds",
       "filter": "shopping",
-      "image": "video-nF6HOA-NMaI.webp",
-      "duration": "9:35",
+      "image": "https://img.youtube.com/vi/nF6HOA-NMaI/hqdefault.jpg",
+      "duration": "9:36",
       "viewsLabel": "13",
       "publishedLabel": "8 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=nF6HOA-NMaI",
       "publishedAt": "2026-08-08T11:53:39Z",
-      "viewCount": 13
+      "viewCount": 13,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "gl2JPGr-BSQ",
@@ -297,14 +344,15 @@
       "originalTitle": "Grocery Run.. Shopping..",
       "category": "Shopping finds",
       "filter": "shopping",
-      "image": "video-gl2JPGr-BSQ.webp",
+      "image": "https://img.youtube.com/vi/gl2JPGr-BSQ/hqdefault.jpg",
       "duration": "5:34",
       "viewsLabel": "3",
       "publishedLabel": "1 Aug 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=gl2JPGr-BSQ",
       "publishedAt": "2026-08-01T08:04:09Z",
-      "viewCount": 3
+      "viewCount": 3,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "7gAHxAEocIA",
@@ -312,14 +360,15 @@
       "originalTitle": "Asos Haul from Dresses Tank Tops to Coprispalla or Cover Up in the Cold Season",
       "category": "Shopping finds",
       "filter": "shopping",
-      "image": "video-7gAHxAEocIA.webp",
+      "image": "https://img.youtube.com/vi/7gAHxAEocIA/hqdefault.jpg",
       "duration": "7:05",
       "viewsLabel": "41",
       "publishedLabel": "24 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=7gAHxAEocIA",
       "publishedAt": "2026-07-24T09:57:32Z",
-      "viewCount": 41
+      "viewCount": 41,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "yvZqrwIiaG4",
@@ -327,14 +376,15 @@
       "originalTitle": "Flower Knows Berry Enchanted Garden Set... so pretty guys! ❤️💯🎁",
       "category": "Beauty & fragrance",
       "filter": "beauty",
-      "image": "video-yvZqrwIiaG4.webp",
+      "image": "https://img.youtube.com/vi/yvZqrwIiaG4/hqdefault.jpg",
       "duration": "7:33",
-      "viewsLabel": "407",
+      "viewsLabel": "434",
       "publishedLabel": "23 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=yvZqrwIiaG4",
       "publishedAt": "2026-07-24T05:43:37Z",
-      "viewCount": 407
+      "viewCount": 407,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "FlMLCXyvUvc",
@@ -342,14 +392,15 @@
       "originalTitle": "Full Unboxing of Flower Knows Berry Set.. So So Pretty!",
       "category": "Beauty & fragrance",
       "filter": "beauty",
-      "image": "video-FlMLCXyvUvc.webp",
+      "image": "https://img.youtube.com/vi/FlMLCXyvUvc/hqdefault.jpg",
       "duration": "6:06",
       "viewsLabel": "68",
       "publishedLabel": "23 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=FlMLCXyvUvc",
       "publishedAt": "2026-07-23T11:24:39Z",
-      "viewCount": 68
+      "viewCount": 68,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "M0sWygJfgjk",
@@ -357,14 +408,15 @@
       "originalTitle": "Sephora Haul Tom Ford Eau De Soleil Blanc Acqua Di Gio Profondo One Size On Till Dawn Si Parfum",
       "category": "Beauty & fragrance",
       "filter": "beauty",
-      "image": "video-M0sWygJfgjk.webp",
+      "image": "https://img.youtube.com/vi/M0sWygJfgjk/hqdefault.jpg",
       "duration": "12:03",
       "viewsLabel": "16",
       "publishedLabel": "20 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=M0sWygJfgjk",
       "publishedAt": "2026-07-20T14:04:15Z",
-      "viewCount": 16
+      "viewCount": 16,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "C0VrF3GeB2E",
@@ -372,14 +424,15 @@
       "originalTitle": "Seaside Life.. Lets enjoy the Sea... Relax...",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-C0VrF3GeB2E.webp",
-      "duration": "7:54",
+      "image": "https://img.youtube.com/vi/C0VrF3GeB2E/hqdefault.jpg",
+      "duration": "7:55",
       "viewsLabel": "34",
       "publishedLabel": "18 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=C0VrF3GeB2E",
       "publishedAt": "2026-07-18T14:22:06Z",
-      "viewCount": 34
+      "viewCount": 34,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "3q34j70fxC0",
@@ -387,14 +440,15 @@
       "originalTitle": "So Good To Be Here... Lets Enjoy The Sea!...🌊🏖❤️💯👌",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-3q34j70fxC0.webp",
+      "image": "https://img.youtube.com/vi/3q34j70fxC0/hqdefault.jpg",
       "duration": "2:42",
       "viewsLabel": "12",
       "publishedLabel": "18 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=3q34j70fxC0",
       "publishedAt": "2026-07-18T08:40:02Z",
-      "viewCount": 12
+      "viewCount": 12,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "fRKoHtyhL0s",
@@ -402,14 +456,15 @@
       "originalTitle": "My Summer Essentials and Revolution MakeUp GRWM",
       "category": "Beauty & fragrance",
       "filter": "beauty",
-      "image": "video-fRKoHtyhL0s.webp",
+      "image": "https://img.youtube.com/vi/fRKoHtyhL0s/hqdefault.jpg",
       "duration": "13:50",
       "viewsLabel": "14",
       "publishedLabel": "12 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=fRKoHtyhL0s",
       "publishedAt": "2026-07-13T06:54:49Z",
-      "viewCount": 14
+      "viewCount": 14,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "uGyPBV8DfA0",
@@ -417,14 +472,15 @@
       "originalTitle": "MakeUp Skincare Haul Revolution MakeUp",
       "category": "Beauty & fragrance",
       "filter": "beauty",
-      "image": "video-uGyPBV8DfA0.webp",
-      "duration": "9:07",
+      "image": "https://img.youtube.com/vi/uGyPBV8DfA0/hqdefault.jpg",
+      "duration": "9:08",
       "viewsLabel": "20",
       "publishedLabel": "12 Jul 2026",
       "description": "",
       "source": "https://www.youtube.com/watch?v=uGyPBV8DfA0",
       "publishedAt": "2026-07-12T11:25:46Z",
-      "viewCount": 20
+      "viewCount": 20,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "8WNw6kQvY1g",
@@ -522,14 +578,15 @@
       "originalTitle": "Timex Expedition North Sierra Solar Tw2v64500 so cool so Nice guys very simple yet pragmatic🎁⌚️",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-BxunymAKbEw.webp",
-      "duration": "15:43",
-      "viewsLabel": "2,651",
+      "image": "https://img.youtube.com/vi/BxunymAKbEw/hqdefault.jpg",
+      "duration": "15:44",
+      "viewsLabel": "2.6K",
       "publishedLabel": "3 Apr 2025",
       "description": "",
       "source": "https://www.youtube.com/watch?v=BxunymAKbEw",
       "publishedAt": "2025-04-03T12:51:21Z",
-      "viewCount": 2651
+      "viewCount": 2651,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "5cAgzxjrbjs",
@@ -537,14 +594,15 @@
       "originalTitle": "Timex North Expedition TW2V65800 the substitution of my solar watch that they couldnt repair is 👌",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-5cAgzxjrbjs.webp",
+      "image": "https://img.youtube.com/vi/5cAgzxjrbjs/hqdefault.jpg",
       "duration": "8:06",
-      "viewsLabel": "3,757",
+      "viewsLabel": "3.7K",
       "publishedLabel": "3 Apr 2025",
       "description": "",
       "source": "https://www.youtube.com/watch?v=5cAgzxjrbjs",
       "publishedAt": "2025-04-03T10:31:06Z",
-      "viewCount": 3757
+      "viewCount": 3757,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "vpOR1y082h4",
@@ -552,14 +610,15 @@
       "originalTitle": "Timex Expedition Titanium Automatic 41mm Eco Friendly Leather Strap Watch TW2V54000QY 200m 20ATM WR👌",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-vpOR1y082h4.webp",
-      "duration": "14:29",
-      "viewsLabel": "2,881",
+      "image": "https://img.youtube.com/vi/vpOR1y082h4/hqdefault.jpg",
+      "duration": "14:30",
+      "viewsLabel": "2.8K",
       "publishedLabel": "15 Jan 2025",
       "description": "",
       "source": "https://www.youtube.com/watch?v=vpOR1y082h4",
       "publishedAt": "2025-01-16T07:42:37Z",
-      "viewCount": 2881
+      "viewCount": 2881,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "m9YDtAU7osg",
@@ -567,14 +626,15 @@
       "originalTitle": "Comparison between Timex Navi & Timex Harborside Coast both are valuable but HCW is heavy 🕔😍❤️HRecom",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-m9YDtAU7osg.webp",
-      "duration": "13:34",
-      "viewsLabel": "2,146",
+      "image": "https://img.youtube.com/vi/m9YDtAU7osg/hqdefault.jpg",
+      "duration": "13:35",
+      "viewsLabel": "2.1K",
       "publishedLabel": "10 Jan 2025",
       "description": "",
       "source": "https://www.youtube.com/watch?v=m9YDtAU7osg",
       "publishedAt": "2025-01-10T16:28:22Z",
-      "viewCount": 2146
+      "viewCount": 2146,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "ejHebPFdSw0",
@@ -582,14 +642,15 @@
       "originalTitle": "Timex Harborside Coast Watch 43mm TW2V91700UK the 100m Water Resistant 330ft so good guys 🎉🎄❤️🌊🤩",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-ejHebPFdSw0.webp",
+      "image": "https://img.youtube.com/vi/ejHebPFdSw0/hqdefault.jpg",
       "duration": "10:44",
-      "viewsLabel": "4,075",
+      "viewsLabel": "4.1K",
       "publishedLabel": "11 Dec 2024",
       "description": "",
       "source": "https://www.youtube.com/watch?v=ejHebPFdSw0",
       "publishedAt": "2024-12-11T10:40:00Z",
-      "viewCount": 4075
+      "viewCount": 4075,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "2Gh1UhCs4NA",
@@ -597,14 +658,15 @@
       "originalTitle": "Timex Watch In Comparison TW2V03600 Vs TW2T75400 Timex North Expedition Vs Timex Navi Xl ❤️🔥🕘",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-2Gh1UhCs4NA.webp",
-      "duration": "6:32",
-      "viewsLabel": "2,366",
+      "image": "https://img.youtube.com/vi/2Gh1UhCs4NA/hqdefault.jpg",
+      "duration": "6:33",
+      "viewsLabel": "2.3K",
       "publishedLabel": "3 Sep 2024",
       "description": "",
       "source": "https://www.youtube.com/watch?v=2Gh1UhCs4NA",
       "publishedAt": "2024-09-04T06:28:05Z",
-      "viewCount": 2366
+      "viewCount": 2366,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "Ebn7bAPNS6o",
@@ -612,14 +674,15 @@
       "originalTitle": "The Luxury Side of Venezia..shop till we drop ❤️",
       "category": "Daily life & travel",
       "filter": "life",
-      "image": "video-Ebn7bAPNS6o.webp",
-      "duration": "4:00",
-      "viewsLabel": "2,486",
+      "image": "https://img.youtube.com/vi/Ebn7bAPNS6o/hqdefault.jpg",
+      "duration": "4:01",
+      "viewsLabel": "2.4K",
       "publishedLabel": "27 Apr 2023",
       "description": "",
       "source": "https://www.youtube.com/watch?v=Ebn7bAPNS6o",
       "publishedAt": "2023-04-27T08:48:42Z",
-      "viewCount": 2486
+      "viewCount": 2486,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "xRZgKgrpdK8",
@@ -627,14 +690,15 @@
       "originalTitle": "H&M try on haul october 2022 styling dungarees or overalls",
       "category": "Personal style",
       "filter": "style",
-      "image": "video-xRZgKgrpdK8.webp",
+      "image": "https://img.youtube.com/vi/xRZgKgrpdK8/hqdefault.jpg",
       "duration": "8:20",
-      "viewsLabel": "3,385",
+      "viewsLabel": "3.3K",
       "publishedLabel": "6 Oct 2022",
       "description": "",
       "source": "https://www.youtube.com/watch?v=xRZgKgrpdK8",
       "publishedAt": "2022-10-06T12:31:48Z",
-      "viewCount": 3385
+      "viewCount": 3385,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "HZEMQNZ0bkc",
@@ -642,14 +706,15 @@
       "originalTitle": "My Birkenstock Collection with mod shots [ Gizeh, Madrid, Arizona and with Valentino collab ]",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-HZEMQNZ0bkc.webp",
-      "duration": "6:22",
-      "viewsLabel": "6,904",
+      "image": "https://img.youtube.com/vi/HZEMQNZ0bkc/hqdefault.jpg",
+      "duration": "6:23",
+      "viewsLabel": "6.9K",
       "publishedLabel": "22 Jul 2022",
       "description": "",
       "source": "https://www.youtube.com/watch?v=HZEMQNZ0bkc",
       "publishedAt": "2022-07-22T14:27:06Z",
-      "viewCount": 6904
+      "viewCount": 6904,
+      "metricsCheckedOn": "2026-10-23"
     },
     {
       "id": "sQmQbfNAPGE",
@@ -657,17 +722,20 @@
       "originalTitle": "My Birkenstock Collection with mod shots [Gizeh, Madrid,Arizona, Birkenstock collab with Valentino]",
       "category": "Watches & accessories",
       "filter": "accessories",
-      "image": "video-sQmQbfNAPGE.webp",
+      "image": "https://img.youtube.com/vi/sQmQbfNAPGE/hqdefault.jpg",
       "duration": "4:11",
-      "viewsLabel": "1,519",
+      "viewsLabel": "1.5K",
       "publishedLabel": "21 Jul 2022",
       "description": "",
       "source": "https://www.youtube.com/watch?v=sQmQbfNAPGE",
       "publishedAt": "2022-07-22T04:49:32Z",
-      "viewCount": 1519
+      "viewCount": 1519,
+      "metricsCheckedOn": "2026-10-23"
     }
   ],
   "newVideos": [
+    "NtALSpi56iI",
+    "-5YZyENmFWM",
     "_zegYJcXG44",
     "f0ri1G_-GNQ",
     "CJgpKWXriRo",
@@ -675,9 +743,7 @@
     "Wm4ZHxwCpmA",
     "fMcqWl3-0Oo",
     "mQjqFDblWHY",
-    "Rq5tY4YZF2I",
-    "s68jNW-dHTU",
-    "sYeFLrOmYlg"
+    "Rq5tY4YZF2I"
   ],
   "mostWatched": [
     "HZEMQNZ0bkc",
@@ -771,17 +837,182 @@
       "height": 1678
     }
   ],
-  "featuredVideo": "_zegYJcXG44",
+  "featuredVideo": "NtALSpi56iI",
   "shoppingVideos": [
+    "NtALSpi56iI",
+    "-5YZyENmFWM",
     "_zegYJcXG44",
-    "f0ri1G_-GNQ",
-    "Wm4ZHxwCpmA",
-    "fMcqWl3-0Oo"
+    "f0ri1G_-GNQ"
   ],
   "dailyLifeVideos": [
     "CJgpKWXriRo",
     "TvY5nf7LMJM",
     "mQjqFDblWHY",
     "s68jNW-dHTU"
-  ]
+  ],
+  "shortsLatest": [
+    {
+      "id": "HUBZgM7e2vc",
+      "title": "Amazon finds.. Mouthwashes Candys Paper towels..",
+      "views": "204 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/HUBZgM7e2vc/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAHzAvl36mXE91gLWpLyInN76VDTw"
+    },
+    {
+      "id": "XdF7vIpKvq4",
+      "title": "Shopping plus a Mini Haul... so nice fits..",
+      "views": "31 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/XdF7vIpKvq4/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAjMHLWV9oflsMZOSPonxhNwg90cg"
+    },
+    {
+      "id": "wsSwnzDKY98",
+      "title": "Last Banana I Harvested..",
+      "views": "148 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/wsSwnzDKY98/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDSFCqptb7XnhXZvZpij6hqk54dKg"
+    },
+    {
+      "id": "yY8qkxdr_wI",
+      "title": "My Hubbys Ramen... yummy..so good..",
+      "views": "37 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/yY8qkxdr_wI/oardefault.jpg?sqp=-oaymwEYCJwEENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLD7Dk7OEuBgGCVQFdyPglnuG92L5w"
+    },
+    {
+      "id": "JPjx1BXU05Y",
+      "title": "Perfect Pick .. New Salon New Haircut.. Love the service perfect...",
+      "views": "24 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/JPjx1BXU05Y/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCntSpt8Mk1Bq492csoaxwiIn9pJA"
+    },
+    {
+      "id": "hX-3X2r4mLY",
+      "title": "Sea Nostalgia.. peaceful break...",
+      "views": "15 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/hX-3X2r4mLY/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDGS9hsUOvpUthN5q1G3cRKW2fVLA"
+    },
+    {
+      "id": "CYOS5FZUCvc",
+      "title": "OOTD By the Sea.. Outfit check..",
+      "views": "326 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/CYOS5FZUCvc/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBI3KW_e4fT8Uk9TOjtGbDyTSqN2Q"
+    },
+    {
+      "id": "Am8kFqOuBak",
+      "title": "Waves... so serene...",
+      "views": "412 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/Am8kFqOuBak/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDSkUx3MHW9WDOj_tNHcqcCWUpivQ"
+    },
+    {
+      "id": "wvD9dQILw2Y",
+      "title": "Sea Day.. Early Sunrise... peaceful...",
+      "views": "63 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/wvD9dQILw2Y/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDTpB2S6jzDoPijpPPJ56DWGvGljg"
+    },
+    {
+      "id": "2OSWJ-aDyHI",
+      "title": "OOTD By The Sea..Fit Check...",
+      "views": "163 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/2OSWJ-aDyHI/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAyLd8qDmCgj5nuLdBuDmW0sSvvsQ"
+    }
+  ],
+  "shortsPopular": [
+    {
+      "id": "Vc44SZupKbE",
+      "title": "Lorenz Watch",
+      "views": "3.3K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/Vc44SZupKbE/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLA1FqfMc95rOQmtwenbQz6_bHnuaw"
+    },
+    {
+      "id": "7AbLZRC_3TQ",
+      "title": "Z9 Pro True Wireless Earbuds",
+      "views": "2.4K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/7AbLZRC_3TQ/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBD_Gcx-ziiwCHb-rQuOmYe1bfUwg"
+    },
+    {
+      "id": "yra7LnRmsJE",
+      "title": "Drone N11 Pro ... i like it! but looks very tiny... #amazonfinds #blackfridaydeals",
+      "views": "2.3K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/yra7LnRmsJE/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDe5dVT02qLnvyYo63VRM6-k-Sr-w"
+    },
+    {
+      "id": "9nQ1QyV7QmM",
+      "title": "Beach vibes ... the view!",
+      "views": "2K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/9nQ1QyV7QmM/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAdXWMtLHxEPs9rF3TKxkNZVcimtw"
+    },
+    {
+      "id": "Cee6vUnfknI",
+      "title": "APM Monaco purchase.. Tennis Bracelet.. my BDAY Gift!🍸🎁👌",
+      "views": "1.8K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/Cee6vUnfknI/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAwYwwXIxs2hr4Cowa-L0ABBIhsUg"
+    },
+    {
+      "id": "ngQT4o-hIrE",
+      "title": "H&M Sport Dry Move haul May 2023 love them ❤️",
+      "views": "1.8K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/ngQT4o-hIrE/oar2.jpg?sqp=-oaymwEYCJwEENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLDrZpCuUvyXHt2AC0TlWjdAyxoBWw"
+    },
+    {
+      "id": "No8NQvnRNEE",
+      "title": "For Dinner...Tagliatelle Al Ragu.. Meatballs and Beans..",
+      "views": "1.8K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/No8NQvnRNEE/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAXfBl_8_gGpoDt5zLABaf0sSCiEQ"
+    },
+    {
+      "id": "ipMwi2iRYcc",
+      "title": "Mini Chainsaw.. in action..really works a wonder ..What a nice Toy!",
+      "views": "1.8K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/ipMwi2iRYcc/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCmNQEIs_Sk8eMRBBf67n4WQIQhSw"
+    },
+    {
+      "id": "fnBEsfTWYH0",
+      "title": "Solar Powered Timex North Expedition TW2V03600 Water Resistant 100m 10atm ❤️🔥🕘",
+      "views": "1.7K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/fnBEsfTWYH0/oar2.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBAlo34fIRnnPe7sCMQ8Yvm8l4xPA"
+    },
+    {
+      "id": "CprnU4tTAro",
+      "title": "Maruya Saging Bananacue... must eaten...",
+      "views": "1.6K views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/CprnU4tTAro/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDP2vRbf4wmTY5c-LIuvxK6gdV93w"
+    }
+  ],
+  "shortsVerifiedOn": "2026-10-23"
 }

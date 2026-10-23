@@ -9,6 +9,9 @@ const research=JSON.parse(fs.readFileSync(path.join(content,'video-research.json
 assert.equal(new Set(site.videos.map(v=>v.id)).size,site.videos.length,'Videos must be unique');
 assert.deepEqual(site.newVideos,research.latest.slice(0,10).map(v=>v.id),'New must follow the observed newest-first order');
 assert.deepEqual(site.mostWatched,research.popular.slice(0,10).map(v=>v.id),'Ranking must follow the observed Popular order');
+assert.deepEqual(site.shortsLatest.map(v=>v.id),research.shortsLatest.map(v=>v.id),'Latest Shorts must follow YouTube upload order');
+assert.deepEqual(site.shortsPopular.map(v=>v.id),research.shortsPopular.map(v=>v.id),'Popular Shorts must follow YouTube ranking');
+for(const list of [site.shortsLatest,site.shortsPopular]){assert.equal(list.length,10);assert.equal(new Set(list.map(v=>v.id)).size,10);for(const v of list){assert(/^[A-Za-z0-9_-]{11}$/.test(v.id));assert(v.title&&v.image&&v.views);assert(!site.videos.some(x=>x.id===v.id),'Shorts must be separate from long-form videos');}}
 assert.equal(site.photos.length,11,'Expected eleven owner photographs');
 for(const id of [...site.newVideos,...site.mostWatched])assert(site.videos.some(v=>v.id===id),`Unknown video ${id}`);
 assert.equal(new Set(site.videos.map(v=>v.filter)).size,5,'Expected five browse categories');
