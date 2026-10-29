@@ -1,52 +1,60 @@
 {
-  "checkedOn": "2026-10-25",
+  "checkedOn": "2026-10-29",
   "source": "YouTube @mariasmmania public Videos and Shorts tabs; Latest and Popular sorting",
-  "scope": "Videos and Shorts are ranked separately; view counts are displayed YouTube snapshots and may be rounded.",
+  "scope": "Videos and Shorts ranked separately; displayed YouTube view counts may be rounded.",
   "latest": [
+    {
+      "id": "55PhDN7lB9E",
+      "title": "Mini Haul Asos finds Amazon finds.. so good guys..",
+      "views": "15 views",
+      "age": "9 hours ago",
+      "duration": "14:30",
+      "image": "https://img.youtube.com/vi/55PhDN7lB9E/hqdefault.jpg"
+    },
     {
       "id": "NtALSpi56iI",
       "title": "Asos Amazon Fashion Haul & Try On Denim Shorts Sweater Tops",
-      "views": "37 views",
-      "age": "2 days ago",
+      "views": "59 views",
+      "age": "6 days ago",
       "duration": "11:46",
       "image": "https://img.youtube.com/vi/NtALSpi56iI/hqdefault.jpg"
     },
     {
       "id": "-5YZyENmFWM",
       "title": "An Update of my Watch Collection 3 More Ladys Watch Lorenz Festina Just Cavalli",
-      "views": "11 views",
-      "age": "3 days ago",
+      "views": "15 views",
+      "age": "7 days ago",
       "duration": "11:23",
       "image": "https://img.youtube.com/vi/-5YZyENmFWM/hqdefault.jpg"
     },
     {
       "id": "_zegYJcXG44",
       "title": "Shoe Haul Birkenstock Puma Converse Stradivarius Thong Sandals",
-      "views": "60 views",
-      "age": "5 days ago",
+      "views": "71 views",
+      "age": "9 days ago",
       "duration": "8:57",
       "image": "https://img.youtube.com/vi/_zegYJcXG44/hqdefault.jpg"
     },
     {
       "id": "f0ri1G_-GNQ",
       "title": "Here are some Asos Amazon Skincare Jewelries Haul plus a Sea Day Escapade! &Unboxings",
-      "views": "53 views",
-      "age": "7 days ago",
+      "views": "55 views",
+      "age": "12 days ago",
       "duration": "29:23",
       "image": "https://img.youtube.com/vi/f0ri1G_-GNQ/hqdefault.jpg"
     },
     {
       "id": "CJgpKWXriRo",
       "title": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
-      "views": "49 views",
-      "age": "8 days ago",
+      "views": "50 views",
+      "age": "13 days ago",
       "duration": "12:47",
       "image": "https://img.youtube.com/vi/CJgpKWXriRo/hqdefault.jpg"
     },
     {
       "id": "TvY5nf7LMJM",
       "title": "Spent the Day With Me .. today at the Sea... so much relaxing!..🌊🌏❤️",
-      "views": "43 views",
+      "views": "45 views",
       "age": "2 weeks ago",
       "duration": "7:18",
       "image": "https://img.youtube.com/vi/TvY5nf7LMJM/hqdefault.jpg"
@@ -54,8 +62,8 @@
     {
       "id": "Wm4ZHxwCpmA",
       "title": "Asos Haul Fashion Accessories Fragrances Skincare",
-      "views": "17 views",
-      "age": "3 weeks ago",
+      "views": "18 views",
+      "age": "4 weeks ago",
       "duration": "19:24",
       "image": "https://img.youtube.com/vi/Wm4ZHxwCpmA/hqdefault.jpg"
     },
@@ -74,14 +82,6 @@
       "age": "1 month ago",
       "duration": "11:21",
       "image": "https://img.youtube.com/vi/mQjqFDblWHY/hqdefault.jpg"
-    },
-    {
-      "id": "Rq5tY4YZF2I",
-      "title": "Asos Haul + an Amazon find",
-      "views": "17 views",
-      "age": "1 month ago",
-      "duration": "11:10",
-      "image": "https://img.youtube.com/vi/Rq5tY4YZF2I/hqdefault.jpg"
     }
   ],
   "popular": [
@@ -306,7 +306,7 @@
     {
       "id": "lT1Nd7rhW3k",
       "title": "My new purchases a Handpan from Gladfresit 440hz 9 notes I Love it ❤️🧘☸️🪬#mariasm #gladfresitHandpan",
-      "views": "759 views",
+      "views": "764 views",
       "age": "2 years ago",
       "duration": "16:38",
       "image": "https://img.youtube.com/vi/lT1Nd7rhW3k/hqdefault.jpg"
@@ -328,9 +328,17 @@
       "image": "https://img.youtube.com/vi/CC_Q750Vt6M/hqdefault.jpg"
     },
     {
+      "id": "yvZqrwIiaG4",
+      "title": "Flower Knows Berry Enchanted Garden Set... so pretty guys! ❤️💯🎁",
+      "views": "484 views",
+      "age": "3 months ago",
+      "duration": "7:33",
+      "image": "https://img.youtube.com/vi/yvZqrwIiaG4/hqdefault.jpg"
+    },
+    {
       "id": "ta91XMs717E",
       "title": "Comparison between my 3 Timex Watches Expedition Navi Harborside all Valuable&AffordableWatches👌⌚🏡❤️",
-      "views": "470 views",
+      "views": "471 views",
       "age": "1 year ago",
       "duration": "13:10",
       "image": "https://img.youtube.com/vi/ta91XMs717E/hqdefault.jpg"
@@ -338,23 +346,15 @@
     {
       "id": "sKUwOnYEgl8",
       "title": "Timex The Waterbury GMT TW2W22600UK Wrist Watch... the perfect addition !",
-      "views": "464 views",
+      "views": "471 views",
       "age": "1 year ago",
       "duration": "17:48",
       "image": "https://img.youtube.com/vi/sKUwOnYEgl8/hqdefault.jpg"
     },
     {
-      "id": "yvZqrwIiaG4",
-      "title": "Flower Knows Berry Enchanted Garden Set... so pretty guys! ❤️💯🎁",
-      "views": "444 views",
-      "age": "3 months ago",
-      "duration": "7:33",
-      "image": "https://img.youtube.com/vi/yvZqrwIiaG4/hqdefault.jpg"
-    },
-    {
       "id": "8GNCYFe26LM",
       "title": "Hunter Womens Original Back Adjustable Short .. fits me perfect good for big calves!",
-      "views": "425 views",
+      "views": "431 views",
       "age": "1 year ago",
       "duration": "8:19",
       "image": "https://img.youtube.com/vi/8GNCYFe26LM/hqdefault.jpg"
@@ -378,10 +378,18 @@
     {
       "id": "YMwXp-QaoXM",
       "title": "D1 Milano Olivetti Digital Watch very Light weight 50m WR CLV 283 Movement good Watch 🕔😍❤️",
-      "views": "401 views",
+      "views": "403 views",
       "age": "1 year ago",
       "duration": "7:10",
       "image": "https://img.youtube.com/vi/YMwXp-QaoXM/hqdefault.jpg"
+    },
+    {
+      "id": "DcFd2Qdd37U",
+      "title": "Luxury Haul May 2023 Coperni Mini Swipe Leather Bag, Ruslan Baginskiy Baker Hat, Belly Bars",
+      "views": "373 views",
+      "age": "3 years ago",
+      "duration": "14:57",
+      "image": "https://img.youtube.com/vi/DcFd2Qdd37U/hqdefault.jpg"
     },
     {
       "id": "8aqJD9dHCHY",
@@ -392,14 +400,6 @@
       "image": "https://img.youtube.com/vi/8aqJD9dHCHY/hqdefault.jpg"
     },
     {
-      "id": "DcFd2Qdd37U",
-      "title": "Luxury Haul May 2023 Coperni Mini Swipe Leather Bag, Ruslan Baginskiy Baker Hat, Belly Bars",
-      "views": "372 views",
-      "age": "3 years ago",
-      "duration": "14:57",
-      "image": "https://img.youtube.com/vi/DcFd2Qdd37U/hqdefault.jpg"
-    },
-    {
       "id": "Tc0qTjC8FOA",
       "title": "Mugler X H&M my top picks ❤️🧡 May 2023 haul",
       "views": "355 views",
@@ -408,49 +408,57 @@
       "image": "https://img.youtube.com/vi/Tc0qTjC8FOA/hqdefault.jpg"
     },
     {
+      "id": "55PhDN7lB9E",
+      "title": "Mini Haul Asos finds Amazon finds.. so good guys..",
+      "views": "15 views",
+      "age": "9 hours ago",
+      "duration": "14:30",
+      "image": "https://img.youtube.com/vi/55PhDN7lB9E/hqdefault.jpg"
+    },
+    {
       "id": "NtALSpi56iI",
       "title": "Asos Amazon Fashion Haul & Try On Denim Shorts Sweater Tops",
-      "views": "37 views",
-      "age": "2 days ago",
+      "views": "59 views",
+      "age": "6 days ago",
       "duration": "11:46",
       "image": "https://img.youtube.com/vi/NtALSpi56iI/hqdefault.jpg"
     },
     {
       "id": "-5YZyENmFWM",
       "title": "An Update of my Watch Collection 3 More Ladys Watch Lorenz Festina Just Cavalli",
-      "views": "11 views",
-      "age": "3 days ago",
+      "views": "15 views",
+      "age": "7 days ago",
       "duration": "11:23",
       "image": "https://img.youtube.com/vi/-5YZyENmFWM/hqdefault.jpg"
     },
     {
       "id": "_zegYJcXG44",
       "title": "Shoe Haul Birkenstock Puma Converse Stradivarius Thong Sandals",
-      "views": "60 views",
-      "age": "5 days ago",
+      "views": "71 views",
+      "age": "9 days ago",
       "duration": "8:57",
       "image": "https://img.youtube.com/vi/_zegYJcXG44/hqdefault.jpg"
     },
     {
       "id": "f0ri1G_-GNQ",
       "title": "Here are some Asos Amazon Skincare Jewelries Haul plus a Sea Day Escapade! &Unboxings",
-      "views": "53 views",
-      "age": "7 days ago",
+      "views": "55 views",
+      "age": "12 days ago",
       "duration": "29:23",
       "image": "https://img.youtube.com/vi/f0ri1G_-GNQ/hqdefault.jpg"
     },
     {
       "id": "CJgpKWXriRo",
       "title": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
-      "views": "49 views",
-      "age": "8 days ago",
+      "views": "50 views",
+      "age": "13 days ago",
       "duration": "12:47",
       "image": "https://img.youtube.com/vi/CJgpKWXriRo/hqdefault.jpg"
     },
     {
       "id": "TvY5nf7LMJM",
       "title": "Spent the Day With Me .. today at the Sea... so much relaxing!..🌊🌏❤️",
-      "views": "43 views",
+      "views": "45 views",
       "age": "2 weeks ago",
       "duration": "7:18",
       "image": "https://img.youtube.com/vi/TvY5nf7LMJM/hqdefault.jpg"
@@ -458,8 +466,8 @@
     {
       "id": "Wm4ZHxwCpmA",
       "title": "Asos Haul Fashion Accessories Fragrances Skincare",
-      "views": "17 views",
-      "age": "3 weeks ago",
+      "views": "18 views",
+      "age": "4 weeks ago",
       "duration": "19:24",
       "image": "https://img.youtube.com/vi/Wm4ZHxwCpmA/hqdefault.jpg"
     },
@@ -498,7 +506,7 @@
     {
       "id": "sYeFLrOmYlg",
       "title": "Full Review of my Lorenz Watch Festina Watch Just Cavalli Watch",
-      "views": "49 views",
+      "views": "52 views",
       "age": "1 month ago",
       "duration": "13:21",
       "image": "https://img.youtube.com/vi/sYeFLrOmYlg/hqdefault.jpg"
@@ -531,7 +539,7 @@
       "id": "Dp2PrDbxu74",
       "title": "Suppliments That Saved My Life In This Menopausal Stages... Highly Recommend!",
       "views": "13 views",
-      "age": "1 month ago",
+      "age": "2 months ago",
       "duration": "14:58",
       "image": "https://img.youtube.com/vi/Dp2PrDbxu74/hqdefault.jpg"
     },
@@ -539,7 +547,7 @@
       "id": "8CJruHzK4Wo",
       "title": "Huge Asos Fashion Haul for the End of Summer 2026 so pretty Fits! Keeping them All!🎁💯🏖",
       "views": "35 views",
-      "age": "1 month ago",
+      "age": "2 months ago",
       "duration": "12:19",
       "image": "https://img.youtube.com/vi/8CJruHzK4Wo/hqdefault.jpg"
     },
@@ -562,7 +570,7 @@
     {
       "id": "eTcsr5x7rl0",
       "title": "An Update for my Snoopy Timex Watch and A Full Review for my Citizen Ladys Watch",
-      "views": "74 views",
+      "views": "76 views",
       "age": "2 months ago",
       "duration": "10:13",
       "image": "https://img.youtube.com/vi/eTcsr5x7rl0/hqdefault.jpg"
@@ -594,7 +602,7 @@
     {
       "id": "FlMLCXyvUvc",
       "title": "Full Unboxing of Flower Knows Berry Set.. So So Pretty!",
-      "views": "68 views",
+      "views": "73 views",
       "age": "3 months ago",
       "duration": "6:06",
       "image": "https://img.youtube.com/vi/FlMLCXyvUvc/hqdefault.jpg"
@@ -630,21 +638,45 @@
       "age": "3 months ago",
       "duration": "13:50",
       "image": "https://img.youtube.com/vi/fRKoHtyhL0s/hqdefault.jpg"
-    },
-    {
-      "id": "uGyPBV8DfA0",
-      "title": "MakeUp Skincare Haul Revolution MakeUp",
-      "views": "20 views",
-      "age": "3 months ago",
-      "duration": "9:08",
-      "image": "https://img.youtube.com/vi/uGyPBV8DfA0/hqdefault.jpg"
     }
   ],
   "shortsLatest": [
     {
+      "id": "ZsElGUxGX6Y",
+      "title": "Amazon finds.. Rubber for feet..",
+      "views": "16 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/ZsElGUxGX6Y/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCScxxPVC_5svUWRF0KK4l1bItmlw"
+    },
+    {
+      "id": "lFfK6ZF1r4E",
+      "title": "Mini Asos Haul so pretty finds...",
+      "views": "255 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/lFfK6ZF1r4E/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLA6KS6vApVd3mLFvojdbaQaOdXk_g"
+    },
+    {
+      "id": "mGlP77cTMIs",
+      "title": "Amazon finds... Fresh Water Pearls  Gold Coin necklace.. so so pretty!",
+      "views": "14 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/mGlP77cTMIs/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBItRkXRUjYnNRHeDEsU6EtEz_5og"
+    },
+    {
+      "id": "zdGZzUBwALU",
+      "title": "Amazon finds... feet warmer...cape..house slippers..",
+      "views": "180 views",
+      "age": "",
+      "duration": "",
+      "image": "https://img.youtube.com/vi/zdGZzUBwALU/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLD2piIgzeQG66dONl1-xnycWOiGyQ"
+    },
+    {
       "id": "-sp8INIEg4A",
-      "title": "Amazon finds... Toorhpastes..",
-      "views": "105 views",
+      "title": "Amazon finds... Toothpastes..",
+      "views": "127 views",
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/-sp8INIEg4A/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLA6POsmlwgkz6vwPfkrFHSV6iWUtQ"
@@ -652,7 +684,7 @@
     {
       "id": "yl8fIQfRVSk",
       "title": "Our New Couch Pillows so cozy and homey...",
-      "views": "500 views",
+      "views": "499 views",
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/yl8fIQfRVSk/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAD98nMo0i6qfZf4dI_8BfQttKRTw"
@@ -660,7 +692,7 @@
     {
       "id": "WM8oWIZoMXM",
       "title": "Buying New Couch Pillows for my Couch... so comfy and soft .. perfect!",
-      "views": "24 views",
+      "views": "31 views",
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/WM8oWIZoMXM/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCOI3zbE4eY80S-b6T7U5dNJu-GHQ"
@@ -668,7 +700,7 @@
     {
       "id": "dY5HYuQX65A",
       "title": "OOTD Outfit Check..",
-      "views": "307 views",
+      "views": "309 views",
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/dY5HYuQX65A/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBDK9AOfivWCywBnaFn-HKb-WvFlw"
@@ -688,38 +720,6 @@
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/XdF7vIpKvq4/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAjMHLWV9oflsMZOSPonxhNwg90cg"
-    },
-    {
-      "id": "wsSwnzDKY98",
-      "title": "Last Banana I Harvested..",
-      "views": "148 views",
-      "age": "",
-      "duration": "",
-      "image": "https://img.youtube.com/vi/wsSwnzDKY98/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDSFCqptb7XnhXZvZpij6hqk54dKg"
-    },
-    {
-      "id": "yY8qkxdr_wI",
-      "title": "My Hubbys Ramen... yummy..so good..",
-      "views": "37 views",
-      "age": "",
-      "duration": "",
-      "image": "https://img.youtube.com/vi/yY8qkxdr_wI/oardefault.jpg?sqp=-oaymwEYCJwEENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLD7Dk7OEuBgGCVQFdyPglnuG92L5w"
-    },
-    {
-      "id": "JPjx1BXU05Y",
-      "title": "Perfect Pick .. New Salon New Haircut.. Love the service perfect...",
-      "views": "24 views",
-      "age": "",
-      "duration": "",
-      "image": "https://img.youtube.com/vi/JPjx1BXU05Y/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCntSpt8Mk1Bq492csoaxwiIn9pJA"
-    },
-    {
-      "id": "hX-3X2r4mLY",
-      "title": "Sea Nostalgia.. peaceful break...",
-      "views": "15 views",
-      "age": "",
-      "duration": "",
-      "image": "https://img.youtube.com/vi/hX-3X2r4mLY/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDGS9hsUOvpUthN5q1G3cRKW2fVLA"
     }
   ],
   "shortsPopular": [
@@ -742,7 +742,7 @@
     {
       "id": "yra7LnRmsJE",
       "title": "Drone N11 Pro ... i like it! but looks very tiny... #amazonfinds #blackfridaydeals",
-      "views": "2.3K views",
+      "views": "2.4K views",
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/yra7LnRmsJE/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLDe5dVT02qLnvyYo63VRM6-k-Sr-w"
@@ -758,7 +758,7 @@
     {
       "id": "Cee6vUnfknI",
       "title": "APM Monaco purchase.. Tennis Bracelet.. my BDAY Gift!🍸🎁👌",
-      "views": "1.8K views",
+      "views": "1.9K views",
       "age": "",
       "duration": "",
       "image": "https://img.youtube.com/vi/Cee6vUnfknI/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAwYwwXIxs2hr4Cowa-L0ABBIhsUg"
@@ -790,10 +790,10 @@
     {
       "id": "fnBEsfTWYH0",
       "title": "Solar Powered Timex North Expedition TW2V03600 Water Resistant 100m 10atm ❤️🔥🕘",
-      "views": "1.7K views",
+      "views": "1.8K views",
       "age": "",
       "duration": "",
-      "image": "https://img.youtube.com/vi/fnBEsfTWYH0/oar1.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBw9eBr_krSSZetpOwbCITea4ar2A"
+      "image": "https://img.youtube.com/vi/fnBEsfTWYH0/oar2.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBAlo34fIRnnPe7sCMQ8Yvm8l4xPA"
     },
     {
       "id": "CprnU4tTAro",
