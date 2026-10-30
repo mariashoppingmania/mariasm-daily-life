@@ -1,0 +1,205 @@
+/* MariaSM Angelic Bloom — editorial restyle, 30 Oct 2026 */
+:root{
+  --angel-ink:#503d53;--angel-plum:#693a67;--angel-rose:#ad627f;
+  --angel-pink:#f5d9e5;--angel-petal:#fff0f6;--angel-lilac:#eae1f6;
+  --angel-gold:#c2a06d;--angel-border:rgba(169,111,146,.22);
+  --angel-shadow:0 18px 56px rgba(113,66,99,.13);
+}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{
+  color:var(--angel-ink);
+  background:radial-gradient(ellipse 900px 500px at 90% 2%,#f5eafd 0,transparent 77%),
+             radial-gradient(ellipse 1050px 600px at 0% 30%,#fff0f5 0,transparent 80%),
+             #fffafc;
+}
+::selection{background:#f5cfdf;color:#683f61}
+.announcement{
+  background:linear-gradient(97deg,#8a567c 0%,#ba7f9d 48%,#9879af 100%)!important;
+  color:#fff!important;letter-spacing:.09em;box-shadow:0 3px 19px #b985a240;
+}
+.header{
+  background:rgba(255,249,252,.94)!important;
+  border-bottom:1px solid var(--angel-border)!important;
+  box-shadow:0 8px 26px rgba(108,69,108,.07);
+  backdrop-filter:blur(16px);
+}
+.brand{color:var(--angel-plum)!important;letter-spacing:.01em}
+.brand span{color:var(--angel-rose)!important}
+.brand small{color:#a07998!important}
+.nav a:not(.youtube-link){color:#694f69!important}
+.nav a:not(.youtube-link):hover,
+.nav a:not(.youtube-link):focus-visible{color:#9c517f!important}
+.nav .youtube-link{background:#9e5e84!important;color:white!important;border-radius:99px}
+h1,h2,.hero h1,.section h2,.angel-edit h2,.angel-card h3{
+  letter-spacing:-.027em;
+}
+h1 em,h2 em,.hero h1 em{color:#ae6d96!important}
+.eyebrow{color:#9f5c82!important;letter-spacing:.15em}
+.section{scroll-margin-top:90px}
+.section-head{position:relative}
+.section-head::after{
+  content:'✧';position:absolute;right:0;top:0;
+  color:#cba8cb;font-size:21px;pointer-events:none;
+}
+.hero{
+  isolation:isolate;position:relative;padding-top:clamp(66px,8vw,112px)!important;
+  padding-bottom:clamp(70px,8vw,110px)!important;
+}
+.hero::before{
+  content:'';position:absolute;z-index:-2;inset:12px -3% 25px;
+  border:1px solid #e8cadb;border-radius:40px;
+  background:linear-gradient(118deg,rgba(255,244,250,.88),rgba(246,238,252,.85) 68%,rgba(255,252,251,.8));
+  box-shadow:var(--angel-shadow);
+}
+.hero::after{
+  content:'';position:absolute;z-index:-1;inset:16px -3% 28px;
+  pointer-events:none;border-radius:40px;
+  background:radial-gradient(circle at 35% 45%,rgba(255,255,255,.85),transparent 49%);
+}
+.hero>*{position:relative;z-index:2}
+.hero-wing-art{position:absolute!important;z-index:1!important;
+  top:-3%;left:3%;width:51%;max-width:690px;pointer-events:none;opacity:.19;
+  filter:drop-shadow(0 5px 22px #c997c7);
+  animation:angel-breathe 10s ease-in-out infinite;
+}
+.hero-wing-art img{width:100%;height:auto;display:block}
+.hero-intro{color:#715c72!important;max-width:40rem}
+.hero .hero-note{color:#a16c91!important}
+.hero .feature-video{
+  border-radius:26px!important;overflow:hidden;
+  box-shadow:0 24px 65px rgba(102,61,98,.24),0 0 0 6px rgba(255,255,255,.7);
+  transform:rotate(1deg);transition:transform .4s,box-shadow .4s;
+}
+.hero .feature-video:hover{transform:rotate(0) translateY(-5px);box-shadow:0 25px 70px rgba(102,61,98,.26)}
+.creator-chip{background:#fffafc!important;box-shadow:var(--angel-shadow)}
+.button,.actions .button{
+  color:#fff!important;background:linear-gradient(120deg,#aa688f,#815d9c)!important;
+  border-color:transparent!important;border-radius:999px!important;
+  box-shadow:0 11px 25px rgba(148,92,140,.22);
+  transition:transform .25s,box-shadow .25s,filter .25s;
+}
+.button:hover,.actions .button:hover{transform:translateY(-3px);filter:brightness(1.08);box-shadow:0 16px 29px rgba(148,92,140,.27)}
+.text-link,.footer a{color:#965f82}
+.ribbon{
+  background:linear-gradient(100deg,#eedde8 0%,#eadff4 50%,#f8e7ed 100%)!important;
+  border-top:1px solid #e5cbd9;border-bottom:1px solid #e5cbd9;
+  color:#714f6c!important;
+}
+.ribbon span{color:#754e71!important}
+.video-card,.short-card,.ranking-item,.journal-item{
+  border:1px solid var(--angel-border)!important;
+  background:rgba(255,255,255,.9)!important;
+  border-radius:22px!important;
+  box-shadow:0 8px 25px rgba(126,86,112,.06);
+  transition:transform .25s,box-shadow .25s;
+}
+.video-card:hover,.short-card:hover,.ranking-item:hover,.journal-item:hover{
+  transform:translateY(-4px);box-shadow:var(--angel-shadow);
+}
+.video-image,.short-image,.ranking-image{border-radius:16px!important;overflow:hidden}
+.video-card h3 a,.short-card h4 a,.ranking-item h3 a{color:#60435b}
+.video-meta,.snapshot-note{color:#866f85!important}
+.snapshot-note{font-size:.84rem}
+.ranking-section,.note-band{
+  background:linear-gradient(135deg,#f7e5ef,#f0e7f6 54%,#fff5f9)!important;
+}
+.ranking-number,.rank-number{color:#a46b91!important}
+.shorts-section{position:relative}
+.shorts-section::before{
+  content:'✦';position:absolute;right:2%;top:18px;color:#d6b1d0;font-size:36px;
+  pointer-events:none
+}
+.shorts-collection{border-top-color:#ecd7e4!important}
+.shorts-jumps a{color:#89567d}
+.short-label{background:#a05e89!important;color:#fff!important}
+.filters .filter[aria-pressed="true"],.filters .filter:hover{
+  background:#a65f89!important;color:#fff!important;border-color:#a65f89!important
+}
+.photo-gallery figure{border-radius:19px!important;overflow:hidden;box-shadow:0 12px 30px rgba(110,77,100,.12);background:white}
+.photo-gallery figure img{transition:transform .5s ease,filter .5s ease}
+.photo-gallery figure:hover img{transform:scale(1.035);filter:saturate(1.09) brightness(1.04)}
+.photo-gallery figcaption{color:#715670}
+.seaside,.contact{position:relative;isolation:isolate}
+.seaside::after,.contact::after{
+ content:'';position:absolute;pointer-events:none;inset:0;
+ background:linear-gradient(115deg,rgba(235,203,228,.12),rgba(222,213,247,.12));z-index:-1;
+}
+.footer{border-top-color:#e7ccd9!important}
+.footer-note,.footer-bottom{color:#866c81}
+.visit-counter{border-color:#e3c5d5!important;background:#fff1f6!important}
+.visit-heart{color:#bd7fa1!important}
+
+/* New angelic editorial area */
+.angel-edit{
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(52px,7vw,100px) 0;
+  background:linear-gradient(135deg,#fbeef5 0%,#f6ecfa 50%,#fff7f8 100%);
+  border-top:1px solid #ecd7e5;border-bottom:1px solid #ecd7e5;
+}
+.angel-edit::before,.angel-edit::after{
+  content:'';position:absolute;pointer-events:none;width:520px;height:520px;border-radius:50%;
+  filter:blur(15px);opacity:.4;z-index:-1
+}
+.angel-edit::before{top:-280px;left:-180px;background:radial-gradient(#efbdd9,transparent 65%)}
+.angel-edit::after{bottom:-260px;right:-130px;background:radial-gradient(#dac8f2,transparent 65%)}
+.angel-edit-head{text-align:center;max-width:800px;margin:0 auto 38px}
+.angel-edit-head .wings-icon{width:min(240px,52%);height:auto;display:block;margin:0 auto -8px;
+  filter:drop-shadow(0 8px 18px rgba(162,105,153,.19))}
+.angel-edit h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.5rem,4.5vw,4.8rem);font-weight:normal;margin:8px 0 16px;color:#6e4e75}
+.angel-edit h2 em{font-weight:normal}
+.angel-edit-head>p:last-child{color:#755d77;font-size:1.07rem;line-height:1.75}
+.angel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.angel-card{border:1px solid #e9d2e1;border-radius:26px;padding:clamp(24px,3vw,40px);
+  background:rgba(255,255,255,.82);box-shadow:0 18px 38px rgba(115,74,116,.09);
+  position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s
+}
+.angel-card:hover{transform:translateY(-5px);box-shadow:var(--angel-shadow)}
+.angel-card::before{content:'';position:absolute;right:-30px;top:-48px;width:125px;height:125px;
+  border-radius:50%;background:radial-gradient(#f1d8e7,transparent 70%)}
+.angel-card .angel-glyph{display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;font-size:29px;width:60px;height:60px;color:#a65a8d;
+  background:linear-gradient(145deg,#fff3f8,#e9ddf7);border:1px solid #efd8e7;
+  border-radius:50%;margin-bottom:24px
+}
+.angel-card h3{font-family:Georgia,serif;font-weight:normal;font-size:clamp(1.5rem,2vw,1.9rem);color:#604663;margin:0 0 12px}
+.angel-card p{line-height:1.65;color:#7a6479;min-height:73px}
+.angel-card a{display:inline-block;margin-top:7px;font-weight:700;text-decoration:none;color:#995e84}
+.angel-card a:hover{text-decoration:underline}
+.angel-signature{text-align:center;color:#987c99;letter-spacing:.16em;font-size:.77rem;text-transform:uppercase;margin:32px 0 0}
+
+/* Quick gateway to live channel pages: no invented upload dates */
+.channel-gateway{margin-top:26px;padding:clamp(23px,3.5vw,40px);
+ border:1px solid #e5cddf;background:linear-gradient(115deg,#fff7fb,#f4eefc);
+ border-radius:24px;display:flex;justify-content:space-between;gap:22px;align-items:center}
+.channel-gateway h3{font-size:clamp(1.2rem,2.2vw,1.8rem);margin:0 0 6px;color:#6b496b}
+.channel-gateway p{color:#806c80;max-width:600px;margin:0}
+.gateway-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.gateway-links a{display:inline-flex;align-items:center;gap:6px;padding:12px 18px;
+ border-radius:99px;text-decoration:none;font-weight:700;color:#794a71;
+ background:#fff;border:1px solid #e1c5d8;white-space:nowrap}
+.gateway-links a:hover{background:#f6deeb}
+@keyframes angel-breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-9px) scale(1.02)}}
+@media(max-width:850px){
+  .angel-grid{grid-template-columns:1fr 1fr}
+  .angel-card:last-child{grid-column:1/-1}
+  .channel-gateway{flex-direction:column;align-items:flex-start}
+  .gateway-links{justify-content:flex-start}
+}
+@media(max-width:620px){
+  .hero::before,.hero::after{inset:8px -1% 15px;border-radius:24px}
+  .hero-wing-art{top:0;left:0;width:94%;opacity:.13}
+  .hero .feature-video{transform:none}
+  .angel-grid{grid-template-columns:1fr}
+  .angel-card:last-child{grid-column:auto}
+  .angel-card p{min-height:0}
+  .angel-edit-head .wings-icon{width:180px}
+  .section-head::after{display:none}
+  .gateway-links{width:100%}
+  .gateway-links a{flex:1;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-wing-art{animation:none}
+  .video-card,.short-card,.ranking-item,.journal-item,.angel-card,
+  .hero .feature-video,.button,.photo-gallery figure img{transition:none}
+}
