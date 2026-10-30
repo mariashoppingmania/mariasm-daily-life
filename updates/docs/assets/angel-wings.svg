@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title">
+<title id="title">Delicate pearl angel wings and a golden halo</title>
+<defs>
+ <linearGradient id="feather" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdfd"/><stop offset=".42" stop-color="#f8e2f1"/><stop offset="1" stop-color="#d7badd"/></linearGradient>
+ <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#cba3c7"/><stop offset=".5" stop-color="#f9f0f5"/><stop offset="1" stop-color="#bf93b4"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fff5d7" stop-opacity=".85"/><stop offset="1" stop-color="#f6d8ec" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="500" cy="210" rx="240" ry="170" fill="url(#glow)"/>
+<g fill="none" stroke="#d9b17e" stroke-width="9" opacity=".9"><ellipse cx="500" cy="69" rx="98" ry="19"/></g>
+<g fill="#fff6dc" opacity=".68"><ellipse cx="500" cy="69" rx="96" ry="14"/></g>
+<g id="wing">
+  <path d="M485 240Q410 109 294 68Q160 22 54 91Q120 104 188 158Q110 128 20 144Q83 176 153 211Q83 209 18 244Q99 264 175 273Q110 291 64 327Q160 327 248 303Q214 344 202 379Q288 351 361 301Q420 303 485 240Z" fill="url(#feather)" stroke="#c8a5c8" stroke-width="3"/>
+  <path d="M476 243Q396 148 296 118Q215 86 130 95Q232 136 298 203Q220 157 96 159Q238 229 347 250Q259 226 109 244Q234 283 370 270Q287 291 221 341Q344 320 420 285Z" fill="#fff" opacity=".62"/>
+  <g fill="none" stroke="url(#edge)" stroke-width="3.5" stroke-linecap="round" opacity=".86">
+   <path d="M455 246Q333 95 89 92"/><path d="M454 250Q301 156 48 150"/>
+   <path d="M459 262Q314 223 42 244"/><path d="M448 271Q338 289 91 319"/>
+   <path d="M444 276Q339 313 215 363"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".85">
+   <path d="M417 220Q307 113 163 98"/><path d="M423 240Q302 183 121 167"/>
+   <path d="M414 264Q297 252 107 255"/><path d="M401 279Q314 303 191 341"/>
+  </g>
+</g>
+<use href="#wing" transform="translate(1000 0) scale(-1 1)"/>
+<g fill="#c997b9">
+<path d="M500 160l8 22 22 8-22 8-8 22-8-22-22-8 22-8Z" opacity=".65"/>
+<circle cx="501" cy="248" r="5"/>
+<circle cx="464" cy="83" r="3"/><circle cx="536" cy="83" r="3"/>
+</g>
+</svg>
