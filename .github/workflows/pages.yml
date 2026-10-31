@@ -27,6 +27,14 @@ jobs:
         run: |
           unzip -q mariasm-site.zip -d source
           cp -R updates/. source/mariasm-site/
+      - name: Prepare Python for YouTube upload discovery
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install public-channel metadata reader
+        run: python -m pip install --disable-pip-version-check yt-dlp
+      - name: Refresh newest public Videos and Shorts
+        run: node source/mariasm-site/scripts/refresh-youtube.mjs
       - name: Build static pages
         run: node source/mariasm-site/scripts/build.mjs
       - name: Check pages and local links
