@@ -55,3 +55,14 @@
 @media(max-width:1100px){.ac-page-jewellery .ms-navel-products{grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media(max-width:810px){.ac-page-jewellery .ms-navel-hero{grid-template-columns:1fr;gap:0}.ac-page-jewellery .ms-navel-hero-text{padding:22px 24px 27px}.ac-page-jewellery .ms-navel-info{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.ac-page-jewellery .ms-navel-products{grid-template-columns:repeat(2,minmax(0,1fr))}.ac-page-jewellery .ms-navel-product-photo{height:220px}}
 @media(max-width:530px){.ac-page-jewellery .ms-navel-steps{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-gallery{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-gallery-card a{height:285px}.ac-page-jewellery .ms-navel-products{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-product{max-width:460px;width:100%;margin:auto}.ac-page-jewellery .ms-navel-product-photo{height:270px}.ac-page-jewellery .ms-navel-filters span{margin-left:0}}
+
+/* The four professional-stage illustrations: always visible, responsive, openable. */
+.ac-page-jewellery .ms-navel-technique-head{margin:32px 0 13px;}
+.ac-page-jewellery .ms-navel-technique-head h3{margin:4px 0 10px;}
+.ac-page-jewellery .ms-navel-technique-head p:last-child{font:400 13px/1.65 system-ui,sans-serif;color:#795966;max-width:820px;}
+.ac-page-jewellery .ms-navel-procedure-figure{display:block;margin:16px 0 35px;border-radius:17px;overflow:hidden;border:1px solid #e9cfda;background:#fff8f9;box-shadow:0 9px 25px rgba(97,48,68,.07);}
+.ac-page-jewellery .ms-navel-procedure-figure>a{display:block;width:100%;overflow:hidden;}
+.ac-page-jewellery .ms-navel-procedure-figure img{display:block;width:100%!important;height:auto!important;max-width:100%;aspect-ratio:1200/650;object-fit:contain;object-position:center;background:#fff9f9;}
+.ac-page-jewellery .ms-navel-procedure-figure figcaption{padding:12px 17px;border-top:1px solid #e9cfda;color:#876172;font:400 12px/1.6 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-procedure-figure figcaption a{display:inline;font-weight:700;color:#7c3c57;text-decoration:underline;text-underline-offset:2px;}
+@media(max-width:600px){.ac-page-jewellery .ms-navel-procedure-figure{margin:12px 0 24px}.ac-page-jewellery .ms-navel-procedure-figure img{aspect-ratio:auto;min-height:190px}.ac-page-jewellery .ms-navel-procedure-figure figcaption{font-size:11px}.ac-page-jewellery .ms-navel-technique-head{margin-top:20px}}
