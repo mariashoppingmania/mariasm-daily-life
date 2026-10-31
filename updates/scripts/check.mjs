@@ -20,7 +20,7 @@ const files=walk(root),pages=files.filter(f=>f.endsWith('.html'));let references
 assert(pages.length>=8,'Expected homepage, five stories and two information pages');
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
- assert(html.includes(file.includes(path.sep+'fashion'+path.sep)?'<html lang="it">':'<html lang="en">'),`Wrong language: ${file}`);
+ assert(html.includes('<html lang="en">'),`Wrong language: ${file}`);
  assert.equal((html.match(/<h1\b/g)||[]).length,1,`Expected one h1: ${file}`);
  assert(/<meta name="description" content="[^"]+"/.test(html),`Missing description: ${file}`);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);assert.equal(new Set(ids).size,ids.length,`Duplicate id: ${file}`);
@@ -36,4 +36,4 @@ for(const file of pages){
  assert(!/<iframe|<form|googletagmanager|google-analytics/.test(html),'Unexpected tracking/embed/form');
 }
 const total=files.reduce((sum,f)=>sum+fs.statSync(f).size,0);
-console.log(`PASS: ${pages.length} pages (English journal and Italian Fashion Atlas); ${references} valid local references; ${site.videos.length} unique videos; verified newest 10 and ranked 10; ${site.photos.length} owner photos. Static site: ${(total/1024).toFixed(0)} KB.`);
+console.log(`PASS: ${pages.length} English pages; ${references} valid local references; ${site.videos.length} unique videos; verified newest 10 and ranked 10; ${site.photos.length} owner photos. Static site: ${(total/1024).toFixed(0)} KB.`);
