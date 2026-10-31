@@ -211,3 +211,47 @@
   .ac-page-hats .ac-hat-media{height:284px!important;min-height:284px;padding:24px!important}
   .ac-page-hats .ac-hats-editorial figure{height:258px!important}
 }
+
+
+/* Hats hero v6: full photograph, centered; no side caption. */
+.ac-page-hats .ac-hero-photo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 380px !important;
+  padding: 20px !important;
+  overflow: hidden !important;
+  background: linear-gradient(135deg, #f9eeed, #f4e3e6) !important;
+}
+.ac-page-hats .ac-hero-photo > img {
+  position: static !important;
+  display: block !important;
+  flex: 0 1 auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 520px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: auto !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: none !important;
+}
+.ac-page-hats .ac-hero-photo > figcaption { display: none !important; }
+@media (max-width: 720px) {
+  .ac-page-hats .ac-hero-photo {
+    min-height: 270px !important;
+    height: 290px !important;
+    padding: 12px !important;
+  }
+  .ac-page-hats .ac-hero-photo > img {
+    max-height: 100% !important;
+  }
+}
