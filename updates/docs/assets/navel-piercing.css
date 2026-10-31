@@ -1,0 +1,57 @@
+
+/* MariaSM Navel Piercing extension — jewellery atelier, 31 Oct 2026.
+   No site-wide overrides; cards, photos and nav remain independent. */
+.ac-page-jewellery .ms-navel { scroll-margin-top:90px; margin:28px 0 45px; }
+.ac-page-jewellery .ms-navel p { line-height:1.65; }
+.ac-page-jewellery .ms-navel h3 { font:400 clamp(23px,2.3vw,34px)/1.21 Georgia,serif; color:#743c54; margin:6px 0 16px; }
+.ac-page-jewellery .ms-navel .ac-title h3 {font-size:clamp(22px,2.2vw,30px);}
+.ac-page-jewellery .ms-navel-hero { display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:27px;align-items:center;background:linear-gradient(120deg,#fff8f9,#f9e9ed);border:1px solid #eed7e0;border-radius:24px;overflow:hidden;margin:23px 0 37px;box-shadow:0 14px 38px rgba(120,55,78,.075); }
+.ac-page-jewellery .ms-navel-hero figure {margin:0;min-width:0;align-self:stretch;background:#f9e9e6;position:relative;min-height:270px;}
+.ac-page-jewellery .ms-navel-hero figure img {width:100%;height:100%;min-height:320px;max-height:470px;object-fit:cover;object-position:center;display:block;}
+.ac-page-jewellery .ms-navel-hero figcaption {position:absolute;bottom:0;left:0;right:0;padding:10px 15px;color:#72485b;background:#fff9f2ed;font:500 11px/1.5 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-hero-text {padding:28px 30px 31px 8px;}
+.ac-page-jewellery .ms-navel-hero-text .ac-btn {display:inline-block;margin-top:11px;}
+.ac-page-jewellery .ms-navel-info {display:grid;grid-template-columns:minmax(0,1.65fr) minmax(250px,.85fr);gap:25px;margin:22px 0 46px;align-items:start;}
+.ac-page-jewellery .ms-navel-info>div {min-width:0;}
+.ac-page-jewellery .ms-navel-steps {list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 0;padding:0;}
+.ac-page-jewellery .ms-navel-step {min-width:0;background:#fff;border:1px solid #ecdbe3;border-radius:15px;padding:16px 17px;box-shadow:0 6px 19px rgba(117,60,86,.04);}
+.ac-page-jewellery .ms-navel-step-num {display:inline-block;background:#f7e6ed;color:#9c5c76;padding:7px 10px;border-radius:50%;font:700 12px/1 system-ui,sans-serif;margin-bottom:7px;}
+.ac-page-jewellery .ms-navel-step h4 {color:#783b55;font:400 21px/1.2 Georgia,serif;margin:0 0 7px;}
+.ac-page-jewellery .ms-navel-step p {color:#745666;font:400 12px/1.63 system-ui,sans-serif;margin:0;}
+.ac-page-jewellery .ms-navel-info aside {background:#f9edf1;border:1px solid #ecd3dd;border-radius:17px;padding:23px 21px;}
+.ac-page-jewellery .ms-navel-info aside h4 {color:#783b55;font:400 22px/1.3 Georgia,serif;margin:0 0 12px;}
+.ac-page-jewellery .ms-navel-info aside p {font-size:13px;color:#745867;}
+.ac-page-jewellery .ms-navel-info aside small {display:block;font:500 11px/1.6 system-ui,sans-serif;color:#856574;padding-top:12px;border-top:1px solid #eacfd8;}
+.ac-page-jewellery .ms-navel-gallery {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:18px 0 47px;}
+.ac-page-jewellery .ms-navel-gallery-card {margin:0;min-width:0;background:#fff;border:1px solid #ead8df;border-radius:17px;overflow:hidden;box-shadow:0 9px 24px rgba(117,60,86,.05);}
+.ac-page-jewellery .ms-navel-gallery-card a {display:block;height:clamp(200px,26vw,345px);background:#f7e9e7;overflow:hidden;}
+.ac-page-jewellery .ms-navel-gallery-card img {display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .22s;}
+.ac-page-jewellery .ms-navel-gallery-card:hover img {transform:scale(1.04);}
+.ac-page-jewellery .ms-navel-gallery-card figcaption {padding:15px 17px 18px;color:#795a6a;}
+.ac-page-jewellery .ms-navel-gallery-card figcaption strong {display:block;color:#70364d;font:400 22px/1.25 Georgia,serif;}
+.ac-page-jewellery .ms-navel-gallery-card figcaption span {display:block;font:400 12px/1.55 system-ui,sans-serif;margin:7px 0;}
+.ac-page-jewellery .ms-navel-gallery-card figcaption small {display:block;color:#947582;font:400 10px/1.5 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-shop-title {scroll-margin-top:70px;}
+.ac-page-jewellery .ms-navel-filters {display:flex;align-items:center;gap:13px;flex-wrap:wrap;padding:14px 17px;background:#faedf2;border:1px solid #efd9e2;border-radius:14px;margin:20px 0;}
+.ac-page-jewellery .ms-navel-filters label {font:600 12px/1.3 system-ui,sans-serif;color:#81495f;}
+.ac-page-jewellery .ms-navel-filters select {background:#fff;color:#703f52;padding:9px 12px;border:1px solid #dcbacb;border-radius:9px;font-size:13px;}
+.ac-page-jewellery .ms-navel-filters span {font:600 12px system-ui,sans-serif;color:#96697b;margin-left:auto;}
+.ac-page-jewellery .ms-navel-products {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;margin:18px 0 21px;}
+.ac-page-jewellery .ms-navel-product {display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #ead7de;border-radius:17px;background:#fff;box-shadow:0 7px 22px rgba(97,48,68,.055);}
+.ac-page-jewellery .ms-navel-product[hidden] {display:none!important;}
+.ac-page-jewellery .ms-navel-product-photo {display:flex;align-items:center;justify-content:center;width:100%;height:240px;padding:12px;box-sizing:border-box;background:#fcf7f9;border-bottom:1px solid #f2e2e9;overflow:hidden;}
+.ac-page-jewellery .ms-navel-product-photo img {display:block;width:100%;height:100%;object-fit:contain;object-position:center;}
+.ac-page-jewellery .ms-navel-image-unavailable::before {content:'Exact model photo unavailable; follow the product link';display:block;padding:15px;color:#825a6d;text-align:center;font:600 12px/1.6 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-product-info {display:flex;flex:1;flex-direction:column;padding:15px 16px 18px;}
+.ac-page-jewellery .ms-navel-type {text-transform:uppercase;color:#b47b92;letter-spacing:.14em;font:700 10px/1.5 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-product h4 {color:#71364e;margin:5px 0 7px;font:400 19px/1.25 Georgia,serif;}
+.ac-page-jewellery .ms-navel-product p {color:#876575;margin:0 0 12px;font:400 12px/1.5 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-product strong {display:block;color:#76445b;margin-top:auto;font:700 15px/1.4 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-product small {display:block;color:#9a7785;margin:4px 0 12px;font:400 10px/1.5 system-ui,sans-serif;}
+.ac-page-jewellery .ms-navel-shoplink {display:block;text-align:center;text-decoration:none!important;background:#7c3c57;color:white!important;font:700 12px/1.45 system-ui,sans-serif;border-radius:9px;padding:11px 8px;margin-top:7px;}
+.ac-page-jewellery .ms-navel-shoplink:hover{background:#a05977;}
+.ac-page-jewellery .ms-navel-bottom-note {color:#8e6f7e;font:400 11px/1.75 system-ui,sans-serif;margin-top:24px;}
+.ac-page-jewellery .ms-navel-bottom-note a{color:#803f59;}
+@media(max-width:1100px){.ac-page-jewellery .ms-navel-products{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:810px){.ac-page-jewellery .ms-navel-hero{grid-template-columns:1fr;gap:0}.ac-page-jewellery .ms-navel-hero-text{padding:22px 24px 27px}.ac-page-jewellery .ms-navel-info{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.ac-page-jewellery .ms-navel-products{grid-template-columns:repeat(2,minmax(0,1fr))}.ac-page-jewellery .ms-navel-product-photo{height:220px}}
+@media(max-width:530px){.ac-page-jewellery .ms-navel-steps{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-gallery{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-gallery-card a{height:285px}.ac-page-jewellery .ms-navel-products{grid-template-columns:1fr}.ac-page-jewellery .ms-navel-product{max-width:460px;width:100%;margin:auto}.ac-page-jewellery .ms-navel-product-photo{height:270px}.ac-page-jewellery .ms-navel-filters span{margin-left:0}}
