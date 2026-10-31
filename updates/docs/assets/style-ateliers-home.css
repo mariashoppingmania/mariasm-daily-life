@@ -1,0 +1,25 @@
+/* MariaSM two new fashion Ateliers — preserve YouTube-first home architecture */
+.atelier-home .ms4-feature-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:11px}
+.atelier-home .ms4-feature-grid>.ms4-feature,.atelier-home .ms4-feature-grid>.ms4-feature:nth-last-child(2),.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:span 4;min-height:225px}
+.atelier-home .ms4-feature-grid>.ms4-feature:nth-last-child(4){grid-column:span 4}
+.atelier-home .ms4-feature-grid>.ms4-feature:nth-child(n+4){grid-column:span 3}
+.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy{width:73%;padding:clamp(14px,1.8vw,27px)}
+.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy strong{font-size:clamp(24px,2.4vw,38px)}
+.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy>b{font-size:9px;white-space:normal}
+.atelier-home .ms4-quick-links{grid-template-columns:repeat(9,minmax(0,1fr))}
+.atelier-home .ms4-quick-links>a:nth-child(6){border-right:1px solid #dfb8c4}
+.atelier-home .ms4-quick-links>a:last-child{border-right:0}
+.atelier-home .new-style-editions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:17px auto 40px}
+.atelier-home .new-edition{min-width:0;display:grid;grid-template-columns:1.08fr .92fr;min-height:300px;overflow:hidden;background:linear-gradient(130deg,#fffaf8,#f7e9ed);border-radius:19px;border:1px solid #e8d4dc;box-shadow:0 12px 32px #65324818}
+.atelier-home .new-edition-copy{padding:clamp(20px,2.8vw,35px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.atelier-home .new-edition .eyebrow{border-radius:99px;border:1px solid #e8cbd5;background:#fbedf1;padding:6px 9px;font-size:9px;letter-spacing:.08em;color:#974c68;line-height:1.2}
+.atelier-home .new-edition h2{font:400 clamp(1.8rem,2.35vw,2.6rem)/1.13 Georgia,serif;color:#552b3d;letter-spacing:-.055em;margin:10px 0 11px}
+.atelier-home .new-edition h2 em{color:#a96280;font-weight:400}
+.atelier-home .new-edition p:not(.eyebrow){font-size:12px;color:#785d6a;line-height:1.65}
+.atelier-home .new-edition .button{font-size:11px;padding:10px 14px;text-decoration:none;background:#72314a;color:#fff;border-radius:100px;font-weight:750;margin-top:12px}
+.atelier-home .new-edition .button:hover{background:#9b4a68}
+.atelier-home .new-edition-art{display:block;overflow:hidden;min-height:300px;background:#e6c4d0}
+.atelier-home .new-edition-art img{width:100%;height:100%;object-fit:cover;object-position:47% 35%}
+@media(max-width:1300px){.atelier-home .ms4-quick-links{grid-template-columns:repeat(5,minmax(0,1fr))}.atelier-home .new-style-editions{grid-template-columns:1fr}.atelier-home .new-edition h2{font-size:2.5rem}}
+@media(max-width:1050px){.atelier-home .ms4-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.atelier-home .ms4-feature-grid>.ms4-feature,.atelier-home .ms4-feature-grid>.ms4-feature:nth-last-child(2),.atelier-home .ms4-feature-grid>.ms4-feature:last-child,.atelier-home .ms4-feature-grid>.ms4-feature:nth-child(n+4){grid-column:span 1}.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:1/-1}.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy strong{font-size:clamp(30px,4vw,42px)}}
+@media(max-width:690px){.atelier-home .ms4-feature-grid{grid-template-columns:1fr}.atelier-home .ms4-feature-grid>.ms4-feature,.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:1}.atelier-home .ms4-quick-links{grid-template-columns:repeat(2,minmax(0,1fr))}.atelier-home .new-edition{grid-template-columns:1fr}.atelier-home .new-edition-copy{padding:26px}.atelier-home .new-edition-art{min-height:250px;height:250px}.atelier-home .new-edition h2{font-size:2.25rem}}
