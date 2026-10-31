@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Navel piercing — four illustrated professional stages</title>
+<desc id="desc">Four non-graphic illustrations showing marking, sterile preparation, professional needle work, and placement of a curved navel barbell.</desc>
+<defs>
+ <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6cfb7"/><stop offset=".53" stop-color="#edb395"/><stop offset="1" stop-color="#d99578"/></linearGradient>
+ <radialGradient id="navel"><stop stop-color="#a45c47"/><stop offset=".55" stop-color="#c7896e"/><stop offset="1" stop-color="#dfad8e"/></radialGradient>
+ <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8dce4"/><stop offset=".3" stop-color="#fff"/><stop offset=".7" stop-color="#a9abb8"/><stop offset="1" stop-color="#eceef5"/></linearGradient>
+</defs>
+<style>
+.step{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.7px;fill:#7e475d}
+.count{font-family:Georgia,serif;font-size:23px;fill:#aa718a}
+.descr{font-family:Arial,sans-serif;font-size:12px;fill:#7f5c6b}
+.foot{font-family:Arial,sans-serif;font-size:10px;fill:#b08a98}
+.title{font-family:Georgia,serif;font-size:34px;font-weight:400;fill:#743e54}
+.sub{font-family:Arial,sans-serif;font-size:14px;fill:#a07487}
+</style>
+<rect width="1200" height="650" fill="#fff9f9"/>
+<text x="600" y="45" text-anchor="middle" class="title">Navel Piercing · Illustrated Professional Overview</text>
+<text x="600" y="69" text-anchor="middle" class="sub">From consultation and marking to initial jewellery placement</text>
+<g transform="translate(12 87)">
+ <rect width="275" height="455" rx="18" fill="#fff" stroke="#ead0d9" stroke-width="2"/>
+ <rect width="275" height="54" rx="18" fill="#f9e5ed"/><path d="M0 32H275V54H0Z" fill="#f9e5ed"/>
+ <text x="18" y="36" class="count">01</text>
+ <text x="56" y="33" class="step">POSITION & MARKING</text>
+ 
+<g transform="translate(6 54)">
+  <rect width="263" height="320" rx="13" fill="url(#skin)" />
+  <path d="M0 18 Q130 -5 263 18" stroke="#edb8a0" stroke-opacity=".4" stroke-width="3" fill="none"/>
+  <ellipse cx="131" cy="148" rx="25" ry="33" fill="#b66c57" opacity=".22"/>
+  <ellipse cx="131" cy="151" rx="13" ry="21" fill="url(#navel)" />
+  <path d="M105 148Q131 173 158 148" fill="none" stroke="#bb755e" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M0 274Q125 238 263 270L263 320H0Z" fill="#fff0ec" opacity=".8"/>
+  <path d="M0 273Q130 252 263 269" stroke="#fff" stroke-opacity=".85" fill="none" stroke-width="12"/>
+</g>
+ <g transform="translate(6 54)">
+  <circle cx="131" cy="111" r="5" fill="#a25095" stroke="#f8d5f0" stroke-width="2" />
+  <circle cx="131" cy="184" r="3" fill="#a25095" opacity=".5" />
+  <g transform="rotate(-36 187 67)">
+    <rect x="159" y="7" width="18" height="120" rx="7" fill="#f6f7fb" stroke="#9b91b0" stroke-width="2"/>
+    <rect x="159" y="7" width="18" height="33" rx="6" fill="#c9c3dc"/>
+    <path d="M159 124L168 144L177 124Z" fill="#7a408d"/>
+  </g>
+  <path d="M188 65C207 63 228 81 229 108C230 125 215 126 201 122L180 105L181 88Z" fill="#fffaf5" stroke="#dfcbd0" stroke-width="2"/>
+  <path d="M183 95L198 106M190 88L205 99" stroke="#e2cfd2" stroke-width="2" stroke-linecap="round"/>
+</g>
+ <rect y="374" width="275" height="81" rx="18" fill="#fffafa"/><path d="M0 374H275V421H0Z" fill="#fffafa"/>
+ <text x="137.5" y="410" text-anchor="middle" class="descr">Anatomy checked; placement marked.</text>
+ <text x="137.5" y="438" text-anchor="middle" class="foot">Education · trained piercer only</text>
+</g><g transform="translate(299 87)">
+ <rect width="275" height="455" rx="18" fill="#fff" stroke="#ead0d9" stroke-width="2"/>
+ <rect width="275" height="54" rx="18" fill="#f9e5ed"/><path d="M0 32H275V54H0Z" fill="#f9e5ed"/>
+ <text x="18" y="36" class="count">02</text>
+ <text x="56" y="33" class="step">STERILE PREPARATION</text>
+ 
+<g transform="translate(6 54)">
+  <rect width="263" height="320" rx="13" fill="url(#skin)" />
+  <path d="M0 18 Q130 -5 263 18" stroke="#edb8a0" stroke-opacity=".4" stroke-width="3" fill="none"/>
+  <ellipse cx="131" cy="148" rx="25" ry="33" fill="#b66c57" opacity=".22"/>
+  <ellipse cx="131" cy="151" rx="13" ry="21" fill="url(#navel)" />
+  <path d="M105 148Q131 173 158 148" fill="none" stroke="#bb755e" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M0 274Q125 238 263 270L263 320H0Z" fill="#fff0ec" opacity=".8"/>
+  <path d="M0 273Q130 252 263 269" stroke="#fff" stroke-opacity=".85" fill="none" stroke-width="12"/>
+</g>
+ <g transform="translate(6 54)">
+  <circle cx="131" cy="112" r="5" fill="#aa629c"/>
+  <path d="M103 225L113 126L131 123L147 126L159 225" fill="none" stroke="#aeb6c0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M101 221L110 126Q114 94 129 104L129 155M161 221L151 126Q149 95 132 104L132 155" fill="none" stroke="#fbfdff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M102 224L117 261M160 224L144 261" stroke="#aab4c1" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="117" cy="261" r="10" fill="#c2cad5" stroke="#fafcff" stroke-width="3"/>
+  <circle cx="144" cy="261" r="10" fill="#c2cad5" stroke="#fafcff" stroke-width="3"/>
+  <path d="M64 238C88 222 104 216 121 232L113 270H55Z" fill="#fffcfa" stroke="#e3d2d5" stroke-width="2"/>
+</g>
+ <rect y="374" width="275" height="81" rx="18" fill="#fffafa"/><path d="M0 374H275V421H0Z" fill="#fffafa"/>
+ <text x="137.5" y="410" text-anchor="middle" class="descr">Clean tools and positioning.</text>
+ <text x="137.5" y="438" text-anchor="middle" class="foot">Education · trained piercer only</text>
+</g><g transform="translate(586 87)">
+ <rect width="275" height="455" rx="18" fill="#fff" stroke="#ead0d9" stroke-width="2"/>
+ <rect width="275" height="54" rx="18" fill="#f9e5ed"/><path d="M0 32H275V54H0Z" fill="#f9e5ed"/>
+ <text x="18" y="36" class="count">03</text>
+ <text x="56" y="33" class="step">PROFESSIONAL PIERCING</text>
+ 
+<g transform="translate(6 54)">
+  <rect width="263" height="320" rx="13" fill="url(#skin)" />
+  <path d="M0 18 Q130 -5 263 18" stroke="#edb8a0" stroke-opacity=".4" stroke-width="3" fill="none"/>
+  <ellipse cx="131" cy="148" rx="25" ry="33" fill="#b66c57" opacity=".22"/>
+  <ellipse cx="131" cy="151" rx="13" ry="21" fill="url(#navel)" />
+  <path d="M105 148Q131 173 158 148" fill="none" stroke="#bb755e" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M0 274Q125 238 263 270L263 320H0Z" fill="#fff0ec" opacity=".8"/>
+  <path d="M0 273Q130 252 263 269" stroke="#fff" stroke-opacity=".85" fill="none" stroke-width="12"/>
+</g>
+ <g transform="translate(6 54)">
+  <circle cx="131" cy="110" r="5" fill="#af72a5"/>
+  <path d="M112 222L117 128M150 222L146 128" stroke="#bec6d2" stroke-width="13" stroke-linecap="round"/>
+  <path d="M112 224L119 138M150 224L144 138" stroke="#f4f6f9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M162 109H225" stroke="#7d8f9f" stroke-width="5" stroke-linecap="round" />
+  <path d="M137 109L163 106L163 112Z" fill="#b4bbc4"/>
+  <rect x="221" y="100" width="16" height="18" rx="2" fill="#b2c0d0" stroke="#7c96a8" stroke-width="2"/>
+  <path d="M237 90L263 79V145L238 126Z" fill="#fffaf6" stroke="#d9c9d0" stroke-width="2"/>
+  <path d="M164 91L145 91" stroke="#fff8fb" stroke-width="2" stroke-dasharray="5 5"/>
+  <path d="M150 89L141 91L149 94" fill="none" stroke="#fff8fb" stroke-width="2"/>
+</g>
+ <rect y="374" width="275" height="81" rx="18" fill="#fffafa"/><path d="M0 374H275V421H0Z" fill="#fffafa"/>
+ <text x="137.5" y="410" text-anchor="middle" class="descr">Single-use sterile needle.</text>
+ <text x="137.5" y="438" text-anchor="middle" class="foot">Education · trained piercer only</text>
+</g><g transform="translate(873 87)">
+ <rect width="275" height="455" rx="18" fill="#fff" stroke="#ead0d9" stroke-width="2"/>
+ <rect width="275" height="54" rx="18" fill="#f9e5ed"/><path d="M0 32H275V54H0Z" fill="#f9e5ed"/>
+ <text x="18" y="36" class="count">04</text>
+ <text x="56" y="33" class="step">JEWELLERY PLACEMENT</text>
+ 
+<g transform="translate(6 54)">
+  <rect width="263" height="320" rx="13" fill="url(#skin)" />
+  <path d="M0 18 Q130 -5 263 18" stroke="#edb8a0" stroke-opacity=".4" stroke-width="3" fill="none"/>
+  <ellipse cx="131" cy="148" rx="25" ry="33" fill="#b66c57" opacity=".22"/>
+  <ellipse cx="131" cy="151" rx="13" ry="21" fill="url(#navel)" />
+  <path d="M105 148Q131 173 158 148" fill="none" stroke="#bb755e" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M0 274Q125 238 263 270L263 320H0Z" fill="#fff0ec" opacity=".8"/>
+  <path d="M0 273Q130 252 263 269" stroke="#fff" stroke-opacity=".85" fill="none" stroke-width="12"/>
+</g>
+ <g transform="translate(6 54)">
+  <circle cx="131" cy="110" r="11" fill="url(#silver)" stroke="#8b8793" stroke-width="2"/>
+  <path d="M131 120Q132 133 131 144" stroke="#a7a6ab" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="131" cy="156" r="18" fill="url(#silver)" stroke="#9995a0" stroke-width="3"/>
+  <path d="M131 141L143 156L131 172L119 156Z" fill="#f8faff" stroke="#b4bdcd" stroke-width="2"/>
+  <path d="M131 141V172M119 156H143" stroke="#d1dcea" stroke-width="2"/>
+  <circle cx="129" cy="107" r="4" fill="#fff" opacity=".9"/>
+  <path d="M166 95L171 83L176 95L188 100L176 105L171 118L166 105L154 100Z" fill="#fff2dc" stroke="#d2b795" stroke-width="2"/>
+</g>
+ <rect y="374" width="275" height="81" rx="18" fill="#fffafa"/><path d="M0 374H275V421H0Z" fill="#fffafa"/>
+ <text x="137.5" y="410" text-anchor="middle" class="descr">Fitted initial navel jewellery.</text>
+ <text x="137.5" y="438" text-anchor="middle" class="foot">Education · trained piercer only</text>
+</g>
+<g><path d="M284 334H295M571 334H582M858 334H869" stroke="#bb7996" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 9"/></g>
+<rect x="127" y="562" width="946" height="58" rx="14" fill="#f7e6ed"/>
+<text x="600" y="588" text-anchor="middle" fill="#75465d" font-family="Arial,sans-serif" font-weight="600" font-size="15">Professional procedure only · sterile setting and qualified piercer required</text>
+<text x="600" y="606" text-anchor="middle" fill="#9b7182" font-family="Arial,sans-serif" font-size="12">Illustrative educational artwork · techniques and anatomy vary · not a DIY guide</text>
+</g></svg>
