@@ -1,51 +1,70 @@
-/* MariaSM 2026 — approved 16:9 photographic welcome banner, fully visible. */
-.atelier-home .ms4-hero.ms4-hero-banner {
-  position:relative;
-  display:block !important;
-  grid-template-columns:none !important;
-  align-items:initial !important;
+/* MariaSM homepage: restore the earlier two-column hero.
+   The approved wide artwork remains COMPLETE in the left photo panel. */
+.atelier-home .ms4-hero.ms4-hero-split{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;
+  align-items:stretch!important;
   width:100%;
-  max-width:1672px;
-  min-height:0 !important;
-  height:auto !important;
-  padding:0 !important;
-  margin:0 auto !important;
-  overflow:visible !important;
-  background:#f8eff0;
-  border:0;
-  border-radius:0;
-  box-shadow:none;
+  max-width:none;
+  min-height:400px!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+  background:linear-gradient(110deg,#fff5f2 25%,#f6e0e7 100%);
 }
-.atelier-home .ms4-hero.ms4-hero-banner>.ms4-banner-image {
-  display:block !important;
-  position:static !important;
-  inset:auto !important;
-  width:100% !important;
-  max-width:100%;
-  height:auto !important;
-  min-height:0 !important;
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo{
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:0!important;
+  min-height:400px!important;
+  height:auto!important;
+  padding:clamp(10px,1.4vw,22px)!important;
+  overflow:hidden!important;
+  isolation:isolate!important;
+  background:linear-gradient(125deg,#f3e3e6,#fceeea)!important;
+}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo::before,
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo::after{display:none!important}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo>img.ms4-split-banner{
+  position:relative!important;
+  inset:auto!important;
+  display:block!important;
+  flex:0 1 auto!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  max-height:530px!important;
   aspect-ratio:1600/901;
-  object-fit:contain !important;
-  object-position:center center !important;
-  filter:none !important;
-  transform:none !important;
-  margin:0;
-  padding:0;
-  border:0;
+  object-fit:contain!important;
+  object-position:center center!important;
+  filter:none!important;
+  transform:none!important;
+  box-shadow:none!important;
+  border-radius:10px!important;
+  margin:0!important;
 }
-.atelier-home .ms4-hero.ms4-hero-banner>.ms4-screenreader{
-  position:absolute !important;
-  width:1px !important;
-  height:1px !important;
-  padding:0 !important;
-  margin:-1px !important;
-  overflow:hidden !important;
-  clip:rect(0,0,0,0) !important;
-  clip-path:inset(50%) !important;
-  border:0 !important;
-  white-space:nowrap !important;
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-copy{
+  display:flex!important;
+  min-width:0!important;
 }
 @media(max-width:900px){
-  .atelier-home .ms4-hero.ms4-hero-banner{min-height:0 !important;padding:0 !important}
-  .atelier-home .ms4-hero.ms4-hero-banner>.ms4-banner-image{width:100% !important;height:auto !important}
+  .atelier-home .ms4-hero.ms4-hero-split{grid-template-columns:1fr!important;min-height:0!important}
+  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo{
+    min-height:0!important;
+    padding:12px!important;
+  }
+  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo>img.ms4-split-banner{
+    width:100%!important;
+    max-height:none!important;
+  }
+  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-copy{
+    padding:clamp(24px,5vw,48px)!important;
+  }
+}
+@media(max-width:480px){
+  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo{padding:8px!important}
+  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo>img.ms4-split-banner{border-radius:7px!important}
 }
