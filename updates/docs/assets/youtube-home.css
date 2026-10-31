@@ -178,3 +178,18 @@
  .halloween .atelier-home .yt-seasonal-slot .halloween-art{position:absolute;right:5px;top:5px;opacity:.3;width:90px;height:70px}
 }
 @media(prefers-reduced-motion:reduce){.atelier-home .yt-main-thumb img,.atelier-home .new-grid .video-card{transition:none}}
+
+/* Halloween remains an unobtrusive seasonal vignette near the photo journal. */
+.halloween .atelier-home .new-section::before,
+.halloween .atelier-home #watch::before,
+.halloween .atelier-home #finds::before,
+.halloween .atelier-home #photo-diary::before,
+.halloween .atelier-home #about::before,
+.halloween .atelier-home #contact::before,
+.halloween .atelier-home .ranking-section .section-head>div::after{display:none!important}
+.halloween .atelier-home .ms4-hero,
+.halloween .atelier-home .yt-channel-spotlight,
+.halloween .atelier-home .new-section,
+.halloween .atelier-home .shorts-section,
+.halloween .atelier-home .ranking-section{--wine:#713047;--rose:#b36a82;--line:#ead8df}
+.halloween .atelier-home .home-brand::after{content:"♡";font-family:Georgia,serif;font-size:22px;top:-1px;right:-20px}
