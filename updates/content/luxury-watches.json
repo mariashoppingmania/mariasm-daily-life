@@ -1,0 +1,116 @@
+{
+  "asOf": "2026-10-31",
+  "purpose": "Exact-model editorial luxury watch directory, no live inventory claims",
+  "products": [
+    {
+      "brand": "Rolex",
+      "name": "Datejust 36 — Bright Blue, Oyster",
+      "sku": "m126234-0018",
+      "image": "https://watchxnyc.com/cdn/shop/files/watchxnyc-watch-default-title-rolex-datejust-36-36mm-bright-blue-dial-oystersteel-and-white-gold-oyster-bracelet-126234-0018-30698493804725.png?v=1753990930",
+      "imageSource": "WATCHXNYC, matching reference",
+      "url": "https://www.rolex.com/it-it/watches/datejust/m126234-0018",
+      "detail": "Oystersteel and white gold, 36 mm, fluted bezel, blue dial, date and Oyster bracelet.",
+      "price": "Official listed reference: €9,750"
+    },
+    {
+      "brand": "Patek Philippe",
+      "name": "Calatrava — Rose Gold",
+      "sku": "6119R-001",
+      "image": "https://assets.coveted.com/watches/images/patek_philippe/2123af84b6508e836665b922059324b3_6119R-001.png",
+      "imageSource": "Coveted, matching reference",
+      "url": "https://www.patek.com/en/collection/calatrava/6119R-001",
+      "detail": "39 mm rose-gold Calatrava with hobnail bezel and manually wound small seconds.",
+      "price": "Ask an authorised boutique"
+    },
+    {
+      "brand": "Audemars Piguet",
+      "name": "Royal Oak Selfwinding — Anniversary",
+      "sku": "15510ST.OO.1320ST.01",
+      "image": "https://res.cloudinary.com/wc-photo/image/upload/c_fill%2Cw_3000%2Ch_3000%2Cg_auto/f_auto/q_auto/v1698914436/product/12a5476a79cadcf6c31f0f28c6312e0f/963d14e244b48de2490df3932bc4f434",
+      "imageSource": "Wristcheck, exact anniversary reference",
+      "url": "https://www.audemarspiguet.com/it/watch-collection/royal-oak/15510ST.OO.1320ST.01",
+      "detail": "41 mm steel case, integrated bracelet and Grande Tapisserie blue dial.",
+      "price": "Boutique enquiry"
+    },
+    {
+      "brand": "Vacheron Constantin",
+      "name": "Overseas Self-winding — Blue",
+      "sku": "4520V/210A-B128",
+      "image": "https://watchbiz.com.au/cdn/shop/files/Vacheron-4520V-blue-the-watch-business-4.jpg?v=1752477933&width=1946",
+      "imageSource": "Watchbiz, matching Overseas reference",
+      "url": "https://www.vacheron-constantin.com/it/it/collections/overseas/4520v-210a-b128.html",
+      "detail": "41 mm steel, blue dial, 150 m rating and interchangeable bracelet/straps.",
+      "price": "Price on request"
+    },
+    {
+      "brand": "Cartier",
+      "name": "Tank Must — Large Steel",
+      "sku": "WSTA0106",
+      "image": "https://www.pragnell.co.uk/images/extralarge/43057c14-9f62-4c67-9f08-2e86ce68a783.jpg",
+      "imageSource": "Pragnell, matching Cartier reference",
+      "url": "https://int.cartier.com/en/collections/watches/all-watches/tank-watches/wsta0106-tank-must-de-cartier-watch.html",
+      "detail": "Rectangular silvered dial, blue sword hands and stainless-steel bracelet.",
+      "price": "Check official price"
+    },
+    {
+      "brand": "Jaeger-LeCoultre",
+      "name": "Reverso Tribute Monoface",
+      "sku": "Q7168420",
+      "image": "https://img.jaeger-lecoultre.com/product-grid-hero-4/o-dpr-2/65a2206c38c2a92c5fc900146466c03c71010ad1.jpg",
+      "imageSource": "Jaeger-LeCoultre, exact reference",
+      "url": "https://www.jaeger-lecoultre.com/eu-it/watches/reverso/reverso-tribute/reverso-tribute-monoface-stainless-steel-q7168420",
+      "detail": "Reversible Art Deco steel case, manually wound, refined silver-grey dial.",
+      "price": "Check official price"
+    },
+    {
+      "brand": "IWC Schaffhausen",
+      "name": "Portugieser Automatic 40 — Silver",
+      "sku": "IW358304",
+      "image": "https://burdeens.com/cdn/shop/products/C00138436_7457063.jpg?crop=center&height=1200&v=1763498436&width=1200",
+      "imageSource": "Burdeen's Jewelry, matching reference",
+      "url": "https://www.iwc.com/eu-it/watches/portugieser/iw358304-portugieser-automatic-40",
+      "detail": "40.4 mm, small seconds at six, silver dial and blue alligator strap.",
+      "price": "Official listed reference: €8,000"
+    },
+    {
+      "brand": "TAG Heuer",
+      "name": "Carrera Chronograph Glassbox",
+      "sku": "CBS2210.FC6534",
+      "image": "https://genevecompany.com/cdn/shop/files/2_aagnjk_b052e81e-8600-41bf-9d1d-76ae076def90.png?v=1764587145&width=2048",
+      "imageSource": "Geneve Company, matching reference",
+      "url": "https://www.tagheuer.com/it/it/segnatempo/collezioni/tag-heuer-carrera/39-mm-th20-00/CBS2210.FC6534.html",
+      "detail": "39 mm black reverse-panda automatic chronograph on leather strap.",
+      "price": "Official listed reference: €7,200"
+    },
+    {
+      "brand": "Breitling",
+      "name": "Navitimer B01 Chronograph 43",
+      "sku": "AB0138211B1P1",
+      "image": "https://www.robertgatwardjewellers.co.uk/cdn/shop/products/ab0138211b1p1.jpg?v=1654010641",
+      "imageSource": "Robert Gatward, matching reference",
+      "url": "https://www.breitling.com/it-it/watches/navitimer/navitimer-b01-chronograph-43-my22/AB0138211B1P1/",
+      "detail": "Aviation-inspired 43 mm chronograph with circular slide-rule bezel.",
+      "price": "Official listed reference: €9,500"
+    },
+    {
+      "brand": "Zenith",
+      "name": "Chronomaster Sport — White",
+      "sku": "03.3100.3600/69.M3100",
+      "image": "https://pisa1940.com/cdn/shop/files/Zenoth_Chronomaster-Sport_03.3100.3600.69.M3100_97ebd960-6018-4663-a574-2fb3a0160c04.png?v=1765988908",
+      "imageSource": "Pisa 1940, matching reference",
+      "url": "https://www.zenith-watches.com/en_us/product/chronomaster-sport-03-3100-3600-69-m3100",
+      "detail": "41 mm white dial, tri-colour subdials and high-frequency El Primero chronograph.",
+      "price": "Check local boutique price"
+    },
+    {
+      "brand": "Hublot",
+      "name": "Classic Fusion Titanium on Rubber",
+      "sku": "542.NX.1171.RX",
+      "image": "https://www.hublot.com/sites/default/files/styles/global_laptop_1x/public/2021-10/classic-fusion-titanium-on-rubber-42-mm-lifestyle.jpg?itok=7vvOaKUH",
+      "imageSource": "Hublot official lifestyle photograph",
+      "url": "https://www.hublot.com/en-us/watches/classic-fusion/classic-fusion-titanium-rubber-42-mm",
+      "detail": "42 mm titanium, black dial and understated sporty rubber strap.",
+      "price": "Check official price"
+    }
+  ]
+}
