@@ -27,7 +27,7 @@ for(const file of pages){
  for(const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){
   const url=match[1];if(/^(https?:|mailto:|data:)/.test(url))continue;
   assert(!url.startsWith('/'),`Root-relative URL breaks project Pages: ${url}`);
-  const [base,hash]=url.split('#');const target=base?path.resolve(path.dirname(file),base):file;
+  const [withQuery,hash]=url.split('#');const base=withQuery.split('?')[0];const target=base?path.resolve(path.dirname(file),base):file;
   assert(fs.existsSync(target),`Missing target ${url} in ${file}`);references++;
   if(hash && target.endsWith('.html'))assert(fs.readFileSync(target,'utf8').includes(`id="${hash}"`),`Missing anchor ${url}`);
  }
