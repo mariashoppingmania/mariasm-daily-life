@@ -1,0 +1,119 @@
+[
+  {
+    "name": "ASOS",
+    "category": "Multi-brand",
+    "url": "https://www.asos.com/women/",
+    "description": "Dresses, denim, occasionwear and trend-led separates across multiple labels.",
+    "tip": "Compare the measurements and fit notes for each brand rather than assuming every label fits alike.",
+    "photo": "modern",
+    "position": 0
+  },
+  {
+    "name": "Zalando",
+    "category": "Multi-brand",
+    "url": "https://www.zalando.it/donna-home/",
+    "description": "A broad starting point for clothing, footwear, accessories and sportswear.",
+    "tip": "Use category and brand filters to narrow the selection before comparing individual garments.",
+    "photo": "modern",
+    "position": 2
+  },
+  {
+    "name": "Zara",
+    "category": "Everyday & trends",
+    "url": "https://www.zara.com/it/en/woman-mkt1000.html",
+    "description": "Seasonal womenswear, tailoring, dresses and accessories.",
+    "tip": "Look closely at fabric composition, garment measurements and the cut of the shoulder or waist.",
+    "photo": "modern",
+    "position": 2
+  },
+  {
+    "name": "H&M",
+    "category": "Everyday & trends",
+    "url": "https://www2.hm.com/en_gb/ladies.html",
+    "description": "Everyday basics, knitwear, denim and occasion pieces.",
+    "tip": "Choose the destination country before checking stock, prices and delivery.",
+    "photo": "modern",
+    "position": 0
+  },
+  {
+    "name": "Mango",
+    "category": "Everyday & trends",
+    "url": "https://shop.mango.com/it/it/h/donna",
+    "description": "Tailoring, knitwear, dresses and coordinated wardrobe pieces.",
+    "tip": "Compare how a piece works with your existing wardrobe, not just its campaign styling.",
+    "photo": "late",
+    "position": 1
+  },
+  {
+    "name": "UNIQLO",
+    "category": "Basics & tailoring",
+    "url": "https://www.uniqlo.com/it/en/women_navigation",
+    "description": "Layering basics, knitwear, shirts, trousers and functional everyday clothing.",
+    "tip": "Check fabric weight and fit information when choosing a base layer or everyday knit.",
+    "photo": "modern",
+    "position": 1
+  },
+  {
+    "name": "COS",
+    "category": "Basics & tailoring",
+    "url": "https://www.cos.com/en-eu/women",
+    "description": "Modern tailoring, knitwear and clothing with an emphasis on shape.",
+    "tip": "Notice the intended volume and length: an oversized design is different from the wrong size.",
+    "photo": "modern",
+    "position": 2
+  },
+  {
+    "name": "& Other Stories",
+    "category": "Everyday & trends",
+    "url": "https://www.stories.com/en-eu/",
+    "description": "Womenswear, dresses, knitwear, shoes and finishing accessories.",
+    "tip": "Consider fabric and care instructions alongside the look of the garment.",
+    "photo": "late",
+    "position": 2
+  },
+  {
+    "name": "NET-A-PORTER",
+    "category": "Designer",
+    "url": "https://www.net-a-porter.com/en-it/",
+    "description": "A multi-designer destination for womenswear, footwear and accessories.",
+    "tip": "Compare designer sizing and the specific seller terms for your delivery destination.",
+    "photo": "early",
+    "position": 2
+  },
+  {
+    "name": "Oysho",
+    "category": "Sport & swim",
+    "url": "https://www.oysho.com/gb/",
+    "description": "Sportswear, athleisure and swimwear in a range of activity-led categories.",
+    "tip": "Match the fabric and support to the activity, then check the local store for delivery.",
+    "photo": "modern",
+    "position": 1
+  },
+  {
+    "name": "Calzedonia",
+    "category": "Sport & swim",
+    "url": "https://www.calzedonia.com/uk/",
+    "description": "Swimwear and beachwear alongside tights, socks and legwear.",
+    "tip": "Check the cut, lining and whether two-piece components can be selected separately.",
+    "photo": "swim",
+    "position": 1
+  },
+  {
+    "name": "Decathlon",
+    "category": "Sport & swim",
+    "url": "https://www.decathlon.it/tutti-gli-sport/nuoto/costumi-piscina-donna",
+    "description": "Swimming and activity-focused swimwear, including pool one-pieces and two-pieces.",
+    "tip": "Choose according to swimming frequency, intended activity and the product specifications.",
+    "photo": "swim",
+    "position": 0
+  },
+  {
+    "name": "Speedo",
+    "category": "Sport & swim",
+    "url": "https://speedo.com/en-eu/pages/women",
+    "description": "A swimming-focused destination for swimsuits and related swim products.",
+    "tip": "Read the individual suit’s fabric, fit and intended-use information.",
+    "photo": "swim",
+    "position": 0
+  }
+]

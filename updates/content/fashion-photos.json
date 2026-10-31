@@ -1,0 +1,50 @@
+{
+  "early": {
+    "file": "early-century.webp",
+    "title": "1900s–1930s · From structure to fluidity",
+    "caption": "Left: a 1905-inspired blouse and walking skirt. Centre: a 1920s dropped-waist chemise. Right: a 1930s-inspired bias-cut evening gown.",
+    "alt": "Three adult women in an Edwardian-inspired blouse and long skirt, a dropped-waist dress and a fluid green evening gown"
+  },
+  "mid": {
+    "file": "mid-century.webp",
+    "title": "1940s–1960s · Three different silhouettes",
+    "caption": "Left: a wartime-inspired utility suit. Centre: a fitted-waist 1950s day dress with a full skirt. Right: a 1960s A-line minidress and boots.",
+    "alt": "Three adult women wearing a grey utility skirt suit, a full pink day dress and a blue A-line minidress"
+  },
+  "late": {
+    "file": "late-century.webp",
+    "title": "1970s–1990s · Denim, power and minimalism",
+    "caption": "Left: flared jeans and a soft blouse. Centre: a structured 1980s trouser suit. Right: a 1990s slip dress layered over a T-shirt.",
+    "alt": "Three adult women wearing flared jeans, a burgundy trouser suit and a black slip dress over a T-shirt"
+  },
+  "modern": {
+    "file": "modern-wardrobe.webp",
+    "title": "2000s–today · Many ways to dress",
+    "caption": "Left: cargo trousers and a fitted top. Centre: an athleisure ensemble. Right: relaxed tailoring with wide-leg trousers.",
+    "alt": "Three adult women in cargo trousers, grey athleisure and a camel blazer with wide-leg navy trousers"
+  },
+  "asia": {
+    "file": "asian-formalwear.webp",
+    "title": "Japan, Korea and the Philippines",
+    "caption": "Left: a kimono interpretation with an obi. Centre: a hanbok interpretation with jeogori and chima. Right: a modern terno with butterfly sleeves. These are three distinct clothing traditions.",
+    "alt": "Three adult women wearing a kimono, a hanbok and a Philippine terno with butterfly sleeves"
+  },
+  "world": {
+    "file": "textile-journeys.webp",
+    "title": "Drape, textile and layered volume",
+    "caption": "Left: a sari with a contrasting border. Centre: a contemporary dress inspired by indigo resist-dyed textiles. Right: an Andean-inspired pollera and woven shawl. Selective interpretations, not regional uniforms.",
+    "alt": "Three adult women wearing a green sari, an indigo patterned dress and an Andean-inspired layered skirt with shawl"
+  },
+  "swim": {
+    "file": "swimwear-today.webp",
+    "title": "Swimwear today · Three practical directions",
+    "caption": "Left: an athletic one-piece. Centre: a retro-inspired high-waisted two-piece. Right: a long-sleeved rashguard with swim shorts.",
+    "alt": "Flat-lay AI product photograph of a navy one-piece, a red high-waisted two-piece and a teal rashguard with shorts"
+  },
+  "swim-history": {
+    "file": "swimwear-history.webp",
+    "title": "Swimwear through time",
+    "caption": "Left: a 1920s-inspired tunic-style bathing suit. Centre: a 1950s-inspired ruched one-piece. Right: a 1970s-inspired printed two-piece.",
+    "alt": "Flat-lay AI product photograph of historical-inspired navy knitted bathing garments, a red ruched one-piece and an orange patterned two-piece"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "method": "Built-in image generation; no API/CLI fallback",
+  "date": "2026-10-31",
+  "delivery": "Eight complete images saved as WebP website assets; no image content cropped or retouched in the files. CSS crops previews only.",
+  "assets": [
+    {
+      "key": "early",
+      "path": "updates/docs/fashion/photos/early-century.webp",
+      "prompt": "Create one landscape photorealistic editorial fashion photograph for an educational women's fashion history website, warm cream studio backdrop, refined magazine lighting, visible natural fabric textures. Three clearly adult women age 30–40 stand well separated, full body head to toe, facing camera with relaxed neutral fashion catalogue poses. Left wears a historically inspired 1905 high neck cream lace blouse with long sleeves, fitted waist and floor length burgundy walking skirt, small period hat. Centre wears a 1926 loose straight navy chemise dress with dropped waist, below-knee hem, cloche hat and strap shoes. Right wears a 1935 long fluid bias-cut emerald satin evening gown with modest neckline. Accurate differentiated garment silhouettes, realistic proportions, tasteful editorial clothing study. No text, no logos, no watermark. This is an AI-created illustrative reconstruction, not an archival photo."
+    },
+    {
+      "key": "mid",
+      "path": "updates/docs/fashion/photos/mid-century.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape editorial photograph for MariaSM Fashion Atlas website. Three clearly adult women age 30–40, full body head to toe and well separated. Left: historically inspired 1943 grey wool utility skirt suit, structured shoulders, knee-length skirt, sensible brown shoes. Centre: 1955 rose cotton day dress with fitted waist and full circle skirt below knee, low court shoes. Right: 1966 cobalt A-line minidress with short sleeves, opaque cream tights and white boots. Distinct historically plausible construction. Photorealistic fashion magazine photography, warm cream/beige setting, soft studio daylight, realistic adult faces, premium textile detail, equal space between the three people, no cropped heads or feet. This is an original AI-created educational interpretation, not an archive photo or actual brand merchandise. No text, no logo, no watermark."
+    },
+    {
+      "key": "late",
+      "path": "updates/docs/fashion/photos/late-century.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape editorial photograph for MariaSM Fashion Atlas website. Three clearly adult women age 30–40, full body head to toe and well separated. Left: 1974 cream blouse tucked into indigo flared jeans with suede belt and platform shoes. Centre: 1985 burgundy shoulder-padded trouser suit with white blouse and pumps. Right: 1995 black midi slip dress layered over white short sleeve T-shirt with black combat boots. Fabric details, distinct era styling. Photorealistic fashion magazine photography, warm cream/beige setting, soft studio daylight, realistic adult faces, premium textile detail, equal space between the three people, no cropped heads or feet. This is an original AI-created educational interpretation, not an archive photo or actual brand merchandise. No text, no logo, no watermark."
+    },
+    {
+      "key": "modern",
+      "path": "updates/docs/fashion/photos/modern-wardrobe.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape editorial photograph for MariaSM Fashion Atlas website. Three clearly adult women age 30–40 with different natural body types, full body head to toe and well separated. Left: early 2000s taupe cargo trousers and modest fitted sleeveless top, small shoulder bag. Centre: 2015 grey athleisure leggings with hip length sweatshirt and trainers. Right: contemporary 2026 relaxed camel blazer over cream shirt with wide leg navy trousers and loafers. Realistic fabric textures. Photorealistic fashion magazine photography, warm cream/beige setting, soft studio daylight, realistic adult faces, premium textile detail, equal space between the three people, no cropped heads or feet. This is an original AI-created educational interpretation, not an archive photo or actual brand merchandise. No text, no logo, no watermark."
+    },
+    {
+      "key": "asia",
+      "path": "updates/docs/fashion/photos/asian-formalwear.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape editorial photograph for MariaSM Fashion Atlas website. Three clearly adult women age 30–40, full body head to toe, individually styled respectfully without mixing traditions. Left: Japanese woman in a beautifully tailored muted indigo silk kimono with subtle botanical motif and wide obi, conventional wrapped construction. Centre: Korean woman in a contemporary ceremonial hanbok with cream jeogori jacket and voluminous muted rose chima skirt. Right: Filipina woman in a modern burgundy floor length terno with upright stiff butterfly sleeves. Clear accurate garment constructions, no costume parody. Photorealistic fashion magazine photography, warm cream/beige setting, soft studio daylight, realistic adult faces, premium textile detail, equal space between the three people, no cropped heads or feet. This is an original AI-created educational interpretation, not an archive photo or actual brand merchandise. No text, no logo, no watermark."
+    },
+    {
+      "key": "world",
+      "path": "updates/docs/fashion/photos/textile-journeys.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape editorial photograph for MariaSM Fashion Atlas website. Three clearly adult women age 30–40, full body head to toe, respectfully presented as individual contemporary formalwear interpretations, not generic national costumes. Left: South Asian woman in emerald sari with gold border draped over a modest short-sleeve blouse. Centre: West African woman in contemporary tailored dress made from rich indigo resist-dyed cloth, sleeves and mid-calf hem. Right: Andean woman in a burgundy full layered pollera skirt, cream blouse and woven shawl, simple low shoes. Distinct materials and realistic textile detail, no caricature. Photorealistic fashion magazine photography, warm cream/beige setting, soft studio daylight, realistic adult faces, premium textile detail, equal space between the three people, no cropped heads or feet. This is an original AI-created educational interpretation, not an archive photo or actual brand merchandise. No text, no logo, no watermark."
+    },
+    {
+      "key": "swim",
+      "path": "updates/docs/fashion/photos/swimwear-today.webp",
+      "prompt": "Photorealistic product still-life photograph, landscape composition, for an educational swimwear catalogue. No people, no mannequins, no bodies. Three neatly arranged complete swim outfits lying flat separately on pale limestone beside a Mediterranean pool: left a navy athletic one-piece swimsuit with wide straps; centre a muted red high-waisted two-piece swimming set, substantial full brief and matching structured top; right a teal long-sleeved zipped rashguard and matching mid-thigh swim shorts. All garments are flat fabric objects, clearly separated, with realistic stitching, lining, material texture and gentle shadows. Premium editorial product photography. No text, no brand marks."
+    },
+    {
+      "key": "swim-history",
+      "path": "updates/docs/fashion/photos/swimwear-history.webp",
+      "prompt": "Photorealistic museum-style product photograph for a swimwear history website, landscape composition. NO people, NO mannequins, NO bodies. Three historical-inspired bathing outfits laid flat, each clearly separate, on a warm cream textile surface: left a 1920s inspired navy knitted tunic bathing garment with matching short leggings; centre a 1950s inspired red ruched one-piece swimsuit with low leg openings and broad straps; right a 1970s inspired orange geometric-pattern high-waisted two-piece swimming set. Show only actual fabric garments, with clear realistic stitching and texture. Soft studio daylight, tasteful educational fashion objects, no text, no logos."
+    }
+  ]
+}
