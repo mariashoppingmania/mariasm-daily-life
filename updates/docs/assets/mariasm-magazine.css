@@ -1,0 +1,143 @@
+/* MariaSM Magazine 4.0 — coordinated home, Fashion, Fragrance, Makeup editorial system.
+   Deliberately scoped, preserving every original guide, product catalogue, real YouTube card and photograph. */
+:root{--mswine:#74223d;--msink:#53283c;--msrose:#b8778c;--msline:#efd8df;--mscream:#fffaf8;--msmuted:#785d69}
+.atelier-home{background:var(--mscream)}
+.atelier-home .home-announcement{display:none}
+.atelier-home .home-header{
+  position:sticky;top:0;z-index:100;background:rgba(255,250,249,.96);
+  backdrop-filter:blur(16px);box-shadow:0 7px 28px rgba(87,34,50,.07);
+}
+.atelier-home .home-header .home-header-inner{min-height:66px;padding-block:7px}
+.atelier-home .home-header .home-brand{font:400 32px/1 Georgia,"Times New Roman",serif;letter-spacing:-.06em;color:var(--mswine)}
+.atelier-home .home-header .home-brand small{font-size:9px;margin-top:6px;letter-spacing:.3em}
+.atelier-home .home-header .home-brand::after{content:"♡";top:-1px;right:-20px;font:22px Georgia,serif;color:#a75b78}
+.atelier-home .home-header .home-primary-nav>a{border-radius:5px;padding:11px 10px;text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:750}
+.atelier-home .home-header .home-primary-nav>a.home-nav-current{background:transparent;color:#923954;border-color:transparent;border-bottom:2px solid #b6677f;border-radius:0}
+.atelier-home .home-header .home-primary-nav>a.home-youtube-link{font-size:10px;border-radius:99px;padding:11px 16px}
+/* Primary welcome display: photographic portrait left; blush editorial text right */
+.atelier-home .ms4-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);width:100%;min-height:390px;background:linear-gradient(110deg,#fff5f2 25%,#f6e0e7 100%);overflow:hidden}
+.atelier-home .ms4-hero-photo{position:relative;min-height:400px;background:#e9c5ce;overflow:hidden}
+.atelier-home .ms4-hero-photo::after{position:absolute;inset:0;content:"";pointer-events:none;background:linear-gradient(90deg,transparent 68%,rgba(255,248,245,.36) 100%)}
+.atelier-home .ms4-hero-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:saturate(.92) contrast(1.02)}
+.atelier-home .ms4-photo-credit{position:absolute;bottom:7px;left:12px;padding:4px 8px;border-radius:6px;background:#fffaf6d9;color:#6c4654;font-size:9px;line-height:1.4;z-index:1}
+.atelier-home .ms4-hero-copy{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;min-width:0;position:relative;padding:clamp(28px,5vw,65px) clamp(24px,4vw,60px);background:radial-gradient(circle at 100% 4%,rgba(251,205,219,.7),transparent 32%),radial-gradient(circle at 9% 99%,rgba(255,255,255,.9),transparent 40%)}
+.atelier-home .ms4-hero-copy::after{content:"✦";position:absolute;color:rgba(177,106,132,.14);right:3%;top:4%;font:160px/1 Georgia,serif;z-index:0;pointer-events:none}
+.atelier-home .ms4-hero-copy>*{position:relative;z-index:1}
+.atelier-home .ms4-handwritten{font:italic clamp(23px,2.3vw,34px) Georgia,serif;letter-spacing:-.02em;color:#af5e79;margin:1px 0 6px}
+.atelier-home .ms4-hero-copy .eyebrow{font-size:10px;letter-spacing:.22em;color:#b75f82}
+.atelier-home .ms4-hero-copy h1{font:400 clamp(62px,6.7vw,112px)/.91 Georgia,"Times New Roman",serif;letter-spacing:-.085em;color:#67243e;margin:6px 0 20px}
+.atelier-home .ms4-hero-copy h1 span{color:#b16e84}
+.atelier-home .ms4-hero-copy h1 small{display:block;letter-spacing:-.045em;font-size:.47em;line-height:1.3}
+.atelier-home .ms4-categories{font-size:11px;font-weight:750;letter-spacing:.17em;color:#884159;margin:0 0 13px}
+.atelier-home .ms4-hero-deck{font:clamp(16px,1.37vw,20px)/1.55 Georgia,serif;color:#684453;max-width:450px}
+.atelier-home .ms4-pill{display:inline-flex;background:#782b48;border:1px solid #782b48;color:#fff;text-decoration:none;border-radius:99px;padding:12px 26px;font-weight:750;font-size:12px;letter-spacing:.065em;text-transform:uppercase;box-shadow:0 9px 20px #71243b25}
+.atelier-home .ms4-pill:hover{background:#9e4a64;color:#fff}
+.atelier-home .ms4-hero-subtle{font-size:11px;color:#9b7886;margin-top:12px}
+/* Three panoramic editorial category cards immediately below the main hero */
+.atelier-home .ms4-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:1536px;width:calc(100% - 34px);margin:12px auto}
+.atelier-home .ms4-feature{position:relative;min-width:0;min-height:252px;overflow:hidden;border-radius:7px;display:block;background:#ecd4da;text-decoration:none;color:#652941;border:1px solid #efdae1}
+.atelier-home .ms4-feature>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s ease;filter:saturate(.93)}
+.atelier-home .ms4-feature:hover>img{transform:scale(1.035)}
+.atelier-home .ms4-feature::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,247,243,.94),rgba(255,247,243,.78) 44%,rgba(255,247,243,.02) 86%)}
+.atelier-home .ms4-feature-copy{display:flex;position:absolute;z-index:1;left:0;top:0;bottom:0;flex-direction:column;justify-content:center;align-items:flex-start;width:64%;padding:clamp(14px,2vw,32px)}
+.atelier-home .ms4-kicker{font-size:10px;font-weight:800;letter-spacing:.24em;color:#9c4e67}
+.atelier-home .ms4-feature-copy strong{font:400 clamp(30px,3vw,49px)/.96 Georgia,serif;letter-spacing:-.05em;color:#64263f;margin:10px 0}
+.atelier-home .ms4-feature-copy>span:not(.ms4-kicker){font:14px/1.3 Georgia,serif;color:#6c4b55}
+.atelier-home .ms4-feature-copy>b{display:inline-block;background:#762a47;color:white;border-radius:100px;padding:10px 17px;margin-top:15px;font-size:10px;font-weight:700;letter-spacing:.045em;white-space:nowrap}
+.atelier-home .ms4-quick-links{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;max-width:1536px;width:calc(100% - 34px);margin:10px auto 16px;padding:7px;background:#f6e6e5;border-radius:9px;border:1px solid #f0dedc}
+.atelier-home .ms4-quick-links a{display:grid;grid-template-columns:34px 1fr;grid-template-rows:auto auto;align-items:center;column-gap:6px;padding:9px 10px;text-decoration:none;color:#703148;border-right:1px solid #dfb8c4;min-width:0}
+.atelier-home .ms4-quick-links a:last-child{border-right:0}
+.atelier-home .ms4-quick-links a>span{grid-row:span 2;display:grid;place-items:center;font:27px/1 Georgia,serif;color:#8f4561}
+.atelier-home .ms4-quick-links strong{font:16px/1.2 Georgia,serif;white-space:normal;color:#64283e}
+.atelier-home .ms4-quick-links small{font-size:10px;line-height:1.4;color:#976d7d}
+.atelier-home .ms4-quick-links a:hover{background:#fceff1;border-radius:7px}
+/* Video section follows immediately, with real titles and YouTube assets from MariaSM */
+.atelier-home .new-section{margin:0 auto 30px;padding:clamp(22px,2.9vw,40px)!important;background:linear-gradient(#fff7f6,#fffaf8);border-radius:15px}
+.atelier-home .new-section .section-head h2{font:400 clamp(32px,3vw,48px)/1.1 Georgia,serif;color:#732940}
+.atelier-home .new-section .video-card{border-radius:8px;box-shadow:none}
+.atelier-home .new-section .video-image img{aspect-ratio:16/9;object-fit:cover}
+.atelier-home .halloween-banner{margin:20px auto 0;width:min(1170px,calc(100% - 34px));min-height:0;opacity:.96}
+.atelier-home .angel-edit{margin-top:24px}
+.atelier-home .atelier-collections-head{padding-top:58px}
+/* Shared magazine typography + navigation */
+.maria-magazine{--mswine:#752541;--msrose:#b8778c;--mscream:#fff8f7;background:#fffaf8}
+.maria-magazine .brand{font-family:Georgia,serif;color:#6f2641;font-weight:400;letter-spacing:-.04em;font-size:31px}
+.maria-magazine .brand span{color:#b9748d}
+.maria-magazine .brand small{font-size:9px;letter-spacing:.23em;margin-top:2px}
+.maria-magazine .ms-mag-nav{display:flex;align-items:center;gap:clamp(10px,1.25vw,22px);flex-wrap:wrap}
+.maria-magazine .ms-mag-nav a{text-decoration:none;text-transform:uppercase;letter-spacing:.045em;font-size:11px;font-weight:750;color:#723047;white-space:nowrap}
+.maria-magazine .ms-mag-nav a[aria-current="page"]{padding:10px 15px;border-radius:8px;background:#752b47;color:#fff}
+.maria-magazine .ms-mag-nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.maria-magazine .ms-mag-header{position:sticky;top:0;z-index:70;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px max(3.5%,calc((100vw - 1320px)/2));background:#fff9f7ee;border-bottom:1px solid #ead7df;backdrop-filter:blur(15px)}
+.maria-magazine .ms-mag-topstrip{display:none}
+/* Immersive split hero with photographic foreground, blush copy and large serif titles */
+.maria-magazine .ms-mag-hero{width:100%;display:grid;grid-template-columns:1.08fr .92fr;min-height:440px;overflow:hidden;background:linear-gradient(135deg,#fff9f7,#f5e3e8)}
+.maria-magazine .ms-mag-photo{position:relative;overflow:hidden;min-height:440px;background:#edc6d3}
+.maria-magazine .ms-mag-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 39%}
+.maria-magazine .ms-mag-photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 65%,#fff9f745)}
+.maria-magazine .ms-mag-photo-credit{position:absolute;left:12px;bottom:10px;z-index:2;border-radius:4px;padding:3px 7px;background:#fffaf5dc;color:#744c5b;font-size:10px;line-height:1.5}
+.maria-magazine .ms-mag-copy{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(26px,4.5vw,70px);min-width:0;position:relative}
+.maria-magazine .ms-mag-copy::after{content:"✧";position:absolute;right:4%;top:-60px;color:#b5798d20;font:240px Georgia,serif;pointer-events:none}
+.maria-magazine .ms-mag-copy>*{position:relative}
+.maria-magazine .ms-mag-copy .eyebrow{color:#a45a76;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.maria-magazine .ms-mag-copy h1{color:#6e2540;font:400 clamp(49px,6.1vw,96px)/.95 Georgia,serif;letter-spacing:-.07em;margin:11px 0 22px;max-width:none}
+.maria-magazine .ms-mag-copy h1 em{color:#b26985;font-weight:400}
+.maria-magazine .ms-mag-copy .ms-mag-deck{font:clamp(15px,1.2vw,19px)/1.55 Georgia,serif;color:#755463;max-width:540px}
+.maria-magazine .ms-mag-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:15px}
+.maria-magazine .ms-mag-actions a{border-radius:99px;background:#752741;color:#fff;text-decoration:none;padding:12px 22px;display:inline-flex;align-items:center;gap:7px;font-weight:750;font-size:12px;letter-spacing:.02em}
+.maria-magazine .ms-mag-actions a:hover{background:#a2506e;color:white}
+/* Clear and useful section shortcuts, linked to existing real pages rather than invented features */
+.maria-magazine .ms-mag-ribbon{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:1340px;margin:12px auto 20px;gap:8px;padding:9px 15px;border:1px solid #edd7dd;border-radius:12px;background:#faebee}
+.maria-magazine .ms-mag-ribbon a{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0;text-align:center;color:#78344e;text-decoration:none;padding:8px 12px;border-radius:9px;font-size:12px;font-weight:750}
+.maria-magazine .ms-mag-ribbon a small{font-size:10px;color:#906b77;font-weight:400}
+.maria-magazine .ms-mag-ribbon a:hover{background:#fff6f7}
+.maria-magazine .ms-mag-feature-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;max-width:1320px;width:calc(100% - 30px);margin:14px auto 28px}
+.maria-magazine .ms-mag-feature{position:relative;min-height:180px;background:#f1dfe6;overflow:hidden;border-radius:9px;text-decoration:none;color:#5d2940;box-shadow:0 8px 23px #74334913}
+.maria-magazine .ms-mag-feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.maria-magazine .ms-mag-feature::before{position:absolute;inset:0;content:"";background:linear-gradient(90deg,#fff7f3ec,rgba(255,245,242,.85) 50%,transparent 95%);z-index:1}
+.maria-magazine .ms-mag-feature span{position:absolute;z-index:2;left:22px;top:50%;transform:translateY(-50%);width:55%;font:400 clamp(21px,2.5vw,35px)/1.08 Georgia,serif}
+.maria-magazine .ms-mag-feature span small{display:block;margin-top:10px;font:11px/1.4 system-ui,sans-serif;letter-spacing:.04em;color:#77525f}
+.maria-magazine .sectionhead h2,.maria-magazine .heading h2,.maria-magazine .atlas-section h2{color:#692840}
+.maria-magazine .navlinks a,.maria-magazine .atlas-header nav a{text-decoration:none}
+/* Existing content remains; visual styling is refined but no cards or filters removed. */
+.maria-magazine .history,.maria-magazine .lesson,.maria-magazine .panel,.maria-magazine .product,.maria-magazine .look,.maria-magazine .family{border-radius:14px;box-shadow:0 9px 25px #6e2a4510}
+.maria-magazine .section.alt{background:linear-gradient(180deg,#faefef,#fffaf8)}
+@media(max-width:1220px){.atelier-home .home-header .home-header-inner{min-height:60px}}
+@media(max-width:1020px){
+ .atelier-home .ms4-quick-links{grid-template-columns:repeat(3,1fr)}
+ .atelier-home .ms4-quick-links a:nth-child(3){border-right:0}
+ .atelier-home .ms4-quick-links a{border-bottom:1px solid #e6c8d1}
+ .atelier-home .ms4-feature-copy{width:75%}
+ .maria-magazine .ms-mag-nav{gap:11px}.maria-magazine .ms-mag-nav a{font-size:10px}
+}
+@media(max-width:760px){
+ .atelier-home .ms4-hero{grid-template-columns:1fr}
+ .atelier-home .ms4-hero-photo{min-height:330px}
+ .atelier-home .ms4-hero-copy{padding:33px 20px}
+ .atelier-home .ms4-hero-copy h1{font-size:66px}
+ .atelier-home .ms4-feature-grid{grid-template-columns:1fr;gap:9px}
+ .atelier-home .ms4-feature{min-height:202px}
+ .atelier-home .ms4-feature-copy{width:65%}
+ .atelier-home .ms4-feature-copy strong{font-size:38px}
+ .atelier-home .ms4-quick-links{grid-template-columns:repeat(2,1fr);padding:4px}
+ .atelier-home .ms4-quick-links a:nth-child(3){border-right:1px solid #dfb8c4}
+ .atelier-home .ms4-quick-links a:nth-child(even){border-right:0}
+ .maria-magazine .ms-mag-header{display:block;padding:10px 16px}
+ .maria-magazine .ms-mag-nav{display:flex;flex-wrap:nowrap;overflow-x:auto;padding:11px 0 3px;gap:14px}
+ .maria-magazine .ms-mag-hero{grid-template-columns:1fr}
+ .maria-magazine .ms-mag-photo{min-height:315px}
+ .maria-magazine .ms-mag-copy{padding:34px 24px}
+ .maria-magazine .ms-mag-copy h1{font-size:60px}
+ .maria-magazine .ms-mag-feature-strip{grid-template-columns:1fr}
+ .maria-magazine .ms-mag-feature{min-height:185px}
+}
+@media(max-width:490px){
+ .atelier-home .ms4-hero-photo{min-height:255px}
+ .atelier-home .ms4-hero-copy h1{font-size:57px}
+ .atelier-home .ms4-quick-links strong{font-size:14px}
+ .atelier-home .ms4-quick-links a{grid-template-columns:25px 1fr;padding:9px 4px}
+ .atelier-home .ms4-quick-links a>span{font-size:23px}
+ .maria-magazine .ms-mag-copy h1{font-size:49px}
+ .maria-magazine .ms-mag-ribbon{grid-template-columns:repeat(2,1fr);width:calc(100% - 22px)}
+}
+@media(prefers-reduced-motion:reduce){.atelier-home .ms4-feature>img{transition:none}.atelier-home .ms4-feature:hover>img{transform:none}}
