@@ -1,0 +1,19 @@
+/* MariaSM Makeup Atelier gateway — homepage only */
+.atelier-home .makeup-gateway{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;gap:0;margin:32px auto 39px;border:1px solid #e9d3dd;border-radius:23px;background:linear-gradient(115deg,#fff9f6 0%,#f7e5eb 55%,#edd4df 100%);box-shadow:0 17px 42px rgba(105,37,64,.085)}
+.atelier-home .makeup-gateway-copy{padding:clamp(30px,4.7vw,60px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.atelier-home .makeup-gateway .eyebrow{color:#a85d7c;font-size:11px;letter-spacing:.14em}
+.atelier-home .makeup-gateway h2{font:400 clamp(2.35rem,4.5vw,4.6rem)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.05em;color:#54253d;margin:13px 0 19px}
+.atelier-home .makeup-gateway h2 em{color:#af6482;font-weight:400}
+.atelier-home .makeup-gateway p:not(.eyebrow){color:#6f5261;line-height:1.73;max-width:510px;font-size:.94rem}
+.atelier-home .makeup-gateway .button{border-radius:99px;background:#71243b;color:#fff;padding:13px 23px;text-decoration:none;margin-top:18px;box-shadow:0 10px 25px #71243b1c}
+.atelier-home .makeup-gateway .button:hover{background:#943a5d}
+.atelier-home .makeup-gateway-art{position:relative;min-height:360px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 70% 20%,#fff6f3,#eac7d3 72%)}
+.atelier-home .makeup-gateway-art img{position:absolute;object-fit:cover;width:53%;height:82%;border:8px solid #fff9f8;box-shadow:0 16px 38px #65314736;border-radius:14px;transition:transform .25s ease}
+.atelier-home .makeup-gateway-art img:first-child{left:7%;top:13%;transform:rotate(-8deg)}
+.atelier-home .makeup-gateway-art img:last-child{right:8%;top:8%;transform:rotate(7deg)}
+.atelier-home .makeup-gateway-art:hover img:first-child{transform:rotate(-5deg) translateY(-4px)}
+.atelier-home .makeup-gateway-art:hover img:last-child{transform:rotate(4deg) translateY(-4px)}
+.atelier-home .makeup-gateway-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:21px}
+.atelier-home .makeup-gateway-links a{font-size:12px;color:#87415b;text-decoration:none;border-bottom:1px solid #b48a9b;font-weight:700}
+@media(max-width:710px){.atelier-home .makeup-gateway{grid-template-columns:1fr}.atelier-home .makeup-gateway-copy{padding:27px}.atelier-home .makeup-gateway-art{min-height:295px}.atelier-home .makeup-gateway-art img{height:85%;width:44%}}
+@media(prefers-reduced-motion:reduce){.atelier-home .makeup-gateway-art img{transition:none}}
