@@ -5,3 +5,15 @@
 @media(max-width:780px){.headerin{min-height:65px}.navlinks{flex-wrap:nowrap;overflow-x:auto;padding-bottom:10px}.navlinks a{white-space:nowrap}.headerin{display:block}.brand{padding-top:9px}.heroin{grid-template-columns:1fr;gap:24px;min-height:0;padding:57px 0}.heroart{min-height:420px}.section{padding:62px 0}.heading{display:block}.introgrid{grid-template-columns:1fr 1fr}.lookgrid{grid-template-columns:repeat(2,1fr)}.lessonGrid,.historygrid,.featureband,.directory,.faq,.twocol{grid-template-columns:1fr}.productgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.accessories,.learnGrid{grid-template-columns:repeat(2,1fr)}.swatchgrid{grid-template-columns:repeat(2,1fr)}.shoptop{grid-template-columns:1fr}.filters{justify-content:flex-start}}
 @media(max-width:540px){.wrap{width:calc(100% - 28px)}h1{font-size:3.6rem}.heroart{min-height:330px}.introgrid,.accessories,.learnGrid{grid-template-columns:1fr}.productgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product figure{height:160px;padding:6px}.productbody{padding:12px}.product h3{font-size:1.13rem}.product .cost{font-size:1.22rem}.history{padding:20px}.statsin{grid-template-columns:repeat(2,1fr)}.lookgrid{gap:9px}.look>div{padding:13px}.store{display:block}.store a{display:inline-block;margin-top:9px}.featureband{padding:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::after,*::before{transition:none!important}}
+
+/* Photographic makeover: realistic editorial beauty imagery, consistent magazine crops. */
+.lookgrid .look{background:#fffdfc;box-shadow:0 15px 35px rgba(92,41,62,.095)}
+.lookgrid .look>img{height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 37%;background:linear-gradient(135deg,#ecd3da,#f7e9ec);filter:saturate(.98) contrast(1.015);transition:transform .3s ease}
+.lookgrid .look:hover>img{transform:scale(1.018)}
+.lookgrid .look h3{margin:2px 0 8px}
+.lookgrid .look .look-credit{margin-top:17px;padding-top:11px;border-top:1px solid #f0e3e7;color:#8b7580;font-size:10px;line-height:1.5}
+.lookgrid .look .look-credit a{color:#87415c;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.heroart>img{object-fit:cover;object-position:50% 37%;filter:saturate(.98);background:#e9ccd5}
+.heroart{background:linear-gradient(145deg,#ecd3dd,#f7e7eb)}
+.featureband>img{object-fit:cover;object-position:center 34%}
+@media(prefers-reduced-motion:reduce){.lookgrid .look>img{transition:none}.lookgrid .look:hover>img{transform:none}}
