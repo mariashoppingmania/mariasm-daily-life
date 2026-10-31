@@ -4,3 +4,13 @@
 @media(max-width:990px){.headin{display:block;padding:12px 0}.nav{overflow-x:auto;flex-wrap:nowrap;gap:16px;margin:12px 0 0;padding-bottom:5px}.nav a{white-space:nowrap}.grid4,.wardrobe{grid-template-columns:repeat(2,1fr)}.palettegrid,.materials{grid-template-columns:repeat(2,1fr)}.intro{gap:20px}.sideimg{gap:25px}}
 @media(max-width:650px){.wrap{width:calc(100% - 30px)}.hero img{min-height:210px;aspect-ratio:16/9}.hero-foot{font-size:9px;left:15px;bottom:7px}.intro{display:block;padding:45px 0 25px}.intro-quote{margin-top:25px}.quicklinks{padding-bottom:25px}.section{padding:55px 0}.sectionhead{display:block}.grid4,.wardrobe,.palettegrid,.ritualgrid,.footmap,.materials,.faqs,.sources,.sideimg{grid-template-columns:1fr}.footmap{padding:16px}.zone-list{margin-top:10px}.sideimg{gap:20px}.palette-bar{height:73px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* 2026-10-31 — high-resolution photo restoration: no upscaling or blur overlays. */
+.hero{background:#e7d5da}
+.hero>img{display:block;width:100%;height:clamp(270px,39vw,590px);min-height:0;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:center 44%;filter:none}
+.hero::after{background:linear-gradient(0deg,rgba(51,23,38,.35),transparent 37%)}
+.hero-foot{background:rgba(57,29,44,.63);padding:5px 10px;border-radius:6px;bottom:15px;max-width:calc(100% - 30px);font-size:11px}
+.hero-foot a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.sideimg>img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:17px;border:1px solid #e5d2da;box-shadow:0 14px 31px rgba(85,45,62,.13);filter:none}
+.sideimg>img:hover{filter:none}
+@media(max-width:650px){.hero>img{height:260px;object-position:center 43%}.hero-foot{font-size:9px;bottom:8px}}
