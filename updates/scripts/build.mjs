@@ -75,4 +75,5 @@ if(fs.existsSync(articlePath)){
 await import('./build-fashion.mjs');
 await import('./enhance-catalog.mjs');
 await import('./build-accessories.mjs');
+await import('./build-navel-piercing.mjs');
 await import('./accessories-bridge.mjs');
