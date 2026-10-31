@@ -1,0 +1,87 @@
+{
+  "updated": "2026-10-31",
+  "illustrationDisclaimer": "The image collage is AI-generated editorial artwork, not photographs of the listed branded products. Follow each official brand link for authentic product photos and current price.",
+  "products": [
+    {
+      "brand": "Cartier",
+      "name": "LOVE bracelet — classic yellow gold",
+      "reference": "LOVE · B6067517",
+      "material": "18K yellow gold; iconic screw motifs and two-screw closure.",
+      "url": "https://www.cartier.com/",
+      "linkType": "house",
+      "price": "Ask the boutique"
+    },
+    {
+      "brand": "Tiffany & Co.",
+      "name": "HardWear graduated link necklace",
+      "reference": "60153092",
+      "material": "Sterling silver, 18-inch graduated link design.",
+      "url": "https://www.tiffany.com/jewelry/necklaces-pendants/tiffany-hardwear-sterling-silver-necklaces-pendants-60153092.html",
+      "linkType": "product",
+      "price": "Check current price"
+    },
+    {
+      "brand": "Bvlgari",
+      "name": "B.zero1 one-band ring — rose gold",
+      "reference": "358704",
+      "material": "18 kt rose gold with an architectural openwork spiral.",
+      "url": "https://www.bulgari.com/en-int/358704.html",
+      "linkType": "product",
+      "price": "Check current price"
+    },
+    {
+      "brand": "Van Cleef & Arpels",
+      "name": "Vintage Alhambra pendant — mother-of-pearl",
+      "reference": "VCARA45900",
+      "material": "18K yellow gold with white mother-of-pearl quatrefoil.",
+      "url": "https://www.vancleefarpels.com/it/en/collections/jewelry/alhambra/vcara45900---vintage-alhambra-pendant.html",
+      "linkType": "product",
+      "price": "Check current price"
+    },
+    {
+      "brand": "Chopard",
+      "name": "Happy Diamonds Icons pendant — rose gold",
+      "reference": "79A611-5001",
+      "material": "Ethical 18-carat rose gold with three freely moving diamonds.",
+      "url": "https://www.chopard.com/it-it/pendant/79A611-5001.html",
+      "linkType": "product",
+      "price": "Check current price"
+    },
+    {
+      "brand": "Pomellato",
+      "name": "Nudo collection — blue-toned gemstone rings",
+      "reference": "Nudo collection",
+      "material": "Milanese gemstone-led design; check the official collection for exact stone and setting.",
+      "url": "https://www.pomellato.com/",
+      "linkType": "house",
+      "price": "Browse the collection"
+    },
+    {
+      "brand": "Swarovski",
+      "name": "Matrix Tennis bracelet — white / rhodium plated",
+      "reference": "5648936",
+      "material": "Continuous crystal-set tennis bracelet with rhodium-finished setting.",
+      "url": "https://www.swarovski.com/fr-BE/p-M5657657/Bracelet-Matrix-Tennis-Taille-ronde-Blanc-Metal-rhodie/",
+      "linkType": "product",
+      "price": "Check current price"
+    },
+    {
+      "brand": "Pandora",
+      "name": "Moments bracelet — personal charm styling",
+      "reference": "590719",
+      "material": "Sterling silver bracelet with heart clasp, designed for personalised charms.",
+      "url": "https://it.pandora.net/it/bracciali/bracciali-componibili/bracciale-moments-con-chiusura-a-cuore/590719.html",
+      "linkType": "product",
+      "price": "Check current price"
+    },
+    {
+      "brand": "Buccellati",
+      "name": "Opera collection — ornate fine earrings",
+      "reference": "Opera collection",
+      "material": "Detailed goldsmithing and decorative motifs; editions and stones vary.",
+      "url": "https://www.buccellati.com/",
+      "linkType": "house",
+      "price": "Enquire with a boutique"
+    }
+  ]
+}

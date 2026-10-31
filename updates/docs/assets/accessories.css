@@ -357,3 +357,104 @@
 @media(max-width:1140px){.ac-page-bags .ac-luxury-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:720px){.ac-page-bags .ac-luxury-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ac-page-bags .ac-luxury-content{padding:14px}.ac-page-bags .ac-luxury-content h3{font-size:20px}}
 @media(max-width:480px){.ac-page-bags .ac-luxury-grid{grid-template-columns:1fr}.ac-page-bags .ac-luxury-card{max-width:460px;margin:0 auto;width:100%}}
+
+
+/* Jewellery Atelier 2026: 16 consistent studio-style studies plus nine maison references. */
+.ac-page-jewellery .ac-jewel-style-grid,
+.ac-page-jewellery .ac-jewel-maison-grid{
+ display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+ gap:17px;align-items:stretch;margin:23px 0 35px;
+}
+.ac-page-jewellery .ac-jewel-style-card,
+.ac-page-jewellery .ac-jewel-maison-card{
+ display:flex;flex-direction:column;min-width:0;overflow:hidden;
+ border-radius:17px;border:1px solid #edd9e0;background:#fff;
+ box-shadow:0 9px 24px rgba(109,54,73,.06);
+}
+.ac-page-jewellery .ac-jewel-style-photo,
+.ac-page-jewellery .ac-jewel-maison-photo{
+ width:100%;aspect-ratio:4/3;background-color:#f7e8e4;
+ background-repeat:no-repeat;background-size:400% 400%;
+ border-bottom:1px solid #f1dfe6;
+}
+.ac-page-jewellery .ac-jewel-style-photo{background-image:url('./jewellery-ai-style-lookbook.webp')}
+.ac-page-jewellery .ac-jewel-style-body{flex:1;min-width:0;display:flex;flex-direction:column;padding:15px 17px 18px}
+.ac-page-jewellery .ac-jewel-number{font:500 17px Georgia,serif;color:#bb8199;letter-spacing:.06em}
+.ac-page-jewellery .ac-jewel-style-body h3{font:400 clamp(20px,1.8vw,25px)/1.2 Georgia,serif;color:#73334e;margin:2px 0 8px}
+.ac-page-jewellery .ac-jewel-style-body p{font:400 13px/1.62 system-ui,sans-serif;color:#755966;margin:0 0 17px}
+.ac-page-jewellery .ac-jewel-style-body small{
+ margin-top:auto;display:block;padding-top:9px;border-top:1px solid #f3e6eb;
+ font:400 10px/1.55 system-ui,sans-serif;color:#937581;
+}
+.ac-page-jewellery .ac-jewel-maison-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ac-page-jewellery .ac-jewel-maison-photo{
+ background-image:url('./jewellery-maison-editorial.webp');background-size:300% 300%;
+}
+.ac-page-jewellery .ac-jewel-maison-content{flex:1;display:flex;flex-direction:column;min-width:0;padding:17px 19px 19px}
+.ac-page-jewellery .ac-jewel-brand{font:700 11px/1.5 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ad768d;margin:0 0 5px}
+.ac-page-jewellery .ac-jewel-maison-content h3{font:400 23px/1.22 Georgia,serif;color:#73334f;margin:0 0 7px}
+.ac-page-jewellery .ac-jewel-maison-content>p:not(.ac-jewel-brand){font:400 12px/1.65 system-ui,sans-serif;color:#735666;margin:0 0 11px}
+.ac-page-jewellery .ac-jewel-maison-content .ac-jewel-ref{font-size:11px!important;overflow-wrap:anywhere}
+.ac-page-jewellery .ac-jewel-maison-content .ac-jewel-price{font:700 14px/1.5 system-ui,sans-serif;color:#7b3752;margin:1px 0 12px}
+.ac-page-jewellery .ac-jewel-maison-content small{margin-top:auto;padding-top:9px;border-top:1px solid #efdee4;font:400 10px/1.5 system-ui,sans-serif;color:#907381}
+.ac-page-jewellery .ac-jewel-maison-link{
+ display:block;text-align:center;padding:11px 14px;margin-top:14px;
+ text-decoration:none!important;background:#793b56;color:#fff!important;
+ border-radius:9px;font:700 12px/1.4 system-ui,sans-serif;
+}
+.ac-page-jewellery .ac-jewel-maison-link:hover{background:#97536e}
+.ac-page-jewellery .ac-product .ac-exact-photo{background:#fff;min-height:0!important}
+.ac-page-jewellery .ac-product .ac-exact-photo>img{
+ display:block;width:100%!important;height:225px!important;
+ aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;
+ box-sizing:border-box;padding:14px!important;background:#fff;
+}
+.ac-page-jewellery .ac-product .ac-exact-photo>img[hidden]{display:none!important}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing{
+ background-image:url('./jewellery-ai-style-lookbook.webp')!important;
+ background-size:400% 400%!important;background-repeat:no-repeat!important;
+ aspect-ratio:4/3;min-height:0!important;
+ position:relative;display:block!important;
+}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing::before{
+ content:"AI style illustration · actual model at retailer" !important;
+ display:block!important;position:absolute;left:8px;bottom:35px;right:8px;
+ max-width:none;padding:6px 8px;box-sizing:border-box;border-radius:6px;
+ background:rgba(255,250,252,.92);color:#794961;text-align:center;
+ font:500 10px/1.4 system-ui,sans-serif;
+}
+.ac-page-jewellery .ac-product .ac-exact-photo figcaption{
+ position:static!important;display:block!important;
+ padding:9px 10px!important;text-align:center;
+ background:#f9eef1!important;color:#824e67!important;
+ font:600 10px/1.5 system-ui,sans-serif!important;
+ overflow-wrap:anywhere;
+}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing figcaption{
+ position:absolute!important;bottom:0!important;left:0!important;
+ width:100%!important;border-radius:0!important;right:0!important;
+}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="590719"],
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="BHKB261"]{background-position:100% 33.33333%}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="591469C01"],
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="5648936"]{background-position:33.33333% 33.33333%}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="5117703"]{background-position:0% 33.33333%}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="Chunky Medium Hoops"]{background-position:33.33333% 0%}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="CO02-512"]{background-position:100% 0%}
+.ac-page-jewellery .ac-product .ac-exact-photo.ac-photo-missing[data-ref="SAIW99"]{background-position:0% 0%}
+.ac-page-jewellery .ac-product{display:flex;flex-direction:column;align-items:stretch}
+.ac-page-jewellery .ac-product-body{display:flex;flex-direction:column;min-width:0;flex:1}
+.ac-page-jewellery .ac-product-body .ac-shoplink{margin-top:auto}
+@media(max-width:1070px){.ac-page-jewellery .ac-jewel-style-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:735px){
+ .ac-page-jewellery .ac-jewel-style-grid,
+ .ac-page-jewellery .ac-jewel-maison-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .ac-page-jewellery .ac-jewel-style-body,
+ .ac-page-jewellery .ac-jewel-maison-content{padding:13px}
+}
+@media(max-width:470px){
+ .ac-page-jewellery .ac-jewel-style-grid,
+ .ac-page-jewellery .ac-jewel-maison-grid{grid-template-columns:1fr}
+ .ac-page-jewellery .ac-jewel-style-card,
+ .ac-page-jewellery .ac-jewel-maison-card{max-width:460px;width:100%;margin:0 auto}
+}
