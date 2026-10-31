@@ -14,3 +14,110 @@
 .sideimg>img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:17px;border:1px solid #e5d2da;box-shadow:0 14px 31px rgba(85,45,62,.13);filter:none}
 .sideimg>img:hover{filter:none}
 @media(max-width:650px){.hero>img{height:260px;object-position:center 43%}.hero-foot{font-size:9px;bottom:8px}}
+
+/* Realistic traditional foot zone map 2026 — a responsive photo-map, not an anatomical claim */
+#reflexology .footmap{
+  grid-template-columns:minmax(0,1.16fr) minmax(285px,.84fr);
+  gap:clamp(19px,3vw,40px);
+  align-items:start;
+  padding:clamp(14px,2.3vw,30px);
+  background:linear-gradient(130deg,#fffaf8,#fff);
+  box-shadow:0 14px 38px rgba(83,37,56,.07);
+}
+#reflexology .foot-graphic{
+  padding:0;
+  margin:0;
+  border:1px solid #eadad9;
+  overflow:hidden;
+  background:#fff8f5;
+  border-radius:17px;
+}
+#reflexology .foot-map-canvas{position:relative;isolation:isolate;width:100%;line-height:0}
+#reflexology .foot-map-canvas img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:900/1125;
+  object-fit:contain;
+  background:#f6eee9;
+  filter:none;
+  image-rendering:auto;
+}
+#reflexology .foot-map-hotspot{
+  position:absolute;
+  z-index:2;
+  transform:translate(-50%,-50%);
+  width:44px;
+  height:44px;
+  background:transparent;
+  border:0;
+  border-radius:50%;
+  padding:0;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+}
+#reflexology .foot-map-hotspot::before{
+  content:"";
+  display:block;
+  width:15px;
+  height:15px;
+  border:2px solid #fff;
+  border-radius:50%;
+  background:#873d59a8;
+  box-shadow:0 0 0 3px #873d5940,0 3px 8px #4c223c32;
+  transition:box-shadow .18s ease,transform .18s ease,background .18s ease;
+}
+#reflexology .foot-map-hotspot:hover::before,
+#reflexology .foot-map-hotspot[aria-pressed="true"]::before{
+  background:#6c2546;
+  box-shadow:0 0 0 6px #e9b7cda9,0 3px 11px #4c223c44;
+  transform:scale(1.12);
+}
+#reflexology .foot-map-hotspot:focus-visible{outline:3px solid #82334f;outline-offset:2px}
+#reflexology .foot-map-caption{
+  display:grid;
+  gap:5px;
+  padding:14px 17px 17px;
+  background:#fffaf7;
+  text-align:left;
+  color:#765767;
+  font-size:.78rem;
+  line-height:1.5;
+}
+#reflexology .foot-map-caption strong{
+  color:#633149;
+  font:400 21px/1.1 Georgia,'Times New Roman',serif;
+  margin-bottom:2px;
+}
+#reflexology .foot-map-caption .foot-map-disclaimer{font-size:.73rem;color:#966f7b;font-style:italic}
+#reflexology .foot-map-caption a{font-weight:750;font-size:.78rem;text-decoration:none;margin-top:6px}
+#reflexology .foot-map-caption a:hover{text-decoration:underline}
+#reflexology .zone-list{gap:11px}
+#reflexology .zone{
+  padding:clamp(13px,1.6vw,19px) clamp(14px,1.8vw,22px);
+  border-radius:15px;
+  border-left:5px solid #d6a6b6;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+#reflexology .zone:hover{transform:translateX(2px)}
+#reflexology .zone[aria-pressed="true"]{border-left-color:#78334b;background:#f9e9ed}
+#reflexology .zone-detail{padding:23px;border-radius:16px;box-shadow:0 10px 25px #6c274a19}
+#reflexology .zone-detail h4{font:400 26px Georgia,'Times New Roman',serif}
+#reflexology .zone-detail p{font-size:.88rem;line-height:1.7}
+@media(max-width:900px){
+  #reflexology .footmap{grid-template-columns:1fr;gap:25px}
+  #reflexology .foot-graphic{max-width:650px;width:100%;margin:0 auto}
+}
+@media(max-width:650px){
+  #reflexology .foot-graphic{max-width:none}
+  #reflexology .foot-map-caption{padding:13px 15px}
+  #reflexology .foot-map-caption strong{font-size:19px}
+  #reflexology .zone{padding:14px}
+  #reflexology .footmap{padding:11px}
+}
+@media(prefers-reduced-motion:reduce){
+  #reflexology .foot-map-hotspot::before,
+  #reflexology .zone{transition:none}
+  #reflexology .zone:hover{transform:none}
+}
