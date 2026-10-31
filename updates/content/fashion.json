@@ -1,0 +1,420 @@
+{
+  "eras": [
+    [
+      "1900–1909",
+      "La Belle Époque e il corpo costruito",
+      "edward",
+      "Corsetto, camicetta e gonna lunga",
+      "Il busto sostenuto dal corsetto, la vita segnata e la gonna lunga costruiscono una figura molto diversa da quella odierna. Le camicette ad alto collo e le maniche elaborate completano il guardaroba borghese; i completi da passeggio mostrano il peso crescente della sartoria. Non tutte le donne indossano abiti da salotto: lavoro, reddito e ambiente rurale richiedono soluzioni più semplici.",
+      "Lana per i completi; cotone e lino per biancheria e camicette; seta, pizzo e ricami negli abiti eleganti. Sottogonne e chiusure sono parte della struttura, non semplici decorazioni.",
+      "Cappelli ampi, guanti, stivaletti e ombrellini. Osserva il contrasto tra la superficie ricca del busto e la linea continua della gonna.",
+      "La crescente presenza femminile nello sport e negli spazi pubblici rende più evidente il problema della mobilità. La moda elegante resta un indicatore di classe.",
+      "Una blusa con collo alto e una gonna midi evocano il periodo senza riprodurne il corsetto."
+    ],
+    [
+      "1910–1919",
+      "Verso una nuova libertà",
+      "empire",
+      "Tuniche, vita rialzata e completi pratici",
+      "Nei primi anni del decennio alcune proposte couture allungano e semplificano la figura, con drappeggi e richiami storici. Coesistono però gonne strette al fondo, poco pratiche. Durante la Prima guerra mondiale il lavoro femminile e le necessità materiali favoriscono gonne meno ingombranti e capi separati. La trasformazione non è immediata né uguale ovunque.",
+      "Jersey e tessuti morbidi acquistano visibilità accanto a lane e cotoni. La praticità delle uniformi e degli abiti di servizio influenza il rapporto tra taglio e funzione.",
+      "Stivaletti, cappelli più contenuti e borse pratiche accompagnano i completi. Le decorazioni possono concentrarsi lungo una tunica o un bordo.",
+      "La guerra cambia attività, disponibilità dei materiali e occasioni sociali. Il lusso e l’abbigliamento da lavoro raccontano storie parallele.",
+      "Un cappotto diritto sopra un abito fluido riprende l’idea della linea lunga."
+    ],
+    [
+      "1920–1929",
+      "La vita scende, il passo si allunga",
+      "flapper",
+      "Chemise dress e completo in maglia",
+      "La linea a tubo riduce l’enfasi sulla vita; cinture e cuciture possono scendere sui fianchi. Gli orli si accorciano soprattutto nella seconda metà del decennio. L’abito da sera con perline è memorabile, ma non rappresenta l’intero guardaroba: completi in maglia e vestiti da giorno sono altrettanto importanti.",
+      "Maglieria, crêpe e sete leggere consentono movimento. Nel guardaroba serale ricami e frange possono accentuare il ritmo della danza.",
+      "Cloche aderente alla testa, scarpe con cinturino e collane lunghe. Il punto chiave è la verticalità, non la quantità di paillettes.",
+      "Tempo libero, sport e una nuova cultura urbana aiutano la diffusione di un’immagine femminile più mobile, con differenze di classe e generazione.",
+      "Un abito diritto con cintura bassa suggerisce gli anni Venti anche senza frange."
+    ],
+    [
+      "1930–1939",
+      "Il tessuto segue il corpo",
+      "bias",
+      "Abito in sbieco e completo da giorno",
+      "La vita torna più vicina alla sua posizione naturale e la gonna si allunga. Il taglio in sbieco fa cadere la stoffa diagonalmente rispetto alla trama, consentendo un movimento morbido. Il glamour cinematografico rende celebri gli abiti fluidi; nella vita quotidiana restano centrali abiti stampati, capi in maglia e completi.",
+      "Crêpe, raso e tessuti che cadono bene sono ideali per la sera. Le fibre artificiali offrono alternative alle sete più costose.",
+      "Spalle definite, piccoli cappelli inclinati, borse compatte. Le schiene scoperte appartengono soprattutto alla sera, non a ogni situazione.",
+      "La crisi economica convive con il desiderio di evasione del cinema. La moda mostra insieme fantasia e attenzione alla durata dei capi.",
+      "Una gonna satinata e una maglia semplice riprendono il gioco tra fluidità e sobrietà."
+    ],
+    [
+      "1940–1949",
+      "Vestirsi tra necessità e rinascita",
+      "utility",
+      "Utility suit e New Look",
+      "Nel periodo bellico molti guardaroba privilegiano giacche strutturate e gonne relativamente contenute. Razionamenti e norme cambiano da paese a paese. Rammendi e riutilizzo diventano competenze essenziali. Nel 1947 il New Look di Dior propone una svolta: vita stretta, busto modellato e gonne ampie, suscitando ammirazione e critiche per l’abbondanza di tessuto.",
+      "Lane resistenti, tessuti recuperati e sostituti dei materiali scarsi. L’abito del dopoguerra può richiedere sostegni interni e sottogonne per conservare il volume.",
+      "Scarpe robuste, turbanti e borse funzionali durante la guerra; accessori coordinati nelle interpretazioni eleganti del dopoguerra.",
+      "La stessa decade contiene scarsità e desiderio di ricostruzione. Non va letta come un’unica silhouette immobile.",
+      "Un blazer con spalle definite o una gonna a ruota raccontano due momenti opposti degli anni Quaranta."
+    ],
+    [
+      "1950–1959",
+      "Vite segnate, eleganze plurali",
+      "full",
+      "Gonna a ruota, tubino e twin-set",
+      "Alla gonna ampia si affianca una linea stretta a matita. La vita resta spesso protagonista, ma non mancano sperimentazioni che la allentano. Il completo coordinato incarna un’eleganza composta; pantaloni e abbigliamento informale hanno un ruolo crescente nel tempo libero. La moda giovanile introduce nuove distanze dalle convenzioni adulte.",
+      "Cotoni stampati per gli abiti estivi, lana nei completi, taffetà e organza per i volumi da sera. Le sottogonne possono sostenere le gonne più ampie.",
+      "Décolleté, ballerine, foulard, piccoli cardigan e borse a mano. La scelta delle scarpe modifica il tono di uno stesso abito.",
+      "Couture, confezione e cultura del consumo dialogano sempre più. In Italia cresce la visibilità internazionale della moda.",
+      "Una camicia annodata con gonna ampia oppure un cardigan su gonna a matita offrono due letture del periodo."
+    ],
+    [
+      "1960–1969",
+      "Giovani, geometrie e nuovi orizzonti",
+      "mini",
+      "Miniabito, linea ad A e pantaloni",
+      "La moda giovane mette in discussione la centralità dell’eleganza adulta. Minigonne e miniabiti convivono con completi tradizionali e, verso fine decennio, con influenze hippie. Le linee geometriche e i riferimenti spaziali ridisegnano il rapporto tra abito e corpo. La diffusione dei pantaloni amplia ulteriormente le possibilità del guardaroba.",
+      "Jersey, tessuti sintetici, vinile e materiali sperimentali affiancano lana e cotone. I tessuti con una certa tenuta rendono leggibili le forme ad A.",
+      "Collant colorati, stivali alti, occhiali geometrici e borse compatte. La gamba diventa parte del disegno complessivo.",
+      "Musica, movimenti giovanili e trasformazioni sociali moltiplicano i centri del gusto. Londra è cruciale ma non unica.",
+      "Un miniabito ad A con collant coprenti comunica il periodo più di un travestimento completo."
+    ],
+    [
+      "1970–1979",
+      "La moda diventa un insieme di voci",
+      "flare",
+      "Jeans a zampa, maxi e wrap dress",
+      "Non esiste una sola uniforme: convivono romanticismo, abbigliamento da lavoro, disco e punk. I pantaloni svasati e le gonne lunghe allungano la figura; l’abito a portafoglio regola la vestibilità con una chiusura sovrapposta. Alla fine del decennio strappi e accessori provocatori contestano le regole dell’eleganza.",
+      "Denim, maglia, jersey stampato, suede e tessuti lucidi per la sera. Ricamo e crochet possono esprimere un’estetica artigianale.",
+      "Zeppe, stivali, cinture e borse a tracolla. Per il punk, spille e hardware hanno un significato oltre la decorazione.",
+      "Il prêt-à-porter e le culture musicali ampliano il vocabolario dello stile. Le identità convivono e spesso si contraddicono.",
+      "Scegli una sola direzione: jeans svasati e camicia, oppure maxi e cardigan, senza sommare ogni cliché."
+    ],
+    [
+      "1980–1989",
+      "Potere, spettacolo e sperimentazione",
+      "power",
+      "Tailleur con spalline e abbigliamento sportivo",
+      "Le spalle ampie e la vita sottolineata caratterizzano molte interpretazioni del power dressing. Accanto al completo da lavoro esplodono abiti da sera vistosi, cultura aerobica e contaminazioni street. La moda giapponese d’avanguardia propone volumi e asimmetrie che sfidano il corpo scolpito dominante in altri ambienti.",
+      "Lane sartoriali, pelle, jersey elasticizzato, tessuti lucidi e materiali tecnici. Strutture interne e spalline cambiano radicalmente la proporzione del busto.",
+      "Orecchini grandi, cinture evidenti, décolleté e sneakers secondo il contesto. Un singolo accessorio può diventare il centro della figura.",
+      "Televisione, videoclip e visibilità delle professioni femminili rendono l’immagine un potente strumento di comunicazione.",
+      "Un blazer strutturato sopra capi semplici conserva energia senza richiedere un’intera armatura di spalline."
+    ],
+    [
+      "1990–1999",
+      "Minimalismo e ribellione quotidiana",
+      "slip",
+      "Slip dress, denim e camicia a quadri",
+      "Il minimalismo riduce ornamenti e rende importanti taglio e caduta. Lo slip dress porta nel vestire da sera una forma vicina alla sottoveste. In parallelo il grunge combina capi apparentemente non coordinati, maglie e stivali. Streetwear e cultura hip-hop contribuiscono a ridefinire volumi, marchi e appartenenze.",
+      "Raso, jersey, denim, flanella e pelle. Un tessuto semplice può diventare raffinato grazie al taglio; l’usura può essere cercata come segno stilistico.",
+      "Sandali essenziali, anfibi, sneakers e borse compatte. Cambiare scarpa trasforma lo slip dress da delicato a urbano.",
+      "Le mode di lusso e le sottoculture si osservano e si appropriano reciprocamente di forme e simboli.",
+      "Un vestito fluido con T-shirt oppure jeans diritti e maglia pulita sono due memorie diverse del decennio."
+    ],
+    [
+      "2000–2009",
+      "L’immaginario Y2K",
+      "y2k",
+      "Vita bassa, cargo e top corti",
+      "La vita bassa altera la proporzione tra busto e gambe; top corti, denim decorato e pantaloni cargo acquistano visibilità. La cultura pop amplifica dettagli metallici e accessori riconoscibili. Coesistono però boho, abiti romantici e un abbigliamento da ufficio più convenzionale: il decennio non coincide soltanto con i look delle celebrità.",
+      "Denim elasticizzato, jersey, velluto sportivo, finiture metallizzate e tessuti leggeri sovrapposti.",
+      "Borse da spalla piccole, cinture decorative, occhiali e scarpe con suole importanti. Il rapporto tra cintura e orlo del top è decisivo.",
+      "Internet e fotografia delle celebrità accelerano la circolazione dei look. Il marchio può diventare parte visibile dell’outfit.",
+      "Un cargo comodo con top essenziale cita lo Y2K senza rendere obbligatoria la vita bassissima."
+    ],
+    [
+      "2010–2019",
+      "Il guardaroba connesso",
+      "sport",
+      "Athleisure, sneakers e silhouette oversize",
+      "L’abbigliamento sportivo entra stabilmente nei contesti quotidiani. Leggings, sneakers e felpe convivono con minimalismo, abiti romantici e sartoria. Le silhouette oversize ridisegnano il rapporto con il corpo, mentre immagini e piattaforme digitali rendono visibili contemporaneamente stili di città diverse.",
+      "Maglie tecniche, denim, cotone felpato e tessuti sartoriali spesso nello stesso look. Comfort e prestazione diventano argomenti di moda.",
+      "Sneakers, zaini e borse a tracolla; accessori molto riconoscibili possono convivere con basi neutre.",
+      "La comunicazione dello stile passa sempre più attraverso creator, community e commercio digitale. La velocità delle immagini non coincide con la durata dei capi.",
+      "Una giacca sartoriale con sneakers racconta bene l’incrocio tra codici formali e informali."
+    ],
+    [
+      "2020–2026",
+      "Molte estetiche nello stesso armadio",
+      "modern",
+      "Comfort, revival e stile personale",
+      "Il periodo è ancora aperto: pandemia, ritorno alla socialità e circolazione digitale dei revival hanno prodotto risposte diverse. Capi comodi, sartoria rilassata, richiami Y2K e abiti da occasione convivono. Resale e riparazione offrono strumenti per costruire un guardaroba personale, senza rendere automaticamente sostenibile ogni acquisto di seconda mano.",
+      "Cotoni, maglie, tessuti tecnici e materiali di recupero. Per valutare un capo conta leggere composizione, lavorazione, manutenzione e durata prevista.",
+      "Sneakers, ballerine, borse capienti o piccole: non c’è un solo accessorio obbligatorio. La scelta dipende dall’uso reale.",
+      "È più utile osservare pratiche e comunità che dichiarare un’unica tendenza mondiale. Una passerella non fotografa l’intera società.",
+      "Parti dai capi che usi davvero: una nuova proporzione o un abbinamento possono cambiare il guardaroba più di dieci acquisti."
+    ]
+  ],
+  "regions": [
+    [
+      "occidente",
+      "Europa occidentale e Nord America",
+      "utility",
+      "Couture, confezione e abbigliamento urbano",
+      "Parigi, Londra, Milano e New York sono centri importanti, ma rappresentano circuiti specifici e non tutte le donne occidentali. Tra 1900 e 1930 il passaggio dal busto costruito a linee più sciolte modifica la silhouette urbana. Guerra, lavoro e sport rendono più centrali i capi separati.",
+      "Tra anni Quaranta e Sessanta convivono razionamento, couture del dopoguerra e abbigliamento giovanile. Dal 1970 pantaloni, denim e prêt-à-porter ampliano le combinazioni. Negli anni Ottanta il tailleur esprime autorevolezza, mentre streetwear e minimalismo moltiplicano le alternative.",
+      "Dal 1990 a oggi il confine tra abbigliamento formale e quotidiano si fa più poroso. La differenza tra una città finanziaria, un piccolo centro e una comunità rurale resta essenziale.",
+      "Tailleur: giacca con gonna o pantaloni; trench: soprabito con cintura e dettagli di origine militare; tubino: abito relativamente aderente e lineare.",
+      "Non confondere le immagini pubblicitarie con la frequenza reale d’uso. Per leggere un abito chiediti dove, da chi e per quale occasione fosse indossato.",
+      "https://www.vam.ac.uk/collections/fashion"
+    ],
+    [
+      "italia",
+      "Italia: sartoria e vita quotidiana",
+      "full",
+      "Dalla sartoria al Made in Italy",
+      "All’inizio del secolo il guardaroba elegante dialoga con i modelli francesi; sarte locali e lavoro domestico adattano tagli e tessuti a possibilità concrete. La camicetta con gonna e il completo da passeggio convivono con abiti da lavoro di forte varietà regionale.",
+      "Nel dopoguerra la presentazione internazionale della moda italiana cresce, insieme a un sistema di produzione che comprende sartoria, tessile e accessori. Tra anni Sessanta e Ottanta il prêt-à-porter acquista un ruolo decisivo: l’abito è pensato anche come prodotto seriale coordinabile.",
+      "Denim, maglieria, cappotti e abiti da occasione raccontano un presente plurale. Lo stile italiano comprende lavoro, cerimonia, tempo libero e sperimentazione, senza ridursi a un unico modello elegante.",
+      "Completo in lana; abito da cocktail; maglieria coordinata; cappotto sartoriale. La qualità dipende anche da fodere, cuciture, vestibilità e possibilità di riparazione.",
+      "Osserva come una giacca disegna la spalla e come cade una gonna quando si cammina: la moda si capisce anche in movimento.",
+      "https://www.vam.ac.uk/collections/fashion"
+    ],
+    [
+      "est",
+      "Europa orientale e area ex sovietica",
+      "power",
+      "Modernità, disponibilità e memoria tessile",
+      "Le storie di Polonia, Romania, Ucraina, Russia e Balcani non sono intercambiabili. Nel primo Novecento abiti urbani internazionali e vesti regionali convivono. Ricami e tessiture possono esprimere appartenenze locali precise.",
+      "Nei paesi socialisti l’ideale di praticità si confronta con case di moda, sartoria, produzione industriale e differenze di accesso ai beni. Le donne adattano e cuciono, ma continuano a cercare eleganza, colore e individualità. Le situazioni cambiano secondo paese e periodo.",
+      "Dal 1990 mutano mercati e reti commerciali. Designer contemporanei reinterpretano elementi locali accanto al linguaggio globale di tailoring e streetwear. Guerra e migrazione incidono su produzione e conservazione dei patrimoni.",
+      "Abiti chemisier, completi, maglie e cappotti; camicie ricamate come la vyshyvanka ucraina appartengono a storie specifiche e hanno molte varianti.",
+      "Un ricamo non è soltanto un motivo decorativo generico. Verifica comunità, tecnica e contesto prima di attribuirgli un significato.",
+      "https://iriran.ru/sites/default/files/2023-10/617156.pdf"
+    ],
+    [
+      "giappone",
+      "Giappone",
+      "kimono",
+      "Kimono, abbigliamento occidentale e avanguardia",
+      "Nel primo Novecento il kimono rimane centrale per molte donne mentre si diffondono forme occidentali. Il taglio del kimono costruisce il volume attraverso superfici relativamente piane, avvolgimento e obi: una logica diversa dall’abito occidentale sagomato.",
+      "Nel dopoguerra cresce il guardaroba occidentale quotidiano. Il kimono mantiene ruoli cerimoniali e creativi. Dagli anni Settanta e Ottanta designer giapponesi contribuiscono alla moda internazionale con sperimentazioni su volume, asimmetria, tessuto e distanza dal corpo.",
+      "Le scene di strada di Tokyo sono molteplici: non tutta la moda giapponese è kawaii o Harajuku. Oggi abiti occidentali, vintage, design sperimentale e kimono reinterpretati possono coesistere.",
+      "Kimono: veste avvolta e regolata dall’obi; yukata: variante generalmente informale, spesso in cotone; hakama: indumento inferiore pieghettato, presente in contesti specifici.",
+      "Osserva linea della manica, lunghezza, disposizione del motivo e formalità del tessuto. Non attribuire automaticamente significati identici a ogni kimono.",
+      "https://www.vam.ac.uk/articles/kimono"
+    ],
+    [
+      "cina",
+      "Cina e Hong Kong",
+      "qipao",
+      "Il qipao e le modernità cinesi",
+      "Il qipao del Novecento cambia nel tempo: le prime versioni urbane non hanno tutte la linea stretta oggi più riconoscibile. Shanghai diventa un importante laboratorio di modernità, con scambi tra sartoria locale e tecniche internazionali.",
+      "Tra anni Trenta e Quaranta si affermano interpretazioni più sagomate. Le vicende politiche della Cina continentale e i circuiti di Hong Kong conducono poi a percorsi diversi. L’abbigliamento utilitario non cancella ogni pratica di distinzione personale.",
+      "Nel presente qipao da occasione, moda internazionale e reinterpretazioni di vesti storiche appartengono a fenomeni differenti. Hanfu e qipao non sono sinonimi; cambiano riferimenti storici e costruzione.",
+      "Qipao o cheongsam: abito con numerose varianti di lunghezza, aderenza, manica e chiusura. Il colletto alto e gli spacchi non bastano a datare un esemplare.",
+      "Guarda posizione della chiusura, cuciture e proporzione dello spacco. Il celebre modello cinematografico non riassume un secolo di abbigliamento cinese.",
+      "https://libmma.contentdm.oclc.org/digital/api/collection/p16028coll12/id/13810/download"
+    ],
+    [
+      "corea",
+      "Corea",
+      "hanbok",
+      "Hanbok e guardaroba contemporaneo",
+      "L’hanbok femminile comprende comunemente jeogori, la giacca, e chima, la gonna. Proporzioni, materiali e modi d’uso cambiano nel tempo: non esiste una forma eternamente identica. Nei primi decenni del Novecento si intrecciano riforme, abbigliamento locale e influenze esterne.",
+      "Dopo la divisione della penisola i percorsi politici e produttivi divergono. In Corea del Sud il guardaroba occidentale cresce nella vita quotidiana; l’hanbok conserva ruoli festivi, familiari e cerimoniali.",
+      "Designer e artigiani propongono anche hanbok moderni. La moda di Seoul, il costume dei drama storici e i look del K-pop sono ambiti collegati ma distinti. I costumi di scena non descrivono come si veste tutta la popolazione.",
+      "Jeogori: parte superiore; chima: gonna; nastri e sovrapposizioni contribuiscono alla composizione. Materiale e colore vanno letti nel loro contesto.",
+      "Distingui ricostruzione storica, abito cerimoniale attuale e adattamento quotidiano. Una manica o una gonna possono riprendere un riferimento senza riprodurlo integralmente.",
+      "https://www.vam.ac.uk/articles/hanbok-traditional-korean-dress"
+    ],
+    [
+      "india",
+      "Asia meridionale",
+      "sari",
+      "Sari, salwar kameez e pluralità regionale",
+      "India, Pakistan, Bangladesh, Sri Lanka e paesi vicini comprendono tradizioni e comunità differenti. Il sari è un tessuto drappeggiato: la sua forma dipende tanto dalla tessitura quanto dal modo di indossarlo. Non coincide con un unico costume nazionale uniforme.",
+      "Nel Novecento urbanizzazione, cinema, industrie tessili e cambiamenti politici modificano gusti e disponibilità. Sari, salwar kameez e altri completi convivono con capi occidentali, secondo luogo, occasione e preferenze.",
+      "Nel presente abiti da sposa riccamente lavorati e guardaroba professionali raccontano esigenze diverse. Tessiture artigiane e nuove costruzioni sartoriali dialogano con la produzione industriale.",
+      "Sari: telo drappeggiato; salwar kameez: pantaloni e tunica, spesso con dupatta; lehenga: gonna in un completo che può comprendere blusa e velo.",
+      "Cotone, seta e tecnica di tessitura cambiano peso e caduta. Non ogni tessuto lucido è seta e non ogni motivo è stampato.",
+      "https://www.vam.ac.uk/articles/indian-textiles/"
+    ],
+    [
+      "filippine",
+      "Filippine e Sud-est asiatico",
+      "terno",
+      "Il terno e le maniche a farfalla",
+      "Nelle Filippine il baro’t saya comprende blusa e gonna. Nel primo Novecento l’insieme evolve; le maniche diventano uno degli elementi più riconoscibili. Le fotografie di famiglia aiutano a cogliere differenze tra cerimonia, classe sociale e vita quotidiana.",
+      "Il terno moderno si sviluppa fino a essere riconoscibile come abito coordinato o unificato con maniche a farfalla. Nel dopoguerra queste maniche mantengono un ruolo simbolico forte. Non è però l’abbigliamento quotidiano universale delle filippine.",
+      "Il terno è oggi reinterpretato per eventi e occasioni formali. Nel resto del Sud-est asiatico kebaya, áo dài e abiti in batik appartengono a tradizioni distinte: accostarli serve a confrontare, non a considerarli equivalenti.",
+      "Terno: struttura della manica rigida e arcuata; baro’t saya: blusa e gonna; piña: tessuto da fibre di ananas, utilizzato in contesti specifici della tradizione filippina.",
+      "Osserva come la manica si alza dalla spalla: è una forma costruita, non una semplice manica gonfia.",
+      "https://folklife.si.edu/magazine/filipina-terno-history"
+    ],
+    [
+      "medio-oriente",
+      "Medio Oriente e Nord Africa",
+      "kaftan",
+      "Capi lunghi, sartoria e scelte personali",
+      "L’area comprende storie religiose, politiche e climatiche molto diverse. Nel primo Novecento capi locali, abiti urbani e influenze europee convivono. Non è corretto immaginare un unico modo di vestire dalla costa atlantica al Golfo.",
+      "Nel corso del secolo cambiano abbigliamento professionale, sartoria e occasioni pubbliche. Caftani marocchini, abaya del Golfo e completi urbani non sono la stessa cosa. I cambiamenti delle norme sociali e politiche incidono in modi differenti sulle scelte individuali.",
+      "La moda contemporanea comprende design di lusso, abiti quotidiani e modest fashion, che attraversa anche altri paesi e religioni. Copertura, decorazione e struttura possono essere oggetto di sperimentazione.",
+      "Caftano: veste lunga con varianti regionali; abaya: soprabito lungo in molti contesti del Golfo; hijab: termine con usi e significati che richiedono contesto, non sinonimo di abito intero.",
+      "Non dedurre convinzioni personali da un capo. Per studiare la costruzione guarda aperture, strati, tessuti e movimento.",
+      "https://www.vam.ac.uk/exhibitions/africa-fashion"
+    ],
+    [
+      "africa",
+      "Africa subsahariana",
+      "wrap",
+      "Tessuti, identità e design contemporaneo",
+      "Un continente non ha un solo guardaroba. Nel Novecento tessiture locali, scambi commerciali, colonialismo e missioni si intrecciano con pratiche sartoriali specifiche. Tessuti avvolti e abiti cuciti convivono in molte comunità.",
+      "Le indipendenze e i nuovi circuiti culturali danno ulteriore significato politico all’abbigliamento. Sarti, designer e clienti trasformano i materiali disponibili, anche importati, in linguaggi locali. Le stampe wax hanno una storia transnazionale, non una singola origine africana.",
+      "Lagos, Dakar, Johannesburg e altre città ospitano scene autonome di design. Ricerca sui materiali, fotografia, artigianato e streetwear contribuiscono alla moda globale. La tradizione non è una fase superata dalla modernità.",
+      "Àdìrẹ: tessuti tinti con tecniche a riserva nella tradizione yoruba; kente: tessuto a strisce con origini e contesti specifici; boubou: ampio indumento presente in diverse varianti.",
+      "Nomina tecnica e provenienza quando le conosci. Un generico motivo “africano” cancella differenze importanti.",
+      "https://www.vam.ac.uk/exhibitions/africa-fashion"
+    ],
+    [
+      "sudamerica",
+      "Sud America e mondo andino",
+      "pollera",
+      "Pollera, tessiture e città contemporanee",
+      "Abiti urbani di influenza europea convivono con pratiche indigene e afrodiscendenti. Nel mondo andino gonne stratificate, scialli e copricapi assumono significati locali, collegati a comunità, commercio e vicende coloniali. La pollera non è un modello identico in tutti i paesi.",
+      "Nel Novecento migrazione verso le città e cambiamenti del lavoro modificano occasioni e materiali. Le donne possono mantenere, adattare o abbandonare elementi regionali. Le scelte non seguono un percorso unico verso l’abito occidentale.",
+      "La moda contemporanea valorizza anche l’identità delle cholitas e il lavoro tessile, accanto a streetwear e design urbano. In Brasile l’abbigliamento da mare costituisce un settore importante, ma non rappresenta l’intera moda del paese.",
+      "Pollera: gonna spesso ampia, con costruzioni regionali diverse; lliclla: telo o scialle andino; tessuti in fibre di camelidi: materiali da identificare con precisione.",
+      "Distingui abito d’uso, abito festivo e costume di spettacolo. Una fotografia di festa non descrive automaticamente il guardaroba di tutti i giorni.",
+      "https://collections.si.edu/search/results.htm?q=Andean+textiles"
+    ],
+    [
+      "centroamerica",
+      "Messico, America centrale e Caraibi",
+      "huipil",
+      "Huipil, ricami e storie comunitarie",
+      "Le comunità indigene del Messico e dell’America centrale conservano e trasformano saperi di tessitura e ricamo. L’huipil è una blusa o tunica composta da pannelli: dimensioni, disegno e materiali cambiano profondamente secondo luogo e uso.",
+      "Nel Novecento circolano cotoni industriali, nuovi filati e macchine da cucire accanto al lavoro manuale. Le trasformazioni tecniche non cancellano il valore culturale del capo. Nei Caraibi si intrecciano eredità africane, europee e locali.",
+      "Designer, cooperative e artigiane lavorano tra continuità e innovazione. L’uso commerciale dei motivi pone questioni di attribuzione e compenso: riconoscere chi produce fa parte della lettura dell’abito.",
+      "Huipil: indumento a pannelli, spesso ricamato o tessuto con disegni; rebozo: scialle messicano con molte varianti; pollera panamense: abito distinto dalle gonne andine omonime.",
+      "Non chiamare ogni blusa ricamata “Frida”. Cerca invece nome della comunità, tecnica, materiale e provenienza documentata.",
+      "https://statemuseum.arizona.edu/online-exhibit/what-would-frida-wear/mexican-textiles"
+    ],
+    [
+      "oceania",
+      "Oceania e Pacifico",
+      "wrap",
+      "Clima, colonialismo e creatività insulare",
+      "Australia e Nuova Zelanda dialogano con i circuiti della moda europea, mentre le culture del Pacifico possiedono proprie tradizioni tessili e di ornamento. L’abbigliamento introdotto dalle missioni si intreccia con forme locali, spesso attraverso trasformazioni creative.",
+      "Nel Novecento abiti da giorno, beachwear e capi sportivi convivono con vesti cerimoniali e pratiche comunitarie. Le storie delle popolazioni indigene non coincidono con quelle delle società coloniali dominanti.",
+      "Designer Māori, delle isole del Pacifico e delle First Nations australiane ridefiniscono il rapporto tra identità e moda contemporanea. Un motivo culturale richiede contesto e attribuzione.",
+      "Teli avvolti, abiti ampi e capi sartoriali sono famiglie di forme, non nomi intercambiabili. Tecniche di tapa e tessitura hanno usi specifici che vanno verificati per comunità.",
+      "Non ridurre il Pacifico all’estetica da vacanza: tessuti e abiti possono raccontare relazioni sociali, cerimonie e appartenenza.",
+      "https://collections.tepapa.govt.nz/topic/1103"
+    ]
+  ],
+  "glossary": [
+    [
+      "Silhouette",
+      "Il profilo complessivo disegnato dall’abito: a colonna, ad A, a clessidra o con volumi spostati."
+    ],
+    [
+      "Taglio in sbieco",
+      "Taglio diagonale rispetto a trama e ordito, utile per ottenere una caduta più fluida."
+    ],
+    [
+      "Vita naturale",
+      "Linea del punto vita anatomico, distinta da vita alta o ribassata."
+    ],
+    [
+      "Vita ribassata",
+      "Cucitura o cintura collocata sotto la vita naturale, spesso verso i fianchi."
+    ],
+    [
+      "Gonna a ruota",
+      "Gonna con forte ampiezza ricavata da una costruzione circolare o affine."
+    ],
+    [
+      "Gonna a matita",
+      "Gonna relativamente stretta che segue i fianchi e può richiedere uno spacco per camminare."
+    ],
+    [
+      "Linea ad A",
+      "Forma più stretta in alto e progressivamente larga verso il fondo."
+    ],
+    [
+      "Plissé",
+      "Pieghe regolari che producono volume e movimento; la tenuta dipende da materiale e trattamento."
+    ],
+    [
+      "Drappeggio",
+      "Disposizione del tessuto attraverso cadute, pieghe e avvolgimenti."
+    ],
+    [
+      "Jersey",
+      "Tessuto a maglia, spesso morbido ed elastico per costruzione; non è il nome di una fibra."
+    ],
+    [
+      "Raso",
+      "Armatura dalla superficie liscia e lucida; può essere in seta o in altre fibre."
+    ],
+    [
+      "Crêpe",
+      "Famiglia di tessuti dalla superficie più o meno granulosa."
+    ],
+    [
+      "Taffetà",
+      "Tessuto compatto con una certa rigidità, adatto a volumi ben definiti."
+    ],
+    [
+      "Organza",
+      "Tessuto leggero e trasparente con buona tenuta, spesso usato per sovrapposizioni."
+    ],
+    [
+      "Tweed",
+      "Tessuto generalmente in lana, con effetti cromatici e superficie caratteristica."
+    ],
+    [
+      "Denim",
+      "Tessuto in diagonale associato ai jeans: non tutti i denim hanno identico peso o elasticità."
+    ],
+    [
+      "Haute couture",
+      "Ambito regolato dell’alta moda francese; non sinonimo generico di abito costoso."
+    ],
+    [
+      "Prêt-à-porter",
+      "Abbigliamento proposto in taglie standard, distinto dal su misura."
+    ],
+    [
+      "Bespoke e su misura",
+      "Lavorazioni costruite o adattate sul cliente; il livello di personalizzazione va verificato."
+    ],
+    [
+      "Wrap dress",
+      "Abito a portafoglio con parti sovrapposte e chiusura regolabile."
+    ],
+    [
+      "Slip dress",
+      "Abito fluido con riferimenti alla sottoveste, spesso con spalline sottili."
+    ],
+    [
+      "Chemisier",
+      "Abito che riprende elementi della camicia, come colletto e abbottonatura."
+    ],
+    [
+      "Peplum",
+      "Balza o piccolo volume aggiunto all’altezza della vita o dei fianchi."
+    ],
+    [
+      "Color blocking",
+      "Accostamento di aree di colore ben distinte."
+    ],
+    [
+      "Upcycling",
+      "Trasformazione di materiali o capi esistenti in un nuovo oggetto; l’impatto va valutato concretamente."
+    ],
+    [
+      "Vintage",
+      "Capo di un periodo precedente: autenticarlo richiede etichetta, costruzione e provenienza."
+    ],
+    [
+      "Revival",
+      "Ripresa di forme del passato in capi nuovi; non equivale a un originale d’epoca."
+    ],
+    [
+      "Modest fashion",
+      "Ambito di abbigliamento orientato alla copertura del corpo, con motivazioni e interpretazioni diverse."
+    ]
+  ],
+  "verifiedOn": "2026-10-31"
+}
