@@ -1,0 +1,180 @@
+/* MariaSM · YouTube-first homepage · 31 Oct 2026
+   Scoped to .atelier-home. Video / Shorts / ranking data are drawn from real channel snapshots. */
+.atelier-home{--yt-burgundy:#713047;--yt-plum:#432536;--yt-rose:#b36a82;--yt-cream:#fffaf8;--yt-outline:#ead8df;--yt-soft:#f9eef0;background:#fffaf8}
+.atelier-home .home-header{box-shadow:0 4px 21px #602e4612}
+.atelier-home .home-header .home-primary-nav>a.home-youtube-link{background:#a32947;border-color:#a32947;box-shadow:0 9px 24px #a329472d}
+.atelier-home .home-header .home-primary-nav>a.home-youtube-link:hover{background:#811e3b}
+.atelier-home .ms4-hero{min-height:390px;background:linear-gradient(115deg,#fff8f6,#f9e9ed)}
+.atelier-home .ms4-hero-photo{min-height:410px}
+.atelier-home .ms4-hero-copy{padding:32px clamp(25px,4vw,60px)}
+.atelier-home .ms4-hero-copy .eyebrow{color:#a65472}
+.atelier-home .ms4-hero-deck{max-width:480px;line-height:1.63}
+.atelier-home .ms4-hero-actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:11px;margin-top:13px}
+.atelier-home .ms4-hero-actions>a{font-size:12px;font-weight:750;text-decoration:none}
+.atelier-home .ms4-hero-secondary{display:inline-flex;align-items:center;border:1px solid #cfacb8;border-radius:100px;padding:11px 18px;color:#7f4057;background:#fffdfbd6}
+.atelier-home .ms4-hero-secondary:hover{background:#f6e3eb}
+.atelier-home .ms4-hero-actions .ms4-pill{font-size:12px;margin:0;white-space:nowrap}
+/* The authentic YouTube channel has immediate prominence after the hero */
+.atelier-home .yt-channel-spotlight{scroll-margin-top:88px;max-width:1330px;width:calc(100% - 36px);margin:25px auto 33px;border:1px solid #e4ccd6;border-radius:24px;background:linear-gradient(133deg,#fffafa 0%,#f9e9ee 100%);overflow:hidden;box-shadow:0 17px 49px #51203616}
+.atelier-home .yt-spotlight-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;padding:35px 38px 22px}
+.atelier-home .yt-spotlight-heading>div{max-width:790px}
+.atelier-home .yt-spotlight-heading .eyebrow{color:#a25d77;font-size:10px;letter-spacing:.16em;margin-bottom:9px}
+.atelier-home .yt-spotlight-heading h2{color:#56263c;font:400 clamp(33px,4vw,56px)/1.07 Georgia,serif;letter-spacing:-.045em;margin:0 0 9px}
+.atelier-home .yt-spotlight-heading h2 em{color:#b16d87}
+.atelier-home .yt-spotlight-heading p:not(.eyebrow){color:#785e69;font-size:14px;line-height:1.65;max-width:640px;margin:0}
+.atelier-home .yt-main-action{display:inline-flex;align-items:center;justify-content:center;flex:none;text-decoration:none;background:#7e2c46;color:#fff;font-size:12px;font-weight:800;padding:12px 19px;border-radius:99px;box-shadow:0 8px 22px #8c385330;text-align:center}
+.atelier-home .yt-main-action:hover{background:#a14360;color:#fff}
+.atelier-home .yt-channel-identity{display:flex;align-items:center;gap:13px;margin:0 36px 20px;padding:14px 17px;border-radius:16px;background:#ffffffb8;border:1px solid #e9d6dd}
+.atelier-home .yt-channel-avatar{width:54px;height:54px;flex:none;object-fit:cover;border:3px solid #f4dce5;border-radius:50%}
+.atelier-home .yt-channel-identity>div{min-width:0}
+.atelier-home .yt-channel-identity strong{display:block;color:#55263b;font:700 20px/1.3 Georgia,serif}
+.atelier-home .yt-channel-identity span{display:block;color:#866674;font-size:11px}
+.atelier-home .yt-identity-links{margin-left:auto;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:9px}
+.atelier-home .yt-identity-links a{font-size:11px;text-decoration:none;font-weight:700;padding:8px 12px;border:1px solid #ead5de;border-radius:99px;background:#fff8fa;color:#7d3954}
+.atelier-home .yt-identity-links a:hover{background:#f5e0e7}
+.atelier-home .yt-spotlight-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:20px;padding:0 36px 34px}
+.atelier-home .yt-main-feature{background:#fff;border:1px solid #e9d7df;overflow:hidden;border-radius:17px;box-shadow:0 12px 28px #5f304412}
+.atelier-home .yt-main-thumb{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:#281f28}
+.atelier-home .yt-main-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.atelier-home .yt-main-thumb::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#21172266);pointer-events:none}
+.atelier-home .yt-thumb-play{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:63px;height:63px;border-radius:50%;display:grid;place-items:center;background:#fffbf4f5;color:#7e2946;font-size:22px;box-shadow:0 8px 20px #25111b55}
+.atelier-home .yt-thumb-duration{position:absolute;right:13px;bottom:12px;background:#241822e9;color:#fff;border-radius:6px;padding:3px 7px;z-index:1;font-size:12px}
+.atelier-home .yt-main-desc{padding:20px 23px 22px}
+.atelier-home .yt-main-desc .eyebrow{font-size:10px;color:#a45c78}
+.atelier-home .yt-main-desc h3{font:400 clamp(19px,2.35vw,29px)/1.26 Georgia,serif;margin:7px 0 10px}
+.atelier-home .yt-main-desc h3 a{color:#592438;text-decoration:none}
+.atelier-home .yt-main-desc h3 a:hover{text-decoration:underline}
+.atelier-home .yt-main-desc p:not(.eyebrow){font-size:12px;color:#866c77;margin:0}
+.atelier-home .yt-small-features{display:flex;flex-direction:column;gap:12px;min-width:0}
+.atelier-home .yt-small-card{display:grid;grid-template-columns:115px minmax(0,1fr);gap:16px;flex:1;align-items:center;padding:12px;border:1px solid #e9d8de;border-radius:15px;background:#fff;min-width:0;text-decoration:none;box-shadow:0 8px 23px #5f30440b}
+.atelier-home .yt-small-card img{width:115px;height:119px;object-fit:cover;border-radius:9px;background:#e7d9e0}
+.atelier-home .yt-small-card b{display:block;color:#aa5876;font-size:9px;letter-spacing:.14em}
+.atelier-home .yt-small-card strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;margin:8px 0 10px;color:#552a3d;font:400 clamp(16px,1.6vw,20px)/1.25 Georgia,serif}
+.atelier-home .yt-small-card small{font-size:11px;font-weight:700;color:#944862}
+.atelier-home .yt-small-card:hover{background:#fff9f8}
+.atelier-home .yt-update-note{display:flex;gap:12px;align-items:flex-start;flex:0 0 auto;padding:16px 17px;border-radius:14px;background:#6b304a;color:#fff}
+.atelier-home .yt-update-icon{font-size:27px;line-height:1;color:#e8a6bd}
+.atelier-home .yt-update-note strong{font:400 20px/1.18 Georgia,serif}
+.atelier-home .yt-update-note p{color:#f0dbe3;font-size:12px;line-height:1.56;margin:7px 0}
+.atelier-home .yt-update-note a{color:#fff;text-underline-offset:3px;font-weight:750;font-size:11px}
+/* More balanced YouTube sections: latest, short-form and ranking. */
+.atelier-home .new-section,
+.atelier-home .shorts-section,
+.atelier-home .ranking-section>.wrap{max-width:1330px;width:calc(100% - 36px);margin-inline:auto}
+.atelier-home .new-section{background:#fff;box-shadow:0 11px 32px #6f31420e;margin-top:28px;margin-bottom:27px;border:1px solid #ebdae1;border-radius:21px;padding:30px!important}
+.atelier-home .new-section .section-head,
+.atelier-home .shorts-section .section-head,
+.atelier-home .ranking-section .section-head{gap:25px;margin-bottom:17px}
+.atelier-home .new-section .section-head h2,
+.atelier-home .shorts-section .section-head h2,
+.atelier-home .ranking-section .section-head h2{font:400 clamp(29px,3.5vw,48px)/1.13 Georgia,serif;letter-spacing:-.04em;color:#5e2c40;margin:7px 0}
+.atelier-home .new-section .section-subtitle{font-size:.45em;letter-spacing:0;color:#a5687b;display:inline-block;margin-left:15px}
+.atelier-home .new-section .section-head>p,
+.atelier-home .shorts-section .section-head>p,
+.atelier-home .ranking-section .section-head>p{max-width:355px;color:#8b6b79;font-size:13px;line-height:1.65}
+.atelier-home .yt-section-link{display:flex;align-items:center;justify-content:space-between;gap:18px;border-radius:12px;background:#f9ebf0;padding:12px 18px;margin:17px 0 19px;color:#715365;font-size:12px}
+.atelier-home .yt-section-link a{color:#86364e;font-weight:800;text-decoration:none;white-space:nowrap}
+.atelier-home .yt-section-link a:hover{text-decoration:underline}
+.atelier-home .new-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.atelier-home .new-grid .video-card{display:flex;flex-direction:column;overflow:hidden;min-width:0;background:#fff;border:1px solid #ebdfe3;border-radius:14px;box-shadow:0 8px 21px #5b223d0c}
+.atelier-home .new-grid .video-card .video-image{display:block;overflow:hidden;aspect-ratio:16/9;border-radius:0;background:#4b3040}
+.atelier-home .new-grid .video-card .video-image img{width:100%;height:100%;object-fit:cover}
+.atelier-home .new-grid .video-card h3{font:400 clamp(15px,1.27vw,19px)/1.35 Georgia,serif;color:#573047}
+.atelier-home .new-grid .video-card h3 a{color:#573047}
+.atelier-home .new-grid .video-card .text-link{color:#8c405d}
+.atelier-home .snapshot-note{font-size:11px;color:#876e7b;line-height:1.55}
+.atelier-home .shorts-section{background:#fff;border:1px solid #ead8df;border-radius:22px;padding:31px!important;box-shadow:0 11px 32px #6f31420f;margin-top:0;margin-bottom:30px}
+.atelier-home .shorts-jumps{gap:10px;flex-wrap:wrap;margin:9px 0 20px}
+.atelier-home .shorts-jumps a{border:1px solid #e7ced8;border-radius:99px;background:#fdf4f7;color:#823e5a;padding:8px 13px;font-size:11px;text-decoration:none;font-weight:800}
+.atelier-home .shorts-jumps a:hover{background:#f7e4eb}
+.atelier-home .shorts-collection{margin-top:22px;border-top:1px solid #efdee4;padding-top:19px}
+.atelier-home .shorts-heading h3{font:400 clamp(23px,2.5vw,31px) Georgia,serif;color:#5e2b40}
+.atelier-home .shorts-heading>p{font-size:12px}
+.atelier-home .shorts-grid{display:flex;overflow-x:auto;gap:16px;padding:8px 2px 19px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#c68ea1 #f8eaef}
+.atelier-home .short-card{display:flex;flex-direction:column;flex:0 0 clamp(155px,17.5vw,215px);scroll-snap-align:start;background:#fff;border:1px solid #ead9e1;border-radius:16px;padding:8px;overflow:hidden;min-width:0;box-shadow:0 6px 16px #6730480b}
+.atelier-home .short-image{border-radius:11px;aspect-ratio:9/13.7}
+.atelier-home .short-image img{object-fit:cover;width:100%;height:100%}
+.atelier-home .short-card h4{font:400 clamp(14px,1.25vw,17px)/1.32 Georgia,serif;margin:12px 4px 7px}
+.atelier-home .short-card h4 a{color:#612a40}
+.atelier-home .short-card .video-meta{margin:0 4px 7px;font-size:11px;color:#876b79}
+.atelier-home .short-card .text-link{margin:0 4px 10px;font-size:11px;color:#86415b;font-weight:700}
+.atelier-home .ranking-section{background:#f9ecef;padding:24px 0 28px;border-top:1px solid #ecd9e1;border-bottom:1px solid #ecd9e1}
+.atelier-home .ranking-section>.wrap{padding:25px 0!important}
+.atelier-home .ranking-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin:22px 0;list-style:none;padding:0}
+.atelier-home .ranking-item{display:grid;grid-template-columns:45px 142px minmax(0,1fr);align-items:center;gap:15px;min-width:0;padding:12px;border-radius:13px;border:1px solid #eddde2;background:#fff;box-shadow:0 6px 16px #6d2d4310}
+.atelier-home .ranking-item .rank-number{font:400 29px Georgia,serif;color:#a55f7c;text-align:center}
+.atelier-home .ranking-item .ranking-image{width:142px;aspect-ratio:16/9;overflow:hidden;border-radius:9px}
+.atelier-home .ranking-item .ranking-image img{display:block;width:100%;height:100%;object-fit:cover}
+.atelier-home .ranking-item h3{font:400 16px/1.3 Georgia,serif;margin:4px 0}
+.atelier-home .ranking-item h3 a{color:#5d3046;text-decoration:none}
+.atelier-home .ranking-item .ranking-views{color:#985874;font-size:11px;font-weight:700;margin:0}
+.atelier-home .ranking-item .ranking-duration{font-size:11px;color:#8d7781;margin:0}
+.atelier-home .ranking-item h3 a:hover{text-decoration:underline}
+.atelier-home #watch{margin-top:36px;border:1px solid #f0e1e5;border-radius:19px;padding:30px!important;background:#fff}
+.atelier-home #watch .video-card{border:1px solid #ecdde2;border-radius:14px;box-shadow:0 7px 18px #6c31430d}
+.atelier-home .yt-ateliers-intro{max-width:870px;text-align:center;padding:65px 0 20px}
+.atelier-home .yt-ateliers-intro h2{font:400 clamp(31px,3.9vw,52px)/1.1 Georgia,serif;color:#6b2c45;letter-spacing:-.05em;margin:6px 0 14px}
+.atelier-home .yt-ateliers-intro h2 em{color:#ac6e82}
+.atelier-home .yt-ateliers-intro p:not(.eyebrow){color:#806574;font-size:14px}
+.atelier-home .ms4-feature-grid{margin-top:0}
+.atelier-home .ms4-feature{min-height:218px}
+.atelier-home .ms4-quick-links{background:#fff1f3;margin-top:13px;margin-bottom:14px}
+.atelier-home .atelier-collections-head{padding-top:38px}
+.atelier-home .fashion-gateway,.atelier-home .fragrance-gateway,.atelier-home .makeup-gateway{min-height:310px;box-shadow:0 11px 26px #6e33441b}
+.atelier-home .fashion-gateway-art,.atelier-home .fragrance-gateway-art,.atelier-home .makeup-gateway-art{min-height:310px}
+.atelier-home .angel-edit{margin-top:34px}
+.atelier-home .yt-seasonal-slot{max-width:1170px;width:calc(100% - 40px);margin:40px auto 20px}
+.atelier-home .yt-seasonal-slot .halloween-banner{margin:0;max-width:none;width:100%}
+.halloween .atelier-home .yt-seasonal-slot .halloween-banner{display:grid;grid-template-columns:1fr 145px;align-items:center;gap:15px;padding:15px 24px;border:1px solid #a47875;border-radius:17px;background:linear-gradient(116deg,#4a2b42,#654052);box-shadow:0 9px 25px #50223925}
+.halloween .atelier-home .yt-seasonal-slot .halloween-banner h2{font:400 25px/1.12 Georgia,serif;color:#fff2e5;margin:3px 0}
+.halloween .atelier-home .yt-seasonal-slot .halloween-banner .eyebrow{font-size:10px;color:#ffd39c}
+.halloween .atelier-home .yt-seasonal-slot .halloween-banner p:last-child{font-size:12px;line-height:1.5;max-width:580px;margin:4px 0;color:#f7e2d9}
+.halloween .atelier-home .yt-seasonal-slot .halloween-art{width:135px;height:90px}
+@media(max-width:1150px){
+ .atelier-home .yt-spotlight-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+ .atelier-home .new-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .atelier-home .ranking-item{grid-template-columns:36px 115px minmax(0,1fr);gap:9px}
+ .atelier-home .ranking-item .ranking-image{width:115px}
+ .atelier-home .ranking-item h3{font-size:14px}
+}
+@media(max-width:850px){
+ .atelier-home .yt-spotlight-heading{display:block;padding:25px 21px 18px}
+ .atelier-home .yt-main-action{margin-top:15px}
+ .atelier-home .yt-channel-identity{margin:0 19px 18px;flex-wrap:wrap}
+ .atelier-home .yt-identity-links{margin-left:0;width:100%;justify-content:flex-start}
+ .atelier-home .yt-spotlight-grid{grid-template-columns:1fr;padding:0 19px 23px}
+ .atelier-home .yt-small-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .atelier-home .yt-update-note{grid-column:1/-1}
+ .atelier-home .new-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .atelier-home .ranking-grid{grid-template-columns:1fr}
+ .atelier-home .short-card{flex-basis:180px}
+}
+@media(max-width:570px){
+ .atelier-home .ms4-hero-photo{min-height:275px}
+ .atelier-home .ms4-hero-copy{padding:31px 17px}
+ .atelier-home .ms4-hero-actions{flex-direction:column}
+ .atelier-home .yt-channel-spotlight{width:calc(100% - 26px);margin:18px auto}
+ .atelier-home .yt-spotlight-heading h2{font-size:34px}
+ .atelier-home .yt-spotlight-grid{gap:13px}
+ .atelier-home .yt-main-desc{padding:16px}
+ .atelier-home .yt-small-features{grid-template-columns:1fr}
+ .atelier-home .yt-small-card{grid-template-columns:105px 1fr}
+ .atelier-home .yt-small-card img{width:105px;height:100px}
+ .atelier-home .yt-channel-identity strong{font-size:17px}
+ .atelier-home .new-section,.atelier-home .shorts-section{padding:20px 15px!important;width:calc(100% - 26px)}
+ .atelier-home .new-grid{grid-template-columns:1fr;gap:14px}
+ .atelier-home .yt-section-link{display:block}
+ .atelier-home .yt-section-link a{display:block;margin-top:8px}
+ .atelier-home .new-section .section-head,.atelier-home .shorts-section .section-head,.atelier-home .ranking-section .section-head{display:block}
+ .atelier-home .new-section .section-head h2,.atelier-home .shorts-section .section-head h2,.atelier-home .ranking-section .section-head h2{font-size:32px}
+ .atelier-home .short-card{flex-basis:165px}
+ .atelier-home .ranking-item{grid-template-columns:29px 105px minmax(0,1fr);gap:8px;padding:9px}
+ .atelier-home .ranking-item .rank-number{font-size:21px}
+ .atelier-home .ranking-item .ranking-image{width:105px}
+ .atelier-home .ranking-item h3{font-size:12px}
+ .atelier-home .ranking-item .ranking-views,.atelier-home .ranking-item .ranking-duration{font-size:10px}
+ .atelier-home .yt-ateliers-intro{padding:48px 12px 17px}
+ .halloween .atelier-home .yt-seasonal-slot .halloween-banner{display:block;padding:18px}
+ .halloween .atelier-home .yt-seasonal-slot .halloween-art{position:absolute;right:5px;top:5px;opacity:.3;width:90px;height:70px}
+}
+@media(prefers-reduced-motion:reduce){.atelier-home .yt-main-thumb img,.atelier-home .new-grid .video-card{transition:none}}
