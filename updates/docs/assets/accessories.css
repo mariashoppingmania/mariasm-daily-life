@@ -606,3 +606,33 @@
  .ac-page-watches .ac-watch-style-grid,.ac-page-watches .ac-watch-luxury-grid{grid-template-columns:1fr}
  .ac-page-watches .ac-watch-style-card,.ac-page-watches .ac-watch-luxury-card{max-width:460px;width:100%;margin:0 auto}
 }
+
+/* WATCH_SPRITE_CROP_V11: The master atlas has a band from the previous
+   wristwatch at the top of some tiles. Crop 16% from each tile's upper edge,
+   center the horizontal crop, and end inside the current tile (no bleed).
+   The same crop applies to editorial typologies and luxury fallback tiles. */
+.ac-page-watches .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-fallback {
+  background-size: 480% 720% !important;
+  background-repeat: no-repeat !important;
+}
+.ac-page-watches .ac-watch-style-card:nth-child(4n + 1) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(4n + 1) .ac-watch-luxury-fallback { background-position-x: 2.63158% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(4n + 2) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(4n + 2) .ac-watch-luxury-fallback { background-position-x: 34.21053% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(4n + 3) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(4n + 3) .ac-watch-luxury-fallback { background-position-x: 65.78947% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(4n + 4) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(4n + 4) .ac-watch-luxury-fallback { background-position-x: 97.36842% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(n + 1):nth-child(-n + 4) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(n + 1):nth-child(-n + 4) .ac-watch-luxury-fallback { background-position-y: 3.09677% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(n + 5):nth-child(-n + 8) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(n + 5):nth-child(-n + 8) .ac-watch-luxury-fallback { background-position-y: 22.45161% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(n + 9):nth-child(-n + 12) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(n + 9):nth-child(-n + 12) .ac-watch-luxury-fallback { background-position-y: 41.80645% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(n + 13):nth-child(-n + 16) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(n + 13):nth-child(-n + 16) .ac-watch-luxury-fallback { background-position-y: 61.16129% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(n + 17):nth-child(-n + 20) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(n + 17):nth-child(-n + 20) .ac-watch-luxury-fallback { background-position-y: 80.51613% !important; }
+.ac-page-watches .ac-watch-style-card:nth-child(n + 21):nth-child(-n + 24) .ac-watch-style-photo,
+.ac-page-watches .ac-watch-luxury-card:nth-child(n + 21):nth-child(-n + 24) .ac-watch-luxury-fallback { background-position-y: 99.87097% !important; }
