@@ -1,0 +1,101 @@
+/* MariaSM hero portrait fit correction — 2026-10-31.
+   Keep the entire portrait visible at every breakpoint. */
+.atelier-home .ms4-hero {
+  grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  min-height:0;
+  overflow:hidden;
+  align-items:stretch;
+}
+.atelier-home .ms4-hero-photo {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  isolation:isolate;
+  position:relative;
+  box-sizing:border-box;
+  min-width:0;
+  min-height:580px;
+  padding:26px 34px 29px;
+  overflow:hidden;
+  background:radial-gradient(ellipse at 48% 34%,#fff7f5 0%,#f6e3e7 49%,#eacbd3 100%);
+}
+.atelier-home .ms4-hero-photo::before {
+  content:"";
+  position:absolute;
+  inset:-12%;
+  z-index:-1;
+  background-image:url("../assets/mariasm-hero-editorial.avif");
+  background-size:cover;
+  background-position:center 45%;
+  filter:blur(48px);
+  opacity:.22;
+  transform:scale(1.08);
+  pointer-events:none;
+}
+.atelier-home .ms4-hero-photo::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,transparent 78%,rgba(255,248,245,.30));
+  pointer-events:none;
+}
+.atelier-home .ms4-hero-photo>img {
+  position:relative !important;
+  inset:auto !important;
+  display:block !important;
+  flex:0 1 auto;
+  width:auto !important;
+  height:auto !important;
+  max-width:min(100%,450px) !important;
+  max-height:530px !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  filter:contrast(1.035) saturate(1.035) !important;
+  image-rendering:auto;
+  border-radius:18px;
+  box-shadow:0 20px 45px rgba(97,45,67,.17);
+  transform:none !important;
+}
+.atelier-home .ms4-hero-photo .ms4-photo-credit {
+  position:absolute;
+  z-index:2;
+  bottom:9px;
+  left:12px;
+  right:12px;
+  text-align:center;
+  font-size:10px;
+  line-height:1.4;
+  color:#785b6c;
+  text-shadow:0 1px 3px rgba(255,255,255,.85);
+}
+@media (min-width:1450px) {
+  .atelier-home .ms4-hero-photo{min-height:640px;padding:30px 38px 34px}
+  .atelier-home .ms4-hero-photo>img{max-width:min(100%,510px)!important;max-height:590px!important}
+}
+@media (max-width:1000px) {
+  .atelier-home .ms4-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .atelier-home .ms4-hero-photo{min-height:485px;padding:20px}
+  .atelier-home .ms4-hero-photo>img{max-height:450px!important;max-width:min(100%,370px)!important}
+}
+@media (max-width:760px) {
+  .atelier-home .ms4-hero{grid-template-columns:1fr}
+  .atelier-home .ms4-hero-photo {
+    min-height:470px;
+    padding:24px 20px 26px;
+  }
+  .atelier-home .ms4-hero-photo>img {
+    max-width:min(82vw,380px)!important;
+    max-height:430px!important;
+  }
+}
+@media (max-width:440px) {
+  .atelier-home .ms4-hero-photo{min-height:390px;padding:18px 12px 24px}
+  .atelier-home .ms4-hero-photo>img {
+    max-width:min(81vw,315px)!important;
+    max-height:354px!important;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .atelier-home .ms4-hero-photo>img{transition:none!important}
+}
