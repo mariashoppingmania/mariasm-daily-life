@@ -1,70 +1,110 @@
-/* MariaSM homepage: restore the earlier two-column hero.
-   The approved wide artwork remains COMPLETE in the left photo panel. */
+/* MariaSM · Flush-fit split hero. No inset image, empty photo margins, or stretching. */
 .atelier-home .ms4-hero.ms4-hero-split{
   display:grid!important;
-  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;
+  grid-template-columns:minmax(0,55fr) minmax(0,45fr)!important;
   align-items:stretch!important;
-  width:100%;
-  max-width:none;
-  min-height:400px!important;
-  height:auto!important;
-  margin:0!important;
+  width:100%!important;
+  max-width:1500px!important;
+  margin:0 auto!important;
   padding:0!important;
+  min-height:0!important;
+  height:clamp(385px,31vw,465px)!important;
+  border:0!important;
+  border-radius:0;
   overflow:hidden!important;
-  background:linear-gradient(110deg,#fff5f2 25%,#f6e0e7 100%);
+  background:#f7e9ed!important;
 }
 .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo{
+  display:block!important;
   position:relative!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
   min-width:0!important;
-  min-height:400px!important;
-  height:auto!important;
-  padding:clamp(10px,1.4vw,22px)!important;
+  min-height:0!important;
+  width:100%!important;
+  height:100%!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
   overflow:hidden!important;
-  isolation:isolate!important;
-  background:linear-gradient(125deg,#f3e3e6,#fceeea)!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
 }
 .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo::before,
 .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo::after{display:none!important}
 .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo>img.ms4-split-banner{
-  position:relative!important;
-  inset:auto!important;
   display:block!important;
-  flex:0 1 auto!important;
+  position:absolute!important;
+  inset:0!important;
   width:100%!important;
-  max-width:100%!important;
-  height:auto!important;
-  max-height:530px!important;
-  aspect-ratio:1600/901;
-  object-fit:contain!important;
-  object-position:center center!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:none!important;
+  max-height:none!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  object-fit:cover!important;
+  object-position:center!important;
   filter:none!important;
   transform:none!important;
-  box-shadow:none!important;
-  border-radius:10px!important;
-  margin:0!important;
+  image-rendering:auto!important;
 }
 .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-copy{
   display:flex!important;
+  justify-content:center!important;
   min-width:0!important;
+  min-height:0!important;
+  height:100%!important;
+  padding:clamp(16px,2.1vw,31px) clamp(17px,2.7vw,42px)!important;
 }
-@media(max-width:900px){
-  .atelier-home .ms4-hero.ms4-hero-split{grid-template-columns:1fr!important;min-height:0!important}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-copy h1{
+  font-size:clamp(50px,5.2vw,82px)!important;
+  margin:4px 0 11px!important;
+}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-handwritten{
+  font-size:clamp(21px,2.05vw,29px)!important;
+  margin:0 0 4px!important;
+}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-deck{
+  font-size:clamp(14px,1.2vw,17px)!important;
+  line-height:1.48!important;
+  margin:4px 0 10px!important;
+}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-actions{
+  margin-top:7px!important;
+  gap:8px!important;
+}
+.atelier-home .ms4-hero.ms4-hero-split .ms4-hero-actions>a{
+  padding:10px 14px!important;
+  font-size:11px!important;
+}
+@media(max-width:1100px){
+  .atelier-home .ms4-hero.ms4-hero-split{
+    grid-template-columns:1fr!important;
+    height:auto!important;
+    max-width:100%!important;
+  }
   .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo{
+    height:auto!important;
     min-height:0!important;
-    padding:12px!important;
+    aspect-ratio:1600/901!important;
   }
   .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo>img.ms4-split-banner{
+    position:absolute!important;
+    inset:0!important;
     width:100%!important;
-    max-height:none!important;
+    height:100%!important;
+    object-fit:contain!important;
   }
   .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-copy{
-    padding:clamp(24px,5vw,48px)!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:26px 20px 30px!important;
   }
 }
 @media(max-width:480px){
-  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo{padding:8px!important}
-  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-photo>img.ms4-split-banner{border-radius:7px!important}
+  .atelier-home .ms4-hero.ms4-hero-split .ms4-hero-copy h1{font-size:56px!important}
 }
