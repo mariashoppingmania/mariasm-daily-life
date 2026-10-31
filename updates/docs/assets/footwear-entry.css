@@ -1,0 +1,23 @@
+/* Footwear Atelier — fifth collection card, coordinated with MariaSM magazine */
+.atelier-home .ms4-feature-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.atelier-home .ms4-feature-grid>.ms4-feature{grid-column:span 2;min-width:0;min-height:235px}
+.atelier-home .ms4-feature-grid>.ms4-feature:nth-last-child(2),.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:span 3}
+.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy{width:66%}
+.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy strong{font-size:clamp(27px,2.9vw,44px)}
+.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy>b{white-space:normal}
+.atelier-home .ms4-quick-links{grid-template-columns:repeat(7,minmax(0,1fr))}
+.atelier-home .ms4-quick-links>a:nth-child(6){border-right:1px solid #dfb8c4}
+.atelier-home .footwear-gateway{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:0;min-height:320px;overflow:hidden;margin:0 auto 30px;border:1px solid #e9d4dd;border-radius:23px;background:linear-gradient(120deg,#fffaf7,#f7e9ed);box-shadow:0 11px 31px rgba(86,30,55,.095)}
+.atelier-home .footwear-gateway .footwear-copy{padding:clamp(27px,4.1vw,52px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.atelier-home .footwear-gateway .eyebrow{display:inline-flex;background:#fbedf1;border-radius:100px;padding:6px 13px;border:1px solid #e5c4d0;color:#a55370;font-size:10px;letter-spacing:.13em;font-weight:800}
+.atelier-home .footwear-gateway h2{font:400 clamp(2.25rem,3.5vw,3.65rem)/1.09 Georgia,"Times New Roman",serif;letter-spacing:-.045em;color:#542739;margin:11px 0 16px}
+.atelier-home .footwear-gateway h2 em{color:#b06a85;font-weight:400}
+.atelier-home .footwear-gateway p:not(.eyebrow){color:#715965;font-size:clamp(.85rem,1vw,.95rem);line-height:1.74;max-width:530px}
+.atelier-home .footwear-gateway .button{display:inline-flex;color:#fff;background:#71243b;border-radius:99px;padding:12px 21px;text-decoration:none;font-weight:800;font-size:12px;margin-top:9px}
+.atelier-home .footwear-gateway .button:hover{background:#9a4763}
+.atelier-home .footwear-links{display:flex;flex-wrap:wrap;gap:9px 15px;margin-top:19px}
+.atelier-home .footwear-links a{font-size:11px;color:#88455f;text-decoration:none;border-bottom:1px solid #cba2b0;font-weight:750}
+.atelier-home .footwear-art{display:block;background:#e6c6d2;min-height:310px;overflow:hidden}
+.atelier-home .footwear-art img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+@media(max-width:1060px){.atelier-home .ms4-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.atelier-home .ms4-feature-grid>.ms4-feature,.atelier-home .ms4-feature-grid>.ms4-feature:nth-last-child(2),.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:span 1}.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:1/-1}.atelier-home .ms4-quick-links{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.atelier-home .footwear-gateway{grid-template-columns:1fr}.atelier-home .footwear-art{height:265px;min-height:0}.atelier-home .ms4-feature-grid{grid-template-columns:1fr}.atelier-home .ms4-feature-grid>.ms4-feature,.atelier-home .ms4-feature-grid>.ms4-feature:nth-last-child(2),.atelier-home .ms4-feature-grid>.ms4-feature:last-child{grid-column:1}.atelier-home .ms4-feature-grid>.ms4-feature .ms4-feature-copy{width:65%}.atelier-home .ms4-quick-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
