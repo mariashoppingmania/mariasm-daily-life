@@ -41,7 +41,7 @@ if(page.includes('id="navel-piercing"')) throw new Error('Navel section already 
 const insertion='<section id="shopping" class="ac-section">';
 if(!page.includes(insertion)) throw new Error('Cannot locate jewellery shopping section');
 page=page.replace(insertion,html+insertion);
-page=page.replace('</head>','<link rel="stylesheet" href="../assets/navel-piercing.css?v=20261031b"></head>');
+page=page.replace('</head>','<link rel="stylesheet" href="../assets/navel-piercing.css?v=20261031b"><script defer src="../assets/navel-piercing.js?v=20261031b"></script></head>');
 const navNeedle='<a href="#luxury">Luxury houses</a>';
 if(page.includes(navNeedle)) page=page.replace(navNeedle,navNeedle+'<a href="#navel-piercing">Navel Piercing</a>');
 else page=page.replace('aria-label="Page chapters">','aria-label="Page chapters"><a href="#navel-piercing">Navel Piercing</a>');
