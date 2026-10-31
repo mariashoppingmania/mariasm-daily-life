@@ -334,3 +334,454 @@
   .atelier-home .video-card:hover,.atelier-home .short-card:hover,
   .atelier-home .atelier-ribbon a:hover,.atelier-home .photo-gallery figure:hover img{transform:none}
 }
+
+/* ========== MariaSM 2026 home editorial navigation and atelier collection ========== */
+/* Styled exclusively on the homepage; native article navigation remains unchanged. */
+.atelier-home .home-announcement{
+  font-weight:700;
+  font-size:10px;
+  letter-spacing:.18em;
+  background:linear-gradient(90deg,#552335,#78394f,#552335);
+  padding:9px 12px;
+}
+.atelier-home .home-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  border-bottom:1px solid #ecd9df;
+  background:rgba(255,250,248,.97);
+  box-shadow:0 8px 30px rgba(78,26,50,.055);
+}
+.atelier-home .home-header .home-header-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:center;
+  min-height:84px;
+  padding-top:10px;
+  padding-bottom:10px;
+  flex-wrap:nowrap;
+}
+.atelier-home .home-header .home-brand{
+  position:relative;
+  display:inline-flex;
+  flex-direction:column;
+  flex:none;
+  color:#662941;
+  text-decoration:none;
+  white-space:nowrap;
+  line-height:1.08;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(26px,2.6vw,34px);
+  font-weight:700;
+  letter-spacing:-.045em;
+}
+.atelier-home .home-header .home-brand::after{
+  content:"✧";
+  position:absolute;
+  color:#c797a7;
+  top:-5px;
+  right:-23px;
+  font-size:20px;
+  font-weight:400;
+}
+.atelier-home .home-header .home-brand small{
+  margin-top:6px;
+  font-size:9px;
+  letter-spacing:.18em;
+  color:#947284;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-weight:650;
+}
+.atelier-home .home-header .home-primary-nav{
+  display:flex !important;
+  flex:none;
+  position:static;
+  max-width:none;
+  width:auto;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  gap:clamp(3px,.68vw,9px);
+  padding:0;
+  margin:0;
+  background:none;
+  box-shadow:none;
+  border:0;
+  overflow:visible;
+}
+.atelier-home .home-header .home-primary-nav>a{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  flex:none;
+  min-height:42px;
+  padding:10px clamp(7px,.7vw,13px);
+  border-radius:999px;
+  font-size:clamp(10px,.78vw,12px);
+  letter-spacing:.012em;
+  line-height:1.2;
+  font-weight:750;
+  white-space:nowrap;
+  color:#64414e;
+  background:transparent;
+  border:1px solid transparent;
+  text-decoration:none;
+  transition:background .18s,color .18s,transform .18s;
+}
+.atelier-home .home-header .home-primary-nav>a:hover,
+.atelier-home .home-header .home-primary-nav>a:focus-visible{
+  background:#f5e6eb;
+  color:#913f5f;
+  border-color:#ebd4dd;
+}
+.atelier-home .home-header .home-primary-nav>a.home-nav-current{
+  background:#f4e2e8;
+  color:#743049;
+  border-color:#e6c9d4;
+}
+.atelier-home .home-header .home-primary-nav>a.home-youtube-link{
+  color:#fff !important;
+  padding:11px 19px;
+  background:#71243b;
+  border-color:#71243b;
+  box-shadow:0 7px 20px rgba(113,36,59,.13);
+  margin-left:6px;
+}
+.atelier-home .home-header .home-primary-nav>a.home-youtube-link:hover{
+  background:#923d59;
+  color:#fff !important;
+  transform:translateY(-1px);
+}
+.atelier-home .home-header .home-menu-toggle{
+  display:none !important;
+  align-items:center;
+  gap:8px;
+  padding:10px 15px;
+  min-height:43px;
+  color:#733149;
+  border-radius:100px;
+  border:1px solid #dfbfd0;
+  background:#fff8fa;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+}
+.atelier-home .home-header .home-menu-toggle span{
+  font-size:18px;
+  font-weight:400;
+}
+/* Editorial umbrella above the three existing long-form banner sections */
+.atelier-home .atelier-collections-head{
+  padding:clamp(47px,5vw,78px) 0 22px;
+  text-align:center;
+  max-width:900px;
+  scroll-margin-top:100px;
+}
+.atelier-home .atelier-collections-head .eyebrow{
+  margin:0 0 15px;
+  letter-spacing:.18em;
+  font-size:11px;
+  color:#a35573;
+}
+.atelier-home .atelier-collections-head h2{
+  margin:0 0 15px;
+  font:400 clamp(2.8rem,5.7vw,5.3rem)/1.05 Georgia,"Times New Roman",serif;
+  letter-spacing:-.06em;
+  color:#54283c;
+}
+.atelier-home .atelier-collections-head h2 em{
+  font-weight:400;
+  color:#b66d87;
+}
+.atelier-home .atelier-collections-head p:not(.eyebrow){
+  color:#7a6470;
+  font-size:clamp(.93rem,1.2vw,1.05rem);
+  line-height:1.8;
+  max-width:640px;
+  margin:0 auto;
+}
+.atelier-home .collections-rule{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  margin:24px 0 0;
+  color:#b3778d;
+  font-family:Georgia,serif;
+  font-size:27px;
+}
+.atelier-home .collections-rule::before,
+.atelier-home .collections-rule::after{
+  content:"";
+  width:min(92px,15vw);
+  height:1px;
+  background:linear-gradient(90deg,transparent,#deafbe);
+}
+.atelier-home .collections-rule::after{transform:rotate(180deg)}
+/* Same editorial proportions, typographic rhythm, shadows and CTA style for all three ateliers */
+.atelier-home .fashion-gateway,
+.atelier-home .fragrance-gateway,
+.atelier-home .makeup-gateway{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);
+  align-items:stretch;
+  min-height:365px;
+  gap:0;
+  padding:0;
+  margin:0 auto 27px;
+  border:1px solid #e8d5dd;
+  border-radius:23px;
+  overflow:hidden;
+  background:linear-gradient(124deg,#fffaf8,#f7e9ed);
+  box-shadow:0 13px 42px rgba(87,35,57,.085);
+}
+.atelier-home .fashion-gateway>div:first-child,
+.atelier-home .fragrance-gateway>.fragrance-gateway-copy,
+.atelier-home .makeup-gateway>.makeup-gateway-copy{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  min-width:0;
+  padding:clamp(30px,4.3vw,55px);
+  position:relative;
+  z-index:1;
+}
+.atelier-home .fashion-gateway .eyebrow,
+.atelier-home .fragrance-gateway .eyebrow,
+.atelier-home .makeup-gateway .eyebrow{
+  display:inline-flex;
+  padding:6px 13px;
+  border:1px solid #e5c4d0;
+  border-radius:100px;
+  margin:0 0 11px;
+  background:#fbedf1;
+  color:#a55370;
+  font-size:10px;
+  line-height:1.4;
+  letter-spacing:.13em;
+  font-weight:800;
+}
+.atelier-home .fashion-gateway h2,
+.atelier-home .fragrance-gateway h2,
+.atelier-home .makeup-gateway h2{
+  font:400 clamp(2.25rem,3.5vw,3.65rem)/1.09 Georgia,"Times New Roman",serif;
+  letter-spacing:-.045em;
+  color:#542739;
+  margin:0 0 17px;
+  text-wrap:balance;
+}
+.atelier-home .fashion-gateway h2 em,
+.atelier-home .fragrance-gateway h2 em,
+.atelier-home .makeup-gateway h2 em{color:#b06a85;font-weight:400}
+.atelier-home .fashion-gateway p:not(.eyebrow),
+.atelier-home .fragrance-gateway p:not(.eyebrow),
+.atelier-home .makeup-gateway p:not(.eyebrow){
+  font-size:clamp(.85rem,1vw,.95rem);
+  line-height:1.73;
+  max-width:515px;
+  color:#705762;
+  margin:0 0 12px;
+}
+.atelier-home .fashion-gateway .button,
+.atelier-home .fragrance-gateway .button,
+.atelier-home .makeup-gateway .button{
+  display:inline-flex;
+  width:auto;
+  border-radius:100px;
+  padding:12px 20px;
+  background:#71243b;
+  color:#fff;
+  font-size:12px;
+  letter-spacing:.01em;
+  font-weight:800;
+  border:1px solid #71243b;
+  text-decoration:none;
+  box-shadow:0 8px 20px #71243b23;
+  margin:13px 0 0;
+  transition:transform .2s,background .2s;
+}
+.atelier-home .fashion-gateway .button:hover,
+.atelier-home .fragrance-gateway .button:hover,
+.atelier-home .makeup-gateway .button:hover{background:#944362;transform:translateY(-2px)}
+.atelier-home .fashion-extra-links,
+.atelier-home .fragrance-gateway-links,
+.atelier-home .makeup-gateway-links{
+  display:flex;
+  gap:10px 15px;
+  flex-wrap:wrap;
+  margin-top:17px;
+}
+.atelier-home .fashion-extra-links a,
+.atelier-home .fragrance-gateway-links a,
+.atelier-home .makeup-gateway-links a{
+  font-size:11px;
+  font-weight:750;
+  color:#8d4862;
+  text-decoration:none;
+  border-bottom:1px solid #cc9faf;
+}
+.atelier-home .fashion-gateway-art,
+.atelier-home .fragrance-gateway-art,
+.atelier-home .makeup-gateway-art{
+  min-width:0;
+  min-height:360px;
+  grid-column:2;
+  grid-row:1;
+  overflow:hidden;
+  background:#e5c4cf;
+}
+.atelier-home .fashion-gateway-art{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  padding:clamp(20px,3vw,37px);
+  background:radial-gradient(circle at 80% 14%,#fff7f4,#edd4d9 85%);
+  align-content:center;
+}
+.atelier-home .fashion-gateway-art img{
+  min-width:0;
+  width:100%;
+  height:clamp(200px,24vw,300px);
+  object-fit:cover;
+  object-position:top center;
+  border:4px solid #fff7f5;
+  border-radius:12px;
+  box-shadow:0 15px 31px rgba(91,47,62,.18);
+}
+.atelier-home .fragrance-gateway-art{
+  background:linear-gradient(120deg,#efd3dc,#dcb8c5);
+}
+.atelier-home .fragrance-gateway-art::after{
+  bottom:19px;
+  left:20px;
+  right:20px;
+  font-size:12px;
+  text-align:center;
+  border-radius:100px;
+  padding:10px 14px;
+}
+.atelier-home .fragrance-gateway-art img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.atelier-home .makeup-gateway-art{
+  background:radial-gradient(circle at 70% 20%,#fff4f1,#e7bbc8 80%);
+}
+.atelier-home .makeup-gateway-art img{
+  width:49%;
+  height:80%;
+  object-fit:cover;
+  border:7px solid #fff9f7;
+  border-radius:12px;
+}
+/* The alternating centre panel echoes an editorial magazine spread. */
+.atelier-home .fragrance-gateway{
+  grid-template-columns:minmax(0,.97fr) minmax(0,1.03fr);
+  background:linear-gradient(125deg,#f7e5e9,#fffaf8);
+}
+.atelier-home .fragrance-gateway>.fragrance-gateway-art{grid-column:1;grid-row:1}
+.atelier-home .fragrance-gateway>.fragrance-gateway-copy{grid-column:2;grid-row:1}
+/* Seasonal banner stays visible but matches the softer site palette. */
+.atelier-home .halloween-banner{
+  width:min(1200px,calc(100% - 44px));
+  margin:17px auto 0;
+  border:1px solid #ebd4db;
+  border-radius:18px;
+  box-shadow:0 5px 26px rgba(75,29,44,.04);
+}
+/* A little more visual breathing room around the homepage hero */
+.atelier-home .hero{border-radius:0 0 22px 22px}
+.atelier-home .hero .actions .button{border-radius:100px}
+.atelier-home #new{scroll-margin-top:96px}
+.atelier-home #shorts{scroll-margin-top:96px}
+.atelier-home #photo-diary{scroll-margin-top:96px}
+.atelier-home #about{scroll-margin-top:96px}
+@media(max-width:1220px){
+  .atelier-home .home-header .home-header-inner{min-height:72px}
+  .atelier-home .home-header .home-primary-nav{display:none !important}
+  .atelier-home .home-header .home-menu-toggle{display:inline-flex !important}
+  .atelier-home .home-header .home-primary-nav.open,
+  .atelier-home .home-header .home-primary-nav.is-open,
+  .atelier-home .home-header:has(.home-menu-toggle[aria-expanded="true"]) .home-primary-nav{
+    display:flex !important;
+    position:absolute;
+    z-index:80;
+    top:100%;
+    right:max(16px,calc((100vw - 1200px)/2));
+    width:min(395px,calc(100vw - 32px));
+    max-height:calc(100dvh - 125px);
+    overflow:auto;
+    flex-direction:column;
+    align-items:stretch;
+    gap:3px;
+    padding:12px;
+    border:1px solid #e6ccd6;
+    border-radius:0 0 17px 17px;
+    background:#fffaf8;
+    box-shadow:0 17px 40px rgba(64,24,40,.16);
+  }
+  .atelier-home .home-header .home-primary-nav>a{
+    font-size:13px;
+    justify-content:flex-start;
+    min-height:43px;
+    padding:11px 15px;
+  }
+  .atelier-home .home-header .home-primary-nav>a.home-youtube-link{
+    justify-content:center;
+    margin:5px 0 2px;
+  }
+}
+@media(max-width:760px){
+  .atelier-home .atelier-collections-head{padding-top:55px;padding-bottom:19px}
+  .atelier-home .atelier-collections-head h2{font-size:clamp(2.7rem,9vw,4rem)}
+  .atelier-home .fashion-gateway,
+  .atelier-home .fragrance-gateway,
+  .atelier-home .makeup-gateway{
+    grid-template-columns:1fr;
+    min-height:0;
+    margin-bottom:22px;
+    border-radius:20px;
+  }
+  .atelier-home .fashion-gateway>div:first-child,
+  .atelier-home .fragrance-gateway>.fragrance-gateway-copy,
+  .atelier-home .makeup-gateway>.makeup-gateway-copy{
+    grid-column:1;
+    grid-row:1;
+    padding:clamp(25px,5vw,40px);
+  }
+  .atelier-home .fashion-gateway-art,
+  .atelier-home .fragrance-gateway>.fragrance-gateway-art,
+  .atelier-home .makeup-gateway-art{
+    grid-column:1;
+    grid-row:2;
+    min-height:270px;
+    height:300px;
+  }
+  .atelier-home .fashion-gateway-art img{height:220px}
+  .atelier-home .fragrance-gateway-art img{position:absolute;inset:0;height:100%}
+  .atelier-home .makeup-gateway-art img{height:86%;width:43%}
+  .atelier-home .halloween-banner{width:calc(100% - 28px);margin-top:11px}
+}
+@media(max-width:480px){
+  .atelier-home .home-announcement{font-size:9px;letter-spacing:.10em}
+  .atelier-home .home-header .home-brand{font-size:27px}
+  .atelier-home .home-header .home-header-inner{min-height:69px}
+  .atelier-home .home-header .home-menu-toggle{padding:9px 12px;font-size:12px}
+  .atelier-home .fashion-gateway h2,
+  .atelier-home .fragrance-gateway h2,
+  .atelier-home .makeup-gateway h2{font-size:2.35rem}
+  .atelier-home .fashion-gateway-art,
+  .atelier-home .fragrance-gateway>.fragrance-gateway-art,
+  .atelier-home .makeup-gateway-art{height:250px;min-height:250px}
+  .atelier-home .fashion-gateway-art img{height:175px}
+}
+@media(prefers-reduced-motion:reduce){
+  .atelier-home .home-primary-nav>a,
+  .atelier-home .fashion-gateway .button,
+  .atelier-home .fragrance-gateway .button,
+  .atelier-home .makeup-gateway .button{transition:none!important}
+}
