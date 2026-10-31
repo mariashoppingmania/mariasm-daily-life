@@ -26,3 +26,13 @@
 .ac-product-body h3{font:400 21px/1.2 Georgia,serif!important}
 .ac-product-body .ac-price{font-size:18px!important}
 .ac-hero-photo img{object-fit:contain;background:#f7edf0}
+
+
+/* Shape-accurate visual guide: preserve full contours without cropping.
+   Retail photography remains attributed and uses matching references only. */
+.ac-style-studies figure{background:#fffaf8}
+.ac-style-studies img{aspect-ratio:4/3!important;object-fit:contain!important;background:linear-gradient(140deg,#f9e9e2,#e6d0cd)!important}
+.ac-style-studies figcaption{padding:13px 15px 17px}
+.ac-style-studies figcaption span{display:block;line-height:1.55;margin:7px 0 9px}
+.ac-style-studies .ac-study-source{display:block;color:#947480;font-size:10px;line-height:1.5;border-top:1px solid #f1e4e9;padding-top:9px}
+.ac-style-studies .ac-study-source a{color:#813754;text-decoration:underline}
