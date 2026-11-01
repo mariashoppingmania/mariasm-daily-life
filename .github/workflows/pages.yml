@@ -39,6 +39,8 @@ jobs:
         run: node source/mariasm-site/scripts/build.mjs
       - name: Add Christmas decorations and remove Halloween
         run: node source/mariasm-site/scripts/postbuild-christmas.mjs
+      - name: Add Winter Style 2027 guide and home link
+        run: node source/mariasm-site/scripts/postbuild-winter.mjs
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
