@@ -9,7 +9,7 @@ const scene=String.raw`
 <section class="christmas-welcome" aria-labelledby="christmas-welcome-title">
  <div class="christmas-welcome-copy">
   <p class="eyebrow">MariaSM Holiday Edition · Winter 2026</p>
-  <h1 id="christmas-welcome-title">A little Christmas <em>magic, just for you.</em></h1>
+  <h2 id="christmas-welcome-title">A little Christmas <em>magic, just for you.</em></h2>
   <p>Step into a cosy winter wonderland of sparkling lights, drifting snow, treasured little gifts and warm moments to share. From my world to yours, Merry Christmas and a beautiful new year.</p>
   <div class="xmas-intro-controls">
    <button type="button" class="christmas-music-toggle" data-xmas-action="music" aria-pressed="false">♫ Play holiday music</button>
