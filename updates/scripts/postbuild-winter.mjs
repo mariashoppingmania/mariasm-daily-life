@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),docs=path.join(root,'docs');
 const products=[
-['Beanies & scarves','Cover your ears and neck with fleece-lined or merino layers.','https://www.uniqlo.com/it/it/','UNIQLO','photo-1510598153732-a68c8f4e294b'],
+['Beanies & scarves','Cover your ears and neck with fleece-lined or merino layers.','https://www.uniqlo.com/it/it/','UNIQLO','photo-1719518870616-8deacda7e18b'],
 ['Thermal base layers','Warm, breathable tops and leggings: your secret winter superheroes.','https://www.uniqlo.com/it/it/','UNIQLO HEATTECH','photo-1483985988355-763728e1935b'],
 ['Wool & cosy knits','Layer a wool or cashmere-blend sweater for beautiful everyday warmth.','https://www.zalando.it/abbigliamento-donna/','Zalando','photo-1483985988355-763728e1935b'],
 ['Waterproof winter parkas','Look for sealed seams, a proper hood and adjustable cuffs.','https://www.columbiasportswear.it/IT/c/women-jacketsvests-winter','Columbia','photo-1539533018447-63fcce2678e3'],
