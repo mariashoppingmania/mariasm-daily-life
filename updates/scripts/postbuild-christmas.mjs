@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const docs=path.join(root,'docs');
-const scene=String.raw\`
+const scene=String.raw`
 <section class="christmas-welcome" aria-labelledby="christmas-welcome-title">
  <div class="christmas-welcome-copy">
   <p class="eyebrow">MariaSM Holiday Edition · Winter 2026</p>
@@ -67,8 +67,8 @@ const scene=String.raw\`
    </g>
   </svg>
  </div>
-</section>\`;
-const footer=String.raw\`<aside class="christmas-footer" aria-label="Christmas greeting"><span class="xmas-goodies" aria-hidden="true">🦌 🎅 🎄 🎁 🍪 🧦 ☃️ 🔔 🌿</span><strong>Season's greetings from MariaSM!</strong> May your winter be full of warmth, sparkle and little moments of wonder. ❄</aside>\`;
+</section>`;
+const footer=String.raw`<aside class="christmas-footer" aria-label="Christmas greeting"><span class="xmas-goodies" aria-hidden="true">🦌 🎅 🎄 🎁 🍪 🧦 ☃️ 🔔 🌿</span><strong>Season's greetings from MariaSM!</strong> May your winter be full of warmth, sparkle and little moments of wonder. ❄</aside>`;
 let pages=0,homeChanged=false,removed=0;
 function walk(folder){
   for(const entry of fs.readdirSync(folder,{withFileTypes:true})){
@@ -86,10 +86,10 @@ function walk(folder){
              .replace(/\sclass="halloween"/g,'');
     if(before!==html)removed++;
     if(!html.includes('christmas-2026.css')){
-      html=html.replace('</head>',\`<link rel="stylesheet" href="\${prefix}assets/christmas-2026.css?v=20261101"></head>\`);
+      html=html.replace('</head>',`<link rel="stylesheet" href="${prefix}assets/christmas-2026.css?v=20261101"></head>`);
     }
     if(!html.includes('christmas-2026.js')){
-      html=html.replace('</body>',\`<script src="\${prefix}assets/christmas-2026.js?v=20261101" defer></script></body>\`);
+      html=html.replace('</body>',`<script src="${prefix}assets/christmas-2026.js?v=20261101" defer></script></body>`);
     }
     if(rel==='index.html'){
       if(!html.includes('christmas-welcome')){
@@ -114,4 +114,4 @@ if(!pages)throw Error('No pages to decorate');
 for(const name of ['christmas-2026.css','christmas-2026.js']){
  if(!fs.existsSync(path.join(docs,'assets',name)))throw Error('Missing Christmas asset: '+name);
 }
-console.log(\`Christmas dressing applied to \${pages} pages; \${removed} pages had Halloween references; tree introduction added.\`);
+console.log(`Christmas dressing applied to ${pages} pages; ${removed} pages had Halloween references; tree introduction added.`);
