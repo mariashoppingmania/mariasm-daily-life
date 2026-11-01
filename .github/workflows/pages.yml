@@ -37,6 +37,8 @@ jobs:
         run: node source/mariasm-site/scripts/refresh-youtube.mjs
       - name: Build static pages
         run: node source/mariasm-site/scripts/build.mjs
+      - name: Add Christmas decorations and remove Halloween
+        run: node source/mariasm-site/scripts/postbuild-christmas.mjs
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
