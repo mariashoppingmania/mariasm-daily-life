@@ -45,8 +45,53 @@ const lessons={
 ['Roman red-slip wares and medieval pottery','Terra sigillata circulated widely in the Roman world, alongside glass and metal drinking vessels. Medieval pottery traditions continued to diversify across regions, with glaze technologies and trade changing the appearance of everyday service.'],
 ['Renaissance maiolica and European porcelain','Italian centres developed painted tin-glazed maiolica with intricate designs. Eighteenth-century European porcelain manufacture grew in dialogue with established Asian production, while later industrialisation made matching services more accessible.'],
 ['How to recognise quality','Earthenware, stoneware, porcelain and bone china have different raw materials, density and firing characteristics. Check glazing, chip resistance, dishwasher instructions and the availability of replacement pieces. Antiques may not be food-safe.']]};
-const css='<style id="maria-curation-css">.maria-catalogue-nav{position:relative;z-index:6;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;padding:10px 14px;background:#f8edf1;border-bottom:1px solid #e8ceda;font-family:Arial,sans-serif}.maria-catalogue-nav b{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7b4963;margin-right:10px}.maria-catalogue-nav a{border:1px solid #ead5df;background:white;border-radius:30px;padding:7px 10px;color:#704154!important;text-decoration:none!important;font-size:12px}.maria-catalogue-nav a:hover{background:#7c4761;color:white!important}.ma-curation{margin:36px auto;max-width:1170px;padding:25px;background:#fff8f9;border:1px solid #e7d7dd;border-radius:18px;color:#543d48}.ma-curation h2{font:normal clamp(29px,3vw,40px) Georgia,serif;color:#743b55}.ma-curation .details{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px}.ma-curation article{border:1px solid #e8d6df;border-radius:14px;background:white;padding:17px}.ma-curation article h3{font:normal 22px Georgia,serif;color:#7e4662}.ma-curation article p,.ma-curation p{line-height:1.65}.ma-curation .photogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.ma-curation figure{margin:0;border:1px solid #ead6df;background:white;border-radius:12px;overflow:hidden}.ma-curation figure img{width:100%;height:210px;object-fit:contain;background:#f4e9ee;display:block}.ma-curation figcaption{padding:11px;font-size:12px}.ma-cards-photo{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:15px;margin-top:18px}.ma-cards-photo a{border:1px solid #e8d3dc;border-radius:17px;overflow:hidden;background:white;color:#744157!important;text-decoration:none!important}.ma-cards-photo img{width:100%;height:154px;object-fit:cover;display:block}.ma-cards-photo strong,.ma-cards-photo small{display:block;padding:9px 12px}.ma-cards-photo strong{font:normal 21px Georgia,serif}.ma-cards-photo small{font-size:12px;padding-top:0;padding-bottom:13px}@media(max-width:600px){.ma-curation{padding:16px}.maria-catalogue-nav{justify-content:flex-start}.maria-catalogue-nav b{width:100%}}</style>';
-function nav(prefix){return '<div class="maria-catalogue-nav" aria-label="Main MariaSM atelier navigation"><b>Explore MariaSM</b><a href="'+prefix+'index.html">Home</a>'+ateliers.map(a=>'<a href="'+prefix+a[0]+'/index.html">'+a[2]+' '+esc(a[1])+'</a>').join('')+'</div>'}
+const css='<style id="maria-curation-css">.maria-catalogue-nav{position:relative;z-index:6;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;padding:10px 14px;background:#f8edf1;border-bottom:1px solid #e8ceda;font-family:Arial,sans-serif}.maria-catalogue-nav b{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7b4963;margin-right:10px}.maria-catalogue-nav a{border:1px solid #ead5df;background:white;border-radius:30px;padding:7px 10px;color:#704154!important;text-decoration:none!important;font-size:12px}.maria-catalogue-nav a:hover{background:#7c4761;color:white!important}.ma-curation{margin:36px auto;max-width:1170px;padding:25px;background:#fff8f9;border:1px solid #e7d7dd;border-radius:18px;color:#543d48}.ma-curation h2{font:normal clamp(29px,3vw,40px) Georgia,serif;color:#743b55}.ma-curation .details{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px}.ma-curation article{border:1px solid #e8d6df;border-radius:14px;background:white;padding:17px}.ma-curation article h3{font:normal 22px Georgia,serif;color:#7e4662}.ma-curation article p,.ma-curation p{line-height:1.65}.ma-curation .photogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.ma-curation figure{margin:0;border:1px solid #ead6df;background:white;border-radius:12px;overflow:hidden}.ma-curation figure img{width:100%;height:210px;object-fit:contain;background:#f4e9ee;display:block}.ma-curation figcaption{padding:11px;font-size:12px}.ma-cards-photo{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:15px;margin-top:18px}.ma-cards-photo a{border:1px solid #e8d3dc;border-radius:17px;overflow:hidden;background:white;color:#744157!important;text-decoration:none!important}.ma-cards-photo img{width:100%;height:154px;object-fit:cover;display:block}.ma-cards-photo strong,.ma-cards-photo small{display:block;padding:9px 12px}.ma-cards-photo strong{font:normal 21px Georgia,serif}.ma-cards-photo small{font-size:12px;padding-top:0;padding-bottom:13px}@media(max-width:600px){.ma-curation{padding:16px}.maria-catalogue-nav{justify-content:flex-start}.maria-catalogue-nav b{width:100%}}/* The extra menu belongs alongside Ateliers; there is no sitewide ribbon above the header. */
+.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{min-width:265px;left:0;right:auto;grid-template-columns:1fr}
+.ma-top{position:relative;z-index:140}
+.ma-top .ma-navigation{align-items:center}
+.ma-top .ms-nav-group{position:relative;flex:0 0 auto}
+.ma-top .ms-nav-group>summary{display:inline-flex;align-items:center;list-style:none;border:1px solid #e3cada;background:#fff8fa;border-radius:99px;padding:8px 12px;color:#744058;cursor:pointer;font:700 12px/1.2 system-ui,Arial,sans-serif}
+.ma-top .ms-nav-group>summary::-webkit-details-marker{display:none}
+.ma-top .ms-nav-group>summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);margin-left:9px}
+.ma-top .ms-nav-group[open]>summary,.ma-top .ms-nav-group>summary:hover{background:#edd7e2}
+.ma-top .ms-nav-group .ms-nav-panel{position:absolute;top:calc(100% + 8px);left:0;z-index:170;background:#fffaf8;border:1px solid #e7ccd5;border-radius:14px;box-shadow:0 14px 35px #542b4833;width:min(310px,calc(100vw - 32px));max-height:65vh;overflow:auto;display:grid;grid-template-columns:1fr;gap:3px;padding:9px}
+.ma-top .ms-nav-group .ms-nav-panel a{font:600 12px/1.4 system-ui,Arial,sans-serif;padding:9px 11px;border-radius:8px;color:#684353;text-decoration:none}
+.ma-top .ms-nav-group .ms-nav-panel a:hover,.ma-top .ms-nav-group .ms-nav-panel a:focus-visible{background:#f5e6ed}
+@media(max-width:1220px){.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;min-width:0;max-width:100%;margin:0;padding:5px 3px 7px;border:0;border-radius:10px;background:#fff5f8;box-shadow:none}}
+@media(max-width:650px){.ma-top{flex-wrap:wrap}.ma-top .ma-navigation{justify-content:flex-start;gap:8px}.ma-top .ms-nav-group .ms-nav-panel{left:0;right:auto}}
+@media(max-width:450px){.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{grid-template-columns:1fr}}
+</style>';
+// Place the six new guides in a true dropdown beside the existing Ateliers menu.
+const mainAteliers=[
+['fashion','Fashion Atlas'],['fragrance','Fragrance'],['makeup','Makeup'],
+['spirituality','Spirituality & Wellbeing'],['footwear','Footwear'],
+['swimwear-lingerie','Swimwear & Lingerie'],['fitness-activewear','Fitness & Activewear'],
+['bags','Bags & Handbags'],['hats','Hats & Headwear'],['jewellery','Jewellery'],
+['watches','Watches & Horology']
+];
+function group(prefix,title,kind,entries){
+return '<details class="ms-nav-group" data-menu="'+kind+'"><summary>'+esc(title)+'</summary><div class="ms-nav-panel">'+entries.map(a=>'<a href="'+prefix+a[0]+'/index.html">'+esc(a[1])+'</a>').join('')+'</div></details>';
+}
+function updateNavigation(html,rel,prefix){
+  // Remove the prior sitewide bar and the redundant footer menu from the previous editorial pass.
+  html=html.replace(/<div class="maria-catalogue-nav"[\s\S]*?<\/div>/g,'');
+  html=html.replace(/<div data-mariasm-new-ateliers-menu[\s\S]*?<\/div>/g,'');
+  const label='Accessories & Home';
+  if(html.includes('class="ms-site-nav') || html.includes('ms-site-nav"')){
+    const menu=group(prefix,label,'accessories-home',ateliers.map(a=>[a[0],a[1]]));
+    // Insert immediately after the existing Ateliers dropdown, not above the header.
+    const marker=/(<details class="ms-nav-group" data-menu="ateliers">[\s\S]*?<\/details>)/;
+    if(!marker.test(html))throw Error('Could not find Ateliers dropdown in '+rel);
+    html=html.replace(marker,'$1'+menu);
+  }else if(ateliers.some(a=>rel===a[0]+'/index.html')){
+    // Standalone editorial pages have a smaller native header; give them matching inline dropdowns.
+    const menus=group(prefix,'Ateliers','ateliers',mainAteliers)+group(prefix,label,'accessories-home',ateliers.map(a=>[a[0],a[1]]));
+    const marker=/(<nav class="ma-navigation">)/;
+    if(!marker.test(html))throw Error('Could not find editorial navigation in '+rel);
+    html=html.replace(marker,'$1'+menus);
+  }
+  return html;
+}
 function gallery(slug){const pics=photos[slug];return '<section class="ma-curation"><h2>Photographic details &amp; materials</h2><p>Relevant visual references from historical collections, contemporary makers and retail photography. A reference image does not claim to depict the precise historical example or shopping variant.</p><div class="photogrid">'+pics.map(p=>'<figure><img loading="lazy" alt="'+esc(p[1])+'" src="'+esc(p[0])+'" onerror="this.onerror=null;this.style.visibility=&#39;hidden&#39;"><figcaption>'+esc(p[1])+'</figcaption></figure>').join('')+'</div></section>'}
 function detail(slug){return '<section class="ma-curation" id="maria-deep-reading"><h2>The story behind the objects</h2><div class="details">'+lessons[slug].map(x=>'<article><h3>'+esc(x[0])+'</h3><p>'+esc(x[1])+'</p></article>').join('')+'</div></section>'}
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory()){walk(f);continue}if(!e.name.endsWith('.html'))continue;const rel=path.relative(docs,f).replaceAll(path.sep,'/');const prefix='../'.repeat(rel.split('/').length-1);let html=fs.readFileSync(f,'utf8');if(html.includes('maria-curation-css'))continue;
@@ -56,7 +101,7 @@ html=html.replace(/<section class="wrap section" id="mariasm-craft-ateliers">[\s
 }
 for(const a of ateliers){if(rel===a[0]+'/index.html'){html=html.replace('<section id="types" class="ma-section">',gallery(a[0])+'<section id="types" class="ma-section">');html=html.replace('<section id="shopping" class="ma-section">',detail(a[0])+'<section id="shopping" class="ma-section">');}}
 html=html.replace('</head>',css+'</head>');
-html=html.replace(/(<body\b[^>]*>)/i,'$1'+nav(prefix));
+html=updateNavigation(html,rel,prefix);
 fs.writeFileSync(f,html);}}
 walk(docs);
 console.log('Applied MariaSM photo, history, homepage and cross-site navigation finishing pass.');
