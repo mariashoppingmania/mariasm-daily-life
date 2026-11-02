@@ -134,7 +134,7 @@
           "€29.99",
           "Budget",
           "https://www2.hm.com/it_it/productpage.1315889001.html",
-          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+          ""
         ],
         [
           "H&M leather belt with oval buckle",
@@ -142,39 +142,39 @@
           "€25.99",
           "Budget",
           "https://www2.hm.com/it_it/productpage.1255195001.html",
-          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+          ""
         ],
         [
           "& Other Stories leather belt",
           "& Other Stories",
           "€49.00",
           "Contemporary",
-          "https://www2.hm.com/it_it/productpage.1322760002.html",
-          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+          "",
+          ""
         ],
         [
           "ARKET slim leather belt",
           "ARKET",
           "€49.00",
           "Contemporary",
-          "https://www2.hm.com/it_it/productpage.1261859001.html",
-          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+          "",
+          ""
         ],
         [
-          "Gucci GG Marmont leather belt",
+          "Gucci GG Marmont black leather belt",
           "Gucci",
-          "€430.00",
+          "€470.00",
           "Luxury",
-          "https://www.gucci.com/it/it/ca/women/accessories-for-women/belts-for-women-c-women-accessories-belts",
-          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+          "https://www.gucci.com/it/it/pr/women/accessories-for-women/belts-for-women/gg-marmont-belt-p-863293AAGD41000",
+          ""
         ],
         [
-          "Gucci slim reversible belt",
+          "Gucci reversible GG Marmont belts",
           "Gucci",
-          "€390.00",
+          "See official boutique",
           "Luxury",
-          "https://www.gucci.com/it/it/ca/women/accessories-for-women/belts-for-women-c-women-accessories-belts",
-          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+          "https://www.gucci.com/it/it/ca/women/accessories-for-women/belts-for-women/reversible-belts-c-women-accessories-belts",
+          ""
         ],
         [
           "Albert Thurston traditional braces",
@@ -182,7 +182,7 @@
           "Price on retailer",
           "Heritage",
           "https://www.albertthurston.com/",
-          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+          ""
         ],
         [
           "Hermès fine leather belts",
@@ -190,7 +190,7 @@
           "Price on retailer",
           "Ultra luxury",
           "https://www.hermes.com/it/it/category/donna/accessori/cinture/",
-          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+          ""
         ]
       ],
       "sources": [
@@ -318,7 +318,7 @@
           "€24.90",
           "Budget",
           "https://www.uniqlo.com/it/it/",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "Soft yarn scarf",
@@ -326,7 +326,7 @@
           "€29.90",
           "Budget",
           "https://www.uniqlo.com/it/it/",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "100% cashmere scarf",
@@ -334,7 +334,7 @@
           "€59.90",
           "Accessible cashmere",
           "https://www.uniqlo.com/it/it/products/E464751-000/00",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "Large soft yarn scarf",
@@ -342,7 +342,7 @@
           "€29.90",
           "Everyday",
           "https://www.uniqlo.com/it/it/",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "Check cashmere scarf",
@@ -350,7 +350,7 @@
           "€525.00",
           "Luxury",
           "https://www.mytheresa.com/it/it/donna/burberry-sciarpa-burberry-check-in-cashmere-beige-p00946995",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "Check scarf",
@@ -358,7 +358,7 @@
           "€441.00",
           "Luxury",
           "https://www.pedrinionline.com/",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "Reversible cashmere scarf",
@@ -366,7 +366,7 @@
           "€520.00",
           "Luxury",
           "https://www.lambitelli.com/",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ],
         [
           "Silk carrés & shawls",
@@ -374,7 +374,7 @@
           "Price on retailer",
           "Ultra luxury",
           "https://www.hermes.com/it/it/category/donna/sciarpe-scialli-e-foulard/",
-          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+          ""
         ]
       ],
       "sources": [
@@ -502,7 +502,7 @@
           "€19.95",
           "Budget",
           "https://www.decathlon.it/",
-          "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg"
+          ""
         ],
         [
           "Heat Keeper teddy gloves",
@@ -510,7 +510,7 @@
           "€25.95",
           "Budget",
           "https://www.decathlon.it/",
-          "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg"
+          ""
         ],
         [
           "Montreal calf-leather gloves",
@@ -518,7 +518,7 @@
           "€149.00",
           "Premium",
           "https://www.lottusse.com/",
-          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+          ""
         ],
         [
           "Black leather zipper gloves",
@@ -526,15 +526,15 @@
           "€179.00",
           "Premium",
           "https://www.sermonetagloves.com/",
-          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+          ""
         ],
         [
-          "Inès leather gloves / cashmere cuff",
+          "Inès leather gloves with cashmere cuff — Burgundy",
           "Cornelia James",
-          "Price on retailer",
+          "€196.95",
           "Premium",
-          "https://www.corneliajames.com/en-us/products/ines-leather-glove-with-cashmere-cuff",
-          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+          "https://corneliajames.com/products/ines-burgundy-leather-gloves",
+          ""
         ],
         [
           "Lambskin gloves with cashmere",
@@ -542,7 +542,7 @@
           "Price on retailer",
           "Luxury",
           "https://www.sermonetagloves.com/",
-          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+          ""
         ],
         [
           "Designer leather gloves",
@@ -550,7 +550,7 @@
           "Price on retailer",
           "Luxury",
           "https://www.prada.com/it/it/womens/accessories.html",
-          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+          ""
         ],
         [
           "Fine leather and suede gloves",
@@ -558,7 +558,7 @@
           "Price on retailer",
           "Ultra luxury",
           "https://www.hermes.com/it/it/category/donna/accessori/",
-          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+          ""
         ]
       ],
       "sources": [
@@ -695,7 +695,7 @@
           "€24.34",
           "Budget",
           "https://www.bialetti.com/it_it/",
-          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+          ""
         ],
         [
           "Alessi BLIP spoon rest",
@@ -703,23 +703,23 @@
           "€27.00",
           "Design accessible",
           "https://alessi.com/it/products/blip-spoon-rest",
-          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+          ""
         ],
         [
           "Alessi Parrot sommelier corkscrew",
           "Alessi",
           "from €50.00",
           "Design",
-          "https://alessi.com/it/collections/all-products",
-          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+          "https://alessi.com/it/products/parrot-sommelier-corkscrew",
+          ""
         ],
         [
           "Alessi Juicy Salif citrus squeezer",
           "Alessi",
           "€90.00",
           "Design icon",
-          "https://alessi.com/it",
-          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+          "https://alessi.com/it/products/juicy-salif-citrus-squeezer",
+          ""
         ],
         [
           "Alessi Plissé electric citrus press",
@@ -727,15 +727,15 @@
           "€120.00",
           "Premium",
           "https://alessi.com/it/collections/plisse",
-          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+          ""
         ],
         [
           "Alessi 9090 espresso maker",
           "Alessi",
           "from €160.00",
           "Premium",
-          "https://alessi.com/it",
-          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+          "https://alessi.com/it/products/9090-espresso-coffee-maker",
+          ""
         ],
         [
           "Le Creuset Balti 24cm cast iron",
@@ -743,15 +743,15 @@
           "€123.00",
           "Premium cookware",
           "https://www.lecreuset.it/",
-          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+          ""
         ],
         [
           "Alessi Il Conico kettle",
           "Alessi",
           "€245.00",
           "Luxury design",
-          "https://alessi.com/it",
-          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+          "https://alessi.com/it/products/il-conico-kettle",
+          ""
         ],
         [
           "Le Creuset Signature cocotte",
@@ -759,7 +759,7 @@
           "Price on retailer",
           "High-end cookware",
           "https://www.lecreuset.it/",
-          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+          ""
         ]
       ],
       "sources": [
@@ -905,7 +905,7 @@
           "Price on retailer",
           "Artisan",
           "https://www.originalmuranoglass.com/vases/murrine-mix-vase-lares-original-murano-glass-omg-detail/",
-          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+          ""
         ],
         [
           "NasonMoretti Gigolo flute torsé",
@@ -913,7 +913,7 @@
           "€136.00",
           "Artisan",
           "https://www.nasonmoretti.com/shop/complex/category/22615882/brand/-",
-          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+          ""
         ],
         [
           "NasonMoretti Macramè XL candle vase",
@@ -921,7 +921,7 @@
           "€222.00",
           "Design",
           "https://www.zanolli.com/",
-          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+          ""
         ],
         [
           "NasonMoretti AS 16 vase",
@@ -929,7 +929,7 @@
           "€350.00",
           "Premium",
           "https://www.nasonmoretti.com/",
-          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+          ""
         ],
         [
           "Venini Fazzoletto vase",
@@ -937,7 +937,7 @@
           "€525.00",
           "Luxury",
           "https://www.venini.com/",
-          "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+          ""
         ],
         [
           "Venini Frozen glass design",
@@ -945,7 +945,7 @@
           "€525.00",
           "Luxury",
           "https://www.venini.com/",
-          "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+          ""
         ],
         [
           "Murano Cyrcus highball set of six",
@@ -953,7 +953,7 @@
           "€490.00",
           "Luxury table",
           "https://artemest.com/",
-          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+          ""
         ],
         [
           "Officine di Murano 1295 murrina vase",
@@ -961,7 +961,7 @@
           "Price on retailer",
           "Collector design",
           "https://artemest.com/products/multicolor-murrina-vase-3",
-          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+          ""
         ]
       ],
       "sources": [
@@ -1102,7 +1102,7 @@
           "€0.65 each",
           "Budget",
           "https://www.ikea.com/it/it/p/oftast-piatto-bianco-30258913/",
-          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+          ""
         ],
         [
           "POKAL clear tumbler 27 cl",
@@ -1110,15 +1110,15 @@
           "€0.95 each",
           "Budget",
           "https://www.ikea.com/it/it/cat/pokal-serie-11910/",
-          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+          ""
         ],
         [
-          "GLADELIG dinner plate 25 cm",
+          "GLADELIG grey dinner plate 25 cm",
           "IKEA",
           "€3.95 each",
           "Everyday",
-          "https://www.ikea.com/it/it/cat/piatti-18861/",
-          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+          "https://www.ikea.com/it/it/p/gladelig-piatto-grigio-10600756/",
+          ""
         ],
         [
           "Manufacture Rock dinner plate 27 cm",
@@ -1126,7 +1126,7 @@
           "€24.90",
           "Premium",
           "https://www.villeroy-boch.it/p/manufacture-piatto-piano-1042392620/",
-          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+          ""
         ],
         [
           "Ginori Antico Doccia soup plate",
@@ -1134,7 +1134,7 @@
           "€42.00",
           "Premium",
           "https://generic.cms.live.aws.ginori1735.com/it/it/tavola/piatti-fondi",
-          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+          ""
         ],
         [
           "Ginori Oriente Italiano bread plate Indaco",
@@ -1142,7 +1142,7 @@
           "€95.00",
           "Luxury",
           "https://generic.cms.live.aws.ginori1735.com/it/it/piatto-da-pane-indaco-oriente-italiano-003rg25-fpt110010170g00136801",
-          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+          ""
         ],
         [
           "Ginori Oriente Italiano dessert plate Bario",
@@ -1150,7 +1150,7 @@
           "€105.00",
           "Luxury",
           "https://generic.cms.live.aws.ginori1735.com/it/it/piatto-dessert-oriente-italiano-bario-set-da-due-oriente-italiano-003rg00-fpt110010210g00124100",
-          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+          ""
         ],
         [
           "Fornasetti decorative plate",
@@ -1158,7 +1158,7 @@
           "€280.00",
           "Collector",
           "https://www.fornasetti.com/",
-          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+          ""
         ],
         [
           "Ginori Granduca Coreana tureen",
@@ -1166,7 +1166,7 @@
           "€1,250.00",
           "Ultra luxury",
           "https://generic.cms.live.aws.ginori1735.com/it/it/vedi-tutto/per-il-servizio",
-          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+          ""
         ]
       ],
       "sources": [
@@ -1187,5 +1187,5 @@
   ],
   "updated": "2026-11-02",
   "currency": "EUR",
-  "pricingNote": "Prices researched on 2 November 2026; retailer listings, offers and availability can change. Retailer links sometimes point to the collection if product variants are not confirmed."
+  "pricingNote": "Historical price snapshots, not live quotes. Product photos are sourced from each exact item page; mismatched stock photos and AI illustrations are excluded from shopping cards."
 }
