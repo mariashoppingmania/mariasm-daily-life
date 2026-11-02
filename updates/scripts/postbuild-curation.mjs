@@ -77,7 +77,7 @@ function updateNavigation(html,rel,prefix){
   html=html.replace(/<div class="maria-catalogue-nav"[\s\S]*?<\/div>/g,'');
   html=html.replace(/<div data-mariasm-new-ateliers-menu[\s\S]*?<\/div>/g,'');
   const label='Accessories & Home';
-  if(html.includes('class="ms-site-nav') || html.includes('ms-site-nav"')){
+  if(/<nav\b[^>]*\bms-site-nav\b/.test(html)){
     const menu=group(prefix,label,'accessories-home',ateliers.map(a=>[a[0],a[1]]));
     // Insert immediately after the existing Ateliers dropdown, not above the header.
     const marker=/(<details class="ms-nav-group" data-menu="ateliers">[\s\S]*?<\/details>)/;
