@@ -46,7 +46,7 @@ function isRelevantHistoryPhoto(d,entry,idx,used){
 const ogCache=new Map();
 async function tryProductImage(product){
  const [title,brand,price,tier,url]=product;
- if(!/^https:/.test(url) || !(/productpage\.|\/p\/|\/product\/|\/products\/|\/piatto-|\/serpenti-viper-/.test(url)))return null;
+ if(!/^https:/.test(url) || !(/productpage\.|\/p\/|\/product\/|\/products\/|mytheresa\.com|\/piatto-|\/serpenti-viper-/.test(url)))return null;
  if(ogCache.has(url))return ogCache.get(url);
  let image=null;
  try{
@@ -70,7 +70,9 @@ async function tryProductImage(product){
 function era(d,e,i,used){
  const useImage=isRelevantHistoryPhoto(d,e,i,used);
  if(useImage)used.add(e[2]);
- const media=useImage?'<img src="'+esc(e[2])+'" loading="lazy" alt="Historically relevant museum or editorial photograph for '+esc(e[0])+'">':illustration(d.slug,i,true);
+ const historyFallback='data:image/svg+xml;base64,'+Buffer.from(illustration(d.slug,i,true),'utf8').toString('base64');
+ const historyError=' onerror="this.onerror=null;this.src=&#39;'+historyFallback+'&#39;;this.closest(&#39;.ma-era-item&#39;).querySelector(&#39;.ma-figure-caption&#39;).textContent=&#39;Illustrated historical reconstruction — source image unavailable&#39;"';
+ const media=useImage?'<img src="'+esc(e[2])+'"'+historyError+' loading="lazy" alt="Historically relevant museum or editorial photograph for '+esc(e[0])+'">':illustration(d.slug,i,true);
  const caption=useImage?'Documentary/editorial reference photograph':'Original reconstructed object illustration · not an archival photograph';
  return '<article class="ma-era-item"><div class="ma-era-media">'+media+'</div><div class="ma-era-copy"><span class="ma-era-index">Chapter '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(e[0])+'</h3><p>'+esc(e[1])+'</p><div class="ma-figure-caption">'+caption+'</div></div></article>';
 }
