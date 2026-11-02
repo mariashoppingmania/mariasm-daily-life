@@ -122,11 +122,18 @@ function typeCard(d,t,i){
  return '<article class="ma-type"><div class="ma-type-art"><img loading="lazy" decoding="async" src="'+esc(src)+'" alt="'+esc(d.name)+' — photographic visual reference for '+esc(t[0])+'" onerror="this.onerror=null;this.style.visibility=&#39;hidden&#39;"></div><div class="ma-type-body"><h3>'+esc(t[0])+'</h3><p>'+esc(t[1])+'</p><small>Materials: '+esc(t[2])+'</small><small>Editorial photographic reference</small></div></article>';
 }
 function materialCard(m){return '<article class="ma-material"><h3>'+esc(m[0])+'</h3><p>'+esc(m[1])+'</p></article>'}
+const exactRetailImages={
+ 'https://www.originalmuranoglass.com/vases/murrine-mix-vase-lares-original-murano-glass-omg-detail/':'https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg',
+ 'https://alessi.com/it/products/juicy-salif-citrus-squeezer':'https://www.designperte.it/upl/psjs-spremiagrumi-manuale-acciaio-philippe-starck-alessi-1.jpg',
+ 'https://alessi.com/it/products/9090-espresso-coffee-maker':'https://speranzaonline.com/cdn/shop/products/alessi_9090_6_1024x1024.jpg?v=1567375355',
+ 'https://www.ikea.com/it/it/p/oftast-piatto-bianco-30258913/':'https://www.ikea.com.hk/dairyfarm/hk/images/123/0712367_PE728786_S5.jpg',
+ 'https://www.gucci.com/it/it/pr/men/accessories-for-men/belts-for-men/casual-belts-for-men/gg-marmont-belt-p-414516AP00T1000':'https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1752655542/414516_AP00T_1000_001_100_0000_Light-cintura-gg-marmont.jpg'
+};
 async function productCard(d,p,i){
  const [title,brand,price,tier,url]=p;
  // Never substitute images of another SKU or any AI/illustrative drawing for actual products.
  if(!url || !/^https:\/\//.test(url))return '';
- const image=await tryProductImage(p);
+ const image=(await tryProductImage(p)) || exactRetailImages[url] || null;
  if(!image)return '';
  const onError=' onerror="this.onerror=null;this.closest(&#39;.ma-product&#39;).remove()"';
  return '<article class="ma-product"><div class="ma-product-image"><img loading="lazy" decoding="async" src="'+esc(image)+'"'+onError+' alt="Actual retailer listing photograph for '+esc(title)+'"><span class="ma-picture-label">Real item photograph · retailer source</span></div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>See actual product at retailer ↗</a></div></article>';
