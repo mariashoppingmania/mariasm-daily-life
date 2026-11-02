@@ -41,6 +41,8 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-christmas.mjs
       - name: Add Winter Style 2027 guide and home link
         run: node source/mariasm-site/scripts/postbuild-winter.mjs
+      - name: Build three accessory ateliers and luxury jewellery edit
+        run: node source/mariasm-site/scripts/postbuild-accessory-trio.mjs
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
