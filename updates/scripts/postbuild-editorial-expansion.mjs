@@ -8,7 +8,9 @@ const css=fs.readFileSync(path.join(root,'assets/editorial-expansion.css'),'utf8
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'' :'&#39;'}[c]));
 const link='target="_blank" rel="noopener noreferrer"';
 const artColors=[['#ad6c78','#e4cad0','#634355'],['#628e9f','#d6e9e8','#2c5969'],['#b48b5f','#f3dfb8','#795030'],['#82769e','#e1d7ef','#47395f'],['#7a987d','#d3e0d0','#385740'],['#b77355','#f0c9b0','#814732'],['#c06c91','#f1d5de','#6c3254'],['#7599b4','#c8e2f2','#345e79'],['#8e7866','#e8d4ba','#503e34']];
+let illustrationCount=0;
 function illustration(slug,index,isHistory=false){
+ const unique='ma-art-'+(++illustrationCount)+'-';
  const c=artColors[index%artColors.length],a=c[0],b=c[1],d=c[2],mode=index%4;
  const opening='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" role="img" aria-label="Original illustrated study of an accessory or decorative object"><defs><linearGradient id="shade" x1="0" y1="1" x2=".7" y2="0"><stop stop-color="'+d+'"/><stop offset=".4" stop-color="'+a+'"/><stop offset=".75" stop-color="'+b+'"/><stop offset="1" stop-color="'+a+'"/></linearGradient><radialGradient id="bg"><stop stop-color="#fffaf9"/><stop offset="1" stop-color="'+b+'"/></radialGradient><filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter></defs><rect width="600" height="330" fill="url(#bg)"/><ellipse cx="300" cy="282" rx="172" ry="22" fill="'+d+'" opacity=".2" filter="url(#shadow)"/><g transform="translate('+(index%3*12-10)+',0)">';
  let shape='';
@@ -30,7 +32,7 @@ function illustration(slug,index,isHistory=false){
  for(let j=0;j<12;j++){let theta=j*Math.PI/6;shape+='<circle cx="'+(299+119*Math.cos(theta)).toFixed(1)+'" cy="'+(180+79*Math.sin(theta)).toFixed(1)+'" r="7" fill="'+d+'" opacity=".78"/>'}
  }
  const texture='<g opacity=".24" stroke="#fff" stroke-width="2"><path d="M65 50l80 60M450 40l80 65M65 280l65-60M450 280l85-59"/></g>';
- return opening+texture+shape+'</g></svg>';
+ return (opening+texture+shape+'</g></svg>').replaceAll('id="shade"','id="'+unique+'shade"').replaceAll('id="bg"','id="'+unique+'bg"').replaceAll('url(#shade)','url(#'+unique+'shade)').replaceAll('url(#bg)','url(#'+unique+'bg)');
 }
 function isRelevantHistoryPhoto(d,entry,idx,used){
  const img=entry[2];if(!img||used.has(img))return false;
