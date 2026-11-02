@@ -7,12 +7,12 @@ const data=JSON.parse(fs.readFileSync(path.join(root,'content/editorial-expansio
 const im=data.images;
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ateliers=[
-['belts-suspenders','Belts & Suspenders','👗',im.belt],
-['scarves','Scarves & Shawls','🧣',im.scarfWool],
-['gloves','Gloves & Handwear','🧤',im.gloves],
-['home-utensils','Home Utensils','🏡',im.romanKitchen],
-['venetian-glass','Venetian Glass & Murano','✨',im.glassMosaic],
-['fine-tableware','Fine Tableware','🍽️',im.fineTable]];
+['belts-suspenders','Belts & Suspenders','👗','https://ciceroni.in/cdn/shop/products/arious-waist-belteconockbagciceroni-225129.jpg?v=1754922126'],
+['scarves','Scarves & Shawls','🧣','https://images.tanp.jp/gracia.tanp/product49152/202410014_tanp1120.jpg?w=954'],
+['gloves','Gloves & Handwear','🧤','https://www.tr-handschuhe.at/cdn/shop/products/gentlemen-s-gloves-from-dark-brown-hair-sheep-nappa-lined-with-cashmere-tr-handschuhe-wien-thomas-riemer-handmade-gloves-1_2c30162c-d639-4198-a1ea-56a6f7fe5c63.jpg?v=1666601658&width=2000'],
+['home-utensils','Home Utensils','🏡','https://www.fercasa.eu/cdn/shop/collections/pentole-bicchieri-posate-caffettiere-tazze.webp?v=1763067795'],
+['venetian-glass','Venetian Glass & Murano','✨','https://es.originalmuranoglass.com/images/stories/virtuemart/product/vasetti_1.jpg'],
+['fine-tableware','Fine Tableware','🍽️','https://www.vietri.com/cdn/shop/files/BRS-7800-2.jpg?v=1767939511&width=1000']];
 const photos={
 'belts-suspenders':[[im.belt,'Modern leather belt: construction and buckle reference'],[im.gucciBelt,'Contemporary luxury hardware and leather finishing']],
 'scarves':[[im.scarfWool,'Cashmere fabric: modern fibre and drape reference']],
