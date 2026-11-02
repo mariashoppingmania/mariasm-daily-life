@@ -10,3 +10,16 @@
 .ma-extra{padding:30px;border-radius:24px;background:#ede2e8;border:1px solid #d8bfcb;margin-top:35px}.ma-extra h3{font:normal 28px Georgia,serif;color:#59354b;margin:0 0 10px}.ma-extra p{margin:0 0 12px}.ma-process{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.ma-process div{padding:22px;background:#fff;border-radius:16px}.ma-process strong{font-size:16px;color:#714663}.ma-note{font-size:12px;line-height:1.7;color:#6b5a64;background:#fffdf9;border-left:4px solid #ba9b70;padding:18px;margin:23px 0}.ma-links{display:flex;flex-wrap:wrap;gap:9px}.ma-links a{padding:8px 15px;border:1px solid #dfc7d2;background:#fff;border-radius:50px;font-size:13px;text-decoration:none;font-weight:700}.ma-footer{text-align:center;padding:34px 15px;background:#efe1e8;font-size:13px;color:#64485a}
 .ma-jewels{padding:32px;max-width:1200px;margin:35px auto;border-radius:24px;background:linear-gradient(145deg,#f9e6e5,#eee1e8)}.ma-jewels h2{font:normal 36px Georgia,serif}.ma-jewels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.ma-jewel{background:#fff;padding:20px;border-radius:15px}.ma-jewel strong{font-size:20px}.ma-jewel a{font-weight:bold}
 @media(max-width:1150px){.ma-types,.ma-products,.ma-materials{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:850px){.ma-types,.ma-products,.ma-materials,.ma-process,.ma-jewels-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ma-era{grid-template-columns:1fr}}@media(max-width:550px){.ma-types,.ma-products,.ma-materials,.ma-process,.ma-jewels-grid{grid-template-columns:1fr}.ma-container{padding:20px 16px 40px}.ma-hero{padding:55px 24px}.ma-section{margin:40px 0}.ma-top{display:block}.ma-hero h1{font-size:47px}.ma-product-image{height:245px}}
+
+/* Full-bleed, crisp editorial photography throughout the new six ateliers. */
+.ma-type-art {overflow:hidden;display:block;background:#f5edf0}
+.ma-type-art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+.ma-type:hover .ma-type-art img{transform:scale(1.045)}
+.ma-era-media img{object-fit:cover;filter:none}
+.ma-product-image img{object-fit:contain;filter:none}
+.ma-product-image{background:#fff;isolation:isolate}
+.ma-product-image .ma-picture-label{background:rgba(255,255,255,.97);font-weight:700}
+.ma-product{overflow:hidden}
+.ma-hero{background-position:center center}
+@media(max-width:620px){.ma-era-media{height:245px}.ma-type-art{height:180px}.ma-product-image{height:235px}}
+@media(prefers-reduced-motion:reduce){.ma-type-art img{transition:none}.ma-type:hover .ma-type-art img{transform:none}}
