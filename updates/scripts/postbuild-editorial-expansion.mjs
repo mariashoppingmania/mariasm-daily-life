@@ -85,7 +85,9 @@ async function productCard(d,p,i){
  'Venini Fazzoletto vase':source.images.venini,
  'Gucci GG Marmont leather belt':source.images.gucciBelt};
  if(!image && special[p[0]])image=special[p[0]];
- const imageSlot=image?'<img loading="lazy" src="'+esc(image)+'" alt="'+esc(p[0])+' — '+(proof?'retailer product photo':'brand or model reference photo')+'"><span class="ma-picture-label">'+(proof?'Retailer product image':'Model reference image — check seller variant')+'</span>':illustration(d.slug,i+7)+'<span class="ma-picture-label">Distinct illustrative drawing · product image at seller</span>';
+ const fallback='data:image/svg+xml;base64,'+Buffer.from(illustration(d.slug,i+7),'utf8').toString('base64');
+ const errorHandler=' onerror="this.onerror=null;this.src=&#39;'+fallback+'&#39;;this.nextElementSibling.textContent=&#39;Illustrative drawing — see retailer&#39;"';
+ const imageSlot=image?'<img loading="lazy" src="'+esc(image)+'"'+errorHandler+' alt="'+esc(p[0])+' — '+(proof?'retailer product photo':'brand or model reference photo')+'"><span class="ma-picture-label">'+(proof?'Retailer product image':'Model reference image — check seller variant')+'</span>':illustration(d.slug,i+7)+'<span class="ma-picture-label">Distinct illustrative drawing · product image at seller</span>';
  return '<article class="ma-product"><div class="ma-product-image">'+imageSlot+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(p[3])+'</span><h3>'+esc(p[0])+'</h3><p>'+esc(p[1])+'</p><span class="ma-price">'+esc(p[2])+'</span><a class="ma-shop-link" href="'+esc(p[4])+'" '+link+'>View at retailer ↗</a></div></article>';
 }
 function sectionHead(k,title,description){return '<div class="ma-section-head"><div><span class="ma-kicker">'+esc(k)+'</span><h2>'+esc(title)+'</h2></div><p>'+esc(description)+'</p></div>'}
