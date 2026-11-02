@@ -32,7 +32,7 @@ function illustration(slug,index,isHistory=false){
  for(let j=0;j<12;j++){let theta=j*Math.PI/6;shape+='<circle cx="'+(299+119*Math.cos(theta)).toFixed(1)+'" cy="'+(180+79*Math.sin(theta)).toFixed(1)+'" r="7" fill="'+d+'" opacity=".78"/>'}
  }
  const texture='<g opacity=".24" stroke="#fff" stroke-width="2"><path d="M65 50l80 60M450 40l80 65M65 280l65-60M450 280l85-59"/></g>';
- return (opening+texture+shape+'</g></svg>').replaceAll('id="shade"','id="'+unique+'shade"').replaceAll('id="bg"','id="'+unique+'bg"').replaceAll('url(#shade)','url(#'+unique+'shade)').replaceAll('url(#bg)','url(#'+unique+'bg)');
+ return (opening+texture+shape+'</g></svg>').replaceAll('id="shade"','id="'+unique+'shade"').replaceAll('id="bg"','id="'+unique+'bg"').replaceAll('url(#shade)','url(#'+unique+'shade)').replaceAll('url(#bg)','url(#'+unique+'bg)').replaceAll('id="shadow"','id="'+unique+'shadow"').replaceAll('url(#shadow)','url(#'+unique+'shadow)');
 }
 function isRelevantHistoryPhoto(d,entry,idx,used){
  const img=entry[2];if(!img||used.has(img))return false;
