@@ -1,0 +1,1191 @@
+{
+  "images": {
+    "romanKitchen": "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg",
+    "renaissanceKitchen": "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg",
+    "glassWorkshop": "https://cdn9.webmaster360.it/2026/09/covers/01M27KJSX6CCWSRBSH0SB7TG79.jpg",
+    "romanGlass": "https://www.exibart.com/repository/media/eventi/2010/05/altino.-vetri-di-laguna.jpg",
+    "historicKitchen": "https://www.villarubini.it/images/storia/2.jpg",
+    "glassMosaic": "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg",
+    "glassLuxury": "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234",
+    "terraSigillata": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Roman_pottery_African_Red_Slip.jpg/625px-Roman_pottery_African_Red_Slip.jpg",
+    "maiolica": "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg",
+    "fineTable": "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917",
+    "gloves": "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200",
+    "historicalGloves": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/168616/364930/main-image",
+    "thermalGloves": "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg",
+    "scarfWool": "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg",
+    "belt": "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200",
+    "gucciBelt": "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg",
+    "pot": "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg",
+    "venini": "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+  },
+  "sections": [
+    {
+      "slug": "belts-suspenders",
+      "name": "Belts & Suspenders",
+      "eyebrow": "The fit · The silhouette · The finishing touch",
+      "intro": "Belts and braces began as practical fastenings, then became visual signatures of status, tailoring, rebellion and luxury. Discover how leather, textile, engineering and decorative buckles have changed the way we dress.",
+      "hero": "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200",
+      "eras": [
+        [
+          "Ancient Rome · 1st c. BCE–5th c. CE",
+          "The cingulum and balteus held military equipment and communicated identity. Civilian belts gathered tunics and supported pouches. Leather straps, cast bronze fittings and ornamented buckles linked function to rank.",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "Medieval Europe · 5th–15th c.",
+          "Girdles crossed social classes: everyday belts supported knives and purses; affluent households favoured patterned metal mounts, embroidery and elaborate terminals. Fashionable placement followed tunic and gown silhouettes.",
+          "https://www.villarubini.it/images/storia/2.jpg"
+        ],
+        [
+          "Renaissance & Baroque · 1500–1750",
+          "Tightened waists, decorative sashes and sword belts reflected the tailoring and ceremonial dress of the time. Silk ribbons and embroidered textiles existed alongside robust leather harnesses.",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Industrial age · 1750–1900",
+          "The rise of tailored trousers encouraged the wider use of braces (suspenders), with button attachments, elastic textile and adjustable straps. Modern buckle manufacture standardised everyday belts.",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "1900–1960 · Workwear and elegance",
+          "Leather belts became everyday companions to denim, military uniforms and sport clothing. Suspender braces remained staples for higher-waisted formal tailoring and practical workwear.",
+          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+        ],
+        [
+          "1970–2000 · Designer buckles",
+          "Statement waist belts, wide corset styles and visible logos turned a utilitarian object into an emblem of fashion. Punk studding and minimal tailoring offered opposite design languages.",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "2000–today · Heritage meets expression",
+          "Modern belts range from vegetable-tanned leather to recycled webbing and sculptural metal hardware; suspenders appear in vintage formalwear, workwear and contemporary gender-neutral styling.",
+          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+        ]
+      ],
+      "types": [
+        [
+          "Dress belt",
+          "A narrow, polished leather strap suits trousers, skirts and smart coats.",
+          "Leather, calfskin, plated brass"
+        ],
+        [
+          "Wide waist belt",
+          "Defines oversized dresses, blazers and winter coats.",
+          "Leather, elastic, suede"
+        ],
+        [
+          "Braided or rope belt",
+          "Flexible, textured and good for casual outfits.",
+          "Woven leather, cotton, jute"
+        ],
+        [
+          "Utility webbing belt",
+          "Strong, washable and adjustable for everyday use.",
+          "Polyester, nylon, recycled fibres"
+        ],
+        [
+          "Y-back braces",
+          "Classic central join, best with button-fastened tailoring.",
+          "Elastic, silk, leather ends"
+        ],
+        [
+          "X-back braces",
+          "Extra support and stable fit for workwear.",
+          "Elastic straps, metal clips"
+        ],
+        [
+          "Chain and ornament belt",
+          "Jewellery-like styling for eveningwear.",
+          "Metal chain, crystals, plated alloys"
+        ],
+        [
+          "Corset-inspired belt",
+          "Broad structure for dramatic silhouette shaping.",
+          "Leather, fabric, flexible boning"
+        ]
+      ],
+      "materials": [
+        [
+          "Full-grain leather",
+          "Durable surface with natural grain; condition sparingly and keep dry."
+        ],
+        [
+          "Suede",
+          "Soft matte texture; protect from rain and brush gently."
+        ],
+        [
+          "Woven elastic",
+          "Traditional braces need stretch recovery and good hardware."
+        ],
+        [
+          "Nylon webbing",
+          "Lightweight and adjustable, suited to practical belts."
+        ],
+        [
+          "Brass and plated hardware",
+          "Check nickel sensitivity, buckle wear and coating quality."
+        ]
+      ],
+      "products": [
+        [
+          "H&M Premium leather belt",
+          "H&M",
+          "€29.99",
+          "Budget",
+          "https://www2.hm.com/it_it/productpage.1315889001.html",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "H&M leather belt with oval buckle",
+          "H&M",
+          "€25.99",
+          "Budget",
+          "https://www2.hm.com/it_it/productpage.1255195001.html",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "& Other Stories leather belt",
+          "& Other Stories",
+          "€49.00",
+          "Contemporary",
+          "https://www2.hm.com/it_it/productpage.1322760002.html",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "ARKET slim leather belt",
+          "ARKET",
+          "€49.00",
+          "Contemporary",
+          "https://www2.hm.com/it_it/productpage.1261859001.html",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "Gucci GG Marmont leather belt",
+          "Gucci",
+          "€430.00",
+          "Luxury",
+          "https://www.gucci.com/it/it/ca/women/accessories-for-women/belts-for-women-c-women-accessories-belts",
+          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+        ],
+        [
+          "Gucci slim reversible belt",
+          "Gucci",
+          "€390.00",
+          "Luxury",
+          "https://www.gucci.com/it/it/ca/women/accessories-for-women/belts-for-women-c-women-accessories-belts",
+          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+        ],
+        [
+          "Albert Thurston traditional braces",
+          "Albert Thurston",
+          "Price on retailer",
+          "Heritage",
+          "https://www.albertthurston.com/",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "Hermès fine leather belts",
+          "Hermès",
+          "Price on retailer",
+          "Ultra luxury",
+          "https://www.hermes.com/it/it/category/donna/accessori/cinture/",
+          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+        ]
+      ],
+      "sources": [
+        [
+          "London Museum · Roman belt fittings",
+          "https://www.londonmuseum.org.uk/collections/v/object-9408/mount-military-belt-plate/"
+        ],
+        [
+          "The Metropolitan Museum of Art · costume collections",
+          "https://www.metmuseum.org/art/collection"
+        ]
+      ]
+    },
+    {
+      "slug": "scarves",
+      "name": "Scarves & Shawls",
+      "eyebrow": "Silk · Wool · Cashmere · The art of wrapping",
+      "intro": "A strip or square of cloth can protect against the cold, signal affiliation, and transform the simplest outfit. From Roman wool mantles to Renaissance silk trade and today's luxury carrés, a scarf is a miniature story in textile.",
+      "hero": "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg",
+      "eras": [
+        [
+          "Classical Rome · 1st c. BCE–5th c. CE",
+          "Rectangular woollen mantles, veils and wraps protected people outdoors. Fashion depended on drape and fibre rather than today's standardised scarf shapes; the palla is associated with Roman women's outer dress.",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Roman_pottery_African_Red_Slip.jpg/625px-Roman_pottery_African_Red_Slip.jpg"
+        ],
+        [
+          "Early medieval Europe · 500–1000",
+          "Linen veils and wool coverings served different climates and norms. Material quality, dyed yarns and borders revealed access to craft and resources.",
+          "https://www.villarubini.it/images/storia/2.jpg"
+        ],
+        [
+          "High medieval trade · 1000–1450",
+          "Wool finishing expanded in European cities and Asian silk routes connected luxury textile traditions. Fine embroidery and decorative edges enriched head coverings and shoulder wraps.",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Renaissance · 1450–1650",
+          "Silk, brocade, lace and elaborately draped textiles became central to court dress and trade. Italian workshops developed sophisticated patterning and finishing.",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "1800s · Shawls and industrial weaving",
+          "Paisley motifs and Kashmiri shawls influenced European fashion. Mechanised weaving widened access to patterned wool and silk designs.",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "1920–1970 · Printed silk",
+          "Graphic printed squares became an icon of fashion houses, while knitted winter scarves accompanied modern travel, leisure and sports.",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Today · Layering without limits",
+          "Wool, recycled fibre, soft cashmere and digitally printed silk offer thousands of ways to wrap, tie or drape. Check fibre labels, weave and washing requirements.",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ]
+      ],
+      "types": [
+        [
+          "Silk carré",
+          "Fold it into a necktie, headband or bag accent.",
+          "Silk twill, silk satin"
+        ],
+        [
+          "Classic wool scarf",
+          "A simple, durable cold-weather layer.",
+          "Merino wool, lambswool"
+        ],
+        [
+          "Cashmere stole",
+          "Soft and warm with an elegant drape.",
+          "Cashmere, cashmere-silk"
+        ],
+        [
+          "Blanket scarf",
+          "Oversized wrap for cold days and travel.",
+          "Wool blend, alpaca"
+        ],
+        [
+          "Pashmina-style shawl",
+          "Draped over dresses and formal coats.",
+          "Fine wool, cashmere"
+        ],
+        [
+          "Infinity and tube scarf",
+          "Loop form stays close to the body on windy days.",
+          "Jersey, knit"
+        ],
+        [
+          "Lightweight summer scarf",
+          "Sun-aware lightweight styling rather than winter insulation.",
+          "Linen, cotton, modal"
+        ],
+        [
+          "Silk evening wrap",
+          "Adds subtle polish without large extra layers.",
+          "Silk chiffon, jacquard"
+        ]
+      ],
+      "materials": [
+        [
+          "Silk",
+          "Elegant lustre and fine drape; normally specialist cleaning."
+        ],
+        [
+          "Wool",
+          "Naturally insulating; gentler wash and flat drying protect shape."
+        ],
+        [
+          "Cashmere",
+          "Extra-soft fine fibre; avoid friction and prolonged hanging."
+        ],
+        [
+          "Alpaca",
+          "Warm plush handle; check skin sensitivity and fibre blend."
+        ],
+        [
+          "Modal and linen",
+          "Breathable, suitable for transitional seasons."
+        ]
+      ],
+      "products": [
+        [
+          "HEATTECH patterned scarf",
+          "UNIQLO",
+          "€24.90",
+          "Budget",
+          "https://www.uniqlo.com/it/it/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Soft yarn scarf",
+          "UNIQLO",
+          "€29.90",
+          "Budget",
+          "https://www.uniqlo.com/it/it/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "100% cashmere scarf",
+          "UNIQLO",
+          "€59.90",
+          "Accessible cashmere",
+          "https://www.uniqlo.com/it/it/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Large soft yarn scarf",
+          "UNIQLO",
+          "€29.90",
+          "Everyday",
+          "https://www.uniqlo.com/it/it/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Check cashmere scarf",
+          "Burberry via Mytheresa",
+          "€525.00",
+          "Luxury",
+          "https://www.mytheresa.com/it/it/donna/designers/burberry",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Check scarf",
+          "Burberry via Pedrini",
+          "€441.00",
+          "Luxury",
+          "https://www.pedrinionline.com/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Reversible cashmere scarf",
+          "Burberry via Lambitelli",
+          "€520.00",
+          "Luxury",
+          "https://www.lambitelli.com/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Silk carrés & shawls",
+          "Hermès",
+          "Price on retailer",
+          "Ultra luxury",
+          "https://www.hermes.com/it/it/category/donna/sciarpe-scialli-e-foulard/",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ]
+      ],
+      "sources": [
+        [
+          "Victoria and Albert Museum · Fashion & textiles",
+          "https://www.vam.ac.uk/collections/fashion"
+        ],
+        [
+          "The Metropolitan Museum · Costume Institute",
+          "https://www.metmuseum.org/about-the-met/collection-areas/the-costume-institute"
+        ]
+      ]
+    },
+    {
+      "slug": "gloves",
+      "name": "Gloves & Handwear",
+      "eyebrow": "Protective craft · Leather elegance · Winter warmth",
+      "intro": "Gloves have been armour, courtly gifts, protective workwear, theatrical accessories and the finishing touch of winter dress. The best pair balances fit, warmth, dexterity and material.",
+      "hero": "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200",
+      "eras": [
+        [
+          "Roman world · 1st c. BCE–5th c. CE",
+          "Hand protection in leather or heavy textiles was important for labour, weather and specialist tasks. Surviving examples are rarer than ceramics or metalware, so claims about universal fashion use require caution.",
+          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+        ],
+        [
+          "Medieval era · 500–1450",
+          "Leather gauntlets helped riders and craftspeople; highly worked gloves also became symbols of office and status among elites and clergy.",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/168616/364930/main-image"
+        ],
+        [
+          "Renaissance · 1450–1650",
+          "Perfumed leather and embroidered gloves were prized luxury gifts. Fine stitching, long cuffs and decorative finishes demonstrated skill.",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/168616/364930/main-image"
+        ],
+        [
+          "1700s · Court and etiquette",
+          "Gloves crossed social rituals, riding dress and formal portraits. Fine leather and embroidered designs reflected class, gender and etiquette.",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/168616/364930/main-image"
+        ],
+        [
+          "1800s · Industrial production",
+          "More consistent sizing and machine sewing widened availability. Long evening gloves and practical cold-weather pairs became wardrobe staples.",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/168616/364930/main-image"
+        ],
+        [
+          "1900–1980 · Cinema and modern life",
+          "Opera gloves, driving designs, work gloves and knit winter accessories developed distinct identities. Fashion photography helped popularise elegant silhouettes.",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Today · Performance meets luxury",
+          "Touchscreen fingertips, waterproof membranes, tailored nappa leather and premium cashmere coexist. Remember that elegant leather may not be waterproof.",
+          "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg"
+        ]
+      ],
+      "types": [
+        [
+          "Nappa leather gloves",
+          "Dressy and supple, perfect with a wool coat.",
+          "Lambskin, silk lining"
+        ],
+        [
+          "Cashmere-lined gloves",
+          "Understated luxury warmth for city winters.",
+          "Nappa leather, cashmere lining"
+        ],
+        [
+          "Wool knit gloves",
+          "Flexible low-bulk everyday warmth.",
+          "Merino wool, acrylic"
+        ],
+        [
+          "Thermal technical gloves",
+          "Made for wind and wet outdoor activity.",
+          "Polyester fleece, membranes"
+        ],
+        [
+          "Driving gloves",
+          "Grip and comfort for the steering wheel.",
+          "Leather, perforated suede"
+        ],
+        [
+          "Touchscreen gloves",
+          "Useful for quick phone access.",
+          "Conductive-fibre fingertips"
+        ],
+        [
+          "Opera gloves",
+          "A theatrical look with evening fashion.",
+          "Satin, silk, stretch fabric"
+        ],
+        [
+          "Mittens",
+          "Often warmer than separate fingers in extreme cold.",
+          "Insulation, wool, technical shell"
+        ]
+      ],
+      "materials": [
+        [
+          "Nappa and suede",
+          "Soft refined hides; specialist cleaning preserves finish."
+        ],
+        [
+          "Cashmere and merino",
+          "Warm knit fibres that benefit from delicate handling."
+        ],
+        [
+          "Waterproof membranes",
+          "Check membrane specs, seam construction and cuff closure."
+        ],
+        [
+          "Thermal synthetics",
+          "Durable and quick-drying; choose a comfortable liner."
+        ],
+        [
+          "Silk and satin",
+          "Formal aesthetics, not usually winter protection."
+        ]
+      ],
+      "products": [
+        [
+          "Heat Keeper thermal women's gloves",
+          "Heat Keeper / Decathlon",
+          "€19.95",
+          "Budget",
+          "https://www.decathlon.it/",
+          "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg"
+        ],
+        [
+          "Heat Keeper teddy gloves",
+          "Heat Keeper / Decathlon",
+          "€25.95",
+          "Budget",
+          "https://www.decathlon.it/",
+          "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg"
+        ],
+        [
+          "Montreal calf-leather gloves",
+          "Lottusse",
+          "€149.00",
+          "Premium",
+          "https://www.lottusse.com/",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Black leather zipper gloves",
+          "Sermoneta Gloves via retailer",
+          "€179.00",
+          "Premium",
+          "https://www.sermonetagloves.com/",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Inès leather gloves / cashmere cuff",
+          "Cornelia James",
+          "Price on retailer",
+          "Premium",
+          "https://www.corneliajames.com/en-us/products/ines-leather-glove-with-cashmere-cuff",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Lambskin gloves with cashmere",
+          "Sermoneta Gloves",
+          "Price on retailer",
+          "Luxury",
+          "https://www.sermonetagloves.com/",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Designer leather gloves",
+          "Prada",
+          "Price on retailer",
+          "Luxury",
+          "https://www.prada.com/it/it/womens/accessories.html",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Fine leather and suede gloves",
+          "Hermès",
+          "Price on retailer",
+          "Ultra luxury",
+          "https://www.hermes.com/it/it/category/donna/accessori/",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ]
+      ],
+      "sources": [
+        [
+          "The Met · historical gloves",
+          "https://www.metmuseum.org/art/collection/search/168616"
+        ],
+        [
+          "V&A · Costume collections",
+          "https://www.vam.ac.uk/collections/fashion"
+        ]
+      ]
+    },
+    {
+      "slug": "home-utensils",
+      "name": "Home Utensils & Domestic Design",
+      "eyebrow": "From Roman hearth to modern kitchen design",
+      "intro": "Trace the objects that made daily life possible: Roman bronze ladles, medieval mortars, Renaissance copperware, industrial utensils and today's precision tools. Homeware is a history of labour, technique, comfort and invention.",
+      "hero": "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg",
+      "eras": [
+        [
+          "Ancient Rome · 1st c. BCE–5th c. CE",
+          "Kitchen archaeology at Pompeii reveals bronze ladles, pans, strainers, ceramic cooking pots and vessels for storing food and liquid. Fuel, water supply and household status shaped the tools available.",
+          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+        ],
+        [
+          "Early Middle Ages · 500–1000",
+          "Open fires and coarse earthenware remained important in households. Wooden spoons, iron hooks, cauldrons and hand querns served essential cooking and food-processing needs.",
+          "https://www.villarubini.it/images/storia/2.jpg"
+        ],
+        [
+          "High medieval households · 1000–1450",
+          "Urban crafts supported improved knives, mortars, cooking pots, ceramic jugs and metal fittings. Wealthier kitchens possessed specialised equipment while rural households relied on versatile tools.",
+          "https://www.villarubini.it/images/storia/2.jpg"
+        ],
+        [
+          "Renaissance kitchens · 1450–1650",
+          "Court kitchens introduced increasingly specialised equipment. Bartolomeo Scappi's 1570 culinary work illustrates roasters, strainers, presses, pastry utensils and elaborate cooking systems.",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "1700s · Refinement and service",
+          "Copper saucepans, specialised baking equipment, porcelain and polished utensils entered refined homes. The division between cooking and formal table service grew more visible.",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "1800–1910 · Mechanisation",
+          "Cast iron, machine-stamped sheet metal, improved stoves, enamel coatings and mass manufacturing expanded choices; domestic technology reshaped cooking labour.",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ],
+        [
+          "1910–1970 · Electricity and new materials",
+          "Electric mixers, refrigerators, aluminium coffeemakers, pressure cookers and stainless steel changed domestic routines. Design increasingly valued efficient mass production.",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ],
+        [
+          "1970–today · Craft and intelligent design",
+          "Induction-compatible cookware, silicone implements, ergonomic design and appliances coexist with traditional copper and cast iron. Buy for performance, repairability and realistic use.",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ]
+      ],
+      "types": [
+        [
+          "Cooking vessels",
+          "Pans, saucepans, Dutch ovens and casseroles.",
+          "Cast iron, stainless steel, copper"
+        ],
+        [
+          "Preparation tools",
+          "Knives, graters, cutting boards, mortars and peelers.",
+          "Steel, stone, wood"
+        ],
+        [
+          "Coffee and tea",
+          "Moka pots, kettles, teapots and infusers.",
+          "Aluminium, stainless steel, ceramics"
+        ],
+        [
+          "Serving utensils",
+          "Ladles, tongs, spatulas and trays.",
+          "Stainless steel, silicone, silver"
+        ],
+        [
+          "Food storage",
+          "Crocks, jars and modern containers.",
+          "Glass, clay, food-grade plastic"
+        ],
+        [
+          "Small electric appliances",
+          "Juicers, mixers, blenders and toasters.",
+          "Steel, thermoplastic, electronics"
+        ],
+        [
+          "Decorative domestic objects",
+          "Design kettles, trays and vases.",
+          "Brass, ceramic, glass"
+        ],
+        [
+          "Cleaning tools",
+          "Brooms, brushes, cloths and ergonomic equipment.",
+          "Wood, natural fibres, synthetic textiles"
+        ]
+      ],
+      "materials": [
+        [
+          "Copper",
+          "Responsive to heat; food contact depends on suitable lining."
+        ],
+        [
+          "Cast iron",
+          "Excellent heat capacity; heavy and requires care."
+        ],
+        [
+          "Stainless steel",
+          "Corrosion-resistant and suitable for a broad range of utensils."
+        ],
+        [
+          "Aluminium",
+          "Lightweight and responsive; follow manufacturer care rules."
+        ],
+        [
+          "Silicone",
+          "Flexible and easy to clean, with rated temperature limits."
+        ],
+        [
+          "Wood and ceramics",
+          "Natural appeal; protect from thermal shock and harsh treatment."
+        ]
+      ],
+      "products": [
+        [
+          "Bialetti Moka Express 2-cup",
+          "Bialetti via Cecaro",
+          "€24.34",
+          "Budget",
+          "https://www.bialetti.com/it_it/",
+          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+        ],
+        [
+          "Alessi BLIP spoon rest",
+          "Alessi",
+          "€27.00",
+          "Design accessible",
+          "https://alessi.com/it/collections/all-products",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Alessi Parrot sommelier corkscrew",
+          "Alessi",
+          "from €50.00",
+          "Design",
+          "https://alessi.com/it/collections/all-products",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Alessi Juicy Salif citrus squeezer",
+          "Alessi",
+          "€90.00",
+          "Design icon",
+          "https://alessi.com/it",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Alessi Plissé electric citrus press",
+          "Alessi",
+          "€120.00",
+          "Premium",
+          "https://alessi.com/it/collections/all-products",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Alessi 9090 espresso maker",
+          "Alessi",
+          "from €160.00",
+          "Premium",
+          "https://alessi.com/it",
+          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+        ],
+        [
+          "Le Creuset Balti 24cm cast iron",
+          "Le Creuset via Longho",
+          "€123.00",
+          "Premium cookware",
+          "https://www.lecreuset.it/",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ],
+        [
+          "Alessi Il Conico kettle",
+          "Alessi",
+          "€245.00",
+          "Luxury design",
+          "https://alessi.com/it",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ],
+        [
+          "Le Creuset Signature cocotte",
+          "Le Creuset",
+          "Price on retailer",
+          "High-end cookware",
+          "https://www.lecreuset.it/",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ]
+      ],
+      "sources": [
+        [
+          "Pompeii exhibition · utensils",
+          "https://www.azscience.org/experience/all-exhibitions/level-3/pompeii-the-exhibition/"
+        ],
+        [
+          "Alessi official design collection",
+          "https://alessi.com/it"
+        ],
+        [
+          "Bartolomeo Scappi's Renaissance implements",
+          "https://www.livre-rare-book.com/book/16810016/LCS-18359"
+        ]
+      ]
+    },
+    {
+      "slug": "venetian-glass",
+      "name": "Venetian Glass & Murano",
+      "eyebrow": "The lagoon · The furnace · The masterpiece",
+      "intro": "A substantial journey through the chemistry, colours, craftsmanship and history of Venetian glass, from Roman glass in the lagoon to medieval workshops, Renaissance cristallo and the modern masters of Murano.",
+      "hero": "https://cdn9.webmaster360.it/2026/09/covers/01M27KJSX6CCWSRBSH0SB7TG79.jpg",
+      "eras": [
+        [
+          "Roman roots · 1st–5th c. CE",
+          "Roman glass vessels, blown flasks, bowls and drinking cups circulated across the northern Adriatic. Archaeological finds reveal an established technological foundation long before medieval Venetian workshops.",
+          "https://www.exibart.com/repository/media/eventi/2010/05/altino.-vetri-di-laguna.jpg"
+        ],
+        [
+          "Early lagoon · 6th–12th c.",
+          "Venice grew as a trading power linking Byzantine and Islamic craftsmanship. Glassmaking knowledge, imported materials and luxury taste helped local production develop.",
+          "https://cdn9.webmaster360.it/2026/09/covers/01M27KJSX6CCWSRBSH0SB7TG79.jpg"
+        ],
+        [
+          "Murano consolidation · 1291",
+          "The Venetian government required glass furnaces to relocate to Murano, a measure closely tied to urban fire risks and the organisation of the trade. Furnace workers developed specialised skills and institutions.",
+          "https://cdn9.webmaster360.it/2026/09/covers/01M27KJSX6CCWSRBSH0SB7TG79.jpg"
+        ],
+        [
+          "14th–15th centuries · First golden age",
+          "Venetian workshops produced utilitarian bottles, beakers and decorated vessels. Mid-15th-century master Angelo Barovier is celebrated for the development of exceptionally clear Venetian cristallo.",
+          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+        ],
+        [
+          "16th century · Filigrana and innovation",
+          "Glassmakers developed reticello and retortoli filigree, lattimo milk glass, brilliant enamel work, delicate stemware and intentionally textured 'ice glass'. Their skill became famous across Europe.",
+          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+        ],
+        [
+          "17th–18th centuries · Splendour and competition",
+          "Aventurine-like glass, elaborate goblets, mirrors and chandeliers appeared alongside growing competition from other glassmaking centres. Muranese knowledge travelled internationally.",
+          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+        ],
+        [
+          "1797–late 1800s · Decline and revival",
+          "The fall of the Venetian Republic brought economic upheaval. Museum founder Vincenzo Zanetti and renewed workshops helped document and revive techniques in the 19th century.",
+          "https://cdn9.webmaster360.it/2026/09/covers/01M27KJSX6CCWSRBSH0SB7TG79.jpg"
+        ],
+        [
+          "1900–1970 · Glass meets design",
+          "Experimental form, modern art and new studio collaborations transformed the medium. Companies such as Venini introduced bold colour, structured geometry and collectible design.",
+          "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+        ],
+        [
+          "Today · A living craft",
+          "Contemporary artisans make hand-blown vessels, sculptural lights, glass art, jewellery, stemware and experimental installations. Authenticity, workshop attribution and maker signatures matter.",
+          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+        ]
+      ],
+      "types": [
+        [
+          "Cristallo",
+          "Highly refined transparent glass, historically prized for purity.",
+          "Refined glass batch, decolourising treatment"
+        ],
+        [
+          "Lattimo",
+          "Opaque milk-white glass imitating porcelain-like whiteness.",
+          "Opacifiers in glass batch"
+        ],
+        [
+          "Filigrana",
+          "Precise white or coloured threads embedded in clear glass.",
+          "Glass canes, hot working"
+        ],
+        [
+          "Murrine / millefiori",
+          "Sliced patterned glass canes assembled into decorative fields.",
+          "Layered coloured canes"
+        ],
+        [
+          "Sommmerso",
+          "Contrasting colour layers encased in clear glass.",
+          "Multiple hot glass gathers"
+        ],
+        [
+          "Aventurina",
+          "Glittering copper crystal effect within glass.",
+          "Copper-bearing glass composition"
+        ],
+        [
+          "Venetian mirrors",
+          "Decorative silvered panels and elaborate frames.",
+          "Glass, silver backing"
+        ],
+        [
+          "Fazzoletto & incalmo",
+          "Folded-looking forms and hot joining of differently coloured pieces.",
+          "Blown glass, hot joining"
+        ]
+      ],
+      "materials": [
+        [
+          "Silica-rich glass batch",
+          "Sand or silica is combined with fluxes and stabilisers in controlled recipes."
+        ],
+        [
+          "Soda and lime",
+          "Core components of many historical and modern glasses."
+        ],
+        [
+          "Metal oxides",
+          "Small changes in chemistry create distinctive transparent and opaque colours."
+        ],
+        [
+          "Gold and silver leaf",
+          "Thin metal foil can be trapped between hot layers."
+        ],
+        [
+          "Glass canes and murrine",
+          "Patterned rods are fused, sliced, reheated and shaped."
+        ],
+        [
+          "Annealing",
+          "Controlled cooling reduces stresses and prevents fracture."
+        ]
+      ],
+      "products": [
+        [
+          "Murano coloured handmade vase",
+          "Original Murano Glass",
+          "Price on retailer",
+          "Artisan",
+          "https://www.originalmuranoglass.com/vases/murrine-mix-vase-lares-original-murano-glass-omg-detail/",
+          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+        ],
+        [
+          "NasonMoretti Gigolo flute torsé",
+          "NasonMoretti",
+          "€136.00",
+          "Artisan",
+          "https://www.nasonmoretti.com/",
+          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+        ],
+        [
+          "NasonMoretti Macramè XL candle vase",
+          "NasonMoretti via Zanolli",
+          "€222.00",
+          "Design",
+          "https://www.zanolli.com/",
+          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+        ],
+        [
+          "NasonMoretti AS 16 vase",
+          "NasonMoretti",
+          "€350.00",
+          "Premium",
+          "https://www.nasonmoretti.com/",
+          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+        ],
+        [
+          "Venini Fazzoletto vase",
+          "Venini",
+          "€525.00",
+          "Luxury",
+          "https://www.venini.com/",
+          "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+        ],
+        [
+          "Venini Frozen glass design",
+          "Venini",
+          "€525.00",
+          "Luxury",
+          "https://www.venini.com/",
+          "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+        ],
+        [
+          "Murano Cyrcus highball set of six",
+          "Artemest",
+          "€490.00",
+          "Luxury table",
+          "https://artemest.com/",
+          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+        ],
+        [
+          "Officine di Murano 1295 murrina vase",
+          "Artemest",
+          "Price on retailer",
+          "Collector design",
+          "https://artemest.com/products/multicolor-murrina-vase-3",
+          "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/1idf6140yg2p82od0c4d5i6qlq62.jpg?v=1747393234"
+        ]
+      ],
+      "sources": [
+        [
+          "Museo del Vetro · Middle Ages / Renaissance",
+          "https://museovetro.visitmuve.it/it/il-museo/percorsi-e-collezioni/vetro-xv-xvi-xvii-secolo/"
+        ],
+        [
+          "Museo del Vetro · materials and techniques",
+          "https://museovetro.visitmuve.it/approfondimenti/"
+        ],
+        [
+          "Museo del Vetro · museum history",
+          "https://museovetro.visitmuve.it/la-sede-e-la-storia/"
+        ]
+      ]
+    },
+    {
+      "slug": "fine-tableware",
+      "name": "Fine Plates, Ceramics & Glassware",
+      "eyebrow": "From terra sigillata to porcelain and the art of the table",
+      "intro": "The dining table reveals centuries of craft and social history: Roman red-slip bowls, medieval glazed earthenware, Renaissance maiolica, European porcelain, crystal glass and bold contemporary Italian design.",
+      "hero": "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917",
+      "eras": [
+        [
+          "Ancient Rome · 1st c. BCE–5th c. CE",
+          "Mass-produced fine red-slip tablewares such as terra sigillata circulated through the empire. Potters made bowls, platters and drinking vessels; glass was a prized but also widely traded material.",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Roman_pottery_African_Red_Slip.jpg/625px-Roman_pottery_African_Red_Slip.jpg"
+        ],
+        [
+          "Early medieval world · 500–1000",
+          "Local pottery workshops supplied cooking and eating vessels. Wood, ceramic and metal shared the table, with regional variations in glazing and finish.",
+          "https://www.villarubini.it/images/storia/2.jpg"
+        ],
+        [
+          "1100–1400 · Glaze and commerce",
+          "Tin-glazed wares and Islamic ceramic traditions influenced Mediterranean producers; trade helped carry colour, techniques and decorative ideas.",
+          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+        ],
+        [
+          "1400–1600 · Renaissance maiolica",
+          "Italian workshops, notably in Urbino, Deruta and Faenza, painted complex designs over opaque white tin glaze. Istoriato plates depicted stories from antiquity and religion.",
+          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+        ],
+        [
+          "1600–1750 · Porcelain ambitions",
+          "European demand for Asian porcelain encouraged experiments in hard-paste porcelain. Meissen production began in the early 18th century and many European manufactories followed.",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "1750–1850 · From service to ceremony",
+          "Dinner services became increasingly specialised, while factories used transfer printing and industrial processes to make matched sets more widely accessible.",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "1850–1950 · Industry and artistic reaction",
+          "Mechanised production made white tableware affordable. Art Nouveau, Art Deco and studio ceramics celebrated ornament, form and handcraft.",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "1950–today · Everyday design and collectables",
+          "Stoneware, bone china, transparent glass and designer porcelain coexist. Fine dining and casual homeware blend durability, colour, sustainability and presentation.",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ]
+      ],
+      "types": [
+        [
+          "Terra sigillata",
+          "Roman fine red-slip pottery, historical precedent for refined dishes.",
+          "Earthenware, red slip"
+        ],
+        [
+          "Majolica / maiolica",
+          "Brilliant decoration over an opaque tin glaze.",
+          "Earthenware, tin glaze, pigments"
+        ],
+        [
+          "Stoneware",
+          "Dense, usually robust glazed or unglazed ceramics.",
+          "Stoneware clays"
+        ],
+        [
+          "Porcelain",
+          "Thin, refined and often translucent high-fired ceramics.",
+          "Kaolin, feldspar, silica"
+        ],
+        [
+          "Bone china",
+          "Fine white porcelain-like ware with bone ash content.",
+          "Bone ash, kaolin, feldspar"
+        ],
+        [
+          "Crystal stemware",
+          "Sophisticated wine glasses and decanters.",
+          "Glass or crystal glass"
+        ],
+        [
+          "Murano drinking glasses",
+          "Colourful crafted glass with artisanal detailing.",
+          "Soda-lime glass, colourants"
+        ],
+        [
+          "Fine silverware",
+          "Decorative serving pieces and collectible place settings.",
+          "Silver, silver plate, stainless steel"
+        ]
+      ],
+      "materials": [
+        [
+          "Earthenware",
+          "Porous clay body traditionally fired at lower temperatures."
+        ],
+        [
+          "Stoneware",
+          "Dense fired ceramic, often sturdy for daily use."
+        ],
+        [
+          "Porcelain",
+          "Vitrified white ceramic prized for fine detail and strength."
+        ],
+        [
+          "Tin glaze",
+          "Opaque white coating that receives colourful painted decoration."
+        ],
+        [
+          "Glass and crystal",
+          "Transparent materials shaped, polished or decorated in many ways."
+        ],
+        [
+          "Gold decoration",
+          "Decorative metallic lustre, often requiring careful hand washing."
+        ]
+      ],
+      "products": [
+        [
+          "OFTAST white plate 25 cm",
+          "IKEA",
+          "€0.65 each",
+          "Budget",
+          "https://www.ikea.com/it/it/cat/piatti-18861/",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "POKAL clear tumbler 27 cl",
+          "IKEA",
+          "€0.95 each",
+          "Budget",
+          "https://www.ikea.com/it/it/cat/pokal-serie-11910/",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "GLADELIG dinner plate 25 cm",
+          "IKEA",
+          "€3.95 each",
+          "Everyday",
+          "https://www.ikea.com/it/it/cat/piatti-18861/",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "Manufacture Rock dinner plate 27 cm",
+          "Villeroy & Boch",
+          "€24.90",
+          "Premium",
+          "https://www.villeroy-boch.it/p/manufacture-piatto-piano-1042392620/",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "Ginori Antico Doccia soup plate",
+          "Ginori 1735",
+          "€42.00",
+          "Premium",
+          "https://generic.cms.live.aws.ginori1735.com/it/it/tavola/piatti-fondi",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ],
+        [
+          "Ginori Oriente Italiano bread plate Indaco",
+          "Ginori 1735",
+          "€95.00",
+          "Luxury",
+          "https://generic.cms.live.aws.ginori1735.com/it/it/piatto-da-pane-indaco-oriente-italiano-003rg25-fpt110010170g00136801",
+          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+        ],
+        [
+          "Ginori Oriente Italiano dessert plate Bario",
+          "Ginori 1735",
+          "€105.00",
+          "Luxury",
+          "https://generic.cms.live.aws.ginori1735.com/it/it/piatto-dessert-oriente-italiano-bario-set-da-due-oriente-italiano-003rg00-fpt110010210g00124100",
+          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+        ],
+        [
+          "Fornasetti decorative plate",
+          "Fornasetti",
+          "€280.00",
+          "Collector",
+          "https://www.fornasetti.com/",
+          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+        ],
+        [
+          "Ginori Granduca Coreana tureen",
+          "Ginori 1735",
+          "€1,250.00",
+          "Ultra luxury",
+          "https://generic.cms.live.aws.ginori1735.com/it/it/vedi-tutto/per-il-servizio",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ]
+      ],
+      "sources": [
+        [
+          "Roman terra sigillata",
+          "https://archaeotrasimeno.wordpress.com/2018/06/20/terra-sigillata-and-its-relationship-to-our-villa/"
+        ],
+        [
+          "Ginori 1735 official tableware prices",
+          "https://generic.cms.live.aws.ginori1735.com/it/it/vedi-tutto/tavola"
+        ],
+        [
+          "Villeroy & Boch Manufacture",
+          "https://www.villeroy-boch.it/p/manufacture-piatto-piano-1042392620/"
+        ]
+      ]
+    }
+  ],
+  "updated": "2026-11-02",
+  "currency": "EUR",
+  "pricingNote": "Prices researched on 2 November 2026; retailer listings, offers and availability can change. Retailer links sometimes point to the collection if product variants are not confirmed."
+}
