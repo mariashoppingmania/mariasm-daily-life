@@ -213,7 +213,10 @@ async function productCard(d,p,i){
    // Browser-side image failures expose the official product page rather than a false picture.
    const shown=local||candidate;
    const fit=brand==='Ferragamo'?'ma-product-fit-luxury':'ma-product-fit-standard';
-   const image='<img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'" alt="Retailer photograph of '+esc(title)+'" onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the exact product photography on the official seller page</a>';
+   // Retry the original designer's exact-SKU metadata image when specialist hosting fails.
+   const backup=brand==='Ferragamo'?await tryProductImage(p):null;
+   const backupAttribute=backup&&backup!==candidate?' data-backup="'+esc(backup)+'"':'';
+   const image='<img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'"'+backupAttribute+' alt="Retailer photograph of '+esc(title)+'" onerror="if(this.dataset.backup){const b=this.dataset.backup;delete this.dataset.backup;this.src=b;return;}this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the exact product photography on the official seller page</a>';
    const category=/braces|suspenders/i.test(title)?'Braces &amp; Suspenders':/chain|ornament/i.test(title)?'Chain &amp; Ornament':/corset|waist/i.test(title)?'Wide Waist &amp; Corset':/utility|webbing/i.test(title)?'Utility &amp; Webbing':/braided|woven/i.test(title)?'Braided &amp; Woven':'Classic &amp; Designer Belts';
    const name=category.replaceAll('&amp;','&');
    verifiedProductStats[d.slug]=(verifiedProductStats[d.slug]||0)+1;
