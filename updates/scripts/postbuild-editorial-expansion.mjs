@@ -146,14 +146,19 @@ function editorialVisual(src,alt){
 function era(d,e,i,used){
  const curated=['belts-suspenders','scarves'].includes(d.slug)&&d.editorialEraPhotos?.[i];
  const preferred=curated?curated[0]:e[2]&&isRelevantHistoryPhoto(d,e,i,used)?e[2]:null;
- const photo=curated?preferred:editorialPhoto(d,i,used,preferred);
+ const photo=curated?preferred:d.slug==='scarves'?null:editorialPhoto(d,i,used,preferred);
  const caption=curated?curated[1]:photo?'Museum, atelier or contemporary photographic reference; check the dated source':'Editorial reference unavailable';
- return '<article class="ma-era-item"><div class="ma-era-media">'+editorialVisual(photo,d.name+' — '+e[0])+'</div><div class="ma-era-copy"><span class="ma-era-index">Chapter '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(e[0])+'</h3><p>'+esc(e[1])+'</p><div class="ma-figure-caption">'+esc(caption)+'</div></div></article>';
+ const museumRef=d.slug==='scarves'?(d.editorialMuseumRecords||[]).find(x=>x.index===i):null;
+ const museumLink=museumRef?'https://www.metmuseum.org/art/collection/search/'+museumRef.id:d.editorialModernProductPage;
+ const visual=photo?editorialVisual(photo,d.name+' — '+e[0]):'<a class="ma-no-image" href="'+esc(museumLink||'../index.html')+'" target="_blank" rel="noopener noreferrer">Explore the original museum or maker photograph</a>';
+ return '<article class="ma-era-item"><div class="ma-era-media">'+visual+'</div><div class="ma-era-copy"><span class="ma-era-index">Chapter '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(e[0])+'</h3><p>'+esc(e[1])+'</p><div class="ma-figure-caption">'+esc(caption)+'</div></div></article>';
 }
 function typeCard(d,t,i,used){
  const curated=['belts-suspenders','scarves'].includes(d.slug)&&d.editorialTypePhotos?.[i];
- const photo=curated?curated[0]:editorialPhoto(d,i,used,null);
- return '<article class="ma-type"><div class="ma-type-art">'+editorialVisual(photo,d.name+' — '+t[0])+'</div><div class="ma-type-body"><h3>'+esc(t[0])+'</h3><p>'+esc(t[1])+'</p><small>Materials: '+esc(t[2])+'</small></div></article>';
+ const photo=curated?curated[0]:d.slug==='scarves'?null:editorialPhoto(d,i,used,null);
+ const url=d.slug==='scarves'?d.editorialTypeProductPages?.[i]?.[0]:null;
+ const visual=photo?editorialVisual(photo,d.name+' — '+t[0]):url?'<a class="ma-no-image" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">View the original product photograph</a>':editorialVisual(null,d.name+' — '+t[0]);
+ return '<article class="ma-type"><div class="ma-type-art">'+visual+'</div><div class="ma-type-body"><h3>'+esc(t[0])+'</h3><p>'+esc(t[1])+'</p><small>Materials: '+esc(t[2])+'</small></div></article>';
 }
 function materialCard(m){return '<article class="ma-material"><h3>'+esc(m[0])+'</h3><p>'+esc(m[1])+'</p></article>'}
 const exactRetailImages={
@@ -293,7 +298,7 @@ async function buildOne(d){
    const unique=[...new Set(references)];
    const local=new Map();
    for(const batch of Array.from({length:Math.ceil(unique.length/5)},(_,i)=>unique.slice(i*5,i*5+5))){
-    await Promise.all(batch.map(async remote=>{const found=await localProductPhoto(remote.replaceAll('&amp;','&'),'belts-editorial',n++);local.set(remote,found)}));
+    await Promise.all(batch.map(async remote=>{const found=await localProductPhoto(remote.replaceAll('&amp;','&'),d.slug+'-editorial',n++);local.set(remote,found)}));
    }
    const replaceRemote=part=>part.replace(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g,(tag,remote)=>{
       const src=local.get(remote);
