@@ -55,6 +55,8 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-murano-types-layout.mjs
       - name: Rebuild Fine Plates, Ceramics and Glassware with verified photography
         run: node source/mariasm-site/scripts/postbuild-fine-tableware-photo-audit.mjs
+      - name: Verify jewellery product photography and remove AI shop placeholders
+        run: node source/mariasm-site/scripts/postbuild-jewellery-verified-photos.mjs
       - name: Verify homepage and six editorial ateliers
         run: |
           test -s source/mariasm-site/docs/index.html
