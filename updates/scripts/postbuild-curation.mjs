@@ -60,7 +60,7 @@ const css=`<style id="maria-curation-css">.maria-catalogue-nav{position:relative
 @media(max-width:1220px){.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;min-width:0;max-width:100%;margin:0;padding:5px 3px 7px;border:0;border-radius:10px;background:#fff5f8;box-shadow:none}}
 @media(max-width:650px){.ma-top{flex-wrap:wrap}.ma-top .ma-navigation{justify-content:flex-start;gap:8px}.ma-top .ms-nav-group .ms-nav-panel{left:0;right:auto}}
 @media(max-width:450px){.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{grid-template-columns:1fr}}
-</style>`;
+.ma-curation figure.ma-photo-unavailable{min-height:210px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#f9f1f4,#eadde3)}.ma-curation figure.ma-photo-unavailable figcaption:before{content:"Photograph unavailable — please refer to the original source. ";font-weight:700}.ma-curation figure img{object-position:center}.ma-cards-photo img{object-position:center}\n</style>`;
 // Place the six new guides in a true dropdown beside the existing Ateliers menu.
 const mainAteliers=[
 ['fashion','Fashion Atlas'],['fragrance','Fragrance'],['makeup','Makeup'],
@@ -92,7 +92,7 @@ function updateNavigation(html,rel,prefix){
   }
   return html;
 }
-function gallery(slug){const pics=photos[slug];return '<section class="ma-curation"><h2>Photographic details &amp; materials</h2><p>Relevant visual references from historical collections, contemporary makers and retail photography. A reference image does not claim to depict the precise historical example or shopping variant.</p><div class="photogrid">'+pics.map(p=>'<figure><img loading="lazy" alt="'+esc(p[1])+'" src="'+esc(p[0])+'" onerror="this.onerror=null;this.style.visibility=&#39;hidden&#39;"><figcaption>'+esc(p[1])+'</figcaption></figure>').join('')+'</div></section>'}
+function gallery(slug){const pics=photos[slug];return '<section class="ma-curation"><h2>Photographic details &amp; materials</h2><p>Relevant visual references from historical collections, contemporary makers and retail photography. A reference image does not claim to depict the precise historical example or shopping variant.</p><div class="photogrid">'+pics.map(p=>'<figure><img loading="lazy" alt="'+esc(p[1])+'" src="'+esc(p[0])+'" onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.parentElement.classList.add(&#39;ma-photo-unavailable&#39;)"><figcaption>'+esc(p[1])+'</figcaption></figure>').join('')+'</div></section>'}
 function detail(slug){return '<section class="ma-curation" id="maria-deep-reading"><h2>The story behind the objects</h2><div class="details">'+lessons[slug].map(x=>'<article><h3>'+esc(x[0])+'</h3><p>'+esc(x[1])+'</p></article>').join('')+'</div></section>'}
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory()){walk(f);continue}if(!e.name.endsWith('.html'))continue;const rel=path.relative(docs,f).replaceAll(path.sep,'/');const prefix='../'.repeat(rel.split('/').length-1);let html=fs.readFileSync(f,'utf8');if(html.includes('maria-curation-css'))continue;
 if(rel==='index.html'){
