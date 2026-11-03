@@ -51,7 +51,7 @@ async function tryProductImage(product){
  if(!/^https:\/\//.test(url))return null;
  const parsed=new URL(url),pathname=parsed.pathname,host=parsed.hostname.toLowerCase();
  const looksLikeItem=/productpage\.|\/p\/|\/product\/|\/products\/|\/pr\/|\/prd\/|\/original-collection-?\/\d+-|\/original-collection\/\d+-|\/\d+[-_][^/]+\.html|\/item-/.test(pathname)
-   || (host.includes('bertelles.com')&&/\/\d+-/.test(pathname)) || (host.includes('cuccuini.it')&&/\/(?:articolo|product)\//.test(pathname));
+   || (host.includes('bertelles.com')&&/\/\d+-/.test(pathname)) || (host.endsWith('oxo.com')&&pathname.endsWith('.html')) || (host.includes('cuccuini.it')&&/\/(?:articolo|product)\//.test(pathname));
  if(!looksLikeItem)return null;
  if(ogCache.has(url))return ogCache.get(url);
  let image=null;
