@@ -51,7 +51,7 @@ async function tryProductImage(product){
  if(!/^https:\/\//.test(url))return null;
  const parsed=new URL(url),pathname=parsed.pathname,host=parsed.hostname.toLowerCase();
  const looksLikeItem=/productpage\.|\/p\/|\/product\/|\/products\/|\/pr\/|\/prd\/|\/original-collection-?\/\d+-|\/original-collection\/\d+-|\/\d+[-_][^/]+\.html|\/item-/.test(pathname)
-   || (host.includes('bertelles.com')&&/\/\d+-/.test(pathname));
+   || (host.includes('bertelles.com')&&/\/\d+-/.test(pathname)) || (host.includes('cuccuini.it')&&/\/(?:articolo|product)\//.test(pathname));
  if(!looksLikeItem)return null;
  if(ogCache.has(url))return ogCache.get(url);
  let image=null;
@@ -202,7 +202,7 @@ const verifiedProductStats={};
 async function productCard(d,p,i){
  const [title,brand,price,tier,url]=p;
  if(!url||!/^https:\/\//.test(url))return '';
- const candidate=p[5]||exactRetailImages[url]||await tryProductImage(p);
+ const candidate=p[5]||exactRetailImages[url]||await tryProductImage(p)||(p[6]?await tryProductImage([title,brand,price,tier,p[6]]):null);
  if(d.slug==='belts-suspenders'){
    if(!candidate||usedRetailPhotos.has(candidate))return '';
    const local=await localProductPhoto(candidate,d.slug,i);
