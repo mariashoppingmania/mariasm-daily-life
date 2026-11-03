@@ -21,7 +21,10 @@ function craft(i){
  return '<path d="M157 139Q123 108 155 86Q199 60 215 78Q252 120 293 70Q322 44 352 82Q413 110 361 156L369 254Q344 301 259 297Q171 301 150 253Z" fill="url(#aqua)" stroke="#6a8da6" stroke-width="6"/><path d="M157 139Q193 116 217 151Q262 113 293 139Q339 115 361 156" fill="none" stroke="#f5dfef" stroke-width="10"/><path d="M163 199Q260 173 361 205" stroke="#f3f9fc" stroke-width="9" fill="none" opacity=".75"/>'+shine;
 }
 function fallback(i){
- return '<div class="murano-art-fallback"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" role="img" aria-label="Original illustrative study of '+names[i]+' Murano glass technique">'+defs+'<rect width="520" height="340" fill="url(#bg)"/><ellipse cx="260" cy="312" rx="135" ry="13" fill="#62445a" opacity=".13" filter="url(#shadow)"/>'+craft(i)+'</svg><span class="murano-art-label">Technique illustration</span></div>';
+ const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" role="img" aria-label="Original illustrative study of '+names[i]+' Murano glass technique">'+defs+'<rect width="520" height="340" fill="url(#bg)"/><ellipse cx="260" cy="312" rx="135" ry="13" fill="#62445a" opacity=".13" filter="url(#shadow)"/>'+craft(i)+'</svg>';
+ const prefix='murano-technique-'+i+'-';
+ const unique=svg.replace(/\bid="([^"]+)"/g,(_,id)=>'id="'+prefix+id+'"').replace(/url\(#([^\)]+)\)/g,(_,id)=>'url(#'+prefix+id+')').replace(/\bhref="#([^"]+)"/g,(_,id)=>'href="#'+prefix+id+'"');
+ return '<div class="murano-art-fallback">'+unique+'<span class="murano-art-label">Technique illustration</span></div>';
 }
 let count=0,photos=0;
 html=html.replace(/<article class="ma-type">([\s\S]*?)<\/article>/g,(whole,body)=>{
