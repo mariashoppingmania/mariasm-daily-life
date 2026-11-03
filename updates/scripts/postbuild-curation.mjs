@@ -135,15 +135,27 @@ const qualityStyle=String.raw`<style id="mariasm-quality">
 .ma-products .ma-product[hidden]{display:none!important}
 .ma-editorial-unavailable{display:grid;place-items:center;width:100%;min-height:185px;padding:22px;background:linear-gradient(130deg,#f8ecf1,#e8dce5);color:#735669;text-align:center;font:600 13px/1.5 system-ui}
 .ma-era-media img,.ma-type-art img,.ma-product-image img{object-position:center}
+.ma-kind{display:inline-flex;align-self:flex-start;font-size:11px;letter-spacing:.02em;color:#81566a;background:#faf0f5;border:1px solid #eddae3;border-radius:30px;padding:4px 9px;margin:6px 0 10px}
+.ma-product-image{overflow:hidden;min-height:225px}
+.ma-product-image img{max-width:100%;max-height:100%;object-fit:contain}
+.ma-product-body{min-width:0}
+.ma-shop-tools label:focus-within{color:#7d405f}
+.ma-shop-tools input:focus-visible,.ma-shop-tools select:focus-visible{outline:2px solid #ad6e8b;outline-offset:1px}
+@media(min-width:900px){.ma-shop-tools:has(#ma-filter-kind) label{flex:1 1 175px}}
+
 @media(max-width:560px){.ma-shop-tools label,.ma-shop-tools button{flex-basis:100%;width:100%}}
 </style>`;
 const qualityJS=String.raw`<script id="mariasm-quality-js">
 (()=>{const section=document.querySelector('#shopping');if(!section)return;
-const q=section.querySelector('#ma-filter-query'),cat=section.querySelector('#ma-filter-tier'),clear=section.querySelector('#ma-filter-clear'),counter=section.querySelector('#ma-filter-results'),cards=[...section.querySelectorAll('.ma-products .ma-product')];
+const q=section.querySelector('#ma-filter-query'),cat=section.querySelector('#ma-filter-tier'),kind=section.querySelector('#ma-filter-kind'),clear=section.querySelector('#ma-filter-clear'),counter=section.querySelector('#ma-filter-results'),cards=[...section.querySelectorAll('.ma-products .ma-product')];
 const norm=s=>String(s||'').toLowerCase();
-function apply(){let n=0;for(const card of cards){const tier=card.querySelector('.ma-tier')?.textContent.trim()||'';const show=norm(card.textContent).includes(norm(q.value.trim()))&&(!cat.value||tier===cat.value);card.hidden=!show;if(show)n++}counter.textContent=n+' of '+cards.length+' products visible'}
-q.addEventListener('input',apply);cat.addEventListener('change',apply);
-clear.addEventListener('click',()=>{q.value='';cat.value='';apply();q.focus()});apply();
+const tierValues=[...new Set(cards.map(c=>c.querySelector('.ma-tier')?.textContent.trim()).filter(Boolean))].sort();
+cat.innerHTML='<option value="">All price categories</option>';
+for(const tier of tierValues){const option=document.createElement('option');option.value=tier;option.textContent=tier;cat.append(option)}
+if(kind){const values=[...new Set(cards.map(c=>c.dataset.kind).filter(Boolean))].sort();kind.innerHTML='<option value="">All styles</option>';for(const value of values){const option=document.createElement('option');option.value=value;option.textContent=value;kind.append(option)}}
+function apply(){let n=0;for(const card of cards){const tier=card.querySelector('.ma-tier')?.textContent.trim()||'';const show=norm(card.textContent).includes(norm(q.value.trim()))&&(!cat.value||tier===cat.value)&&(!kind||!kind.value||card.dataset.kind===kind.value);card.hidden=!show;if(show)n++}counter.textContent=n+' of '+cards.length+' products visible'}
+q.addEventListener('input',apply);cat.addEventListener('change',apply);kind?.addEventListener('change',apply);
+clear.addEventListener('click',()=>{q.value='';cat.value='';if(kind)kind.value='';apply();q.focus()});apply();
 })();</script>`;
 const seenQualityPhotos=new Set();let qualityPages=0,qualityDuplicates=0;
 for(const section of data.sections){
@@ -159,7 +171,8 @@ for(const section of data.sections){
   seenQualityPhotos.add(key);return whole;
  });
  const tiers=[...new Set(section.products.map(p=>p[3]).filter(Boolean))].sort();
- const tools='<div class="ma-shop-tools" role="search" aria-label="Product finder"><label for="ma-filter-query">Search products and brands<input type="search" id="ma-filter-query" placeholder="Product or brand" autocomplete="off"></label><label for="ma-filter-tier">Price category<select id="ma-filter-tier"><option value="">All categories</option>'+tiers.map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join('')+'</select></label><button type="button" id="ma-filter-clear">Clear filters</button><p class="ma-results" id="ma-filter-results" role="status" aria-live="polite"></p></div>';
+ const styleSelector=section.slug==='belts-suspenders'?'<label for="ma-filter-kind">Style &amp; type<select id="ma-filter-kind"><option value="">All styles</option></select></label>':'';
+ const tools='<div class="ma-shop-tools" role="search" aria-label="Product finder"><label for="ma-filter-query">Search products and brands<input type="search" id="ma-filter-query" placeholder="Product or brand" autocomplete="off"></label><label for="ma-filter-tier">Price category<select id="ma-filter-tier"><option value="">All price categories</option>''</select></label>'+styleSelector+'<button type="button" id="ma-filter-clear">Clear filters</button><p class="ma-results" id="ma-filter-results" role="status" aria-live="polite"></p></div>';
  if(!html.includes('<div class="ma-products">'))throw Error('Missing products on '+section.slug);
  html=html.replace('<div class="ma-products">',tools+'<div class="ma-products">');
  html=html.replace('</head>',qualityStyle+'</head>').replace('</body>',qualityJS+'</body>');
