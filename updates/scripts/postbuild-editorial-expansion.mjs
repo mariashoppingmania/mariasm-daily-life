@@ -54,6 +54,29 @@ async function tryProductImage(product){
    || (host.includes('bertelles.com')&&/\/\d+-/.test(pathname)) || (host.endsWith('oxo.com')&&pathname.endsWith('.html')) || (host.includes('cuccuini.it')&&/\/(?:articolo|product)\//.test(pathname));
  if(!looksLikeItem)return null;
  if(ogCache.has(url))return ogCache.get(url);
+ // Official Shopify product JSON is more reliable than blocked/rotating og:image tags.
+ // The handle is taken from this exact retailer product page, not from a search result.
+ if((host==='alessi.com'||host==='eu.josephjoseph.com') && pathname.includes('/products/')){
+   const handle=pathname.split('/products/')[1]?.split('/')[0];
+   if(handle){
+     const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),5200);
+     try{
+       const api='https://'+host+'/products/'+encodeURIComponent(handle)+'.js';
+       const res=await fetch(api,{signal:controller.signal,headers:{'Accept':'application/json','User-Agent':'Mozilla/5.0'}});
+       if(res.ok){
+         const item=await res.json();
+         const first=item?.images?.[0];
+         let photo=typeof first==='string'?first:first?.src;
+         if(!photo&&item?.featured_image)photo=typeof item.featured_image==='string'?item.featured_image:item.featured_image.src;
+         if(photo){
+           if(photo.startsWith('//'))photo='https:'+photo;
+           if(/^https:\/\//.test(photo)){ogCache.set(url,photo);return photo}
+         }
+       }
+     }catch(err){console.warn('Shopify exact-image unavailable for '+handle+': '+String(err).slice(0,80))}
+     finally{clearTimeout(timeout)}
+   }
+ }
  let image=null;
  try{
  const ctrl=new AbortController(),timeout=setTimeout(()=>ctrl.abort(),7500);
