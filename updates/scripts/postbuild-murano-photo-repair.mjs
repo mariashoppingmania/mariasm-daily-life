@@ -79,13 +79,8 @@ async function findCommonsImage(entry,name){
  for(const term of entry.terms){const photo=await commonsBySearch(term,name);if(photo)return photo}
  return null;
 }
-let typeCount=0;
-const typePhotos=[];
-for(let i=0;i<queries.length;i++){
- const photo=await findCommonsImage(queries[i],'type-'+String(i+1).padStart(2,'0'));
- typePhotos.push(photo);
- if(photo)typeCount++;
-}
+const typePhotos=await Promise.all(queries.map((entry,i)=>findCommonsImage(entry,'type-'+String(i+1).padStart(2,'0'))));
+const typeCount=typePhotos.filter(Boolean).length;
 let index=0;
 html=html.replace(/<article class="ma-type">([\s\S]*?)<\/article>/g,(whole,inside)=>{
  const i=index++; if(i>=queries.length)return whole;
