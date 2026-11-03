@@ -219,13 +219,13 @@ async function buildOne(d){
  if(d.slug==='belts-suspenders'){
    // Archive each verified editorial photograph locally, too. Never hotlink missing pictures.
    let n=0;const together=history+'<!--MARIASM-TYPE-SEPARATOR-->'+types;
-   const references=[...together.matchAll(/<img\\b[^>]*\\bsrc="([^"]+)"/g)].map(m=>m[1]);
+   const references=[...together.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(m=>m[1]);
    const unique=[...new Set(references)];
    const local=new Map();
    for(const batch of Array.from({length:Math.ceil(unique.length/5)},(_,i)=>unique.slice(i*5,i*5+5))){
     await Promise.all(batch.map(async remote=>{const found=await localProductPhoto(remote.replaceAll('&amp;','&'),'belts-editorial',n++);local.set(remote,found)}));
    }
-   const replaceRemote=part=>part.replace(/<img\\b[^>]*\\bsrc="([^"]+)"[^>]*>/g,(tag,remote)=>{
+   const replaceRemote=part=>part.replace(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g,(tag,remote)=>{
       const src=local.get(remote);
       return src?tag.replace('src="'+remote+'"','src="'+esc(src)+'"'):'<div class="ma-no-image">The historical photograph is temporarily unavailable; see the referenced museum or maker.</div>';
    });
