@@ -144,19 +144,19 @@ function editorialVisual(src,alt){
  :'<div class="ma-no-image" aria-label="No verified distinct photograph for this topic">Photography reference unavailable</div>';
 }
 function era(d,e,i,used){
- const curated=['belts-suspenders','scarves'].includes(d.slug)&&d.editorialEraPhotos?.[i];
+ const curated=['belts-suspenders','scarves','gloves'].includes(d.slug)&&d.editorialEraPhotos?.[i];
  const preferred=curated?curated[0]:e[2]&&isRelevantHistoryPhoto(d,e,i,used)?e[2]:null;
- const photo=curated?preferred:d.slug==='scarves'?null:editorialPhoto(d,i,used,preferred);
+ const photo=curated?preferred:['scarves','gloves'].includes(d.slug)?null:editorialPhoto(d,i,used,preferred);
  const caption=curated?curated[1]:photo?'Museum, atelier or contemporary photographic reference; check the dated source':'Editorial reference unavailable';
- const museumRef=d.slug==='scarves'?(d.editorialMuseumRecords||[]).find(x=>x.index===i):null;
+ const museumRef=['scarves','gloves'].includes(d.slug)?(d.editorialMuseumRecords||[]).find(x=>x.index===i):null;
  const museumLink=museumRef?'https://www.metmuseum.org/art/collection/search/'+museumRef.id:d.editorialModernProductPage;
  const visual=photo?editorialVisual(photo,d.name+' — '+e[0]):'<a class="ma-no-image" href="'+esc(museumLink||'../index.html')+'" target="_blank" rel="noopener noreferrer">Explore the original museum or maker photograph</a>';
  return '<article class="ma-era-item"><div class="ma-era-media">'+visual+'</div><div class="ma-era-copy"><span class="ma-era-index">Chapter '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(e[0])+'</h3><p>'+esc(e[1])+'</p><div class="ma-figure-caption">'+esc(caption)+'</div></div></article>';
 }
 function typeCard(d,t,i,used){
- const curated=['belts-suspenders','scarves'].includes(d.slug)&&d.editorialTypePhotos?.[i];
- const photo=curated?curated[0]:d.slug==='scarves'?null:editorialPhoto(d,i,used,null);
- const url=d.slug==='scarves'?d.editorialTypeProductPages?.[i]?.[0]:null;
+ const curated=['belts-suspenders','scarves','gloves'].includes(d.slug)&&d.editorialTypePhotos?.[i];
+ const photo=curated?curated[0]:['scarves','gloves'].includes(d.slug)?null:editorialPhoto(d,i,used,null);
+ const url=['scarves','gloves'].includes(d.slug)?d.editorialTypeProductPages?.[i]?.[0]:null;
  const visual=photo?editorialVisual(photo,d.name+' — '+t[0]):url?'<a class="ma-no-image" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">View the original product photograph</a>':editorialVisual(null,d.name+' — '+t[0]);
  return '<article class="ma-type"><div class="ma-type-art">'+visual+'</div><div class="ma-type-body"><h3>'+esc(t[0])+'</h3><p>'+esc(t[1])+'</p><small>Materials: '+esc(t[2])+'</small></div></article>';
 }
@@ -225,7 +225,7 @@ async function productCard(d,p,i){
     .filter(x=>typeof x==='string'&&/^https:\/\//.test(x));
  const candidates=[...new Set(imageOptions)];
  const candidate=candidates[0]||null;
- if(d.slug==='belts-suspenders'||d.slug==='scarves'){
+ if(['belts-suspenders','scarves','gloves'].includes(d.slug)){
    if(!candidate)return '';
    let local=null,chosen=candidate;
    // Prefer a downloaded and validated image over a blocked retailer hotlink.
@@ -246,7 +246,8 @@ async function productCard(d,p,i){
    const backupAttribute=backup&&backup!==candidate?' data-backup="'+esc(backup)+'"':'';
    const image='<img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'" data-fallbacks="'+esc(JSON.stringify(browserBackups))+'" alt="Exact retailer photograph of '+esc(title)+'" onerror="const candidates=JSON.parse(this.dataset.fallbacks||&#39;[]&#39;);if(candidates.length){this.dataset.fallbacks=JSON.stringify(candidates.slice(1));this.src=candidates[0];return;}this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the original photograph at the official retailer</a>';
    const beltCategory=/braces|suspenders/i.test(title)?'Braces &amp; Suspenders':/chain|ornament/i.test(title)?'Chain &amp; Ornament':/corset|waist/i.test(title)?'Wide Waist &amp; Corset':/utility|webbing/i.test(title)?'Utility &amp; Webbing':/braided|woven/i.test(title)?'Braided &amp; Woven':'Classic &amp; Designer Belts';
-   const category=d.slug==='scarves'?(/silk|carré|foulard/i.test(title)?'Silk Carrés &amp; Foulards':/neck warmer|scaldacollo|infinity|tube/i.test(title)?'Infinity &amp; Neck Warmers':/stole|shawl|pashmina/i.test(title)?'Stoles, Shawls &amp; Pashminas':/cashmere/i.test(title)?'Cashmere &amp; Premium Wool':'Wool &amp; Everyday Scarves'):beltCategory;
+   const preGlovesCategory=d.slug==='scarves'?(/silk|carré|foulard/i.test(title)?'Silk Carrés &amp; Foulards':/neck warmer|scaldacollo|infinity|tube/i.test(title)?'Infinity &amp; Neck Warmers':/stole|shawl|pashmina/i.test(title)?'Stoles, Shawls &amp; Pashminas':/cashmere/i.test(title)?'Cashmere &amp; Premium Wool':'Wool &amp; Everyday Scarves'):beltCategory;
+   const category=d.slug==='gloves'?(/opera|satin|evening|lace/i.test(title)?'Evening &amp; Opera':/driving/i.test(title)?'Driving':/mitten|muffole|mezzedita/i.test(title)?'Mittens &amp; Convertible':/ski|trekking|thermal|termici|MT500|MT900|WEDZE/i.test(title)?'Thermal &amp; Outdoor':/cashmere|merino|wool|knitted/i.test(title)?'Cashmere &amp; Knit':'Leather &amp; Fashion'):preGlovesCategory;
    const name=category.replaceAll('&amp;','&');
    verifiedProductStats[d.slug]=(verifiedProductStats[d.slug]||0)+1;
    return '<article class="ma-product" data-kind="'+esc(name)+'"><div class="ma-product-image">'+image+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><span class="ma-kind">'+category+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
@@ -327,10 +328,43 @@ async function buildOne(d){
    }));
    d.editorialTypePhotos=types;
  }
+ if(d.slug==='gloves'){
+   // Never reuse a modern glove as an unlabelled historical object.
+   d.editorialEraPhotos=Array.from({length:d.eras.length},()=>null);
+   const museum=await Promise.all((d.editorialMuseumRecords||[]).map(async item=>{
+     const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),6500);
+     try{
+       const response=await fetch('https://collectionapi.metmuseum.org/public/collection/v1/objects/'+item.id,{signal:ctrl.signal});
+       if(!response.ok)return null;
+       const obj=await response.json();
+       return obj.isPublicDomain&&/^https:\/\//.test(obj.primaryImage||'')?
+         {index:item.index,image:obj.primaryImage,caption:item.caption}:null;
+     }catch(err){console.warn('Gloves museum unavailable '+item.id);return null}
+     finally{clearTimeout(timer)}
+   }));
+   for(const item of museum)if(item)d.editorialEraPhotos[item.index]=[item.image,item.caption];
+   for(const i of [0,5,6]){
+     const reference=d.editorialEraProductPages?.[i];
+     if(!reference)continue;
+     const photo=await tryProductImage(['Period reference','',null,null,reference[0]]);
+     if(photo)d.editorialEraPhotos[i]=[photo,reference[1]];
+   }
+   d.editorialTypePhotos=await Promise.all((d.editorialTypeProductPages||[]).map(async(reference,i)=>{
+     if(!reference)return null;
+     const [url,caption]=reference;
+     const options=[d.editorialTypeDirectPhotos?.[i]?.[0],await tryProductImage([caption,'','','',url])].filter(Boolean);
+     for(const remote of [...new Set(options)]){
+       const local=await localProductPhoto(remote,'gloves-style',i+80);
+       if(local)return [remote,d.editorialTypeDirectPhotos?.[i]?.[1]||caption];
+     }
+     // A product photo is never substituted with a different item.
+     return options.length?[options[0],caption]:null;
+   }));
+ }
  const used=new Set([d.hero]);
  let history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
  let types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
- if(d.slug==='belts-suspenders'||d.slug==='scarves'){
+ if(['belts-suspenders','scarves','gloves'].includes(d.slug)){
    // Archive each verified editorial photograph locally, too. Never hotlink missing pictures.
    let n=0;const together=history+'<!--MARIASM-TYPE-SEPARATOR-->'+types;
    const references=[...together.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(m=>m[1]);
@@ -346,7 +380,7 @@ async function buildOne(d){
    history=replaceRemote(history);types=replaceRemote(types);
  }
  const materials=d.materials.map(materialCard).join('');
- const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);} if(['belts-suspenders','scarves'].includes(d.slug) && !prod.some(Boolean))throw Error('Belts Atelier: no product images verified; abort publication instead of showing broken pictures');
+ const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);} if(['belts-suspenders','scarves','gloves'].includes(d.slug) && !prod.some(Boolean))throw Error(d.slug+': no usable product photos could be sourced');
  const sources=d.sources.map(x=>'<a href="'+esc(x[1])+'" '+link+'>'+esc(x[0])+'</a>').join(' · ');
  const other=source.sections.filter(x=>x.slug!==d.slug).map(x=>'<a href="../'+x.slug+'/index.html">'+esc(x.name)+'</a>').join('');
  const publishedProductCount=prod.filter(Boolean).length;console.log('Catalog items built for '+d.slug+': '+publishedProductCount+'/'+d.products.length+' (photo shown only when exact image available)');const body='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'+esc(d.intro)+'"><title>'+esc(d.name)+' Atelier | MariaSM</title><link rel="canonical" href="https://mariashoppingmania.github.io/mariasm-daily-life/'+esc(d.slug)+'/"><style>'+css+'</style></head><body class="mariasm-editorial"><div class="ma-top"><a href="../index.html">MARIA<span style="color:#ae6481">SM</span> · HOME</a><nav class="ma-navigation"><a href="#history">History</a><a href="#types">Types</a><a href="#materials">Materials</a><a href="#shopping">Shop</a></nav></div><header class="ma-hero" style="background-image:url(&quot;'+esc(photoFor(d.slug,0))+'&quot;)"><div class="ma-hero-copy"><p class="ma-kicker">'+esc(d.eyebrow)+'</p><h1>'+esc(d.name)+' Atelier</h1><p>'+esc(d.intro)+'</p><div class="ma-pills"><a href="#history">Explore the history</a><a href="#types">See styles</a><a href="#shopping">Discover shopping</a></div></div></header><main class="ma-container"><div class="ma-intro"><p class="ma-kicker">MariaSM · The illustrated encyclopaedia</p><h2>Beautiful things. Remarkable stories.</h2><p>Discover the evolution of design, the feel of materials and the difference between everyday essentials and exceptional objects.</p></div><section id="history" class="ma-section">'+sectionHead('A visual timeline','Through the centuries','A photographic journey through the eras; modern visual references are labelled, and do not claim to be historical photographs.')+'<div class="ma-era">'+history+'</div></section><section id="types" class="ma-section">'+sectionHead('The catalogue of forms','Types & uses','Learn to recognise distinctive shapes and understand their purpose.')+'<div class="ma-types">'+types+'</div></section><section id="materials" class="ma-section">'+sectionHead('The makers’ materials','Material encyclopedia','Understand quality, craft and care before choosing your next object.')+'<div class="ma-materials">'+materials+'</div>'+extra(d.slug)+'</section><section id="shopping" class="ma-section">'+sectionHead('From affordable to extraordinary','The shopping collection','Only real, individually photographed products from identifiable retailer pages. No AI-made or substitute product photos.')+'<div class="ma-products">'+prod.join('')+'</div><div class="ma-note"><strong>Important:</strong> Prices are editorial snapshots from 2 November 2026, not live offers. Availability, prices and variants may change. Each displayed shopping item uses its own retailer metadata image; no substitute illustration is shown. Items without a verifiable exact product photo are excluded. Always verify current price and availability with the seller.</div></section><section class="ma-section">'+sectionHead('Keep exploring','More MariaSM Ateliers','Fashion, craft and everyday design are all connected.')+'<div class="ma-links">'+other+'<a href="../jewellery/index.html">Jewellery</a><a href="../bags/index.html">Bags</a><a href="../index.html">Return to MariaSM</a></div></section><div class="ma-note">Historical reading and image references: '+sources+'. Where images are documentary or retailer photographs, credit remains with their respective owners; original schematics are editorial illustrations.</div></main><footer class="ma-footer">MariaSM · A little beauty in the everyday · <a href="../index.html">Back to the journal</a></footer></body></html>';
