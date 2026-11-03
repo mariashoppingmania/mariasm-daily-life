@@ -53,6 +53,8 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-murano-photo-repair.mjs
       - name: Align eight Murano technique cards and guarantee illustrations
         run: node source/mariasm-site/scripts/postbuild-murano-types-layout.mjs
+      - name: Rebuild Fine Plates, Ceramics and Glassware with verified photography
+        run: node source/mariasm-site/scripts/postbuild-fine-tableware-photo-audit.mjs
       - name: Verify homepage and six editorial ateliers
         run: |
           test -s source/mariasm-site/docs/index.html
