@@ -23,3 +23,10 @@
 .ma-hero{background-position:center center}
 @media(max-width:620px){.ma-era-media{height:245px}.ma-type-art{height:180px}.ma-product-image{height:235px}}
 @media(prefers-reduced-motion:reduce){.ma-type-art img{transition:none}.ma-type:hover .ma-type-art img{transform:none}}
+
+/* Distinct-only photography: a truthful link replaces missing or repeated thumbnails. */
+.ma-no-image,.ma-missing-photo{display:flex;align-items:center;justify-content:center;min-height:100%;width:100%;padding:22px;text-align:center;font:700 13px/1.55 system-ui,sans-serif;color:#70445b;background:linear-gradient(130deg,#fbf2f6,#eadddf)}
+.ma-missing-photo{color:#803e60!important;text-decoration:underline;text-underline-offset:3px}
+.ma-missing-photo[hidden]{display:none!important}
+.ma-no-image{font-size:12px;font-weight:600}
+.ma-product-image:has(.ma-missing-photo:not([hidden])){background:#f9f0f4}
