@@ -1792,13 +1792,13 @@
       "hero": "https://alessi.com/cdn/shop/files/hero-kitchen-collection.jpg",
       "eras": [
         [
-          "The first domestic technologies · Before 3000 BCE",
-          "The earliest households relied on stone grinders, hearths, ceramic vessels, woven baskets and wooden containers. Cooking was also a way to preserve harvests and share labour. Querns demanded physical effort, while fire-resistant pots changed what people could eat. Archaeological evidence varies greatly by region; no single 'first kitchen' existed.",
+          "The first domestic vessels · Before 3000 BCE",
+          "Prehistoric households developed fired-clay bowls, stone grinders, hand-built storage pots and shared hearths long before written recipes. The illustrated deep pottery bowl dates to roughly 4500–4000 BCE and was excavated at Matmar in Egypt. It demonstrates early vessel craftsmanship, although its precise household use cannot be proven from its archaeological context.",
           ""
         ],
         [
           "Ancient Egypt · 3000–30 BCE",
-          "Grain grinding, bread ovens, pottery beer jars and stone mortars were integral to domestic work along the Nile. Bread and beer were staples, and grinding could occupy many hours. Wood, stone, ceramic and copper served different tasks, depending on household resources.",
+          "Egyptian domestic food preparation relied on grain grinding, bread ovens, ceramic vessels and beer production. The illustrated wooden model of a bakery and brewery from the tomb of Meketre, circa 1981–1975 BCE, shows workers grinding grain, kneading dough, tending ovens and preparing beer. It is a historical model of work, not a surviving kitchen.",
           ""
         ],
         [
@@ -2933,13 +2933,13 @@
       "editorialMuseumRecords": [
         {
           "index": 0,
-          "id": 561580,
-          "caption": "Grinding stone from Egypt, ca. 1300–1080 BCE · Metropolitan Museum of Art. A documented later example illustrating ancient grinding."
+          "id": 557587,
+          "caption": "Authentic predynastic Egyptian deep pottery bowl, ca. 4500–4000 BCE, Matmar. The Metropolitan Museum of Art, public domain. Museum catalogue: 557587. Exact household function uncertain."
         },
         {
           "index": 1,
-          "id": 568591,
-          "caption": "Ancient Egyptian limestone mortar and pestle, ca. 1300–1080 BCE · Metropolitan Museum of Art; public domain"
+          "id": 544258,
+          "caption": "Ancient Egyptian painted wooden model bakery and brewery from Meketre's tomb, ca. 1981–1975 BCE, showing grain milling, kneading, ovens and brewing. The Metropolitan Museum of Art, public domain. Museum catalogue: 544258."
         },
         {
           "index": 2,
@@ -3134,7 +3134,8 @@
           "https://www.ikea.com/it/it/p/grunka-utensili-da-cucina-4-pezzi-inox-30083334/",
           "IKEA GRUNKA four-piece kitchen tools set"
         ]
-      ]
+      ],
+      "historicalPhotoPolicy": "Historic chapters display only verified artefacts, historical depictions or documented reconstructions appropriate to the period. A modern product must never replace a historical image, even with a modern comparison caption. Missing artefact images must link to the exact museum record and be reported in build logs."
     },
     {
       "slug": "venetian-glass",
