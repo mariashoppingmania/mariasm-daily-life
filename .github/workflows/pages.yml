@@ -47,6 +47,15 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-editorial-expansion.mjs
       - name: Refine photos, historical guides, home cards and atelier menu
         run: node source/mariasm-site/scripts/postbuild-curation.mjs
+      - name: Verify homepage and six editorial ateliers
+        run: |
+          test -s source/mariasm-site/docs/index.html
+          for page in belts-suspenders scarves gloves home-utensils venetian-glass fine-tableware; do
+            test -s "source/mariasm-site/docs/$page/index.html"
+            grep -q 'id="mariasm-quality"' "source/mariasm-site/docs/$page/index.html"
+            grep -q 'id="ma-filter-query"' "source/mariasm-site/docs/$page/index.html"
+          done
+          grep -q 'id="mariasm-craft-ateliers"' source/mariasm-site/docs/index.html
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
