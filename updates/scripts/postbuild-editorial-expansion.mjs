@@ -151,10 +151,51 @@ const exactRetailImages={
 };
 
 const usedRetailPhotos=new Set();
+// Product images are saved into the published site, avoiding third-party hotlink failures.
+// Never show an unrelated photo for a product or a drawing disguised as a photo.
+const localPhotoCache=new Map();
+async function localProductPhoto(remote,slug,index){
+ if(!remote || !/^https:\/\//.test(remote))return null;
+ if(localPhotoCache.has(remote))return localPhotoCache.get(remote);
+ const folder=path.join(docs,'assets','retail-photographs');
+ fs.mkdirSync(folder,{recursive:true});
+ let value=null;
+ try{
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),6500);
+  try{
+   const response=await fetch(remote,{signal:controller.signal,headers:{'User-Agent':'Mozilla/5.0','Accept':'image/avif,image/webp,image/png,image/jpeg,image/*'}});
+   if(response.ok){
+    const mime=(response.headers.get('content-type')||'').toLowerCase().split(';')[0];
+    const extension=({'image/jpeg':'.jpg','image/png':'.png','image/webp':'.webp','image/avif':'.avif'})[mime];
+    const len=Number(response.headers.get('content-length')||0);
+    if(extension && (!len||len<=7000000)){
+      const buffer=Buffer.from(await response.arrayBuffer());
+      if(buffer.length>512 && buffer.length<=7000000){
+       const valid=extension==='.jpg'&&buffer[0]===255&&buffer[1]===216 || extension==='.png'&&buffer.subarray(1,4).toString()==='PNG' || extension==='.webp'&&buffer.subarray(8,12).toString()==='WEBP' || extension==='.avif'&&buffer.subarray(4,12).toString().includes('ftyp');
+       if(valid){const file=slug+'-'+String(index).padStart(3,'0')+extension;fs.writeFileSync(path.join(folder,file),buffer);value='../assets/retail-photographs/'+file;}
+      }
+    }
+   }
+  }finally{clearTimeout(timeout)}
+ }catch(error){console.warn('Photo unavailable for '+slug+' #'+index+': '+String(error).slice(0,120))}
+ localPhotoCache.set(remote,value);
+ return value;
+}
+const verifiedProductStats={};
 async function productCard(d,p,i){
  const [title,brand,price,tier,url]=p;
  if(!url || !/^https:\/\//.test(url))return '';
- const candidate=(await tryProductImage(p)) || exactRetailImages[url] || null;
+ let candidate=exactRetailImages[url] || p[5] || await tryProductImage(p);
+ if(d.slug==='belts-suspenders'){
+   // The belt catalogue is photograph-only: no empty cards or generic images.
+   if(!candidate || usedRetailPhotos.has(candidate))return '';
+   const local=await localProductPhoto(candidate,d.slug,i);
+   if(!local)return '';
+   usedRetailPhotos.add(candidate);
+   verifiedProductStats[d.slug]=(verifiedProductStats[d.slug]||0)+1;
+   return '<article class="ma-product"><div class="ma-product-image"><img loading="lazy" decoding="async" src="'+esc(local)+'" alt="Original photograph of '+esc(title)+'"></div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
+ }
  const image=candidate&&!usedRetailPhotos.has(candidate)?candidate:null;
  if(image)usedRetailPhotos.add(image);
  const linkToSeller='<a class="ma-missing-photo" href="'+esc(url)+'" '+link+'>View the original product photographs on the retailer’s website ↗</a>';
@@ -162,6 +203,7 @@ async function productCard(d,p,i){
  const photoSlot=image?'<img loading="lazy" decoding="async" src="'+esc(image)+'"'+onError+' alt="Exact product photograph of '+esc(title)+'"><span class="ma-picture-label">Original retailer product photograph</span><a class="ma-missing-photo" hidden href="'+esc(url)+'" '+link+'>See original photo at the retailer ↗</a>':linkToSeller;
  return '<article class="ma-product"><div class="ma-product-image">'+photoSlot+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
 }
+
 function sectionHead(k,title,description){return '<div class="ma-section-head"><div><span class="ma-kicker">'+esc(k)+'</span><h2>'+esc(title)+'</h2></div><p>'+esc(description)+'</p></div>'}
 function extra(slug){
  if(slug==='venetian-glass')return '<div class="ma-extra"><h3>Inside a Murano workshop</h3><div class="ma-process"><div><strong>01 · The glass batch</strong><p>Silica, fluxes, stabilisers and selected colourants are melted into a workable mass; formulas and heat treatment determine behaviour.</p></div><div><strong>02 · The gathering</strong><p>The glassmaker collects molten glass on a blowpipe, rolling, reheating and adding layers or decorative glass canes.</p></div><div><strong>03 · Shaping</strong><p>Blowing, centrifugal movement, tools, hand finishing and cooperation with assistants shape the vessel while hot.</p></div><div><strong>04 · Decoration</strong><p>Murrine, filigrana, gold leaf, sommerso, engraving and colour layers each require different workshop skills.</p></div><div><strong>05 · Annealing</strong><p>Slow controlled cooling relieves internal stress. Skipping correct annealing risks cracks later on.</p></div><div><strong>06 · Authentication</strong><p>Ask about furnace or studio, maker, technique, signatures, seller provenance and documentation. Murano-style is not the same as made in Murano.</p></div></div></div>';
@@ -174,7 +216,7 @@ async function buildOne(d){
  const used=new Set([d.hero]);const history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
  const types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
  const materials=d.materials.map(materialCard).join('');
- const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);}
+ const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);} if(d.slug==='belts-suspenders' && !prod.some(Boolean))throw Error('Belts Atelier: no product images verified; abort publication instead of showing broken pictures');
  const sources=d.sources.map(x=>'<a href="'+esc(x[1])+'" '+link+'>'+esc(x[0])+'</a>').join(' · ');
  const other=source.sections.filter(x=>x.slug!==d.slug).map(x=>'<a href="../'+x.slug+'/index.html">'+esc(x.name)+'</a>').join('');
  const publishedProductCount=prod.filter(Boolean).length;console.log('Catalog items built for '+d.slug+': '+publishedProductCount+'/'+d.products.length+' (photo shown only when exact image available)');const body='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'+esc(d.intro)+'"><title>'+esc(d.name)+' Atelier | MariaSM</title><link rel="canonical" href="https://mariashoppingmania.github.io/mariasm-daily-life/'+esc(d.slug)+'/"><style>'+css+'</style></head><body class="mariasm-editorial"><div class="ma-top"><a href="../index.html">MARIA<span style="color:#ae6481">SM</span> · HOME</a><nav class="ma-navigation"><a href="#history">History</a><a href="#types">Types</a><a href="#materials">Materials</a><a href="#shopping">Shop</a></nav></div><header class="ma-hero" style="background-image:url(&quot;'+esc(photoFor(d.slug,0))+'&quot;)"><div class="ma-hero-copy"><p class="ma-kicker">'+esc(d.eyebrow)+'</p><h1>'+esc(d.name)+' Atelier</h1><p>'+esc(d.intro)+'</p><div class="ma-pills"><a href="#history">Explore the history</a><a href="#types">See styles</a><a href="#shopping">Discover shopping</a></div></div></header><main class="ma-container"><div class="ma-intro"><p class="ma-kicker">MariaSM · The illustrated encyclopaedia</p><h2>Beautiful things. Remarkable stories.</h2><p>Discover the evolution of design, the feel of materials and the difference between everyday essentials and exceptional objects.</p></div><section id="history" class="ma-section">'+sectionHead('A visual timeline','Through the centuries','A photographic journey through the eras; modern visual references are labelled, and do not claim to be historical photographs.')+'<div class="ma-era">'+history+'</div></section><section id="types" class="ma-section">'+sectionHead('The catalogue of forms','Types & uses','Learn to recognise distinctive shapes and understand their purpose.')+'<div class="ma-types">'+types+'</div></section><section id="materials" class="ma-section">'+sectionHead('The makers’ materials','Material encyclopedia','Understand quality, craft and care before choosing your next object.')+'<div class="ma-materials">'+materials+'</div>'+extra(d.slug)+'</section><section id="shopping" class="ma-section">'+sectionHead('From affordable to extraordinary','The shopping collection','Only real, individually photographed products from identifiable retailer pages. No AI-made or substitute product photos.')+'<div class="ma-products">'+prod.join('')+'</div><div class="ma-note"><strong>Important:</strong> Prices are editorial snapshots from 2 November 2026, not live offers. Availability, prices and variants may change. Each displayed shopping item uses its own retailer metadata image; no substitute illustration is shown. Items without a verifiable exact product photo are excluded. Always verify current price and availability with the seller.</div></section><section class="ma-section">'+sectionHead('Keep exploring','More MariaSM Ateliers','Fashion, craft and everyday design are all connected.')+'<div class="ma-links">'+other+'<a href="../jewellery/index.html">Jewellery</a><a href="../bags/index.html">Bags</a><a href="../index.html">Return to MariaSM</a></div></section><div class="ma-note">Historical reading and image references: '+sources+'. Where images are documentary or retailer photographs, credit remains with their respective owners; original schematics are editorial illustrations.</div></main><footer class="ma-footer">MariaSM · A little beauty in the everyday · <a href="../index.html">Back to the journal</a></footer></body></html>';
