@@ -35,32 +35,32 @@
         [
           "Medieval Europe · 5th–15th c.",
           "Girdles crossed social classes: everyday belts supported knives and purses; affluent households favoured patterned metal mounts, embroidery and elaborate terminals. Fashionable placement followed tunic and gown silhouettes.",
-          ""
+          "https://eu.armourandcastings.com/media/cache/sylius_shop_product_original/0f/59/4e949a44a5bfd3439f3638cb6e6d.jpeg"
         ],
         [
           "Renaissance & Baroque · 1500–1750",
           "Tightened waists, decorative sashes and sword belts reflected the tailoring and ceremonial dress of the time. Silk ribbons and embroidered textiles existed alongside robust leather harnesses.",
-          ""
+          "https://www.1860-1960.com/z2610p2.jpg"
         ],
         [
           "Industrial age · 1750–1900",
           "The rise of tailored trousers encouraged the wider use of braces (suspenders), with button attachments, elastic textile and adjustable straps. Modern buckle manufacture standardised everyday belts.",
-          ""
+          "https://www.1860-1960.com/z2736p0.jpg"
         ],
         [
           "1900–1960 · Workwear and elegance",
           "Leather belts became everyday companions to denim, military uniforms and sport clothing. Suspender braces remained staples for higher-waisted formal tailoring and practical workwear.",
-          ""
+          "https://theseamstressofbloomsbury.co.uk/cdn/shop/files/GRI-MEN-WHI-2_2048x.png?v=1770037047"
         ],
         [
           "1970–2000 · Designer buckles",
           "Statement waist belts, wide corset styles and visible logos turned a utilitarian object into an emblem of fashion. Punk studding and minimal tailoring offered opposite design languages.",
-          ""
+          "https://ems.dimu.org/image/022s8YzL5mnf?dimension=max&dpi=300&filename=NMA.0052336.jpg&mediatype=image%2Fjpg&quality=100"
         ],
         [
           "2000–today · Heritage meets expression",
           "Modern belts range from vegetable-tanned leather to recycled webbing and sculptural metal hardware; suspenders appear in vintage formalwear, workwear and contemporary gender-neutral styling.",
-          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+          "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1752655542/414516_AP00T_1000_001_100_0000_Light-GG-Marmont-thin-belt.jpg"
         ]
       ],
       "types": [
@@ -395,9 +395,9 @@
         [
           "Bertelles superior navy braces with red polka dots",
           "Bertelles",
-          "See retailer",
+          "€99.00",
           "Premium",
-          "https://www.bertelles.com/en/23-shop",
+          "https://www.bertelles.com/en/original-collection-/262-superior-wide-men-braces-suspenders-navy-with-red-polka-dots-5407005842004.html",
           "https://www.bertelles.com/1004-large_default/superior-wide-men-braces-suspenders-navy-with-red-polka-dots.jpg"
         ],
         [
@@ -575,7 +575,72 @@
         ]
       ],
       "aiPhotoAsset": "assets/editorial-ai/belts-suspenders.webp",
-      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph.",
+      "editorialEraPhotos": [
+        [
+          "https://vehi-mercatus.com/media/image/product/13493/lg/cingulum-roemer-guertel-typ-woelfin-mit-romulus-und-remus.jpg",
+          "Modern reconstruction of a Roman military belt, not an ancient photograph"
+        ],
+        [
+          "https://eu.armourandcastings.com/media/cache/sylius_shop_product_original/0f/59/4e949a44a5bfd3439f3638cb6e6d.jpeg",
+          "Modern reconstruction inspired by a late-14th-century French belt"
+        ],
+        [
+          "https://www.1860-1960.com/z2610p2.jpg",
+          "Antique embroidered braces from a later era, shown as a craftsmanship reference"
+        ],
+        [
+          "https://www.1860-1960.com/z2736p0.jpg",
+          "Surviving Victorian silk braces, circa 1873"
+        ],
+        [
+          "https://theseamstressofbloomsbury.co.uk/cdn/shop/files/GRI-MEN-WHI-2_2048x.png?v=1770037047",
+          "Modern photograph recreating 1940s tailoring and braces"
+        ],
+        [
+          "https://ems.dimu.org/image/022s8YzL5mnf?dimension=max&dpi=300&filename=NMA.0052336.jpg&mediatype=image%2Fjpg&quality=100",
+          "1980s punk outfit preserved by Nordiska museet, Sweden"
+        ],
+        [
+          "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1752655542/414516_AP00T_1000_001_100_0000_Light-GG-Marmont-thin-belt.jpg",
+          "Contemporary luxury leather belt, official Gucci product photography"
+        ]
+      ],
+      "editorialTypePhotos": [
+        [
+          "https://image.hm.com/assets/hm/4e/60/4e6012cae5ecfd9d865a18669a80ba2751a39d7e.jpg?imwidth=820",
+          "Contemporary classic dress belt"
+        ],
+        [
+          "https://ae01.alicdn.com/kf/S0fa1025fde534190b462f90ad7b9fb78c.jpg",
+          "Wide-waist black corset belt, contemporary photograph"
+        ],
+        [
+          "https://turnbullandasser.com/cdn/shop/products/AFBE3247_205812_2002_L.jpg?crop=center&height=1000&v=1658398532&width=1000",
+          "Woven leather belt"
+        ],
+        [
+          "https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/16eebc0fe40aabfd9ae6f082a7665c829d846944_xxl-1.jpg",
+          "Casual leather belt; modern product reference, not technical webbing"
+        ],
+        [
+          "https://www.bertelles.com/1004-large_default/superior-wide-men-braces-suspenders-navy-with-red-polka-dots.jpg",
+          "Y-back braces with leather adjusters"
+        ],
+        [
+          "https://www.bertelles.com/944-large_default/wide-clip-on-men-braces-suspenders-off-white.jpg",
+          "Clip-on braces; photo documents design and clips, not a claimed X-back"
+        ],
+        [
+          "https://littleangel.pl/userdata/public/gfx/47519/Pasek-Ozdobny-do-Sukienki-Lancuch-Zloty.jpg",
+          "Contemporary decorative chain belt"
+        ],
+        [
+          "https://laboutiquedelaceinture.fr/cdn/shop/products/ceinture-corset-a-boucle-en-forme-de-coeur-modele-athenais-166513.jpg?v=1707508912",
+          "Contemporary corset-inspired belt"
+        ]
+      ],
+      "imagesDate": "Photographic editorial references checked November 2026. Historical replicas and modern interpretations are explicitly identified. Images of shopping products must correspond to their precise SKU; no AI product images."
     },
     {
       "slug": "scarves",
