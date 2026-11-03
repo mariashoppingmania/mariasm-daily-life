@@ -2681,6 +2681,66 @@
           "",
           null,
           "Coffee, tea & juice"
+        ],
+        [
+          "IKEA KORKEN glass preserving jar, 1.8 L",
+          "IKEA",
+          "€3.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/korken-contenitore-con-coperchio-vetro-trasparente-70213550/",
+          "",
+          null,
+          "Storage & jars"
+        ],
+        [
+          "IKEA KORKEN glass preserving jar, 0.5 L",
+          "IKEA",
+          "€2.50",
+          "Budget",
+          "https://www.ikea.com/it/it/p/korken-contenitore-con-coperchio-vetro-trasparente-70213545/",
+          "",
+          null,
+          "Storage & jars"
+        ],
+        [
+          "IKEA KORKEN stainless steel strainer and funnel",
+          "IKEA",
+          "€7.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/korken-colino-imbuto-3-pezzi-inox-10561712/",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "IKEA KORKEN glass swing-top bottle 1 L",
+          "IKEA",
+          "€2.50",
+          "Budget",
+          "https://www.ikea.com/it/it/p/korken-bottiglia-con-tappo-vetro-trasparente-30213552/",
+          "",
+          null,
+          "Storage & jars"
+        ],
+        [
+          "IKEA RINNIG dish washing brush grey",
+          "IKEA",
+          "€1.50",
+          "Budget",
+          "https://www.ikea.com/it/it/p/rinnig-spazzolino-per-i-piatti-grigio-30407814/",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "Alessi Kalistò 1 designer steel storage canister",
+          "Alessi",
+          "€110",
+          "Design",
+          "https://alessi.com/it/products/kalisto-1-kitchen-box",
+          "",
+          null,
+          "Storage & jars"
         ]
       ],
       "sources": [
@@ -2823,7 +2883,7 @@
         ],
         [
           "https://alessi.com/it/products/juicy-salif-citrus-squeezer",
-          "Juicy Salif, Philippe Starck, 1990 design; Alessi manufacturer photograph"
+          "Original design object introduced in 1990; Alessi Juicy Salif"
         ],
         [
           "https://alessi.com/it/products/ajm19-kitchen-cutlery-set",
@@ -2831,7 +2891,7 @@
         ],
         [
           "https://alessi.com/it/products/kitchentools-kitchen-cutlery",
-          "Contemporary modular kitchen-tool design"
+          "Modern stainless kitchen tools as an example of reusable modular design"
         ]
       ],
       "designEssays": [
@@ -2868,7 +2928,73 @@
           "Future-facing domestic design should prioritize repairable motors, accurate energy information, low-waste storage, accessible grips and standard replaceable components. A beautiful appliance is not necessarily a better one; a wooden spoon can still be the right tool."
         ]
       ],
-      "productPhotographyPolicy": "Only the correct photographed SKU may be shown in shop; images must be downloaded and verified as real image files. Never use an AI rendering, generic brand hero image or different product variant as a substitute. Products with missing photos remain in source for review but are not shown in the live shop."
+      "productPhotographyPolicy": "Only the correct photographed SKU may be shown in shop; images must be downloaded and verified as real image files. Never use an AI rendering, generic brand hero image or different product variant as a substitute. Products with missing photos remain in source for review but are not shown in the live shop.",
+      "editorialTypeProductPages": [
+        [
+          "https://alessi.com/it/products/9090-espresso-coffee-maker",
+          "Cookware and coffee metal shaping comparison from Alessi"
+        ],
+        [
+          "https://alessi.com/it/products/mami-cooks-knife",
+          "Alessi Mami professional chef knife"
+        ],
+        [
+          "https://www.ikea.com/it/it/p/ikea-365-vaerdefull-pelapatate-nero-30175140/",
+          "IKEA 365+ exact peeler product"
+        ],
+        [
+          "https://www.ikea.com/it/it/p/ikea-365-ihaerdig-macinaspezie-nero-10152875/",
+          "IKEA 365+ manual spice grinder"
+        ],
+        [
+          "https://alessi.com/it/products/moka-espresso-coffee-maker",
+          "Alessi Moka espresso maker"
+        ],
+        [
+          "https://alessi.com/it/products/9093-kettle",
+          "Alessi 9093 kettle, Michael Graves"
+        ],
+        [
+          "https://www.ikea.com/it/it/p/ikea-365-hjaelte-mestolo-inox-nero-70149465/",
+          "IKEA 365+ steel ladle"
+        ],
+        [
+          "https://www.ikea.com/it/it/p/korken-contenitore-con-coperchio-vetro-trasparente-70213550/",
+          "IKEA KORKEN glass storage jar"
+        ],
+        [
+          "https://alessi.com/it/products/a-tempo-tray",
+          "Alessi A Tempo serving tray"
+        ],
+        [
+          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
+          "Alessi Plissé small electric citrus press"
+        ],
+        [
+          "https://alessi.com/it/products/sbriciola-bread-board-1",
+          "Alessi Sbriciola cutting and bread board"
+        ],
+        [
+          "https://www.ikea.com/it/it/p/rinnig-spazzolino-per-i-piatti-grigio-30407814/",
+          "IKEA RINNIG dish washing brush"
+        ],
+        [
+          "https://alessi.com/it/products/kitchen-timer-kitchen-timer",
+          "Alessi mechanical kitchen timer"
+        ],
+        [
+          "https://alessi.com/it/products/parrot-sommelier-corkscrew",
+          "Alessi Parrot corkscrew"
+        ],
+        [
+          "https://alessi.com/it/products/juicy-salif-citrus-squeezer",
+          "Alessi Juicy Salif design icon"
+        ],
+        [
+          "https://www.ikea.com/it/it/p/grunka-utensili-da-cucina-4-pezzi-inox-30083334/",
+          "IKEA GRUNKA four-piece kitchen tools set"
+        ]
+      ]
     },
     {
       "slug": "venetian-glass",
