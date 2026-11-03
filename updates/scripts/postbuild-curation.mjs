@@ -172,7 +172,7 @@ for(const section of data.sections){
  });
  const tiers=[...new Set(section.products.map(p=>p[3]).filter(Boolean))].sort();
  const styleSelector=section.slug==='belts-suspenders'?'<label for="ma-filter-kind">Style &amp; type<select id="ma-filter-kind"><option value="">All styles</option></select></label>':'';
- const tools='<div class="ma-shop-tools" role="search" aria-label="Product finder"><label for="ma-filter-query">Search products and brands<input type="search" id="ma-filter-query" placeholder="Product or brand" autocomplete="off"></label><label for="ma-filter-tier">Price category<select id="ma-filter-tier"><option value="">All price categories</option>''</select></label>'+styleSelector+'<button type="button" id="ma-filter-clear">Clear filters</button><p class="ma-results" id="ma-filter-results" role="status" aria-live="polite"></p></div>';
+ const tools='<div class="ma-shop-tools" role="search" aria-label="Product finder"><label for="ma-filter-query">Search products and brands<input type="search" id="ma-filter-query" placeholder="Product or brand" autocomplete="off"></label><label for="ma-filter-tier">Price category<select id="ma-filter-tier"><option value="">All price categories</option></select></label>'+styleSelector+'<button type="button" id="ma-filter-clear">Clear filters</button><p class="ma-results" id="ma-filter-results" role="status" aria-live="polite"></p></div>';
  if(!html.includes('<div class="ma-products">'))throw Error('Missing products on '+section.slug);
  html=html.replace('<div class="ma-products">',tools+'<div class="ma-products">');
  html=html.replace('</head>',qualityStyle+'</head>').replace('</body>',qualityJS+'</body>');
