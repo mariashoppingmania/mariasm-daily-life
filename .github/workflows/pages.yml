@@ -47,6 +47,8 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-editorial-expansion.mjs
       - name: Refine photos, historical guides, home cards and atelier menu
         run: node source/mariasm-site/scripts/postbuild-curation.mjs
+      - name: Extend Murano history, glassmaking and verified product photography
+        run: node source/mariasm-site/scripts/postbuild-murano-deep-dive.mjs
       - name: Verify homepage and six editorial ateliers
         run: |
           test -s source/mariasm-site/docs/index.html
