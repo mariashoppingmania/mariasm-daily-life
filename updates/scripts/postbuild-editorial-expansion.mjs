@@ -49,29 +49,45 @@ const ogCache=new Map();
 async function tryProductImage(product){
  const [title,brand,price,tier,url]=product;
  if(!/^https:\/\//.test(url))return null;
- const parsed=new URL(url);
- const host=parsed.hostname.toLowerCase(),pathname=parsed.pathname;
- const looksLikeItem=/productpage\.|\/p\/|\/product\/|\/products\/|\/piatto-|\/serpenti-viper-|\/pr\/|\/original-collection-\/\d+-/.test(pathname)
-  || (host==='shop.mohd.it' && /\/it\/[^/]+\.html$/.test(pathname))
-  || (host.includes('villeroy-boch') && /\/p\//.test(pathname));
+ const parsed=new URL(url),pathname=parsed.pathname,host=parsed.hostname.toLowerCase();
+ const looksLikeItem=/productpage\.|\/p\/|\/product\/|\/products\/|\/pr\/|\/prd\/|\/original-collection-?\/\d+-|\/original-collection\/\d+-|\/\d+[-_][^/]+\.html|\/item-/.test(pathname)
+   || (host.includes('bertelles.com')&&/\/\d+-/.test(pathname));
  if(!looksLikeItem)return null;
  if(ogCache.has(url))return ogCache.get(url);
  let image=null;
  try{
-  const ctrl=new AbortController();const timeout=setTimeout(()=>ctrl.abort(),4200);
-  try{
-   const response=await fetch(url,{signal:ctrl.signal,headers:{'User-Agent':'Mozilla/5.0 (compatible; MariaSMEditorial/1.0)'}});
-   if(response.ok){
-    const html=(await response.text()).slice(0,250000);
-    const metas=html.match(/<meta\b[^>]*>/gi)||[];
-    const candidate=metas.find(x=>/(?:og:image|twitter:image)/i.test(x));
-    if(candidate){
-     const m=candidate.match(/content\s*=\s*["']([^"']+)["']/i);
-     if(m){image=m[1].replaceAll('&amp;','&');if(image.startsWith('//'))image='https:'+image;if(!/^https:\/\//.test(image))image=null;}
-    }
+ const ctrl=new AbortController(),timeout=setTimeout(()=>ctrl.abort(),7500);
+ try{
+  const response=await fetch(url,{signal:ctrl.signal,headers:{'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/128.0.0.0 Safari/537.36','Accept':'text/html,application/xhtml+xml'}});
+  if(response.ok){
+   const html=(await response.text()).slice(0,850000);
+   const metas=html.match(/<meta\b[^>]*>/gi)||[];
+   const attribute=(tag,name)=>{const rx=new RegExp('(?:^|\\s)'+name+'\\s*=\\s*(?:"([^"]*)"|\\x27([^\\x27]*)\\x27|([^\\s>]+))','i');const found=tag.match(rx);return found?(found[1]||found[2]||found[3]):''};
+   const unescape=x=>String(x||'').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'");
+   for(const tag of metas){
+     const name=attribute(tag,'property')||attribute(tag,'name');
+     if(/^(?:og:image(?::secure_url)?|twitter:image(?:\:src)?)$/i.test(name)){
+       const candidate=unescape(attribute(tag,'content'));
+       if(candidate){image=candidate;break}
+     }
    }
-  }finally{clearTimeout(timeout)}
- }catch(e){}
+   if(!image){
+     const scripts=[...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+     for(const item of scripts){
+       try{const data=JSON.parse(item[1]);const objects=Array.isArray(data)?data:[data];const candidates=objects.flatMap(x=>x&&Array.isArray(x['@graph'])?x['@graph']:[x]);for(const item of candidates){if(item&&(/Product/i.test(String(item['@type']))||item.sku)){const v=item.image;image=Array.isArray(v)?v[0]:typeof v==='object'?v?.url:v;if(image)break}}if(image)break}catch(err){}
+     }
+   }
+   if(!image){
+     const linkTags=html.match(/<link\b[^>]*>/gi)||[];
+     const img=linkTags.find(t=>/rel=["'](?:preload|image_src)["']/i.test(t)&&/as=["']image["']|rel=["']image_src["']/i.test(t));
+     if(img)image=unescape(attribute(img,'href'));
+   }
+   if(image){image=unescape(image);if(image.startsWith('//'))image='https:'+image;else if(image.startsWith('/'))image=new URL(image,url).href;
+     if(!/^https:\/\//.test(image))image=null;
+   }
+  }
+ }finally{clearTimeout(timeout)}
+ }catch(error){console.warn('Retail photo metadata unavailable for '+brand+': '+String(error).slice(0,80))}
  ogCache.set(url,image);
  return image;
 }
@@ -128,13 +144,15 @@ function editorialVisual(src,alt){
  :'<div class="ma-no-image" aria-label="No verified distinct photograph for this topic">Photography reference unavailable</div>';
 }
 function era(d,e,i,used){
- let preferred=e[2] && isRelevantHistoryPhoto(d,e,i,used)?e[2]:null;
- const photo=editorialPhoto(d,i,used,preferred);
- const caption=photo?'Museum, atelier or contemporary photographic reference; check the dated source':'No duplicate or substitute photograph used';
- return '<article class="ma-era-item"><div class="ma-era-media">'+editorialVisual(photo,d.name+' — '+e[0])+'</div><div class="ma-era-copy"><span class="ma-era-index">Chapter '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(e[0])+'</h3><p>'+esc(e[1])+'</p><div class="ma-figure-caption">'+caption+'</div></div></article>';
+ const curated=d.slug==='belts-suspenders'&&d.editorialEraPhotos?.[i];
+ const preferred=curated?curated[0]:e[2]&&isRelevantHistoryPhoto(d,e,i,used)?e[2]:null;
+ const photo=curated?preferred:editorialPhoto(d,i,used,preferred);
+ const caption=curated?curated[1]:photo?'Museum, atelier or contemporary photographic reference; check the dated source':'Editorial reference unavailable';
+ return '<article class="ma-era-item"><div class="ma-era-media">'+editorialVisual(photo,d.name+' — '+e[0])+'</div><div class="ma-era-copy"><span class="ma-era-index">Chapter '+String(i+1).padStart(2,'0')+'</span><h3>'+esc(e[0])+'</h3><p>'+esc(e[1])+'</p><div class="ma-figure-caption">'+esc(caption)+'</div></div></article>';
 }
 function typeCard(d,t,i,used){
- const photo=editorialPhoto(d,i,used,null);
+ const curated=d.slug==='belts-suspenders'&&d.editorialTypePhotos?.[i];
+ const photo=curated?curated[0]:editorialPhoto(d,i,used,null);
  return '<article class="ma-type"><div class="ma-type-art">'+editorialVisual(photo,d.name+' — '+t[0])+'</div><div class="ma-type-body"><h3>'+esc(t[0])+'</h3><p>'+esc(t[1])+'</p><small>Materials: '+esc(t[2])+'</small></div></article>';
 }
 function materialCard(m){return '<article class="ma-material"><h3>'+esc(m[0])+'</h3><p>'+esc(m[1])+'</p></article>'}
@@ -183,16 +201,20 @@ async function localProductPhoto(remote,slug,index){
 const verifiedProductStats={};
 async function productCard(d,p,i){
  const [title,brand,price,tier,url]=p;
- if(!url || !/^https:\/\//.test(url))return '';
- let candidate=exactRetailImages[url] || p[5] || await tryProductImage(p);
+ if(!url||!/^https:\/\//.test(url))return '';
+ const candidate=p[5]||exactRetailImages[url]||await tryProductImage(p);
  if(d.slug==='belts-suspenders'){
-   // The belt catalogue is photograph-only: no empty cards or generic images.
-   if(!candidate || usedRetailPhotos.has(candidate))return '';
+   if(!candidate||usedRetailPhotos.has(candidate))return '';
    const local=await localProductPhoto(candidate,d.slug,i);
-   if(!local)return '';
    usedRetailPhotos.add(candidate);
+   // Exact-image URLs are retained as fallback when a retailer blocks server-side downloads.
+   // Browser-side image failures expose the official product page rather than a false picture.
+   const shown=local||candidate;
+   const image='<img loading="lazy" decoding="async" src="'+esc(shown)+'" alt="Retailer photograph of '+esc(title)+'" onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the exact product photography on the official seller page</a>';
+   const category=/braces|suspenders/i.test(title)?'Braces &amp; Suspenders':/chain|ornament/i.test(title)?'Chain &amp; Ornament':/corset|waist/i.test(title)?'Wide Waist &amp; Corset':/utility|webbing/i.test(title)?'Utility &amp; Webbing':/braided|woven/i.test(title)?'Braided &amp; Woven':'Classic &amp; Designer Belts';
+   const name=category.replaceAll('&amp;','&');
    verifiedProductStats[d.slug]=(verifiedProductStats[d.slug]||0)+1;
-   return '<article class="ma-product"><div class="ma-product-image"><img loading="lazy" decoding="async" src="'+esc(local)+'" alt="Original photograph of '+esc(title)+'"></div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
+   return '<article class="ma-product" data-kind="'+esc(name)+'"><div class="ma-product-image">'+image+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><span class="ma-kind">'+category+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
  }
  const image=candidate&&!usedRetailPhotos.has(candidate)?candidate:null;
  if(image)usedRetailPhotos.add(image);
@@ -201,7 +223,6 @@ async function productCard(d,p,i){
  const photoSlot=image?'<img loading="lazy" decoding="async" src="'+esc(image)+'"'+onError+' alt="Exact product photograph of '+esc(title)+'"><span class="ma-picture-label">Original retailer product photograph</span><a class="ma-missing-photo" hidden href="'+esc(url)+'" '+link+'>See original photo at the retailer ↗</a>':linkToSeller;
  return '<article class="ma-product"><div class="ma-product-image">'+photoSlot+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
 }
-
 function sectionHead(k,title,description){return '<div class="ma-section-head"><div><span class="ma-kicker">'+esc(k)+'</span><h2>'+esc(title)+'</h2></div><p>'+esc(description)+'</p></div>'}
 function extra(slug){
  if(slug==='venetian-glass')return '<div class="ma-extra"><h3>Inside a Murano workshop</h3><div class="ma-process"><div><strong>01 · The glass batch</strong><p>Silica, fluxes, stabilisers and selected colourants are melted into a workable mass; formulas and heat treatment determine behaviour.</p></div><div><strong>02 · The gathering</strong><p>The glassmaker collects molten glass on a blowpipe, rolling, reheating and adding layers or decorative glass canes.</p></div><div><strong>03 · Shaping</strong><p>Blowing, centrifugal movement, tools, hand finishing and cooperation with assistants shape the vessel while hot.</p></div><div><strong>04 · Decoration</strong><p>Murrine, filigrana, gold leaf, sommerso, engraving and colour layers each require different workshop skills.</p></div><div><strong>05 · Annealing</strong><p>Slow controlled cooling relieves internal stress. Skipping correct annealing risks cracks later on.</p></div><div><strong>06 · Authentication</strong><p>Ask about furnace or studio, maker, technique, signatures, seller provenance and documentation. Murano-style is not the same as made in Murano.</p></div></div></div>';
@@ -240,7 +261,7 @@ async function buildOne(d){
    }
    const replaceRemote=part=>part.replace(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g,(tag,remote)=>{
       const src=local.get(remote);
-      return src?tag.replace('src="'+remote+'"','src="'+esc(src)+'"'):'<div class="ma-no-image">The historical photograph is temporarily unavailable; see the referenced museum or maker.</div>';
+      return src?tag.replace('src="'+remote+'"','src="'+esc(src)+'"') : tag.replace(' onerror="this.onerror=null;this.closest(&#39;.ma-era-media, .ma-type-art&#39;).classList.add(&#39;ma-photo-unavailable&#39;);this.remove()"',' onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"')+'<a hidden class="ma-no-image" href="'+esc(remote)+'" target="_blank" rel="noopener noreferrer">Open the original photographic reference</a>';
    });
    history=replaceRemote(history);types=replaceRemote(types);
  }
