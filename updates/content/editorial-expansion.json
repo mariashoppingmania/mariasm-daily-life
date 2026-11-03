@@ -1232,7 +1232,7 @@
       "eras": [
         [
           "Roman world · 1st c. BCE–5th c. CE",
-          "Hand protection in leather or heavy textiles was important for labour, weather and specialist tasks. Surviving examples are rarer than ceramics or metalware, so claims about universal fashion use require caution.",
+          "Roman hand protection served practical labour and specialist tasks. Directly surviving fashionable Roman gloves are scarce, so this chapter uses a labelled contemporary leather-glove craftsmanship reference, never a misleading archaeological attribution.",
           "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
         ],
         [
@@ -1340,30 +1340,6 @@
           ""
         ],
         [
-          "Heat Keeper teddy gloves",
-          "Heat Keeper / Decathlon",
-          "€25.95",
-          "Budget",
-          "https://www.decathlon.it/",
-          ""
-        ],
-        [
-          "Montreal calf-leather gloves",
-          "Lottusse",
-          "€149.00",
-          "Premium",
-          "https://www.lottusse.com/",
-          ""
-        ],
-        [
-          "Black leather zipper gloves",
-          "Sermoneta Gloves via retailer",
-          "€179.00",
-          "Premium",
-          "https://www.sermonetagloves.com/",
-          ""
-        ],
-        [
           "Inès leather gloves with cashmere cuff — Burgundy",
           "Cornelia James",
           "€196.95",
@@ -1372,43 +1348,11 @@
           ""
         ],
         [
-          "Lambskin gloves with cashmere",
-          "Sermoneta Gloves",
-          "Price on retailer",
-          "Luxury",
-          "https://www.sermonetagloves.com/",
-          ""
-        ],
-        [
-          "Designer leather gloves",
-          "Prada",
-          "Price on retailer",
-          "Luxury",
-          "https://www.prada.com/it/it/womens/accessories.html",
-          ""
-        ],
-        [
-          "Fine leather and suede gloves",
-          "Hermès",
-          "Price on retailer",
-          "Ultra luxury",
-          "https://www.hermes.com/it/it/category/donna/accessori/",
-          ""
-        ],
-        [
           "Dark-brown nappa gloves lined with cashmere",
           "TR Handschuhe Wien",
           "€260.00",
           "Premium",
           "https://www.tr-handschuhe.at/en/products/gentlemens-gloves-from-dark-brown-hair-sheep-nappa-lined-with-cashmere-1",
-          ""
-        ],
-        [
-          "Camilla leather opera gloves · Black",
-          "Fratelli Orsini",
-          "View current price",
-          "Luxury",
-          "https://www.fratelli-orsini.com/collections/long-leather-gloves",
           ""
         ],
         [
@@ -1442,6 +1386,102 @@
           "Luxury",
           "https://www.corneliajames.com/products/ines-leather-glove-with-cashmere-cuff",
           ""
+        ],
+        [
+          "UNIQLO HEATTECH knitted gloves",
+          "UNIQLO",
+          "€14.90",
+          "Budget",
+          "https://www.uniqlo.com/it/it/products/E486210-000/00",
+          ""
+        ],
+        [
+          "UNIQLO HEATTECH knitted touch gloves, grey",
+          "UNIQLO",
+          "See boutique",
+          "Budget",
+          "https://www.uniqlo.com/it/it/products/E478319-000/00",
+          ""
+        ],
+        [
+          "UNIQLO HEATTECH knitted touch gloves, beige",
+          "UNIQLO",
+          "€7.90 reference",
+          "Budget",
+          "https://www.uniqlo.com/it/it/products/E478319-000/01",
+          ""
+        ],
+        [
+          "UNIQLO HEATTECH thermal gloves, dark green",
+          "UNIQLO",
+          "See boutique",
+          "Budget",
+          "https://www.uniqlo.com/it/it/products/E450333-000/00",
+          ""
+        ],
+        [
+          "UNIQLO HEATTECH thermal gloves, beige",
+          "UNIQLO",
+          "€24.90 reference",
+          "Budget",
+          "https://www.uniqlo.com/it/it/products/E470024-000/01",
+          ""
+        ],
+        [
+          "UNIQLO HEATTECH navy thermal gloves",
+          "UNIQLO",
+          "€14.90 reference",
+          "Budget",
+          "https://www.uniqlo.com/it/it/products/E462253-000/00",
+          ""
+        ],
+        [
+          "Decathlon SIMOND MT500 Touch & Stretch black gloves",
+          "SIMOND / Decathlon",
+          "€14.99",
+          "Budget outdoor",
+          "https://www.decathlon.it/p/guanti-trekking-adulto-mt500-touch-and-stretch-neri/335238/c382c382m8655824",
+          ""
+        ],
+        [
+          "Decathlon QUECHUA MT500 black fleece gloves",
+          "QUECHUA / Decathlon",
+          "€8.99",
+          "Budget outdoor",
+          "https://www.decathlon.it/p/guanti-trekking-adulto-mt500-pile-neri/339223/c381c71m8738791",
+          ""
+        ],
+        [
+          "Cornelia James Emilie black nappa gloves",
+          "Cornelia James",
+          "€155.95",
+          "Luxury",
+          "https://corneliajames.com/products/emilie-black-classic-leather-gloves",
+          ""
+        ],
+        [
+          "Cornelia James Emilie dark-navy nappa gloves",
+          "Cornelia James",
+          "€156.95",
+          "Luxury",
+          "https://corneliajames.com/products/emilie-dark-navy-classic-leather-gloves",
+          ""
+        ],
+        [
+          "Cornelia James Emilie classic soft leather gloves",
+          "Cornelia James",
+          "£130.00",
+          "Luxury",
+          "https://corneliajames.com/products/emilie-classic-soft-leather-glove",
+          ""
+        ],
+        [
+          "Cornelia James Anthea satin opera gloves",
+          "Cornelia James",
+          "See boutique",
+          "Evening luxury",
+          "https://www.corneliajames.com/products/anthea-satin-opera-glove",
+          ""
         ]
       ],
       "sources": [
@@ -1454,7 +1494,7 @@
           "https://www.vam.ac.uk/collections/fashion"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "editorialImagePolicy": "Distinct period-appropriate museum photographs for documented historical objects; modern reconstructions and fashion references are explicitly labelled. Product imagery must be the exact model from an identifiable retailer.",
       "editorialPhotoReferences": [
         [
           "Museum historic handwear",
@@ -1470,7 +1510,100 @@
         ]
       ],
       "aiPhotoAsset": "assets/editorial-ai/gloves.webp",
-      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph.",
+      "editorialMuseumRecords": [
+        {
+          "index": 1,
+          "id": 122096,
+          "caption": "British leather gloves, 17th century · Metropolitan Museum of Art. A later historical comparison, not a medieval original."
+        },
+        {
+          "index": 2,
+          "id": 96421,
+          "caption": "European leather, silk and metallic-thread gloves, circa 1645 · Metropolitan Museum of Art."
+        },
+        {
+          "index": 3,
+          "id": 105058,
+          "caption": "European silk and metallic-thread gloves, late 17th century · Metropolitan Museum of Art. Early courtly illustration for the following 18th-century tradition."
+        },
+        {
+          "index": 4,
+          "id": 119431,
+          "caption": "Italian leather gloves, late 18th–early 19th century · Metropolitan Museum of Art."
+        }
+      ],
+      "editorialEraProductPages": [
+        [
+          "https://corneliajames.com/products/emilie-black-classic-leather-gloves",
+          "Modern hand-crafted leather gloves, illustrating practical leatherworking rather than Roman-period originals"
+        ],
+        null,
+        null,
+        null,
+        null,
+        [
+          "https://www.corneliajames.com/products/anthea-satin-opera-glove",
+          "Modern satin opera glove illustrating the heritage of twentieth-century formal fashion"
+        ],
+        [
+          "https://www.uniqlo.com/it/it/products/E470024-000/01",
+          "Contemporary thermal gloves with screen-friendly design · UNIQLO"
+        ]
+      ],
+      "editorialTypeProductPages": [
+        [
+          "https://corneliajames.com/products/emilie-black-classic-leather-gloves",
+          "Nappa leather glove, silk lined, Cornelia James Emilie"
+        ],
+        [
+          "https://corneliajames.com/products/ines-burgundy-leather-gloves",
+          "Cashmere-cuff leather gloves, Cornelia James Inès"
+        ],
+        [
+          "https://www.uniqlo.com/it/it/products/E486210-000/00",
+          "Everyday knitted gloves, UNIQLO HEATTECH"
+        ],
+        [
+          "https://www.decathlon.it/p/guanti-trekking-adulto-mt500-touch-and-stretch-neri/335238/c382c382m8655824",
+          "Technical insulated trekking gloves, SIMOND MT500"
+        ],
+        [
+          "https://www.corneliajames.com/collections/leather-driving-gloves",
+          "Driving gloves, Cornelia James Adeline collection"
+        ],
+        [
+          "https://www.uniqlo.com/it/it/products/E478319-000/00",
+          "Touchscreen knitted gloves, UNIQLO HEATTECH"
+        ],
+        [
+          "https://www.corneliajames.com/products/anthea-satin-opera-glove",
+          "Formal opera gloves, Cornelia James Anthea"
+        ],
+        [
+          "https://www.decathlon.it/tutti-gli-sport/trekking-e-montagna/guanti-e-muffole",
+          "Insulated mittens and outdoor handwear, Decathlon"
+        ]
+      ],
+      "editorialTypeDirectPhotos": [
+        null,
+        [
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200",
+          "Cornelia James Inès cashmere-cuff gloves, original atelier photo"
+        ],
+        [
+          "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/486210/feature/eugoods_486210_feature1.jpg",
+          "UNIQLO knitted HEATTECH gloves, manufacturer photograph"
+        ],
+        null,
+        null,
+        [
+          "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/478319/feature/eugoods_478319_feature1.jpg",
+          "UNIQLO knitted touchscreen HEATTECH gloves, manufacturer photograph"
+        ],
+        null,
+        null
+      ]
     },
     {
       "slug": "home-utensils",
