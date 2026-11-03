@@ -62,6 +62,27 @@ for(const category of categories){
   productItems.push({name:p.title,brand:p.vendor||'Murano artisan',price:variant.price,handle,url:base+'/products/'+encodeURIComponent(handle),img,category});
  }}catch(e){console.warn('Murano JSON parsing issue: '+category, String(e))}
 }
+
+// Exact retailer products to rescue a category if Shopify's public collection API
+// is disabled. Metadata is read from the actual product page; never use stock art.
+if(productItems.length<8){
+ const known=[
+  ['Segretissimi — Murano Glass Round Vase','segretissimi-round-vase','360.00','vases'],
+  ['Giotto — Murano Glass Vase','murano-glass-giotto-vase','750.00','vases'],
+  ['Cestina — Murano Glass Bowl','murano-glass-bowl-cestina','150.00','bowls'],
+  ['Cascata — Murano Glass Bowl','murano-glass-bowl-cascata','160.00','bowls']
+ ];
+ for(const [name,handle,price,category] of known){
+  if(productItems.some(p=>p.handle===handle))continue;
+  const pageUrl=base+'/products/'+handle;
+  const r=await fetchBound(pageUrl,7000);if(!r)continue;
+  const page=await r.text();
+  const match=page.match(/<meta[^>]+(?:property|name)=["']og:image["'][^>]+content=["']([^"']+)["']/i)
+   ||page.match(/<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["']og:image["']/i);
+  const img=safeUrl(match?.[1]?.replaceAll('&amp;','&'));
+  if(img)productItems.push({name,brand:'Venetian Murano Glass',price,handle,url:pageUrl,img,category});
+ }
+}
 productItems=[...new Map(productItems.map(p=>[p.handle,p])).values()].slice(0,36);
 function priceLabel(s){const n=Number(s);return Number.isFinite(n)?new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(n):'See retailer price'}
 let shopCards=[];
