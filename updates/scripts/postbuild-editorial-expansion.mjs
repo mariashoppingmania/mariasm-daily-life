@@ -346,9 +346,15 @@ async function buildOne(d){
    for(const item of museum)if(item)d.editorialEraPhotos[item.index]=[item.image,item.caption];
    for(const i of [0,5,6]){
      const reference=d.editorialEraProductPages?.[i];
-     if(!reference)continue;
-     const photo=await tryProductImage(['Period reference','',null,null,reference[0]]);
-     if(photo)d.editorialEraPhotos[i]=[photo,reference[1]];
+     const direct=d.editorialEraDirectPhotos?.[i];
+     const fromPage=reference?await tryProductImage(['Period reference','',null,null,reference[0]]):null;
+     const options=[direct?.[0],fromPage].filter(Boolean);
+     for(const photo of options){
+       if(await localProductPhoto(photo,'gloves-history-check',i)){
+         d.editorialEraPhotos[i]=[photo,direct?.[1]||reference?.[1]];
+         break;
+       }
+     }
    }
    d.editorialTypePhotos=await Promise.all((d.editorialTypeProductPages||[]).map(async(reference,i)=>{
      if(!reference)return null;
@@ -370,6 +376,7 @@ async function buildOne(d){
    let n=0;const together=history+'<!--MARIASM-TYPE-SEPARATOR-->'+types;
    const references=[...together.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(m=>m[1]);
    const unique=[...new Set(references)];
+   console.log(d.slug+' editorial photos requested: '+unique.length+' / '+(d.eras.length+d.types.length));
    const local=new Map();
    for(const batch of Array.from({length:Math.ceil(unique.length/5)},(_,i)=>unique.slice(i*5,i*5+5))){
     await Promise.all(batch.map(async remote=>{const found=await localProductPhoto(remote.replaceAll('&amp;','&'),d.slug+'-editorial',n++);local.set(remote,found)}));
