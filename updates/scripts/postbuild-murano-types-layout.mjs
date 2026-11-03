@@ -93,6 +93,34 @@ const updated=section.slice(0,pos)+marker+cards+'</div>'+section.slice(next);
 html=html.slice(0,first)+updated+html.slice(end);
 const css='<style id="murano-types-fixed-2026">#types .ma-types{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:18px!important;align-items:stretch!important}#types .ma-types>.ma-type{display:flex!important;flex-direction:column!important;width:auto!important;max-width:none!important;min-width:0!important;height:auto!important;margin:0!important;overflow:hidden!important;align-self:stretch!important;border-radius:18px}#types .ma-type-art{display:block!important;height:205px!important;max-height:205px!important;min-height:205px!important;aspect-ratio:auto!important;overflow:hidden;background:#fff}#types .ma-type-art>a{display:flex;width:100%;height:100%;align-items:center;justify-content:center}#types .ma-type-art img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:205px!important;object-fit:contain!important;object-position:center!important;padding:10px;background:#fff}#types .ma-type-body{display:flex!important;flex:1!important;flex-direction:column!important;gap:10px;padding:18px!important;min-height:190px}#types .ma-type h3{font:normal 21px/1.2 Georgia,serif!important;margin:0!important;min-height:0!important}#types .ma-type p{margin:0!important;line-height:1.55!important}#types .ma-type small{margin-top:auto;padding-top:10px}#types .ma-type-text-only .ma-type-body{justify-content:center;min-height:310px}@media(max-width:1100px){#types .ma-types{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(max-width:760px){#types .ma-types{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(max-width:520px){#types .ma-types{grid-template-columns:1fr!important}#types .ma-type-art{height:220px!important;max-height:220px!important}}</style>';
 html=html.replace('</head>',css+'</head>');
+
+// The final history card previously contained only an unusable "Explore photograph" link.
+// A genuine modern Murano workshop image is more reliable for historical editorial context
+// than claiming an unavailable photo exists. Archive the real photograph in Pages assets.
+let livingCraftPhoto=null;
+for(const title of [
+ 'Murano glassblowing demo 7.jpg',
+ 'Murano glassblowing demo.jpg',
+ 'Murano glassmaker.jpg',
+ 'Murano Glass Making 1 (3501196209).jpg'
+]){
+ livingCraftPhoto=await commonsTitle(title,8);
+ if(livingCraftPhoto)break;
+}
+const livingStart=html.indexOf('<h3>Today · A living craft</h3>');
+if(livingStart<0)throw Error('Murano ninth history chapter missing');
+const articleStart=html.lastIndexOf('<article class="ma-era-item">',livingStart);
+const articleEnd=html.indexOf('</article>',livingStart);
+if(articleStart<0||articleEnd<0)throw Error('Cannot locate Murano modern history article');
+const article=html.slice(articleStart,articleEnd+10);
+const archivePage='https://commons.wikimedia.org/wiki/File:Murano_glassblowing_demo_7.jpg';
+const source=livingCraftPhoto||'https://commons.wikimedia.org/wiki/Special:FilePath/Murano_glassblowing_demo_7.jpg?width=960';
+const visual='<div class="ma-era-media"><a href="'+archivePage+'" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="'+source+'" alt="Murano glassblower demonstrating the modern craft in a working glass furnace" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center;" /></a></div>';
+const fixed=article.replace(/<div class="ma-era-media">[\s\S]*?<\/div>/,visual)
+ .replace(/Editorial reference unavailable/g,'Modern Murano glassblowing · documentary photo from Wikimedia Commons');
+if(!fixed.includes('Murano glassblower demonstrating'))throw Error('Modern glass image substitution failed');
+html=html.slice(0,articleStart)+fixed+html.slice(articleEnd+10);
 fs.writeFileSync(page,html);
+console.log('Murano Living Craft photograph: '+(livingCraftPhoto?'archived locally':'public Commons fallback')+'.');
 console.log('Murano types rebuilt with correct HTML: '+images.filter(Boolean).length+'/8 real photographs; no SVGs; four-column desktop grid.');
 if((html.match(/<article class="ma-type/g)||[]).length!==8)throw Error('Eight Murano cards expected');
