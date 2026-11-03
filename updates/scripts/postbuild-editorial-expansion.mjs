@@ -254,7 +254,8 @@ async function productCard(d,p,i){
    const category=d.slug==='home-utensils'?(p[7]||(/kettle|moka|coffee|espresso|citrus|juicer/i.test(title)?'Coffee, tea & juice':/casserole|cocotte|pan|cookware/i.test(title)?'Pots & cookware':/knife|grater|peeler|board|slicer/i.test(title)?'Preparation & cutting':/drainer|soap|dish brush|paper towel/i.test(title)?'Cleaning & laundry':/jar|container|bottle|box/i.test(title)?'Storage & jars':'Tools & serving')):preHomeCategory;
    const name=category.replaceAll('&amp;','&');
    verifiedProductStats[d.slug]=(verifiedProductStats[d.slug]||0)+1;
-   return '<article class="ma-product" data-kind="'+esc(name)+'"><div class="ma-product-image">'+image+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><span class="ma-kind">'+category+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
+   const visualProduct=d.slug==='home-utensils'?'<a class="ma-photo-open" href="'+esc(shown)+'" target="_blank" rel="noopener noreferrer" title="Open full-size original product photo"><img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'" alt="Exact retailer photograph of '+esc(title)+'"></a>':image;
+   return '<article class="ma-product" data-kind="'+esc(name)+'"><div class="ma-product-image">'+visualProduct+'</div><div class="ma-product-body"><span class="ma-tier">'+esc(tier)+'</span><span class="ma-kind">'+category+'</span><h3>'+esc(title)+'</h3><p>'+esc(brand)+'</p><span class="ma-price">'+esc(price)+'</span><a class="ma-shop-link" href="'+esc(url)+'" '+link+'>Buy or view this product ↗</a></div></article>';
  }
  const image=candidate&&!usedRetailPhotos.has(candidate)?candidate:null;
  if(image)usedRetailPhotos.add(image);
@@ -434,6 +435,14 @@ async function buildOne(d){
       return src?tag.replace('src="'+remote+'"','src="'+esc(src)+'"') : tag.replace(' onerror="this.onerror=null;this.closest(&#39;.ma-era-media, .ma-type-art&#39;).classList.add(&#39;ma-photo-unavailable&#39;);this.remove()"',' onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"')+'<a hidden class="ma-no-image" href="'+esc(remote)+'" target="_blank" rel="noopener noreferrer">Open the original photographic reference</a>';
    });
    history=replaceRemote(history);types=replaceRemote(types);
+   if(d.slug==='home-utensils'){
+     const clickable=fragment=>fragment.replace(/<img\b[^>]*\bsrc="(\.\.\/assets\/retail-photographs\/[^"]+)"[^>]*>/g,tag=>{
+       const m=tag.match(/\bsrc="([^"]+)"/);
+       return '<a class="ma-photo-open" href="'+m[1]+'" target="_blank" rel="noopener noreferrer" title="Open the original photograph">'+tag+'</a>';
+     });
+     history=clickable(history);types=clickable(types);
+   }
+
  }
  const materials=d.materials.map(materialCard).join('');
  const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);} if(['belts-suspenders','scarves','gloves','home-utensils'].includes(d.slug) && !prod.some(Boolean))throw Error(d.slug+': no usable product photos could be sourced');
