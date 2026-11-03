@@ -371,6 +371,51 @@ async function buildOne(d){
      return options.length?[options[0],caption]:null;
    }));
  }
+
+ if(d.slug==='home-utensils'){
+   // Verify one photograph per chronological chapter, recording the museum provenance.
+   d.editorialEraPhotos=Array.from({length:d.eras.length},()=>null);
+   const museumRecords=d.editorialMuseumRecords||[];
+   for(let start=0;start<museumRecords.length;start+=4){
+     const batch=await Promise.all(museumRecords.slice(start,start+4).map(async item=>{
+       const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),6500);
+       try{
+         const res=await fetch('https://collectionapi.metmuseum.org/public/collection/v1/objects/'+item.id,{signal:ctl.signal});
+         if(!res.ok)return null;
+         const obj=await res.json();
+         if(!obj.isPublicDomain)return null;
+         for(const remote of [obj.primaryImageSmall,obj.primaryImage].filter(x=>/^https:\/\//.test(x||''))){
+           const local=await localProductPhoto(remote,'home-museum-check',item.index);
+           if(local)return {index:item.index,photo:remote,caption:item.caption};
+         }
+       }catch(e){console.warn('Domestic museum image '+item.id+': '+String(e).slice(0,90))}
+       finally{clearTimeout(timer)}
+       return null;
+     }));
+     for(const result of batch)if(result)d.editorialEraPhotos[result.index]=[result.photo,result.caption];
+   }
+   const eraPages=d.editorialEraProductPages||[];
+   for(let i=12;i<d.eras.length;i++){
+     const p=eraPages[i];if(!p)continue;
+     const photo=await tryProductImage([p[1],'Alessi','','',p[0]]);
+     if(photo&&await localProductPhoto(photo,'home-modern-check',i))d.editorialEraPhotos[i]=[photo,p[1]];
+   }
+   const candidates=d.products.filter(x=>/^https:\/\//.test(x[4]||''));
+   d.editorialTypePhotos=await Promise.all((d.editorialTypeProductPages||[]).map(async ([url,caption],i)=>{
+     const named=candidates.find(p=>p[4]===url);
+     const ordered=[url,...candidates.filter(p=>p[7]===named?.[7]&&p[4]!==url).slice(0,3).map(p=>p[4])];
+     for(const candidateUrl of ordered){
+       const photo=await tryProductImage([caption,'','','',candidateUrl]);
+       if(!photo)continue;
+       const local=await localProductPhoto(photo,'home-type-check',i);
+       if(local)return [photo,candidateUrl===url?caption:(candidates.find(p=>p[4]===candidateUrl)?.[0]||caption)+' — current retailer example'];
+     }
+     return null;
+   }));
+   console.log('Home Utensils visual verification: '+d.editorialEraPhotos.filter(Boolean).length+'/'+d.eras.length+' history, '+d.editorialTypePhotos.filter(Boolean).length+'/'+d.types.length+' types');
+   const heroSource=await tryProductImage(['Juicy Salif','Alessi','','','https://alessi.com/it/products/juicy-salif-citrus-squeezer']);
+   if(heroSource)d.heroLocal=await localProductPhoto(heroSource,'home-hero',0);
+ }
  const used=new Set([d.hero]);
  let history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
  let types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
@@ -396,7 +441,7 @@ async function buildOne(d){
  const other=source.sections.filter(x=>x.slug!==d.slug).map(x=>'<a href="../'+x.slug+'/index.html">'+esc(x.name)+'</a>').join('');
  const domesticSection=d.slug==='home-utensils'?'<section id="domestic-life" class="ma-section">'+sectionHead('The life of the home','People, work and inventions behind the objects','In-depth essays on fuel, domestic labour, storage, repair, materials, design and the history of household technology.')+'<div class="ma-domestic-grid">'+(d.designEssays||[]).map(domesticEssayCard).join('')+'</div></section>':'';
 
- const publishedProductCount=prod.filter(Boolean).length;console.log('Catalog items built for '+d.slug+': '+publishedProductCount+'/'+d.products.length+' (photo shown only when exact image available)');const body='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'+esc(d.intro)+'"><title>'+esc(d.name)+' Atelier | MariaSM</title><link rel="canonical" href="https://mariashoppingmania.github.io/mariasm-daily-life/'+esc(d.slug)+'/"><style>'+css+'</style></head><body class="mariasm-editorial"><div class="ma-top"><a href="../index.html">MARIA<span style="color:#ae6481">SM</span> · HOME</a><nav class="ma-navigation"><a href="#history">History</a><a href="#types">Types</a><a href="#materials">Materials</a>'+(d.slug==='home-utensils'?'<a href="#domestic-life">Domestic life</a>':'')+'<a href="#shopping">Shop</a></nav></div><header class="ma-hero" style="background-image:url(&quot;'+esc(photoFor(d.slug,0))+'&quot;)"><div class="ma-hero-copy"><p class="ma-kicker">'+esc(d.eyebrow)+'</p><h1>'+esc(d.name)+' Atelier</h1><p>'+esc(d.intro)+'</p><div class="ma-pills"><a href="#history">Explore the history</a><a href="#types">See styles</a><a href="#shopping">Discover shopping</a></div></div></header><main class="ma-container"><div class="ma-intro"><p class="ma-kicker">MariaSM · The illustrated encyclopaedia</p><h2>Beautiful things. Remarkable stories.</h2><p>Discover the evolution of design, the feel of materials and the difference between everyday essentials and exceptional objects.</p></div><section id="history" class="ma-section">'+sectionHead('A visual timeline','Through the centuries','A photographic journey through the eras; modern visual references are labelled, and do not claim to be historical photographs.')+'<div class="ma-era">'+history+'</div></section><section id="types" class="ma-section">'+sectionHead('The catalogue of forms','Types & uses','Learn to recognise distinctive shapes and understand their purpose.')+'<div class="ma-types">'+types+'</div></section><section id="materials" class="ma-section">'+sectionHead('The makers’ materials','Material encyclopedia','Understand quality, craft and care before choosing your next object.')+'<div class="ma-materials">'+materials+'</div>'+extra(d.slug)+'</section>'+domesticSection+'<section id="shopping" class="ma-section">'+sectionHead('From affordable to extraordinary','The shopping collection','Only real, individually photographed products from identifiable retailer pages. No AI-made or substitute product photos.')+'<div class="ma-products">'+prod.join('')+'</div><div class="ma-note"><strong>Important:</strong> Prices are editorial snapshots from 2 November 2026, not live offers. Availability, prices and variants may change. Each displayed shopping item uses its own retailer metadata image; no substitute illustration is shown. Items without a verifiable exact product photo are excluded. Always verify current price and availability with the seller.</div></section><section class="ma-section">'+sectionHead('Keep exploring','More MariaSM Ateliers','Fashion, craft and everyday design are all connected.')+'<div class="ma-links">'+other+'<a href="../jewellery/index.html">Jewellery</a><a href="../bags/index.html">Bags</a><a href="../index.html">Return to MariaSM</a></div></section><div class="ma-note">Historical reading and image references: '+sources+'. Where images are documentary or retailer photographs, credit remains with their respective owners; original schematics are editorial illustrations.</div></main><footer class="ma-footer">MariaSM · A little beauty in the everyday · <a href="../index.html">Back to the journal</a></footer></body></html>';
+ const publishedProductCount=prod.filter(Boolean).length;console.log('Catalog items built for '+d.slug+': '+publishedProductCount+'/'+d.products.length+' (photo shown only when exact image available)');const body='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'+esc(d.intro)+'"><title>'+esc(d.name)+' Atelier | MariaSM</title><link rel="canonical" href="https://mariashoppingmania.github.io/mariasm-daily-life/'+esc(d.slug)+'/"><style>'+css+'</style></head><body class="mariasm-editorial"><div class="ma-top"><a href="../index.html">MARIA<span style="color:#ae6481">SM</span> · HOME</a><nav class="ma-navigation"><a href="#history">History</a><a href="#types">Types</a><a href="#materials">Materials</a>'+(d.slug==='home-utensils'?'<a href="#domestic-life">Domestic life</a>':'')+'<a href="#shopping">Shop</a></nav></div><header class="ma-hero" style="background-image:url(&quot;'+esc(d.heroLocal||photoFor(d.slug,0))+'&quot;)"><div class="ma-hero-copy"><p class="ma-kicker">'+esc(d.eyebrow)+'</p><h1>'+esc(d.name)+' Atelier</h1><p>'+esc(d.intro)+'</p><div class="ma-pills"><a href="#history">Explore the history</a><a href="#types">See styles</a><a href="#shopping">Discover shopping</a></div></div></header><main class="ma-container"><div class="ma-intro"><p class="ma-kicker">MariaSM · The illustrated encyclopaedia</p><h2>Beautiful things. Remarkable stories.</h2><p>Discover the evolution of design, the feel of materials and the difference between everyday essentials and exceptional objects.</p></div><section id="history" class="ma-section">'+sectionHead('A visual timeline','Through the centuries','A photographic journey through the eras; modern visual references are labelled, and do not claim to be historical photographs.')+'<div class="ma-era">'+history+'</div></section><section id="types" class="ma-section">'+sectionHead('The catalogue of forms','Types & uses','Learn to recognise distinctive shapes and understand their purpose.')+'<div class="ma-types">'+types+'</div></section><section id="materials" class="ma-section">'+sectionHead('The makers’ materials','Material encyclopedia','Understand quality, craft and care before choosing your next object.')+'<div class="ma-materials">'+materials+'</div>'+extra(d.slug)+'</section>'+domesticSection+'<section id="shopping" class="ma-section">'+sectionHead('From affordable to extraordinary','The shopping collection','Only real, individually photographed products from identifiable retailer pages. No AI-made or substitute product photos.')+'<div class="ma-products">'+prod.join('')+'</div><div class="ma-note"><strong>Important:</strong> Prices are editorial snapshots from 2 November 2026, not live offers. Availability, prices and variants may change. Each displayed shopping item uses its own retailer metadata image; no substitute illustration is shown. Items without a verifiable exact product photo are excluded. Always verify current price and availability with the seller.</div></section><section class="ma-section">'+sectionHead('Keep exploring','More MariaSM Ateliers','Fashion, craft and everyday design are all connected.')+'<div class="ma-links">'+other+'<a href="../jewellery/index.html">Jewellery</a><a href="../bags/index.html">Bags</a><a href="../index.html">Return to MariaSM</a></div></section><div class="ma-note">Historical reading and image references: '+sources+'. Where images are documentary or retailer photographs, credit remains with their respective owners; original schematics are editorial illustrations.</div></main><footer class="ma-footer">MariaSM · A little beauty in the everyday · <a href="../index.html">Back to the journal</a></footer></body></html>';
  fs.writeFileSync(path.join(dir,'index.html'),body);
  console.log('Rendered '+d.slug+': '+d.eras.length+' historical chapters, '+d.products.length+' shopping picks');
 }
