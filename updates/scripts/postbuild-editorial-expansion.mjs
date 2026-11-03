@@ -209,19 +209,42 @@ async function productCard(d,p,i){
  if(!url||!/^https:\/\//.test(url))return '';
  // Prefer an exact-SKU specialist retailer when the official designer page blocks image extraction.
  const alternative=p[6]&&/^https:\/\//.test(p[6])?await tryProductImage([title,brand,price,tier,p[6]]):null;
- const candidate=(brand==='Ferragamo'&&alternative)||p[5]||exactRetailImages[url]||await tryProductImage(p)||alternative;
+ const official=await tryProductImage(p);
+ const fallbackImages=[];
+ if(d.slug==='scarves' && brand==='UNIQLO'){
+   const sku=(url.match(/\/E(\d{6})-/)||[])[1];
+   const shade=(url.match(/colorDisplayCode=(\d+)/)||[])[1]||'30';
+   if(sku){
+     for(const color of [...new Set([shade,'30','09','01','00'])]){
+       fallbackImages.push('https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/'+sku+'/item/eugoods_'+color+'_'+sku+'.jpg');
+     }
+     fallbackImages.push('https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/'+sku+'/feature/eugoods_'+sku+'_feature1.jpg');
+   }
+ }
+ const imageOptions=[...(brand==='Ferragamo'?[alternative,official]:[official,p[5],exactRetailImages[url],alternative]),...fallbackImages]
+    .filter(x=>typeof x==='string'&&/^https:\/\//.test(x));
+ const candidates=[...new Set(imageOptions)];
+ const candidate=candidates[0]||null;
  if(d.slug==='belts-suspenders'||d.slug==='scarves'){
-   if(!candidate||usedRetailPhotos.has(candidate))return '';
-   const local=await localProductPhoto(candidate,d.slug,i);
-   usedRetailPhotos.add(candidate);
+   if(!candidate)return '';
+   let local=null,chosen=candidate;
+   // Prefer a downloaded and validated image over a blocked retailer hotlink.
+   for(const option of candidates){
+     if(usedRetailPhotos.has(option))continue;
+     const fetched=await localProductPhoto(option,d.slug,i);
+     if(fetched){chosen=option;local=fetched;break}
+   }
+   if(usedRetailPhotos.has(chosen))return '';
+   usedRetailPhotos.add(chosen);
    // Exact-image URLs are retained as fallback when a retailer blocks server-side downloads.
    // Browser-side image failures expose the official product page rather than a false picture.
-   const shown=local||candidate;
+   const shown=local||chosen;
+   const browserBackups=local?[]:candidates.filter(x=>x!==chosen);
    const fit=brand==='Ferragamo'?'ma-product-fit-luxury':'ma-product-fit-standard';
    // Retry the original designer's exact-SKU metadata image when specialist hosting fails.
    const backup=brand==='Ferragamo'?await tryProductImage(p):null;
    const backupAttribute=backup&&backup!==candidate?' data-backup="'+esc(backup)+'"':'';
-   const image='<img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'"'+backupAttribute+' alt="Retailer photograph of '+esc(title)+'" onerror="if(this.dataset.backup){const b=this.dataset.backup;delete this.dataset.backup;this.src=b;return;}this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the exact product photography on the official seller page</a>';
+   const image='<img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'" data-fallbacks="'+esc(JSON.stringify(browserBackups))+'" alt="Exact retailer photograph of '+esc(title)+'" onerror="const candidates=JSON.parse(this.dataset.fallbacks||&#39;[]&#39;);if(candidates.length){this.dataset.fallbacks=JSON.stringify(candidates.slice(1));this.src=candidates[0];return;}this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the original photograph at the official retailer</a>';
    const beltCategory=/braces|suspenders/i.test(title)?'Braces &amp; Suspenders':/chain|ornament/i.test(title)?'Chain &amp; Ornament':/corset|waist/i.test(title)?'Wide Waist &amp; Corset':/utility|webbing/i.test(title)?'Utility &amp; Webbing':/braided|woven/i.test(title)?'Braided &amp; Woven':'Classic &amp; Designer Belts';
    const category=d.slug==='scarves'?(/silk|carré|foulard/i.test(title)?'Silk Carrés &amp; Foulards':/neck warmer|scaldacollo|infinity|tube/i.test(title)?'Infinity &amp; Neck Warmers':/stole|shawl|pashmina/i.test(title)?'Stoles, Shawls &amp; Pashminas':/cashmere/i.test(title)?'Cashmere &amp; Premium Wool':'Wool &amp; Everyday Scarves'):beltCategory;
    const name=category.replaceAll('&amp;','&');
