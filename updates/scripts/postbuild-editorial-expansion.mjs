@@ -305,9 +305,16 @@ async function buildOne(d){
    const modern=await tryProductImage(['Falconeri braided cashmere','Falconeri','','Premium',d.editorialModernProductPage]);
    if(modern)d.editorialEraPhotos[6]=[modern,'Contemporary cashmere scarf · official Falconeri product photograph, not a historical item'];
    // Preserve museum provenance and never substitute contemporary images for earlier eras.
-   const types=await Promise.all((d.editorialTypeProductPages||[]).map(async ([url,caption])=>{
-      const photo=await tryProductImage([caption,'','','',url]);
-      return photo?[photo,caption]:null;
+   const types=await Promise.all((d.editorialTypeProductPages||[]).map(async ([url,caption],i)=>{
+      const direct=d.editorialTypeDirectPhotos?.[i];
+      const metadata=await tryProductImage([caption,'','','',url]);
+      const options=[direct?.[0],metadata].filter(Boolean);
+      for(const remote of [...new Set(options)]){
+        const local=await localProductPhoto(remote,'scarves-editorial',i+70);
+        if(local)return [remote,direct?.[1]||caption];
+      }
+      // A browser may still load a hotlink when GitHub Actions cannot.
+      return options.length?[options[0],direct?.[1]||caption]:null;
    }));
    d.editorialTypePhotos=types;
  }
