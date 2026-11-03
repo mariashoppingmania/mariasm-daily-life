@@ -2021,14 +2021,6 @@
       ],
       "products": [
         [
-          "Bialetti Moka Express 2-cup",
-          "Bialetti via Cecaro",
-          "€24.34",
-          "Budget",
-          "https://www.bialetti.com/it_it/",
-          ""
-        ],
-        [
           "Alessi BLIP spoon rest",
           "Alessi",
           "€27.00",
@@ -2085,14 +2077,6 @@
           ""
         ],
         [
-          "Le Creuset Signature cocotte",
-          "Le Creuset",
-          "Price on retailer",
-          "High-end cookware",
-          "https://www.lecreuset.it/",
-          ""
-        ],
-        [
           "Alessi Citrus citrus squeezer · Eero Aarnio",
           "Alessi",
           "€45.00",
@@ -2109,12 +2093,514 @@
           ""
         ],
         [
-          "Alessi Plissé electric citrus squeezer · EU plug",
+          "Kitchen Timer, mechanical kitchen timer",
           "Alessi",
-          "€120.00",
-          "Premium",
-          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
-          ""
+          "€39",
+          "Design",
+          "https://alessi.com/it/products/kitchen-timer-kitchen-timer",
+          "",
+          null,
+          "Timers & measuring"
+        ],
+        [
+          "Firebird 2.0 rechargeable arc lighter",
+          "Alessi",
+          "€79",
+          "Design",
+          "https://alessi.com/it/products/firebird-2-0-arc-lighter",
+          "",
+          null,
+          "Home essentials"
+        ],
+        [
+          "Mediterraneo kitchen roll holder",
+          "Alessi",
+          "€98",
+          "Design",
+          "https://alessi.com/it/products/mediterraneo-kitchen-roll-holder",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "Barkroll decorative kitchen roll holder",
+          "Alessi",
+          "From €110",
+          "Design",
+          "https://alessi.com/it/products/barkroll-kitchen-roll-holder",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "Taio pizza wheel",
+          "Alessi",
+          "€60",
+          "Design",
+          "https://alessi.com/it/products/taio-pizza-wheel",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Sfrido peeler",
+          "Alessi",
+          "€35",
+          "Design",
+          "https://alessi.com/it/products/sfrido-peeler",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Apostrophe orange peeler",
+          "Alessi",
+          "€30",
+          "Design",
+          "https://alessi.com/it/products/apostrophe-orange-peeler",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Savon du Chef hand odour remover",
+          "Alessi",
+          "€25",
+          "Design",
+          "https://alessi.com/it/products/savon-du-chef-odor-remover-soap",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "Alessi & Kitchen gift set",
+          "Alessi",
+          "€75",
+          "Design",
+          "https://alessi.com/it/products/alessi-kitchen-gift-set",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Alessi & Pasta gift set",
+          "Alessi",
+          "€75",
+          "Design",
+          "https://alessi.com/it/products/alessi-pasta-gift-set",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Convivio kitchen cutlery set",
+          "Alessi",
+          "€100",
+          "Design",
+          "https://alessi.com/it/products/convivio-kitchen-cutlery-set",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "AJM19 kitchen cutlery set",
+          "Alessi",
+          "€135",
+          "Design",
+          "https://alessi.com/it/products/ajm19-kitchen-cutlery-set",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "KitchenTools stainless kitchen cutlery",
+          "Alessi",
+          "€20",
+          "Design",
+          "https://alessi.com/it/products/kitchentools-kitchen-cutlery",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Convivio kitchen tongs",
+          "Alessi",
+          "€35",
+          "Design",
+          "https://alessi.com/it/products/convivio-kitchen-tongs",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Domenica kitchen tongs",
+          "Alessi",
+          "€25",
+          "Design",
+          "https://alessi.com/it/products/domenica-kitchen-tongs",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Vabene pasta tester",
+          "Alessi",
+          "€32",
+          "Design",
+          "https://alessi.com/it/products/vabene-pasta-tester",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "VOILE spaghetti portion measure",
+          "Alessi",
+          "€29",
+          "Design",
+          "https://alessi.com/it/products/voile-spaghetti-measure",
+          "",
+          null,
+          "Timers & measuring"
+        ],
+        [
+          "T-1000 stainless spoon rest",
+          "Alessi",
+          "€45",
+          "Design",
+          "https://alessi.com/it/products/t-1000-spoon-rest",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "A Tempo dish drainer",
+          "Alessi",
+          "€125",
+          "Design",
+          "https://alessi.com/it/products/a-tempo-dish-drainer",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "A Tempo serving tray",
+          "Alessi",
+          "€45",
+          "Design",
+          "https://alessi.com/it/products/a-tempo-tray",
+          "",
+          null,
+          "Table & storage"
+        ],
+        [
+          "Mattina kitchen roll holder",
+          "Alessi",
+          "€60",
+          "Design",
+          "https://alessi.com/it/products/mattina-kitchen-roll-holder",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "Bunny & Carrot paper towel holder",
+          "Alessi",
+          "€65",
+          "Design",
+          "https://alessi.com/it/products/bunny-carrot-kitchen-roll-holder",
+          "",
+          null,
+          "Cleaning & laundry"
+        ],
+        [
+          "Pino kitchen funnel",
+          "Alessi",
+          "€28",
+          "Design",
+          "https://alessi.com/it/products/pino-funnel",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "UT108 wooden lemon squeezer",
+          "Alessi",
+          "€23",
+          "Design",
+          "https://alessi.com/it/products/ut108-lemon-squeezer",
+          "",
+          null,
+          "Coffee, tea & juice"
+        ],
+        [
+          "Convivio wooden cooking tool",
+          "Alessi",
+          "€50",
+          "Design",
+          "https://alessi.com/it/products/convivio-unit-in-cypress-wood-for-simmering-delicate-ingredients",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Sbriciola bread board",
+          "Alessi",
+          "€100",
+          "Design",
+          "https://alessi.com/it/products/sbriciola-bread-board-1",
+          "",
+          null,
+          "Bread & baking"
+        ],
+        [
+          "K-Block designer knife block",
+          "Alessi",
+          "€180",
+          "Design",
+          "https://alessi.com/it/products/k-block-knife-block",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Shiba gentle simmering utensil",
+          "Alessi",
+          "€38",
+          "Design",
+          "https://alessi.com/it/products/shiba-unit-for-simmering-delicate-ingredients",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "Mami chef's knife",
+          "Alessi",
+          "€38",
+          "Design",
+          "https://alessi.com/it/products/mami-cooks-knife",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Mami utility knife",
+          "Alessi",
+          "€25",
+          "Design",
+          "https://alessi.com/it/products/mami-utility-knife-1",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Mami bread knife",
+          "Alessi",
+          "€35",
+          "Design",
+          "https://alessi.com/it/products/mami-bread-knife",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "Mami santoku knife",
+          "Alessi",
+          "From €28",
+          "Design",
+          "https://alessi.com/it/products/mami-santoku-knife",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "IKEA 365+ VÄRDEFULL peeler",
+          "IKEA",
+          "€3.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-vaerdefull-pelapatate-nero-30175140/",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "IKEA 365+ HJÄLTE stainless whisk",
+          "IKEA",
+          "€4.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-hjaelte-frusta-rotonda-inox-nero-30158678/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "IKEA 365+ VÄRDEFULL can opener",
+          "IKEA",
+          "€4.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-vaerdefull-apriscatole-nero-80152155/",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "IKEA 365+ IHÄRDIG spice grinder",
+          "IKEA",
+          "€4.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-ihaerdig-macinaspezie-nero-10152875/",
+          "",
+          null,
+          "Mortars & grinders"
+        ],
+        [
+          "IKEA 365+ mandoline slicer",
+          "IKEA",
+          "€7.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-mandolina-nero-00422321/",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "GRUNKA four-piece utensil set",
+          "IKEA",
+          "€7.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/grunka-utensili-da-cucina-4-pezzi-inox-30083334/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "SJÖKEX two-piece birch utensil set",
+          "IKEA",
+          "€1.50",
+          "Budget",
+          "https://www.ikea.com/it/it/p/sjoekex-set-di-2-utensili-da-cucina-betulla-30619905/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "IDEALISK stainless kitchen tongs",
+          "IKEA",
+          "€2.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/idealisk-pinza-da-cucina-inox-90573320/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "RÖRT beechwood spoon",
+          "IKEA",
+          "€1.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/roert-cucchiaio-rotondo-faggio-40278468/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "IDEALISK stainless skimmer",
+          "IKEA",
+          "€3.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/idealisk-schiumarola-inox-50579381/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "RÖDSYRA spoon rest",
+          "IKEA",
+          "€2.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/roedsyra-poggiamestolo-grigio-azzurro-90602167/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "GNARP three-piece kitchen utensils",
+          "IKEA",
+          "€1.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/gnarp-utensili-da-cucina-3-pezzi-nero-30335841/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "MAJFISK three-piece acacia utensil set",
+          "IKEA",
+          "€4.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/majfisk-utensili-da-cucina-3-pezzi-acacia-70634249/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "GRILLTIDER silicone BBQ brush",
+          "IKEA",
+          "€2.50",
+          "Budget",
+          "https://www.ikea.com/it/it/p/grilltider-pennello-per-barbecue-silicone-00444554/",
+          "",
+          null,
+          "Bread & baking"
+        ],
+        [
+          "IDEALISK set of two whisks",
+          "IKEA",
+          "€1.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/idealisk-set-di-2-fruste-inox-50093172/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "IKEA 365+ HJÄLTE potato masher",
+          "IKEA",
+          "€4.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-hjaelte-schiacciapatate-inox-nero-20152163/",
+          "",
+          null,
+          "Preparation & cutting"
+        ],
+        [
+          "DALAFÅR stainless pasta server",
+          "IKEA",
+          "€2.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/dalafar-servispaghetti-inox-nero-grigio-10642822/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "IKEA 365+ HJÄLTE ladle",
+          "IKEA",
+          "€5.95",
+          "Budget",
+          "https://www.ikea.com/it/it/p/ikea-365-hjaelte-mestolo-inox-nero-70149465/",
+          "",
+          null,
+          "Tools & serving"
+        ],
+        [
+          "FINMAT stainless spatula",
+          "IKEA",
+          "€7.50",
+          "Budget",
+          "https://www.ikea.com/it/it/p/finmat-spatola-inox-20555188/",
+          "",
+          null,
+          "Tools & serving"
         ]
       ],
       "sources": [
@@ -2301,7 +2787,8 @@
           "Design after 2026",
           "Future-facing domestic design should prioritize repairable motors, accurate energy information, low-waste storage, accessible grips and standard replaceable components. A beautiful appliance is not necessarily a better one; a wooden spoon can still be the right tool."
         ]
-      ]
+      ],
+      "productPhotographyPolicy": "Only the correct photographed SKU may be shown in shop; images must be downloaded and verified as real image files. Never use an AI rendering, generic brand hero image or different product variant as a substitute. Products with missing photos remain in source for review but are not shown in the live shop."
     },
     {
       "slug": "venetian-glass",
