@@ -417,6 +417,41 @@ async function buildOne(d){
    const heroSource=await tryProductImage(['Juicy Salif','Alessi','','','https://alessi.com/it/products/juicy-salif-citrus-squeezer']);
    if(heroSource)d.heroLocal=await localProductPhoto(heroSource,'home-hero',0);
  }
+
+ // Download shop photography before composing editorial galleries, so the
+ // historically honest category examples can use already verified local files.
+ const prod=[];for(let i=0;i<d.products.length;i+=5){
+   const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);
+ }
+ if(['belts-suspenders','scarves','gloves','home-utensils'].includes(d.slug) && !prod.some(Boolean))
+   throw Error(d.slug+': no usable product photos could be sourced');
+ if(d.slug==='home-utensils'){
+   const gallery=prod.map((markup,i)=>{
+     const match=markup.match(/<img\b[^>]*\bsrc="([^"]+)"/);
+     return match?{src:match[1],title:d.products[i][0],kind:d.products[i][7]||''}:null;
+   }).filter(x=>x&&x.src.startsWith('../assets/retail-photographs/'));
+   const occupied=new Set([...d.editorialEraPhotos,...d.editorialTypePhotos].filter(Boolean).map(p=>p[0]));
+   const select=(keywords)=>{
+     const words=keywords.split('|');
+     const suitable=gallery.find(g=>!occupied.has(g.src)&&words.some(k=>(g.title+' '+g.kind).toLowerCase().includes(k)));
+     const chosen=suitable||gallery.find(g=>!occupied.has(g.src));
+     if(chosen)occupied.add(chosen.src);
+     return chosen;
+   };
+   const typeHints=['pan|casserole|pot','knife|board','peeler|grater|mandoline','grind|spice','moka|coffee','kettle|tea','ladle|spoon|tongs','jar|korken|storage','tray|serving','juicer|electric|plissé','bread|pastry','dish|brush','timer|measur','corkscrew|opener','juicy|design','set|grunka'];
+   for(let i=0;i<d.editorialTypePhotos.length;i++){
+     if(d.editorialTypePhotos[i])continue;
+     const item=select(typeHints[i]||'tool');
+     if(item)d.editorialTypePhotos[i]=[item.src,'Contemporary original retailer photograph: '+item.title];
+   }
+   const eraHints=['mortar|grind','mortar|stone','serving|spoon','ladle|spoon','strainer|grater','pot|casserole','pot|casserole','grind|knife','mortar|grind','copper|spoon','tea|kettle','spoon|table','pan|casserole','electric|press','moka|coffee','juicer|press','juicy|design','steel|knife','tool|set'];
+   for(let i=0;i<d.editorialEraPhotos.length;i++){
+     if(d.editorialEraPhotos[i])continue;
+     const item=select(eraHints[i]||'utensil');
+     if(item)d.editorialEraPhotos[i]=[item.src,'Contemporary comparison (not an artefact of this era): '+item.title+'. Original manufacturer photograph.'];
+   }
+   console.log('Home Utensils final illustration coverage: '+d.editorialEraPhotos.filter(Boolean).length+'/'+d.eras.length+' history, '+d.editorialTypePhotos.filter(Boolean).length+'/'+d.types.length+' types; '+gallery.length+' validated shop images');
+ }
  const used=new Set([d.hero]);
  let history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
  let types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
@@ -428,7 +463,7 @@ async function buildOne(d){
    console.log(d.slug+' editorial photos requested: '+unique.length+' / '+(d.eras.length+d.types.length));
    const local=new Map();
    for(const batch of Array.from({length:Math.ceil(unique.length/5)},(_,i)=>unique.slice(i*5,i*5+5))){
-    await Promise.all(batch.map(async remote=>{const found=await localProductPhoto(remote.replaceAll('&amp;','&'),d.slug+'-editorial',n++);local.set(remote,found)}));
+    await Promise.all(batch.map(async remote=>{const found=remote.startsWith('../assets/retail-photographs/')?remote:await localProductPhoto(remote.replaceAll('&amp;','&'),d.slug+'-editorial',n++);local.set(remote,found)}));
    }
    const replaceRemote=part=>part.replace(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g,(tag,remote)=>{
       const src=local.get(remote);
@@ -445,7 +480,7 @@ async function buildOne(d){
 
  }
  const materials=d.materials.map(materialCard).join('');
- const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);} if(['belts-suspenders','scarves','gloves','home-utensils'].includes(d.slug) && !prod.some(Boolean))throw Error(d.slug+': no usable product photos could be sourced');
+
  const sources=d.sources.map(x=>'<a href="'+esc(x[1])+'" '+link+'>'+esc(x[0])+'</a>').join(' · ');
  const other=source.sections.filter(x=>x.slug!==d.slug).map(x=>'<a href="../'+x.slug+'/index.html">'+esc(x.name)+'</a>').join('');
  const domesticSection=d.slug==='home-utensils'?'<section id="domestic-life" class="ma-section">'+sectionHead('The life of the home','People, work and inventions behind the objects','In-depth essays on fuel, domestic labour, storage, repair, materials, design and the history of household technology.')+'<div class="ma-domestic-grid">'+(d.designEssays||[]).map(domesticEssayCard).join('')+'</div></section>':'';
