@@ -1553,7 +1553,7 @@
           "€39.99",
           "Mittens",
           "https://www.decathlon.it/p/muffole-sci-adulto-500-nere/325557/c382c382m8648942",
-          ""
+          "https://contents.mediadecathlon.com/p2910813/k%241f76e33ec389dd72c152b45fdc4e99c3/adult-warm-ski-mittens-ski500-black-wedze-8648942.jpg"
         ],
         [
           "WEDZE 500 green insulated skiing mittens",
@@ -1578,6 +1578,14 @@
           "Fingerless & convertible",
           "https://www.decathlon.it/p/muffole-mezzedita-trekking-adulto-mt900-antivento-nere/339297/c382c71m8738803",
           ""
+        ],
+        [
+          "Cornelia James Hermione black satin opera gloves",
+          "Cornelia James",
+          "£155.00 reference",
+          "Evening luxury",
+          "https://www.corneliajames.com/products/hermione-duchess-satin-glove",
+          "https://www.corneliajames.com/cdn/shop/files/hermione-bridal-satin-opera-glove-black-6.jpg?v=1782090147&width=3840"
         ]
       ],
       "sources": [
@@ -1673,8 +1681,8 @@
           "Touchscreen knitted gloves, UNIQLO HEATTECH"
         ],
         [
-          "https://www.corneliajames.com/products/anthea-satin-opera-glove",
-          "Formal opera gloves, Cornelia James Anthea"
+          "https://www.corneliajames.com/products/hermione-duchess-satin-glove",
+          "Cornelia James Hermione black satin opera gloves"
         ],
         [
           "https://www.decathlon.it/p/muffole-sci-adulto-500-nere/325557/c382c382m8648942",
@@ -1700,8 +1708,14 @@
           "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/478319/feature/eugoods_478319_feature1.jpg",
           "UNIQLO knitted touchscreen HEATTECH gloves, manufacturer photograph"
         ],
-        null,
-        null
+        [
+          "https://www.corneliajames.com/cdn/shop/files/hermione-bridal-satin-opera-glove-black-6.jpg?v=1782090147&width=3840",
+          "Hermione original black satin opera glove · Cornelia James"
+        ],
+        [
+          "https://contents.mediadecathlon.com/p2910813/k%241f76e33ec389dd72c152b45fdc4e99c3/adult-warm-ski-mittens-ski500-black-wedze-8648942.jpg",
+          "WEDZE Ski500 black insulated mittens · Decathlon original photo"
+        ]
       ],
       "editorialEraDirectPhotos": [
         [
