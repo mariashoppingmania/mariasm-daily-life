@@ -804,38 +804,38 @@
         ],
         [
           "Classic wool scarf",
-          "A simple, durable cold-weather layer.",
+          "An everyday wool scarf, from plain knit to branded jacquard.",
           "Merino wool, lambswool"
         ],
         [
           "Cashmere stole",
-          "Soft and warm with an elegant drape.",
-          "Cashmere, cashmere-silk"
+          "Soft, generously cut stole for graceful layering.",
+          "100% cashmere, cashmere-silk"
         ],
         [
           "Blanket scarf",
-          "Oversized wrap for cold days and travel.",
-          "Wool blend, alpaca"
+          "Oversized printed or checked scarf for warmth and travel.",
+          "Wool, alpaca, cashmere"
         ],
         [
           "Pashmina-style shawl",
-          "Draped over dresses and formal coats.",
-          "Fine wool, cashmere"
+          "A wide draped shawl that complements coats and evening dresses.",
+          "Fine wool, cashmere, wool-silk blends"
         ],
         [
           "Infinity and tube scarf",
-          "Loop form stays close to the body on windy days.",
-          "Jersey, knit"
+          "A compact neck warmer stays close to the body in wind.",
+          "Ribbed cashmere, jersey, knit wool"
         ],
         [
-          "Lightweight summer scarf",
-          "Sun-aware lightweight styling rather than winter insulation.",
-          "Linen, cotton, modal"
+          "Lightweight silk neckerchief",
+          "A small square tied around the neck, head or handbag.",
+          "Silk satin, silk twill"
         ],
         [
-          "Silk evening wrap",
-          "Adds subtle polish without large extra layers.",
-          "Silk chiffon, jacquard"
+          "Textured decorative scarf",
+          "Statement knitted scarf with plaits or intricate surface finishes.",
+          "Knitted cashmere, wool-silk"
         ]
       ],
       "materials": [
@@ -1148,35 +1148,35 @@
       "editorialTypeProductPages": [
         [
           "https://www.hermes.com/it/it/product/carre-90-la-nature-en-voyage-H004368Sv09/",
-          "Silk carré · original Hermès product"
+          "Hermès silk carré product reference"
         ],
         [
-          "https://www.uniqlo.com/it/it/products/E470089-000/00",
-          "100% cashmere scarf · UNIQLO"
+          "https://www.gucci.com/it/it/pr/women/accessories-for-women/silks-and-scarves-for-women/scarves-for-women/gg-wool-scarf-p-1334833G2001160",
+          "Gucci wool scarf product reference"
         ],
         [
           "https://www.falconeri.com/it/product/stola_cashmere-DZ00195.html",
-          "Cashmere stole · Falconeri"
+          "Falconeri cashmere stole product reference"
         ],
         [
           "https://www.mytheresa.com/it/it/donna/burberry-sciarpa-burberry-check-in-cashmere-beige-p00946995",
-          "Large check scarf · Burberry"
-        ],
-        [
-          "https://www.gobicashmere.com/it/products/wide-rib-knit-scarf-chilli-pepper",
-          "Cashmere knitted shawl · GOBI"
-        ],
-        [
-          "https://www.falconeri.com/it/product/scaldacollo_a_coste_in_cashmere_ultrasoft-UZ00078.html",
-          "Loop neck warmer · Falconeri"
+          "Burberry checked scarf product reference"
         ],
         [
           "https://www.emarinella.eu/collections/scarves-women/products/red-stole-115-in-wool-silk-and-cashmere-1",
-          "Lightweight stole, mixed fibre · E. Marinella"
+          "E. Marinella pashmina-style stole product reference"
+        ],
+        [
+          "https://www.falconeri.com/it/product/scaldacollo_a_coste_in_cashmere_ultrasoft-UZ00078.html",
+          "Falconeri loop neck warmer reference"
+        ],
+        [
+          "https://www.falconeri.com/it/product/foulard_citta_in_seta-DZ00496.html",
+          "Falconeri silk neckerchief reference"
         ],
         [
           "https://www.falconeri.com/it/product/sciarpa_con_intreccio_in_cashmere_ultrasoft-DZ00517.html",
-          "Decorative knitted scarf · Falconeri"
+          "Falconeri textured cashmere scarf reference"
         ]
       ],
       "editorialModernProductPage": "https://www.falconeri.com/it/product/sciarpa_con_intreccio_in_cashmere_ultrasoft-DZ00517.html"
