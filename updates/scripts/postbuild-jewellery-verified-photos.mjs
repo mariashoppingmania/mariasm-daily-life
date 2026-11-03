@@ -44,25 +44,88 @@ function exactReferenceInUrl(url,p){
  const normalized=String(url||'').toLowerCase().replace(/[^a-z0-9]/g,'');
  return normalized.includes(token);
 }
+const alternateMerchants={
+ 'CO02-512':[
+  'https://joyeriacalvo.com/products/collar-mini-letter-a-pdpaola-plata',
+  'https://www.mes-bijoux.fr/pdpaola/23026-pdpaola-collier-en-argent-mini-lettre-a-co02-512-u.html',
+  'https://joyayreloj.com/joyas/3133-collar-pdpaola-letra-a-mini'
+ ],
+ 'BHKB261':[
+  'https://www.joygioielli.com/products/bracciale-donna-brosway-in-acciaio-con-infinito-e-cristalli-bhkb261',
+  'https://cheopebenevento.it/products/chakra-bracciale-bhkb261-62323',
+  'https://www.scintilleshop.com/524024-bracciale-chakra-in-acciaio-316l-con-infinito-e-c.html'
+ ]
+};
+async function merchantImageCandidates(shopUrl){
+ const page=await get(shopUrl);
+ if(!page?.ok)return [];
+ const source=(await page.text()).slice(0,900000);
+ const links=[ogPhoto(source,shopUrl)].filter(Boolean);
+ // Shopify's public product JSON commonly exposes the true product photographs
+ // when the page's OpenGraph image is blocked by CDN or geography.
+ const u=new URL(shopUrl);
+ const handle=u.pathname.split('/products/')[1]?.split('/')[0];
+ if(handle){
+  const endpoint=u.origin+'/products/'+handle+'.js';
+  const json=await get(endpoint);
+  if(json?.ok){
+    try{
+      const item=await json.json();
+      if(item?.images?.length){
+       for(const photo of item.images.slice(0,3)){
+        const value=typeof photo==='string'?photo:photo.src;
+        if(value)links.push(normalize(value,shopUrl));
+       }
+      }
+    }catch{}
+  }
+ }
+ return [...new Set(links)];
+}
+async function archiveExactImage(url,p){
+ const res=await get(url);if(!res?.ok)return null;
+ const mime=(res.headers.get('content-type')||'').toLowerCase();
+ const ext=/image\/jpe?g/.test(mime)?'jpg':/image\/png/.test(mime)?'png':/image\/webp/.test(mime)?'webp':null;
+ if(!ext)return null;
+ const bytes=Buffer.from(await res.arrayBuffer());
+ if(bytes.length<3500||bytes.length>7000000)return null;
+ const basename=p.sku.replace(/[^a-z0-9_-]/gi,'-').toLowerCase();
+ const filename=basename+'.'+ext;
+ fs.writeFileSync(path.join(photoDir,filename),bytes);
+ return 'assets/verified-products/'+filename;
+}
 async function getExactImage(p){
- // Never replace a missing necklace or bracelet with an unrelated item or AI art.
- const landing=await get(p.url);const htmlText=landing?.ok?await landing.text():'';
- const official=ogPhoto(htmlText,p.url);
- const candidates=[official,p.img].filter(Boolean);
- for(const url of [...new Set(candidates)]){
-  // The retailer's own page is the source of truth. If metadata are blocked,
-  // a direct image path must carry the *exact* catalogue SKU to qualify.
-  if(url!==official&&!exactReferenceInUrl(url,p))continue;
-  const res=await get(url);if(!res?.ok)continue;
-  const mime=(res.headers.get('content-type')||'').toLowerCase();
-  const ext=/image\/jpe?g/.test(mime)?'jpg':/image\/png/.test(mime)?'png':/image\/webp/.test(mime)?'webp':null;
-  if(!ext)continue;
-  const bytes=Buffer.from(await res.arrayBuffer());
-  if(bytes.length<3500||bytes.length>7000000)continue;
-  const basename=p.sku.replace(/[^a-z0-9_-]/gi,'-').toLowerCase();
-  const filename=basename+'.'+ext;
-  fs.writeFileSync(path.join(photoDir,filename),bytes);
-  return 'assets/verified-products/'+filename;
+ // Primary source: exact official product page and its original SKU-coded image.
+ const primary=await merchantImageCandidates(p.url);
+ for(const candidate of [...new Set([...primary,p.img])]){
+   if(candidate===p.img&&!exactReferenceInUrl(candidate,p))continue;
+   const result=await archiveExactImage(candidate,p);if(result)return result;
+ }
+ // A named alternative merchant must have a specifically documented matching SKU.
+ // We never substitute a category photo or image of another item.
+ for(const merchant of alternateMerchants[p.sku]||[]){
+   const response=await get(merchant);if(!response?.ok)continue;
+   const page=(await response.text()).slice(0,850000);
+   const sku=p.sku.toLowerCase().replace(/[^a-z0-9]/g,'');
+   const inPage=page.toLowerCase().replace(/[^a-z0-9]/g,'').includes(sku);
+   const inUrl=exactReferenceInUrl(merchant,p);
+   if(!inPage&&!inUrl)continue;
+   let alternatives=[ogPhoto(page,merchant)].filter(Boolean);
+   const u=new URL(merchant),handle=u.pathname.split('/products/')[1]?.split('/')[0];
+   if(handle){
+     const json=await get(u.origin+'/products/'+handle+'.js');
+     if(json?.ok)try{
+       const item=await json.json();
+       for(const p of (item.images||[]).slice(0,3)){
+         const link=typeof p==='string'?p:p.src;
+         if(link)alternatives.push(normalize(link,merchant));
+       }
+     }catch{}
+   }
+   for(const url of [...new Set(alternatives)]){
+     const saved=await archiveExactImage(url,p);
+     if(saved){console.log('Jewellery alternate merchant photo: '+p.sku+' · '+u.hostname);return saved}
+   }
  }
  return null;
 }
