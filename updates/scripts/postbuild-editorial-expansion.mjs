@@ -37,7 +37,7 @@ function illustration(slug,index,isHistory=false){
 function isRelevantHistoryPhoto(d,entry,idx,used){
  const img=entry[2];if(!img||used.has(img))return false;
  const allowed={
- 'belts-suspenders':['alexandersapparel','media.gucci.com'],
+ 'belts-suspenders':['vehi-mercatus','collectionapi.metmuseum','alexandersapparel','media.gucci.com','shopserve.jp','ebayimg.com','livemaster.ru'],
  'scarves':['boutiquedellasciarpa'],
  'gloves':['metmuseum','corneliajames','mediadecathlon'],
  'home-utensils':['azscience','villarubini','salepepe','idealo'],
@@ -213,8 +213,24 @@ function extra(slug){
 }
 async function buildOne(d){
  const dir=path.join(docs,d.slug);fs.mkdirSync(dir,{recursive:true});
- const used=new Set([d.hero]);const history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
- const types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
+ const used=new Set([d.hero]);
+ let history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
+ let types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
+ if(d.slug==='belts-suspenders'){
+   // Archive each verified editorial photograph locally, too. Never hotlink missing pictures.
+   let n=0;const together=history+'<!--MARIASM-TYPE-SEPARATOR-->'+types;
+   const references=[...together.matchAll(/<img\\b[^>]*\\bsrc="([^"]+)"/g)].map(m=>m[1]);
+   const unique=[...new Set(references)];
+   const local=new Map();
+   for(const batch of Array.from({length:Math.ceil(unique.length/5)},(_,i)=>unique.slice(i*5,i*5+5))){
+    await Promise.all(batch.map(async remote=>{const found=await localProductPhoto(remote.replaceAll('&amp;','&'),'belts-editorial',n++);local.set(remote,found)}));
+   }
+   const replaceRemote=part=>part.replace(/<img\\b[^>]*\\bsrc="([^"]+)"[^>]*>/g,(tag,remote)=>{
+      const src=local.get(remote);
+      return src?tag.replace('src="'+remote+'"','src="'+esc(src)+'"'):'<div class="ma-no-image">The historical photograph is temporarily unavailable; see the referenced museum or maker.</div>';
+   });
+   history=replaceRemote(history);types=replaceRemote(types);
+ }
  const materials=d.materials.map(materialCard).join('');
  const prod=[];for(let i=0;i<d.products.length;i+=5){const batch=await Promise.all(d.products.slice(i,i+5).map((p,j)=>productCard(d,p,i+j)));prod.push(...batch);} if(d.slug==='belts-suspenders' && !prod.some(Boolean))throw Error('Belts Atelier: no product images verified; abort publication instead of showing broken pictures');
  const sources=d.sources.map(x=>'<a href="'+esc(x[1])+'" '+link+'>'+esc(x[0])+'</a>').join(' · ');
