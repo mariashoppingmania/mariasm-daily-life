@@ -798,8 +798,8 @@
       ],
       "types": [
         [
-          "Silk carré",
-          "Fold it into a necktie, headband or bag accent.",
+          "Printed silk carré",
+          "A patterned silk square worn around the neck, head or tied to a handbag.",
           "Silk twill, silk satin"
         ],
         [
@@ -862,12 +862,12 @@
       ],
       "products": [
         [
-          "100% cashmere scarf",
+          "100% cashmere scarf · grey (464751)",
           "UNIQLO",
           "€59.90",
           "Accessible cashmere",
           "https://www.uniqlo.com/it/it/products/E464751-000/00",
-          "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/464751/feature/eugoods_464751_feature1.jpg"
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/464751/item/goods_03_464751_3x4.jpg"
         ],
         [
           "Check cashmere scarf",
@@ -1179,7 +1179,41 @@
           "Falconeri textured cashmere scarf reference"
         ]
       ],
-      "editorialModernProductPage": "https://www.falconeri.com/it/product/sciarpa_con_intreccio_in_cashmere_ultrasoft-DZ00517.html"
+      "editorialModernProductPage": "https://www.falconeri.com/it/product/sciarpa_con_intreccio_in_cashmere_ultrasoft-DZ00517.html",
+      "editorialTypeDirectPhotos": [
+        [
+          "https://assets.hermes.com/is/image/hermesproduct/la-nature-en-voyage-scarf-90--004368S%2004-flat-wm-3-0-0-1000-1000_g.jpg",
+          "Printed silk carré: Hermès La Nature en Voyage, colourway 04"
+        ],
+        [
+          "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1752512527/848507_3G200_9878_001_100_0000_Light-GG-wool-scarf.jpg",
+          "Classic wool scarf: Gucci wool jacquard, beige/ivory"
+        ],
+        [
+          "https://www.falconeri.com/dw/image/v2/BKQL_PRD/on/demandware.static/-/Sites-FAL_EC_COM/default/dw80c374ed/images/DZ001959081-M.jpg?bgcolor=f4f4f4&sfrm=jpeg&sw=1920",
+          "Cashmere stole: Falconeri cashmere stole worn in pale pink"
+        ],
+        [
+          "https://www.mytheresa.com/image/1094/1238/100/1b/P00896278_b2.jpg",
+          "Oversized check scarf: Burberry beige cashmere"
+        ],
+        [
+          "https://www.emarinella.eu/cdn/shop/files/STOLA_SCIA958_12206_150_02.jpg?v=1759839571&width=860",
+          "Draped shawl: E. Marinella silk-wool-cashmere stole, red/cream"
+        ],
+        [
+          "https://www.falconeri.com/dw/image/v2/BKQL_PRD/on/demandware.static/-/Sites-FAL_EC_COM/default/dw2a4c4cee/images/UZ000789107-FW.jpg?bgcolor=f4f4f4&sfrm=jpeg",
+          "Infinity/tube scarf: Falconeri black ribbed cashmere neck warmer"
+        ],
+        [
+          "https://www.falconeri.com/dw/image/v2/BKQL_PRD/on/demandware.static/-/Sites-FAL_EC_COM/default/dw667d80bc/images/DZ004969255-F.jpg?bgcolor=f4f4f4&sfrm=png",
+          "Lightweight printed silk: Falconeri Venezia silk neckerchief"
+        ],
+        [
+          "https://www.falconeri.com/dw/image/v2/BKQL_PRD/on/demandware.static/-/Sites-FAL_EC_COM/default/dw356f45aa/images/DZ005178984-FW.jpg?bgcolor=f4f4f4&sfrm=jpeg",
+          "Textured decorative scarf: Falconeri grey cable-knit cashmere"
+        ]
+      ]
     },
     {
       "slug": "gloves",
