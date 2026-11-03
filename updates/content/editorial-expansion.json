@@ -283,7 +283,27 @@
           "https://www.metmuseum.org/art/collection"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "editorialPhotoReferences": [
+        [
+          "Roman cingulum reconstruction",
+          "https://vehi-mercatus.com/media/image/product/13493/lg/cingulum-roemer-guertel-typ-woelfin-mit-romulus-und-remus.jpg"
+        ],
+        [
+          "Historic original Roman belt fittings",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/256214/505118/main-image"
+        ],
+        [
+          "Premium contemporary belt",
+          "https://alexandersapparel.co.nz/cdn/shop/products/Parisian_YLDART_Artemis_Western_Belt_Black_99_Styled_2.jpg?v=1686103929&width=1200"
+        ],
+        [
+          "Contemporary designer belt detail",
+          "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1764179132/864436_AAGD7_1000_001_100_0000_Light-flat-marmont-belt.jpg"
+        ]
+      ],
+      "aiPhotoAsset": "assets/editorial-ai/belts-suspenders.webp",
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
     },
     {
       "slug": "scarves",
@@ -502,7 +522,7 @@
           "Hermès",
           "€580.00",
           "Luxury silk",
-          "https://www.hermes.com/it/it/category/donna/carre-scialli-e-sciarpe/carre-e-accessori-in-seta/",
+          "https://www.hermes.com/it/it/product/carre-90-la-nature-en-voyage-H004368Sv09/",
           ""
         ]
       ],
@@ -516,7 +536,23 @@
           "https://www.metmuseum.org/about-the-met/collection-areas/the-costume-institute"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "editorialPhotoReferences": [
+        [
+          "Nineteenth-century Kashmiri embroidered shawl",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/447775/892422/main-image"
+        ],
+        [
+          "Modern fine wool and cashmere reference",
+          "https://www.boutiquedellasciarpa.com/cm/showfiles.php/news/come-prendersi-cura-del-cashmere-e-farlo-durare/come-curare-cashmere.jpg"
+        ],
+        [
+          "Modern patterned silk and scarf styling",
+          "https://images.tanp.jp/gracia.tanp/product49152/202410014_tanp1120.jpg?w=954"
+        ]
+      ],
+      "aiPhotoAsset": "assets/editorial-ai/scarves.webp",
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
     },
     {
       "slug": "gloves",
@@ -749,7 +785,23 @@
           "https://www.vam.ac.uk/collections/fashion"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "editorialPhotoReferences": [
+        [
+          "Museum historic handwear",
+          "https://collectionapi.metmuseum.org/api/collection/v1/iiif/168616/364930/main-image"
+        ],
+        [
+          "Cornelia James Inès leather glove craftsmanship",
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-8.jpg?v=1771031169&width=1200"
+        ],
+        [
+          "Cashmere-lined nappa gloves, modern workshop",
+          "https://www.tr-handschuhe.at/cdn/shop/products/gentlemen-s-gloves-from-dark-brown-hair-sheep-nappa-lined-with-cashmere-tr-handschuhe-wien-thomas-riemer-handmade-gloves-1_2c30162c-d639-4198-a1ea-56a6f7fe5c63.jpg?v=1666601658&width=2000"
+        ]
+      ],
+      "aiPhotoAsset": "assets/editorial-ai/gloves.webp",
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
     },
     {
       "slug": "home-utensils",
@@ -979,7 +1031,23 @@
           "https://www.livre-rare-book.com/book/16810016/LCS-18359"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "editorialPhotoReferences": [
+        [
+          "Ancient Roman kitchen and cookware at Pompeii",
+          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+        ],
+        [
+          "Historic food and cooking tools editorial reference",
+          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+        ],
+        [
+          "Contemporary cast iron cookware",
+          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+        ]
+      ],
+      "aiPhotoAsset": "assets/editorial-ai/home-utensils.webp",
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
     },
     {
       "slug": "venetian-glass",
@@ -1206,14 +1274,6 @@
           "Artisan",
           "https://vaporettoglass.it/products/sonetto",
           ""
-        ],
-        [
-          "NasonMoretti Gigolo Tumbler · from",
-          "NasonMoretti",
-          "from €62.00",
-          "Artisan",
-          "https://nasonmoretti.com/collections/gigolo",
-          ""
         ]
       ],
       "sources": [
@@ -1230,7 +1290,37 @@
           "https://museovetro.visitmuve.it/la-sede-e-la-storia/"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "retailerCollections": [
+        [
+          "NasonMoretti Gigolo Tumbler · from",
+          "NasonMoretti",
+          "from €62.00",
+          "Artisan",
+          "https://nasonmoretti.com/collections/gigolo",
+          ""
+        ]
+      ],
+      "editorialPhotoReferences": [
+        [
+          "Roman glass from northern Adriatic area",
+          "https://www.exibart.com/repository/media/eventi/2010/05/altino.-vetri-di-laguna.jpg"
+        ],
+        [
+          "Nineteenth-century filigrana in Murano Glass Museum",
+          "https://cdn.finestresullarte.info/rivista/immagini/2025/fn/museo-vetro-murano-sezione-ottocento-9.jpeg"
+        ],
+        [
+          "Contemporary murrine hand-blown vessel",
+          "https://www.originalmuranoglass.com/images/stories/virtuemart/product/vase_murrine_mix_colors_lares_original_murano_glass_omg8.jpg"
+        ],
+        [
+          "Venini Fazzoletto modern design object",
+          "https://a.1stdibscdn.com/venini-fazzoletto-opalino-medium-vase-in-horizon-murano-glass-for-sale/f_39503/f_274669121645408732496/f_27466912_1645408732923_bg_processed.jpg"
+        ]
+      ],
+      "aiPhotoAsset": "assets/editorial-ai/venetian-glass.webp",
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
     },
     {
       "slug": "fine-tableware",
@@ -1476,10 +1566,26 @@
           "https://www.villeroy-boch.it/p/manufacture-piatto-piano-1042392620/"
         ]
       ],
-      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
+      "editorialPhotoReferences": [
+        [
+          "Roman terra sigillata bowl museum photograph",
+          "https://www.museotorino.it/images/f6/07/a6/60/f607a66016c44d9e9b3301512ac4d631-1.jpg"
+        ],
+        [
+          "Historical painted Italian majolica reference",
+          "https://www.meisterdrucke.it/kunstwerke/1260px/Italian_School_-_Representation_of_the_Roman_heros_Scaevola_%28Muzio_Scevola%29_Ceramic_plate_produce_-_%28MeisterDrucke-988417%29.jpg"
+        ],
+        [
+          "Contemporary Manufacture Rock fine tableware",
+          "https://www.thommel-hausrat.de/media/c0/ec/4a/1712239243/villeroy-boch_manufacture_1042402590_03_on.jpg?ts=1718782917"
+        ]
+      ],
+      "aiPhotoAsset": "assets/editorial-ai/fine-tableware.webp",
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
     }
   ],
   "updated": "2026-11-03",
   "currency": "EUR",
-  "pricingNote": "Editorial price snapshots checked on 3 November 2026. The original store page is authoritative for price, variant, availability and currency. A few imported listings use pounds sterling. Retail cards must only display exact-product photography; never use AI illustrations or another SKU's image."
+  "pricingNote": "Editorial price snapshots checked on 3 November 2026. The original store page is authoritative for price, variant, availability and currency. A few imported listings use pounds sterling. Retail cards must only display exact-product photography; never use AI illustrations or another SKU's image. Merchant collection entries are tracked separately and do not claim a specific SKU image."
 }
