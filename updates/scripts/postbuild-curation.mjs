@@ -167,7 +167,7 @@ for(const section of data.sections){
  html=html.replace(/(<div class="ma-(?:era-media|type-art)">)([\s\S]*?)(<\/div>)/g,(whole,open,inside,close)=>{
   const m=inside.match(/<img\b[^>]*\bsrc="([^"]+)"/i);if(!m)return whole;
   const key=m[1].replaceAll('&amp;','&');
-  if(seenQualityPhotos.has(key)){qualityDuplicates++;return open+'<div class="ma-editorial-unavailable">A distinct photographic reference is unavailable for this topic. Explore the historical explanation and source links below.</div>'+close}
+  if(seenQualityPhotos.has(key)){qualityDuplicates++;return whole;}
   seenQualityPhotos.add(key);return whole;
  });
  const tiers=[...new Set(section.products.map(p=>p[3]).filter(Boolean))].sort();
@@ -177,6 +177,22 @@ for(const section of data.sections){
  html=html.replace('<div class="ma-products">',tools+'<div class="ma-products">');
  html=html.replace('</head>',qualityStyle+'</head>').replace('</body>',qualityJS+'</body>');
  html=html.replace('Only real, individually photographed products from identifiable retailer pages. No AI-made or substitute product photos.','Real retailer products only. Exact-item photography appears where it is available. Otherwise follow the original retailer link to inspect the product; AI-generated photos are never used as substitutes.');
+
+// Repair editorial imagery before writing the finished page. Duplicate photos must
+// never be replaced with empty placeholders, and the two known homeware gaps
+// receive topic-appropriate photographic references.
+if(section.slug==='home-utensils'){
+ const photoByTitle={
+  'Coffee makers & moka pots':'https://commons.wikimedia.org/wiki/Special:Redirect/file/Moka_coffee_pot.jpg?width=720',
+  'Design icons & collectible homeware':'https://commons.wikimedia.org/wiki/Special:Redirect/file/Glass_Vases_and_Bowl-BMA.jpg?width=720'
+ };
+ html=html.replace(/<article class="ma-type">([\s\S]*?)<\/article>/g,(whole,inside)=>{
+  const title=(inside.match(/<h3>([^<]+)<\/h3>/)||[])[1];
+  if(!photoByTitle[title])return whole;
+  const img='<img loading="lazy" decoding="async" src="'+photoByTitle[title]+'" alt="'+title+' — photographic reference" style="width:100%;height:100%;object-fit:contain;object-position:center" />';
+  return '<article class="ma-type">'+inside.replace(/<div class="ma-type-art">[\s\S]*?<\/div>/,'<div class="ma-type-art">'+img+'</div>')+'</article>';
+ });
+}
  fs.writeFileSync(filename,html);qualityPages++;
 }
 if(qualityPages!==6)throw Error('Quality pass incomplete: '+qualityPages);
