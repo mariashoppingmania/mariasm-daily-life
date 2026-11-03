@@ -1691,7 +1691,10 @@
           "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/486210/feature/eugoods_486210_feature1.jpg",
           "UNIQLO knitted HEATTECH gloves, manufacturer photograph"
         ],
-        null,
+        [
+          "https://contents.mediadecathlon.com/m18148205/k%24f592f678d0415bd4df2013735c4465d5/picture.jpg",
+          "Technical winter gloves reference from Decathlon"
+        ],
         null,
         [
           "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/478319/feature/eugoods_478319_feature1.jpg",
@@ -1699,6 +1702,24 @@
         ],
         null,
         null
+      ],
+      "editorialEraDirectPhotos": [
+        [
+          "https://www.tr-handschuhe.at/cdn/shop/products/gentlemen-s-gloves-from-dark-brown-hair-sheep-nappa-lined-with-cashmere-tr-handschuhe-wien-thomas-riemer-handmade-gloves-1_2c30162c-d639-4198-a1ea-56a6f7fe5c63.jpg?v=1666601658&width=2000",
+          "Modern leather gloves photograph as a craftsmanship comparison; not Roman archaeological evidence"
+        ],
+        null,
+        null,
+        null,
+        null,
+        [
+          "https://www.corneliajames.com/cdn/shop/files/ines-leather-glove-with-cashmere-cuff-13.jpg?v=1771031179&width=3840",
+          "Modern formal leather-glove photograph illustrating twentieth-century fashion continuity"
+        ],
+        [
+          "https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/470024/feature/eugoods_470024_feature1.jpg",
+          "Modern touchscreen thermal glove detail, UNIQLO HEATTECH"
+        ]
       ]
     },
     {
