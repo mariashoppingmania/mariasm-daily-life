@@ -1787,117 +1787,236 @@
     {
       "slug": "home-utensils",
       "name": "Home Utensils & Domestic Design",
-      "eyebrow": "From Roman hearth to modern kitchen design",
-      "intro": "Trace the objects that made daily life possible: Roman bronze ladles, medieval mortars, Renaissance copperware, industrial utensils and today's precision tools. Homeware is a history of labour, technique, comfort and invention.",
-      "hero": "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg",
+      "eyebrow": "Domestic history · Ancient hearths · Everyday inventions · Design icons",
+      "intro": "An illustrated history of domestic life: how fire, water, trade, labour, craft, electrification and sustainable design shaped the objects found in our homes. Explore original museum artefacts, the work behind ordinary meals, and a broad catalogue of accessible tools and collectible design.",
+      "hero": "https://alessi.com/cdn/shop/files/hero-kitchen-collection.jpg",
       "eras": [
         [
+          "The first domestic technologies · Before 3000 BCE",
+          "The earliest households relied on stone grinders, hearths, ceramic vessels, woven baskets and wooden containers. Cooking was also a way to preserve harvests and share labour. Querns demanded physical effort, while fire-resistant pots changed what people could eat. Archaeological evidence varies greatly by region; no single 'first kitchen' existed.",
+          ""
+        ],
+        [
+          "Ancient Egypt · 3000–30 BCE",
+          "Grain grinding, bread ovens, pottery beer jars and stone mortars were integral to domestic work along the Nile. Bread and beer were staples, and grinding could occupy many hours. Wood, stone, ceramic and copper served different tasks, depending on household resources.",
+          ""
+        ],
+        [
+          "Greek and Etruscan kitchens · 800–100 BCE",
+          "Ceramic vessels were joined by metal ladles and strainers for wine and food. Banquet service was not the same as everyday household cooking: wealthy dining sets survive more readily than perishable wooden tools. Etruscan bronze objects reveal precise casting and decoration.",
+          ""
+        ],
+        [
           "Ancient Rome · 1st c. BCE–5th c. CE",
-          "Kitchen archaeology at Pompeii reveals bronze ladles, pans, strainers, ceramic cooking pots and vessels for storing food and liquid. Fuel, water supply and household status shaped the tools available.",
-          "https://www.azscience.org/media/t55ljtjw/pompeii_8.jpg"
+          "The Roman household combined ceramic pots, mortaria for grinding and mixing, bronze spoons, ladles, strainers and amphorae for storage. A domus kitchen differed from a crowded apartment's cooking facilities. Pompeii and Herculaneum preserve rich evidence, yet not every Roman family owned metal cookware.",
+          ""
         ],
         [
-          "Early Middle Ages · 500–1000",
-          "Open fires and coarse earthenware remained important in households. Wooden spoons, iron hooks, cauldrons and hand querns served essential cooking and food-processing needs.",
-          "https://www.villarubini.it/images/storia/2.jpg"
+          "Late Antiquity · 300–650",
+          "Food preparation remained largely manual while trade routes and household wealth changed. Clay cookware and metal service pieces persisted alongside wood and textiles that rarely survive. The key transformations were gradual, not a clean break between Roman and medieval kitchens.",
+          ""
         ],
         [
-          "High medieval households · 1000–1450",
-          "Urban crafts supported improved knives, mortars, cooking pots, ceramic jugs and metal fittings. Wealthier kitchens possessed specialised equipment while rural households relied on versatile tools.",
-          "https://www.villarubini.it/images/storia/2.jpg"
+          "Early medieval homes · 650–1000",
+          "A central hearth and suspension hooks supported one-pot cooking. Iron, coarse pottery, wooden bowls and hand-powered grinding remained fundamental in many places. In ninth-century Nishapur, carved stone cauldrons illustrate how utilitarian vessels could also have elegant forms.",
+          ""
         ],
         [
-          "Renaissance kitchens · 1450–1650",
-          "Court kitchens introduced increasingly specialised equipment. Bartolomeo Scappi's 1570 culinary work illustrates roasters, strainers, presses, pastry utensils and elaborate cooking systems.",
-          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+          "High Middle Ages · 1000–1350",
+          "Urban metalworkers and potters increased the variety of pots, knives and strainers. Adjustable hanging equipment allowed a cook to alter temperature without a stove dial. Large cauldrons served communal households; modest families often cooked an entire meal in a single pot.",
+          ""
         ],
         [
-          "1700s · Refinement and service",
-          "Copper saucepans, specialised baking equipment, porcelain and polished utensils entered refined homes. The division between cooking and formal table service grew more visible.",
-          "https://www.salepepe.it/files/2024/01/CATERINA-COVER-1140x636.jpeg"
+          "Late medieval cooking · 1350–1500",
+          "Specialized kitchens acquired mortars, sieves, spits, skimmers, chopping boards and vessels of different sizes. Food service became increasingly differentiated from food preparation. At the same time, cleaning and fire management remained strenuous daily work.",
+          ""
         ],
         [
-          "1800–1910 · Mechanisation",
-          "Cast iron, machine-stamped sheet metal, improved stoves, enamel coatings and mass manufacturing expanded choices; domestic technology reshaped cooking labour.",
-          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+          "Renaissance workshops · 1500–1600",
+          "Kitchen innovation was not simply a series of inventions: it depended on craftsmen, metal supply and access to printed manuals. In 1570 Bartolomeo Scappi illustrated elaborate equipment for professional cooking, but ordinary homes used simpler versions. Bronze mortars could be both practical and prestigious.",
+          ""
         ],
         [
-          "1910–1970 · Electricity and new materials",
-          "Electric mixers, refrigerators, aluminium coffeemakers, pressure cookers and stainless steel changed domestic routines. Design increasingly valued efficient mass production.",
-          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+          "Venice and Mediterranean kitchens · 1500–1700",
+          "Venetian commerce brought spices, glass and metalwork into contact with established local traditions. Bronze mortars, copper pans, ceramic jars and intricate tableware reveal the overlap of work, trade and display. The example shown is an authentic sixteenth-century Venetian bronze mortar.",
+          ""
         ],
         [
-          "1970–today · Craft and intelligent design",
-          "Induction-compatible cookware, silicone implements, ergonomic design and appliances coexist with traditional copper and cast iron. Buy for performance, repairability and realistic use.",
-          "https://cdn.idealo.com/folder/Product/4809/9/4809936/s4_produktbild_max_1/le-creuset-signature-cocotte-ronde-24-cm-cerise.jpg"
+          "Seventeenth-century dining · 1600–1700",
+          "Specialised serving pieces, silverware and utensils for new beverages became important in affluent homes. Table service could signal status; in everyday households, wooden and pewter objects remained much more practical. A fine object reveals elite taste, not what every family used.",
+          ""
+        ],
+        [
+          "Eighteenth-century refinement · 1700–1800",
+          "Copper and tin-lined cookware, pewter, silver, porcelain and improved metal fittings gave affluent kitchens more specialized implements. Global tea and coffee circulation changed serving rituals. Caution: porcelain and silver objects survive better than ordinary wooden domestic gear.",
+          ""
+        ],
+        [
+          "Nineteenth-century manufacturing · 1800–1910",
+          "Industrial casting, stamping, enamel coatings and more predictable production made kitchen utensils available at lower prices. Iron ranges, pressure technology, can openers and calibrated scales altered food preparation, although adoption depended on fuel, income and infrastructure.",
+          ""
+        ],
+        [
+          "The electrified home · 1910–1940",
+          "Household electricity spread unevenly; where available it changed lighting, refrigeration, mixing and heating. Early appliances were often expensive and maintenance-intensive. Aluminium cookware reduced weight, while standardized components reshaped repair and replacement.",
+          ""
+        ],
+        [
+          "Moka and mid-century modernity · 1930–1960",
+          "The Moka Express appeared in 1933, becoming an enduring example of aluminium domestic design. Postwar kitchens increasingly integrated metal cabinets, refrigerators, mixers and standardized worktops. These transformations also changed the distribution of paid and unpaid household labour.",
+          ""
+        ],
+        [
+          "From plastic to precision · 1960–1990",
+          "Plastics lowered costs and enabled new shapes, while nonstick coatings and compact electric tools promised convenience. Industrial design became more visible on the countertop. These advances also introduced waste, repair and material-safety questions that continue today.",
+          ""
+        ],
+        [
+          "The designer kitchen · 1990–2010",
+          "Consumers increasingly compared ergonomics, aesthetics and materials rather than just basic function. Stainless steel, silicone, engineered plastics and multifunction appliances flourished, while traditional cast iron and wooden tools returned as craft choices.",
+          ""
+        ],
+        [
+          "The contemporary home · 2010–2026",
+          "Induction hobs, digital scales, programmable appliances and compact storage systems coexist with century-old methods. Durable handles, replaceable components, honest material labelling and suitability for available cooktops matter more than decoration alone.",
+          ""
+        ],
+        [
+          "Tomorrow's household · 2027 and beyond",
+          "Repairability, lower energy use, modular storage, recycled materials and accessible ergonomics are plausible priorities. Smart features may help planning and temperature control, but they are not proof of better cooking. The next domestic revolution may be an object that lasts longer rather than one with more software.",
+          ""
         ]
       ],
       "types": [
         [
-          "Cooking vessels",
-          "Pans, saucepans, Dutch ovens and casseroles.",
-          "Cast iron, stainless steel, copper"
+          "Pots, casseroles & Dutch ovens",
+          "From ancient clay pots to cast-iron cocottes, saucepans and induction-ready cookware.",
+          "Clay, steel, cast iron, copper"
         ],
         [
-          "Preparation tools",
-          "Knives, graters, cutting boards, mortars and peelers.",
-          "Steel, stone, wood"
+          "Knives & cutting boards",
+          "Chopping, trimming and food preparation from forged blades to hygienic work surfaces.",
+          "Steel, wood, composite"
         ],
         [
-          "Coffee and tea",
-          "Moka pots, kettles, teapots and infusers.",
-          "Aluminium, stainless steel, ceramics"
+          "Peelers, graters & mandolines",
+          "Small specialized tools that reduced repetitive work and increased precision.",
+          "Stainless steel, reinforced polymer"
         ],
         [
-          "Serving utensils",
-          "Ladles, tongs, spatulas and trays.",
-          "Stainless steel, silicone, silver"
+          "Mortars, mills & grinders",
+          "Hand-powered processing from antiquity to today; stone and steel remain essential.",
+          "Stone, wood, bronze, steel"
         ],
         [
-          "Food storage",
-          "Crocks, jars and modern containers.",
-          "Glass, clay, food-grade plastic"
+          "Coffee makers & moka pots",
+          "Classic stovetop extraction, espresso design and contemporary coffee rituals.",
+          "Aluminium, stainless steel"
         ],
         [
-          "Small electric appliances",
-          "Juicers, mixers, blenders and toasters.",
-          "Steel, thermoplastic, electronics"
+          "Tea, kettles & infusion",
+          "From ceremonial tea vessels to precision pouring and electric heating.",
+          "Ceramic, steel, glass"
         ],
         [
-          "Decorative domestic objects",
-          "Design kettles, trays and vases.",
-          "Brass, ceramic, glass"
+          "Ladles, spoons & tongs",
+          "Everyday serving tools spanning ancient bronze work and modern silicone.",
+          "Bronze, wood, steel, silicone"
         ],
         [
-          "Cleaning tools",
-          "Brooms, brushes, cloths and ergonomic equipment.",
-          "Wood, natural fibres, synthetic textiles"
+          "Storage jars & containers",
+          "Food preservation, pantry organisation, and the long history of the sealed vessel.",
+          "Glass, stoneware, food-grade plastic"
+        ],
+        [
+          "Trays, plates & table service",
+          "Objects that connect labour in the kitchen to the rituals of eating together.",
+          "Ceramic, silver, steel"
+        ],
+        [
+          "Juicers, mixers & small electrics",
+          "Manual and powered food preparation, from simple presses to compact motors.",
+          "Metal, plastics, electronics"
+        ],
+        [
+          "Bread, pastry & baking tools",
+          "Measuring, kneading, rolling and baking in domestic and professional kitchens.",
+          "Wood, metal, silicone"
+        ],
+        [
+          "Cleaning, brushes & dish care",
+          "Washing and cleaning tools, from natural fibres to ergonomic dishwasher-friendly products.",
+          "Wood, bristles, steel, textiles"
+        ],
+        [
+          "Cooking thermometers & timers",
+          "Accuracy and repeatability in cooking, from mechanical dial to digital temperature sensing.",
+          "Steel, glass, electronic sensors"
+        ],
+        [
+          "Corkscrews & bottle openers",
+          "From corked storage vessels to theatrical design objects on the table.",
+          "Steel, wood, engineered polymer"
+        ],
+        [
+          "Design icons & collectible homeware",
+          "Distinctive shapes by designers who transformed useful objects into cultural symbols.",
+          "Polished metal, resin, glass"
+        ],
+        [
+          "Food preparation sets & organizers",
+          "Modular systems for compact kitchens, efficient drawers and practical everyday routines.",
+          "Mixed materials, steel, plastics"
         ]
       ],
       "materials": [
         [
-          "Copper",
-          "Responsive to heat; food contact depends on suitable lining."
+          "Clay and earthenware",
+          "Ancient fired clay enabled boiling and storage; porosity and thermal-shock sensitivity vary with glaze and firing."
         ],
         [
-          "Cast iron",
-          "Excellent heat capacity; heavy and requires care."
+          "Stone, marble and granite",
+          "Dense, durable pounding and grinding surfaces; choose the correct finish for acidic ingredients."
+        ],
+        [
+          "Iron and cast iron",
+          "Heavy thermal mass, repairable long-lived cookware. Season bare iron; enamel must be kept intact."
+        ],
+        [
+          "Bronze and brass",
+          "Historically common for utensils and mortars; museum display does not imply a decorative object is food safe today."
+        ],
+        [
+          "Copper and tin",
+          "Excellent heat conduction but requires appropriate food-safe lining, often tin or stainless steel."
         ],
         [
           "Stainless steel",
-          "Corrosion-resistant and suitable for a broad range of utensils."
+          "Useful corrosion resistance and compatibility with dishwasher cleaning; induction requires the correct magnetic base."
         ],
         [
           "Aluminium",
-          "Lightweight and responsive; follow manufacturer care rules."
+          "Lightweight and highly conductive. Observe compatibility with acidic foods, coatings and manufacturer care instructions."
         ],
         [
-          "Silicone",
-          "Flexible and easy to clean, with rated temperature limits."
+          "Wood and bamboo",
+          "Gentle on cookware and renewable when responsibly sourced; dry fully and avoid prolonged soaking."
         ],
         [
-          "Wood and ceramics",
-          "Natural appeal; protect from thermal shock and harsh treatment."
+          "Glass and borosilicate",
+          "Ideal for visibility and many storage uses, but avoid sudden temperature changes outside rated ranges."
+        ],
+        [
+          "Food-contact silicone",
+          "Flexible and practical. Choose documented food-contact grade and respect stated temperature limits."
+        ],
+        [
+          "Enamel and porcelain",
+          "Smooth surfaces and strong decorative heritage; chips may compromise food-contact or washability."
+        ],
+        [
+          "Electronics and repairability",
+          "Timers, sensors and programmable motors require safe electrical components, replaceable parts and realistic service life."
         ]
       ],
       "products": [
@@ -2010,6 +2129,22 @@
         [
           "Bartolomeo Scappi's Renaissance implements",
           "https://www.livre-rare-book.com/book/16810016/LCS-18359"
+        ],
+        [
+          "The Met · Etruscan bronze strainer",
+          "https://www.metmuseum.org/art/collection/search/251195"
+        ],
+        [
+          "The Met · medieval cauldron",
+          "https://www.metmuseum.org/art/collection/search/471343"
+        ],
+        [
+          "The Met · Renaissance mortar",
+          "https://www.metmuseum.org/art/collection/search/715408"
+        ],
+        [
+          "IKEA 365+ tools official",
+          "https://www.ikea.com/it/it/cat/ikea-365-utensili-da-cucina-49550/"
         ]
       ],
       "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images.",
@@ -2028,7 +2163,145 @@
         ]
       ],
       "aiPhotoAsset": "assets/editorial-ai/home-utensils.webp",
-      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph."
+      "aiPhotoAssetRole": "Photorealistic illustration for editorial use only, never a product photograph.",
+      "editorialMuseumRecords": [
+        {
+          "index": 0,
+          "id": 568591,
+          "caption": "Ancient Egyptian limestone mortar and pestle, ca. 1300–1080 BCE · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 1,
+          "id": 568591,
+          "caption": "Ancient Egyptian limestone mortar and pestle, ca. 1300–1080 BCE · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 2,
+          "id": 251195,
+          "caption": "Etruscan bronze strainer, 5th century BCE · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 3,
+          "id": 255892,
+          "caption": "Roman bronze simpulum, 2nd century CE · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 4,
+          "id": 572534,
+          "caption": "Bronze strainer, Egyptian Roman period · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 5,
+          "id": 454751,
+          "caption": "Ninth-century carved steatite cauldron, Nishapur · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 6,
+          "id": 471343,
+          "caption": "French or South Netherlandish medieval caldron, 13th–14th century · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 7,
+          "id": 471343,
+          "caption": "Medieval cauldron, 13th–14th century · Metropolitan Museum of Art; illustration of multi-purpose cooking"
+        },
+        {
+          "index": 8,
+          "id": 715408,
+          "caption": "Renaissance mortar by Wenzel Jamnitzer, ca. 1550 · Metropolitan Museum of Art"
+        },
+        {
+          "index": 9,
+          "id": 191286,
+          "caption": "Venetian bronze mortar, 16th century · Metropolitan Museum of Art; public domain"
+        },
+        {
+          "index": 10,
+          "id": 200114,
+          "caption": "Paris silver and ebony teapot, 1699–1700 · Metropolitan Museum of Art"
+        },
+        {
+          "index": 11,
+          "id": 188105,
+          "caption": "Dutch silver-gilt spoon, probably 18th century · Metropolitan Museum of Art; public domain"
+        }
+      ],
+      "editorialEraProductPages": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        [
+          "https://alessi.com/it/products/mami-casserole",
+          "Modern steel cookware as an industrial-era materials comparison; not an antique"
+        ],
+        [
+          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
+          "Contemporary electric citrus press as a comparison to early domestic electrification"
+        ],
+        [
+          "https://alessi.com/it/products/9090-espresso-coffee-maker",
+          "Alessi 9090 espresso maker as a twentieth-century design comparison, not a Moka Express"
+        ],
+        [
+          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
+          "Modern countertop appliance; an illustration of later electrification, not an object from 1960"
+        ],
+        [
+          "https://alessi.com/it/products/juicy-salif-citrus-squeezer",
+          "Juicy Salif, Philippe Starck, 1990 design; Alessi manufacturer photograph"
+        ],
+        [
+          "https://alessi.com/it/products/ajm19-kitchen-cutlery-set",
+          "Modern stainless-steel kitchen cutlery from Alessi"
+        ],
+        [
+          "https://alessi.com/it/products/kitchentools-kitchen-cutlery",
+          "Contemporary modular kitchen-tool design"
+        ]
+      ],
+      "designEssays": [
+        [
+          "The hearth was the first machine",
+          "For millennia cooking meant controlling distance from flame: moving a vessel, changing the firewood, lowering a chain or adjusting a trivet. A pot was a thermal device, a storage technology and often a communal object. Kitchens were social spaces, but smoke and labour were significant costs."
+        ],
+        [
+          "Who carried the water?",
+          "Home design cannot be separated from infrastructure. Before running water, someone fetched, heated and carried every litre. Wells, cisterns, water pitchers, basins and cloth filters were essential domestic technologies. Improved water supply transformed hygiene and time use as dramatically as a new saucepan."
+        ],
+        [
+          "Work, gender and invisible labour",
+          "A household tool changes the allocation of labour only if time, access and maintenance are considered. Grinding grain by hand, laundering clothes, carrying fuel, preserving food and washing dishes often fell to women and servants. Mechanisation could reduce physical exertion, but also create new expectations of cleanliness and productivity."
+        ],
+        [
+          "From repair to replacement",
+          "Wooden spoons, iron pans and copper vessels were traditionally repaired, rehandled, relined or passed down. Disposable plastics and inexpensive electrics changed that calculus. Durable design looks at replacement parts, cleaning, local repair skill and the total lifespan rather than only purchase price."
+        ],
+        [
+          "The art of the table",
+          "Silver, porcelain, enamel, glass and decorative utensils express trade, status, migration and cultural identity. A lavish teapot tells us about courtly consumption, not necessarily the common household. Distinguish luxury museum survival from the practical tools used by most people."
+        ],
+        [
+          "Energy and fuel through the ages",
+          "Wood and charcoal gave way in many places to coal, manufactured gas, electric resistance and induction. Each shift shaped cookware materials, ventilation, fire risk, architecture and running costs. Today induction-ready steel, efficient kettles and well-fitting lids matter in energy-conscious homes."
+        ],
+        [
+          "The evolution of materials",
+          "Clay retains heat; copper moves it quickly; steel resists corrosion; aluminium cuts weight; cast iron stores thermal energy; silicone adds flexibility. No material is universally best: heat source, food acidity, washing habits and repairability determine suitability."
+        ],
+        [
+          "Design after 2026",
+          "Future-facing domestic design should prioritize repairable motors, accurate energy information, low-waste storage, accessible grips and standard replaceable components. A beautiful appliance is not necessarily a better one; a wooden spoon can still be the right tool."
+        ]
+      ]
     },
     {
       "slug": "venetian-glass",
