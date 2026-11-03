@@ -34,8 +34,10 @@ html=html.replace(/<article class="ma-type">([\s\S]*?)<\/article>/g,(whole,body)
  }
  if(usePhoto){photos++;return whole;}
  const newMedia='<div class="ma-type-art">'+fallback(i)+'</div>';
- if(/<div class="ma-type-art">[\s\S]*?<\/div>/.test(body))return '<article class="ma-type">'+body.replace(/<div class="ma-type-art">[\s\S]*?<\/div>/,newMedia)+'</article>';
- throw Error('Missing type-art block at card '+i);
+ const mediaStart=body.indexOf('<div class="ma-type-art">');
+ const copyStart=body.indexOf('<div class="ma-type-body">');
+ if(mediaStart>=0&&copyStart>mediaStart)return '<article class="ma-type">'+body.slice(0,mediaStart)+newMedia+body.slice(copyStart)+'</article>';
+ throw Error('Missing type media or type body block at card '+i);
 });
 if(count!==8)throw Error('Murano Types & Uses expected 8 cards; found '+count);
 const css='<style id="murano-types-layout-2026">#types .ma-types{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;align-items:stretch}#types .ma-type{display:flex;flex-direction:column;min-width:0;height:100%;overflow:hidden;border-radius:20px}#types .ma-type-art{position:relative;display:block;height:auto;aspect-ratio:4/3;min-height:0;flex:none;background:#faf4f7;overflow:hidden}#types .ma-type-art>a{display:block;width:100%;height:100%}#types .ma-type-art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff}#types .ma-type-body{flex:1;display:flex;flex-direction:column;gap:10px;padding:21px}#types .ma-type h3{margin:0;line-height:1.2;min-height:2.4em}#types .ma-type p{margin:0;line-height:1.6}#types .ma-type small{display:block;margin-top:auto;line-height:1.6;padding-top:6px}#types .murano-art-fallback{width:100%;height:100%;position:relative}#types .murano-art-fallback svg{width:100%;height:100%;display:block}#types .murano-art-label{position:absolute;bottom:5px;right:8px;font:10px/1.2 system-ui;color:#73546b;background:#ffffffd9;border-radius:5px;padding:3px 5px}@media(max-width:1080px){#types .ma-types{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:780px){#types .ma-types{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){#types .ma-types{grid-template-columns:1fr}#types .ma-type h3{min-height:0}}</style>';
