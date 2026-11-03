@@ -2741,6 +2741,26 @@
           "",
           null,
           "Storage & jars"
+        ],
+        [
+          "Alessi Mami 16 cm stainless two-handle casserole",
+          "Alessi",
+          "From €85",
+          "Premium cookware",
+          "https://alessi.com/it/products/mami-casserole-with-two-handles",
+          "",
+          null,
+          "Pots & cookware"
+        ],
+        [
+          "Alessi Pots&Pans stainless casserole by Jasper Morrison",
+          "Alessi",
+          "From €80",
+          "Premium cookware",
+          "https://alessi.com/it/products/pots-pans-casserole-with-two-handles-1",
+          "",
+          null,
+          "Pots & cookware"
         ]
       ],
       "sources": [
@@ -2866,8 +2886,8 @@
         null,
         null,
         [
-          "https://alessi.com/it/products/9090-espresso-coffee-maker",
-          "Alessi 9090 as a modern stainless steel technique comparison, not a nineteenth-century object"
+          "https://alessi.com/it/products/pots-pans-casserole-with-two-handles-1",
+          "Modern stainless-steel two-handle casserole as a material comparison, not a nineteenth-century original"
         ],
         [
           "https://alessi.com/it/products/plisse-drip-coffee-maker-european-plug",
@@ -2931,8 +2951,8 @@
       "productPhotographyPolicy": "Only the correct photographed SKU may be shown in shop; images must be downloaded and verified as real image files. Never use an AI rendering, generic brand hero image or different product variant as a substitute. Products with missing photos remain in source for review but are not shown in the live shop.",
       "editorialTypeProductPages": [
         [
-          "https://alessi.com/it/products/9090-espresso-coffee-maker",
-          "Cookware and coffee metal shaping comparison from Alessi"
+          "https://alessi.com/it/products/mami-casserole-with-two-handles",
+          "Alessi Mami stainless-steel two-handle casserole, 1999 design"
         ],
         [
           "https://alessi.com/it/products/mami-cooks-knife",
@@ -2984,7 +3004,7 @@
         ],
         [
           "https://alessi.com/it/products/parrot-sommelier-corkscrew",
-          "Alessi Parrot corkscrew"
+          "Alessi Parrot sommelier corkscrew"
         ],
         [
           "https://alessi.com/it/products/juicy-salif-citrus-squeezer",
