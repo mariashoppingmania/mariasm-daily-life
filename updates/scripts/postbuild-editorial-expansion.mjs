@@ -451,7 +451,7 @@ async function buildOne(d){
  if(d.slug==='home-utensils'){
    const gallery=prod.map((markup,i)=>{
      const match=markup.match(/<img\b[^>]*\bsrc="([^"]+)"/);
-     return match?{src:match[1],title:d.products[i][0],kind:d.products[i][7]||''}:null;
+     return match?{src:match[1],title:d.products[i]?.[0]||'Household utensil',kind:d.products[i]?.[7]||''}:null;
    }).filter(x=>x&&x.src.startsWith('../assets/retail-photographs/'));
    const occupied=new Set([...d.editorialEraPhotos,...d.editorialTypePhotos].filter(Boolean).map(p=>p[0]));
    const select=(keywords)=>{
@@ -467,11 +467,23 @@ async function buildOne(d){
      const item=select(typeHints[i]||'tool');
      if(item)d.editorialTypePhotos[i]=[item.src,'Contemporary original retailer photograph: '+item.title];
    }
+   // Strictly prohibit substitute modern objects in ancient/pre-modern chapters.
+   // The first two must be real photographic files of the exact dated Met records.
+   for(const index of [0,1]){
+     const reference=d.editorialMuseumRecords?.find(x=>x.index===index);
+     const chosen=d.editorialEraPhotos?.[index];
+     if(!reference||!chosen||!/metmuseum/i.test(chosen[0])){
+       throw Error('Home Utensils historical verification failed: chapter '+(index+1)+' needs a dated museum artefact photograph, not a modern utensil.');
+     }
+   }
    const eraHints=['mortar|grind','mortar|stone','serving|spoon','ladle|spoon','strainer|grater','pot|casserole','pot|casserole','grind|knife','mortar|grind','copper|spoon','tea|kettle','spoon|table','pan|casserole','electric|press','moka|coffee','juicer|press','juicy|design','steel|knife','tool|set'];
-   for(let i=0;i<d.editorialEraPhotos.length;i++){
+   for(let i=12;i<d.editorialEraPhotos.length;i++){
      if(d.editorialEraPhotos[i])continue;
      const item=select(eraHints[i]||'utensil');
      if(item)d.editorialEraPhotos[i]=[item.src,'Contemporary comparison (not an artefact of this era): '+item.title+'. Original manufacturer photograph.'];
+   }
+   for(let i=0;i<12;i++){
+     if(!d.editorialEraPhotos[i])console.warn('Historical artifact photo absent in Home Utensils Chapter '+(i+1)+'; a documented museum record link will appear, never a modern replacement');
    }
    console.log('Home Utensils final illustration coverage: '+d.editorialEraPhotos.filter(Boolean).length+'/'+d.eras.length+' history, '+d.editorialTypePhotos.filter(Boolean).length+'/'+d.types.length+' types; '+gallery.length+' validated shop images');
  }
