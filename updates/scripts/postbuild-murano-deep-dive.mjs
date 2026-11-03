@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-const root=process.cwd();
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const file=path.join(root,'docs/venetian-glass/index.html');
 if(!fs.existsSync(file))throw Error('Murano page missing');
 let html=fs.readFileSync(file,'utf8');
@@ -61,7 +62,7 @@ for(const category of categories){
   productItems.push({name:p.title,brand:p.vendor||'Murano artisan',price:variant.price,handle,url:base+'/products/'+encodeURIComponent(handle),img,category});
  }}catch(e){console.warn('Murano JSON parsing issue: '+category, String(e))}
 }
-productItems=[...new Map(productItems.map(p=>[p.handle,p])).values()].slice(0,70);
+productItems=[...new Map(productItems.map(p=>[p.handle,p])).values()].slice(0,36);
 function priceLabel(s){const n=Number(s);return Number.isFinite(n)?new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(n):'See retailer price'}
 let shopCards=[];
 for(let i=0;i<productItems.length;i++){
