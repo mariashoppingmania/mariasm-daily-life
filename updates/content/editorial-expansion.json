@@ -1546,6 +1546,38 @@
           "Luxury",
           "https://corneliajames.com/products/brigitte-unlined-leather-glove",
           ""
+        ],
+        [
+          "WEDZE 500 black insulated skiing mittens",
+          "WEDZE / Decathlon",
+          "€39.99",
+          "Mittens",
+          "https://www.decathlon.it/p/muffole-sci-adulto-500-nere/325557/c382c382m8648942",
+          ""
+        ],
+        [
+          "WEDZE 500 green insulated skiing mittens",
+          "WEDZE / Decathlon",
+          "€39.99",
+          "Mittens",
+          "https://www.decathlon.it/p/muffole-sci-adulto-500-verde-scuro/325557/c49c1m8988779",
+          ""
+        ],
+        [
+          "WEDZE 500 white leopard skiing mittens",
+          "WEDZE / Decathlon",
+          "€27.99 reference",
+          "Mittens",
+          "https://www.decathlon.it/p/muffole-sci-adulto-500-bianche-leopardo/325557/c183c179m8937401",
+          ""
+        ],
+        [
+          "SIMOND MT900 black convertible half-finger mittens",
+          "SIMOND / Decathlon",
+          "€24.99",
+          "Fingerless & convertible",
+          "https://www.decathlon.it/p/muffole-mezzedita-trekking-adulto-mt900-antivento-nere/339297/c382c71m8738803",
+          ""
         ]
       ],
       "sources": [
@@ -1633,8 +1665,8 @@
           "Technical insulated trekking gloves, SIMOND MT500"
         ],
         [
-          "https://www.corneliajames.com/collections/leather-driving-gloves",
-          "Driving gloves, Cornelia James Adeline collection"
+          "https://corneliajames.com/products/adeline-black-leather-driving-glove",
+          "Cornelia James Adeline driving gloves in black"
         ],
         [
           "https://www.uniqlo.com/it/it/products/E478319-000/00",
@@ -1645,8 +1677,8 @@
           "Formal opera gloves, Cornelia James Anthea"
         ],
         [
-          "https://www.decathlon.it/tutti-gli-sport/trekking-e-montagna/guanti-e-muffole",
-          "Insulated mittens and outdoor handwear, Decathlon"
+          "https://www.decathlon.it/p/muffole-sci-adulto-500-nere/325557/c382c382m8648942",
+          "Insulated skiing mittens, WEDZE 500 black"
         ]
       ],
       "editorialTypeDirectPhotos": [
