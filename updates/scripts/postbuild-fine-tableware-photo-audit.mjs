@@ -46,6 +46,30 @@ const save=async(url,filename)=>{
  fs.writeFileSync(path.join(images,name),bytes);
  return '../assets/fine-tableware-photographs/'+name;
 };
+// Wikimedia can reject automated downloads in GitHub Actions. The Met Museum
+// Open Access API is an independent CC0 source, and this uses its current v1.1
+// search endpoint instead of the discontinued v1 search endpoint.
+async function metPhoto(term,i,prefix){
+ const base='https://collectionapi.metmuseum.org/public/collection/';
+ const search=await get(base+'v1.1/search?hasImages=true&limit=18&q='+encodeURIComponent(term),8500);
+ if(!search)return null;
+ let ids=[];try{ids=(await search.json()).objectIDs||[]}catch{return null}
+ const records=await Promise.all(ids.slice(0,10).map(async id=>{
+  const response=await get(base+'v1/objects/'+id,7000);
+  try{return response?await response.json():null}catch{return null}
+ }));
+ const words=term.toLowerCase().split(/\s+/).filter(w=>w.length>3);
+ const objects=records.filter(x=>x?.isPublicDomain&&x?.primaryImageSmall).sort((a,b)=>{
+  const score=x=>words.filter(w=>(String(x.title)+' '+String(x.objectName)+' '+String(x.medium)+' '+String(x.culture)+' '+String(x.period)).toLowerCase().includes(w)).length;
+  return score(b)-score(a);
+ });
+ for(const obj of objects.slice(0,5)){
+  if(!/bowl|plate|dish|cup|glass|ware|jug|teapot|vessel|silver|ceramic|porcelain|goblet|pot|decanter|charger/i.test(obj.title+' '+obj.objectName))continue;
+  const photo=await save(obj.primaryImageSmall,prefix+'-'+String(i+1).padStart(2,'0'));
+  if(photo)return {photo,credit:'The Metropolitan Museum of Art · Open Access (CC0)',title:obj.title,objectId:obj.objectID};
+ }
+ return null;
+}
 async function museumPhoto(searches,i,prefix){
  for(let j=0;j<searches.length;j++){
   const query='https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=8&gsrsearch='+encodeURIComponent(searches[j])+'&prop=imageinfo&iiprop=url&iiurlwidth=800';
@@ -61,6 +85,14 @@ async function museumPhoto(searches,i,prefix){
    const photo=await save(p.imageinfo[0].thumburl,prefix+'-'+String(i+1).padStart(2,'0'));
    if(photo)return {photo,credit:'Wikimedia Commons archival object photograph',title:p.title};
   }
+ }
+ for(const term of searches.slice(0,2)){
+  const fromMet=await metPhoto(term,i,prefix);
+  if(fromMet)return fromMet;
+ }
+ if(prefix==='history'&&i===0){
+  const photo=await save('https://www.museotorino.it/images/f6/07/a6/60/f607a66016c44d9e9b3301512ac4d631-1.jpg',prefix+'-'+String(i+1).padStart(2,'0'));
+  if(photo)return {photo,credit:'MuseoTorino · Roman Terra Sigillata',title:'Roman red slip bowl'};
  }
  return null;
 }
