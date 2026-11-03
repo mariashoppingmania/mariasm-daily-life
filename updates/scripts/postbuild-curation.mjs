@@ -105,3 +105,50 @@ html=updateNavigation(html,rel,prefix);
 fs.writeFileSync(f,html);}}
 walk(docs);
 console.log('Applied MariaSM photo, history, homepage and cross-site navigation finishing pass.');
+
+
+// Final quality layer for the six in-depth ateliers: search, price-tier filters,
+// nonduplicated editorial pictures, accurate broken-image feedback.
+const qualityStyle=String.raw`<style id="mariasm-quality">
+.ma-shop-tools{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:20px 0;padding:16px;background:#fff7fa;border:1px solid #ead4df;border-radius:17px}
+.ma-shop-tools label{display:grid;gap:6px;flex:1 1 185px;font:700 12px system-ui;color:#73435c}
+.ma-shop-tools input,.ma-shop-tools select{width:100%;padding:11px;border:1px solid #d8bdcb;border-radius:9px;background:#fff;color:#473441;font:14px system-ui}
+.ma-shop-tools button{border:1px solid #b688a0;border-radius:9px;padding:11px 16px;color:#6d4055;background:#fff;cursor:pointer}
+.ma-shop-tools button:hover{background:#f4e1ea}
+.ma-shop-tools .ma-results{flex:1 1 100%;margin:0;color:#6d5364;font:600 12px system-ui}
+.ma-products .ma-product[hidden]{display:none!important}
+.ma-editorial-unavailable{display:grid;place-items:center;width:100%;min-height:185px;padding:22px;background:linear-gradient(130deg,#f8ecf1,#e8dce5);color:#735669;text-align:center;font:600 13px/1.5 system-ui}
+.ma-era-media img,.ma-type-art img,.ma-product-image img{object-position:center}
+@media(max-width:560px){.ma-shop-tools label,.ma-shop-tools button{flex-basis:100%;width:100%}}
+</style>`;
+const qualityJS=String.raw`<script id="mariasm-quality-js">
+(()=>{const section=document.querySelector('#shopping');if(!section)return;
+const q=section.querySelector('#ma-filter-query'),cat=section.querySelector('#ma-filter-tier'),clear=section.querySelector('#ma-filter-clear'),counter=section.querySelector('#ma-filter-results'),cards=[...section.querySelectorAll('.ma-products .ma-product')];
+const norm=s=>String(s||'').toLowerCase();
+function apply(){let n=0;for(const card of cards){const tier=card.querySelector('.ma-tier')?.textContent.trim()||'';const show=norm(card.textContent).includes(norm(q.value.trim()))&&(!cat.value||tier===cat.value);card.hidden=!show;if(show)n++}counter.textContent=n+' of '+cards.length+' products visible'}
+q.addEventListener('input',apply);cat.addEventListener('change',apply);
+clear.addEventListener('click',()=>{q.value='';cat.value='';apply();q.focus()});apply();
+})();</script>`;
+const seenQualityPhotos=new Set();let qualityPages=0,qualityDuplicates=0;
+for(const section of data.sections){
+ const filename=path.join(docs,section.slug,'index.html');
+ if(!fs.existsSync(filename))throw Error('Missing editorial page '+section.slug);
+ let html=fs.readFileSync(filename,'utf8');
+ if(html.includes('id="mariasm-quality"'))continue;
+ // Images used for explanatory history and types must not recur across all six ateliers.
+ html=html.replace(/(<div class="ma-(?:era-media|type-art)">)([\s\S]*?)(<\/div>)/g,(whole,open,inside,close)=>{
+  const m=inside.match(/<img\b[^>]*\bsrc="([^"]+)"/i);if(!m)return whole;
+  const key=m[1].replaceAll('&amp;','&');
+  if(seenQualityPhotos.has(key)){qualityDuplicates++;return open+'<div class="ma-editorial-unavailable">A distinct photographic reference is unavailable for this topic. Explore the historical explanation and source links below.</div>'+close}
+  seenQualityPhotos.add(key);return whole;
+ });
+ const tiers=[...new Set(section.products.map(p=>p[3]).filter(Boolean))].sort();
+ const tools='<div class="ma-shop-tools" role="search" aria-label="Product finder"><label for="ma-filter-query">Search products and brands<input type="search" id="ma-filter-query" placeholder="Product or brand" autocomplete="off"></label><label for="ma-filter-tier">Price category<select id="ma-filter-tier"><option value="">All categories</option>'+tiers.map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join('')+'</select></label><button type="button" id="ma-filter-clear">Clear filters</button><p class="ma-results" id="ma-filter-results" role="status" aria-live="polite"></p></div>';
+ if(!html.includes('<div class="ma-products">'))throw Error('Missing products on '+section.slug);
+ html=html.replace('<div class="ma-products">',tools+'<div class="ma-products">');
+ html=html.replace('</head>',qualityStyle+'</head>').replace('</body>',qualityJS+'</body>');
+ html=html.replace('Only real, individually photographed products from identifiable retailer pages. No AI-made or substitute product photos.','Real retailer products only. Exact-item photography appears where it is available. Otherwise follow the original retailer link to inspect the product; AI-generated photos are never used as substitutes.');
+ fs.writeFileSync(filename,html);qualityPages++;
+}
+if(qualityPages!==6)throw Error('Quality pass incomplete: '+qualityPages);
+console.log('MariaSM quality: '+qualityPages+' complete atelier pages with product filters; '+qualityDuplicates+' duplicate documentary images prevented.');
