@@ -221,7 +221,7 @@ async function productCard(d,p,i){
      fallbackImages.push('https://image.uniqlo.com/UQ/ST3/eu/imagesgoods/'+sku+'/feature/eugoods_'+sku+'_feature1.jpg');
    }
  }
- const imageOptions=[...(brand==='Ferragamo'?[alternative,official]:[official,p[5],exactRetailImages[url],alternative]),...fallbackImages]
+ const imageOptions=[...(brand==='Ferragamo'?[alternative,official]:(brand==='UNIQLO'&&d.slug==='scarves'?[p[5],official,alternative]:[official,p[5],exactRetailImages[url],alternative])),...fallbackImages]
     .filter(x=>typeof x==='string'&&/^https:\/\//.test(x));
  const candidates=[...new Set(imageOptions)];
  const candidate=candidates[0]||null;
