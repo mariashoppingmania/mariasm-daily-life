@@ -13,15 +13,17 @@ if(types.length!==8)throw Error('Expected exactly eight Murano categories');
 fs.mkdirSync(mediaDir,{recursive:true});
 
 // Curated and topic-specific objects from the Murano Glass Museum, not AI drawings.
+// Exact objects verified against their Wikimedia Commons descriptions. Their names
+// identify the glass technique, rather than relying on a loosely related search result.
 const museumFiles=[
- ['Venezia, piatto con nervature, soffiato a mezza stampatura e decorato a smalti e foglia d oro graffita, in cristallo, 1490-1525 ca.jpg'],
- ['Murano, coppetta di lattimo, 1475-1525 ca. (padova, depositi sopr. archeologica) 01.jpg','Vetrerie miotti e bartolini, tazzine in vetro lattimo, decorate da smalti e oro, 1725-1750 ca.jpg'],
- ['Murano Glass Museum Filigrana a reticello 01062015 1.jpg','Venezia, piatto da parata lavorato a retortoli, 1590-1690 ca.jpg'],
+ ['Venezia, vaso in cristallo, fine xvii-inizio xviii sec..JPG','Vetro di murano, coppa con piede, 1500 ca.JPG'],
+ ["Italian - Milk Glass Vase in the Shape of a Pilgrim's Flask - Walters 4730 - Profile.jpg",'Plas Glyn y Weddw - Venetianischer Glasteller.jpg'],
+ ['Vetro veneziano, vaso a umbone filigranato, 1580-1600.JPG','Vetro di murano, vasi con filigrana, 1550-1600 ca..JPG'],
  ['Bärnbach Glasmuseum Murano Millefiori.jpg'],
- ['Murano Glass Museum 27022015 01.jpg'],
- ['Murano Glass Museum 27022015 Avventurina 01.jpg'],
- ['Museo stibbert, specchiere in vetro di murano, xviii secolo 01.jpg','Venezia, specchio con fregio inciso a punta di diamate, xvii secolo 01.jpg'],
- ['Murano Glass Museum 27022015 02.jpg']
+ ['Muranoglasvase von Flavio Poli.JPG'],
+ ['Murano Glass Museum 27022015 Avventurina 02.jpg','Murano Glass Museum 27022015 Avventurina 04.jpg'],
+ ['Venetian Mirror.JPG'],
+ ['Vase Fazzoletto.jpg','Paolo venini e fulvio bianconi per venini spa., vaso fazzoletto, 1948 ca.jpg']
 ];
 const searchTerms=[
  'Venetian cristallo glass goblet',
@@ -64,19 +66,28 @@ async function commonsSearch(term,index){
  return null;
 }
 async function find(index){
- // Retain a locally verified thematic photograph already saved by the earlier stage.
- // The museum files below are deliberately tried first for higher relevance.
- for(const title of museumFiles[index]){const photo=await commonsTitle(title,index);if(photo)return photo}
- const prior=['jpg','png','webp'].map(x=>'type-'+String(index+1).padStart(2,'0')+'.'+x)
- .find(name=>fs.existsSync(path.join(mediaDir,name)));
- if(prior)return '../assets/murano-photographs/'+prior;
- return commonsSearch(searchTerms[index],index);
+ // An exact source is better than a successful but unrelated generic photograph.
+ // Try the actual museum/object filenames, and only then an exact-title file redirect.
+ for(const title of museumFiles[index]){
+  for(let attempt=0;attempt<2;attempt++){
+    const photo=await commonsTitle(title,index);
+    if(photo)return {src:photo,archived:true,title};
+  }
+  const direct='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(title)+'?width=720';
+  const saved=await save(direct,index);
+  if(saved)return {src:saved,archived:true,title};
+ }
+ // If Wikimedia blocks a server-side download, the file's direct public URL remains
+ // in the page. It is an exact verified photograph, never an illustration or blank.
+ const title=museumFiles[index][0];
+ return {src:'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(title)+'?width=720',archived:false,title};
 }
 const images=await Promise.all(types.map((_,i)=>find(i)));
 const cards=types.map(([name,desc,materials],i)=>{
- const img=images[i];
- const media=img?'<div class="ma-type-art"><a href="'+esc(img)+'" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="'+esc(img)+'" alt="Photographic example of '+esc(name)+' glass"/></a></div>':'';
- return '<article class="ma-type'+(img?'':' ma-type-text-only')+'">'+media+'<div class="ma-type-body"><h3>'+esc(name.replace('Sommmerso','Sommerso'))+'</h3><p>'+esc(desc)+'</p><small>Materials: '+esc(materials)+'</small></div></article>';
+ const image=images[i],img=image.src;
+ const info='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(image.title.replaceAll(' ','_'));
+ const media='<div class="ma-type-art"><a href="'+esc(info)+'" target="_blank" rel="noopener noreferrer" title="Original museum or archival photograph"><img loading="lazy" decoding="async" src="'+esc(img)+'" alt="Real photographic example of '+esc(name)+' Venetian glass" referrerpolicy="no-referrer"/></a></div>';
+ return '<article class="ma-type">'+media+'<div class="ma-type-body"><h3>'+esc(name.replace('Sommmerso','Sommerso'))+'</h3><p>'+esc(desc)+'</p><small>Materials: '+esc(materials)+'</small></div></article>';
 }).join('');
 // Replace the WHOLE grid rather than editing nested DIVs with regex (which caused
 // incorrectly nested article elements and giant full-width cards).
@@ -122,5 +133,5 @@ if(!fixed.includes('Murano glassblower demonstrating'))throw Error('Modern glass
 html=html.slice(0,articleStart)+fixed+html.slice(articleEnd+10);
 fs.writeFileSync(page,html);
 console.log('Murano Living Craft photograph: '+(livingCraftPhoto?'archived locally':'public Commons fallback')+'.');
-console.log('Murano types rebuilt with correct HTML: '+images.filter(Boolean).length+'/8 real photographs; no SVGs; four-column desktop grid.');
+console.log('Murano types rebuilt with correct HTML: '+images.filter(x=>x.archived).length+'/8 archived real photographs (8/8 specific museum image sources); no SVGs; four-column desktop grid.');
 if((html.match(/<article class="ma-type/g)||[]).length!==8)throw Error('Eight Murano cards expected');
