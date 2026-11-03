@@ -56,6 +56,15 @@ jobs:
             grep -q 'id="ma-filter-query"' "source/mariasm-site/docs/$page/index.html"
           done
           grep -q 'id="mariasm-craft-ateliers"' source/mariasm-site/docs/index.html
+          BELTS_PAGE=source/mariasm-site/docs/belts-suspenders/index.html
+          PRODUCT_COUNT=$(grep -o 'class="ma-product"' "$BELTS_PAGE" | wc -l | tr -d ' ')
+          HISTORY_COUNT=$(grep -o 'class="ma-era-item"' "$BELTS_PAGE" | wc -l | tr -d ' ')
+          TYPE_COUNT=$(grep -o 'class="ma-type"' "$BELTS_PAGE" | wc -l | tr -d ' ')
+          echo "Belts Atelier published: $PRODUCT_COUNT photographic product cards, $HISTORY_COUNT history chapters, $TYPE_COUNT style guides"
+          test "$PRODUCT_COUNT" -ge 12
+          test "$HISTORY_COUNT" -eq 7
+          test "$TYPE_COUNT" -eq 8
+          grep -q 'id="ma-filter-kind"' "$BELTS_PAGE"
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
