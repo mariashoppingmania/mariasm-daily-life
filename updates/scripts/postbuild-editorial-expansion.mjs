@@ -37,7 +37,7 @@ function illustration(slug,index,isHistory=false){
 function isRelevantHistoryPhoto(d,entry,idx,used){
  const img=entry[2];if(!img||used.has(img))return false;
  const allowed={
- 'belts-suspenders':['vehi-mercatus','collectionapi.metmuseum','alexandersapparel','media.gucci.com','shopserve.jp','ebayimg.com','livemaster.ru'],
+ 'belts-suspenders':['vehi-mercatus','collectionapi.metmuseum','images.metmuseum.org','alexandersapparel','media.gucci.com','shopserve.jp','ebayimg.com','livemaster.ru'],
  'scarves':['boutiquedellasciarpa'],
  'gloves':['metmuseum','corneliajames','mediadecathlon'],
  'home-utensils':['azscience','villarubini','salepepe','idealo'],
@@ -211,6 +211,21 @@ function extra(slug){
 }
 async function buildOne(d){
  const dir=path.join(docs,d.slug);fs.mkdirSync(dir,{recursive:true});
+ if(d.slug==='belts-suspenders'){
+  // Museum records are authentic documentary imagery and only used for the correct historical period.
+  const museum=[{id:465060,era:1,label:'7th-century Frankish belt buckle · Metropolitan Museum of Art'},{id:470278,era:2,label:'Early medieval Langobardic belt fitting · Metropolitan Museum of Art'},{id:122485,era:3,label:'European suspenders, 1840–1859 · Metropolitan Museum of Art'},{id:121811,era:4,label:'American 19th-century suspenders · Metropolitan Museum of Art'}];
+  await Promise.all(museum.map(async item=>{
+   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),4500);
+   try{
+    const res=await fetch('https://collectionapi.metmuseum.org/public/collection/v1/objects/'+item.id,{signal:controller.signal});
+    if(res.ok){const record=await res.json();if(record.isPublicDomain&&/^https:\/\//.test(record.primaryImage||'')){
+      d.eras[item.era][2]=record.primaryImage;
+      d.editorialPhotoReferences.unshift([item.label,record.primaryImage]);
+    }}
+   }catch(err){console.warn('Museum photo unavailable '+item.id)}
+   finally{clearTimeout(timer)}
+  }));
+ }
  const used=new Set([d.hero]);
  let history=d.eras.map((x,i)=>era(d,x,i,used)).join('');
  let types=d.types.map((x,i)=>typeCard(d,x,i,used)).join('');
