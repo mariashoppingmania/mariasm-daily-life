@@ -77,7 +77,7 @@ const cards=verified.map(({p,img})=>
  '<figcaption>ORIGINAL RETAILER PHOTO · '+esc(p.sku)+'</figcaption></figure>'+
  '<div class="ac-product-body"><p class="ac-brand">'+esc(p.brand)+' · '+esc(p.group)+'</p><h3>'+esc(p.title)+'</h3><p class="ac-ref">Reference: '+esc(p.sku)+'</p>'+
  '<strong class="ac-price">'+esc(p.price)+'</strong><small>Confirm current price and availability with the retailer.</small>'+
- '<p>Photograph archived from the product's exact reference or official retailer listing.</p><a class="ac-shoplink" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">View exact product &amp; price ↗</a></div></article>').join('');
+ '<p>Photograph archived from this exact reference or its official retailer listing.</p><a class="ac-shoplink" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">View exact product &amp; price ↗</a></div></article>').join('');
 const gridStart=html.indexOf('<div id="ac-product-grid" class="ac-product-grid">');
 const end=html.indexOf('<p class="ac-footnote">',gridStart);
 if(gridStart<0||end<0)throw Error('Jewellery shopping HTML anchors unavailable');
