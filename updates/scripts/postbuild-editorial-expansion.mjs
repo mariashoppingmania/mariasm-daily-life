@@ -166,14 +166,12 @@ async function localProductPhoto(remote,slug,index){
   try{
    const response=await fetch(remote,{signal:controller.signal,headers:{'User-Agent':'Mozilla/5.0','Accept':'image/avif,image/webp,image/png,image/jpeg,image/*'}});
    if(response.ok){
-    const mime=(response.headers.get('content-type')||'').toLowerCase().split(';')[0];
-    const extension=({'image/jpeg':'.jpg','image/png':'.png','image/webp':'.webp','image/avif':'.avif'})[mime];
     const len=Number(response.headers.get('content-length')||0);
-    if(extension && (!len||len<=7000000)){
+    if(!len||len<=7000000){
       const buffer=Buffer.from(await response.arrayBuffer());
       if(buffer.length>512 && buffer.length<=7000000){
-       const valid=extension==='.jpg'&&buffer[0]===255&&buffer[1]===216 || extension==='.png'&&buffer.subarray(1,4).toString()==='PNG' || extension==='.webp'&&buffer.subarray(8,12).toString()==='WEBP' || extension==='.avif'&&buffer.subarray(4,12).toString().includes('ftyp');
-       if(valid){const file=slug+'-'+String(index).padStart(3,'0')+extension;fs.writeFileSync(path.join(folder,file),buffer);value='../assets/retail-photographs/'+file;}
+       const extension=buffer[0]===255&&buffer[1]===216?'.jpg':buffer.subarray(1,4).toString()==='PNG'?'.png':buffer.subarray(8,12).toString()==='WEBP'?'.webp':buffer.subarray(4,12).toString().includes('ftyp')?'.avif':null;
+       if(extension){const file=slug+'-'+String(index).padStart(3,'0')+extension;fs.writeFileSync(path.join(folder,file),buffer);value='../assets/retail-photographs/'+file;}
       }
     }
    }
