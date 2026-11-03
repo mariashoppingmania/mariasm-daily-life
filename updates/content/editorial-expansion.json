@@ -149,7 +149,7 @@
           "& Other Stories",
           "€49.00",
           "Contemporary",
-          "",
+          "https://www.stories.com/it-it/product/leather-belt-black-1322760002/",
           ""
         ],
         [
@@ -157,7 +157,7 @@
           "ARKET",
           "€49.00",
           "Contemporary",
-          "",
+          "https://www.arket.com/it_it/women/accessories/belts.html",
           ""
         ],
         [
@@ -215,6 +215,62 @@
           "Luxury",
           "https://www.gucci.com/it/it/pr/men/accessories-for-men/belts-for-men/casual-belts-for-men/gg-marmont-belt-p-414516AP00T1000",
           ""
+        ],
+        [
+          "Bertelles Armada Navy slim clip-on braces",
+          "Bertelles",
+          "€49.00",
+          "Budget",
+          "https://www.bertelles.com/en/original-collection-/125-thin-clip-on-braces-armada-navy.html",
+          ""
+        ],
+        [
+          "Bertelles navy-cross superior wide braces",
+          "Bertelles",
+          "€99.00",
+          "Premium",
+          "https://www.bertelles.com/en/original-collection-/212-superior-wide-braces-navy-cross-on-beige.html",
+          ""
+        ],
+        [
+          "Bertelles navy military-stripe superior braces",
+          "Bertelles",
+          "€99.00",
+          "Premium",
+          "https://www.bertelles.com/en/original-collection-/11-superior-wide-mens-braces-suspenders-navy-with-military-stripe.html",
+          ""
+        ],
+        [
+          "Bertelles ecru thin wine and green stripe braces",
+          "Bertelles",
+          "€85.00",
+          "Premium",
+          "https://www.bertelles.com/en/original-collection-/185-wide-clip-on-braces-with-leather-details-thin-wine-and-green-stripes-on-ecru.html",
+          ""
+        ],
+        [
+          "Gucci GG Marmont thin black leather belt",
+          "Gucci",
+          "€350.00",
+          "Luxury",
+          "https://www.gucci.com/it/it/pr/women/accessories-for-women/belts-for-women/thin-belts-for-women/gg-marmont-thin-belt-p-4094170AAA51000",
+          ""
+        ],
+        [
+          "Gucci flat Marmont GG black fabric belt",
+          "Gucci",
+          "€450.00",
+          "Luxury",
+          "https://www.gucci.com/it/it/pr/men/accessories-for-men/belts-for-men/flat-marmont-belt-p-864233FAFUT1000",
+          ""
+        ],
+        [
+          "& Other Stories classic leather belt · black",
+          "& Other Stories",
+          "€49.00",
+          "Contemporary",
+          "https://www.stories.com/it-it/product/leather-belt-black-1322760002/",
+          ""
         ]
       ],
       "sources": [
@@ -226,7 +282,8 @@
           "The Metropolitan Museum of Art · costume collections",
           "https://www.metmuseum.org/art/collection"
         ]
-      ]
+      ],
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
     },
     {
       "slug": "scarves",
@@ -415,6 +472,38 @@
           "Luxury",
           "https://www.emarinella.eu/collections/scarves-women/products/red-stole-115-in-wool-silk-and-cashmere-1",
           ""
+        ],
+        [
+          "UNIQLO 100% cashmere scarf · off-white",
+          "UNIQLO",
+          "€59.90",
+          "Accessible cashmere",
+          "https://www.uniqlo.com/it/it/products/E450338-000/00",
+          ""
+        ],
+        [
+          "UNIQLO cashmere scarf · beige",
+          "UNIQLO",
+          "€59.90",
+          "Accessible cashmere",
+          "https://www.uniqlo.com/it/it/products/E470089-000/00",
+          ""
+        ],
+        [
+          "UNIQLO cashmere scarf · grey",
+          "UNIQLO",
+          "€59.00",
+          "Accessible cashmere",
+          "https://www.uniqlo.com/it/it/products/E461193-000/00",
+          ""
+        ],
+        [
+          "Hermès Carré 90 La Nature en Voyage",
+          "Hermès",
+          "€580.00",
+          "Luxury silk",
+          "https://www.hermes.com/it/it/category/donna/carre-scialli-e-sciarpe/carre-e-accessori-in-seta/",
+          ""
         ]
       ],
       "sources": [
@@ -426,7 +515,8 @@
           "The Metropolitan Museum · Costume Institute",
           "https://www.metmuseum.org/about-the-met/collection-areas/the-costume-institute"
         ]
-      ]
+      ],
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
     },
     {
       "slug": "gloves",
@@ -615,6 +705,38 @@
           "Luxury",
           "https://www.fratelli-orsini.com/collections/long-leather-gloves",
           ""
+        ],
+        [
+          "Decathlon WEDZE ski gloves 500 · sage green",
+          "WEDZE / Decathlon",
+          "€24.99",
+          "Sport",
+          "https://www.decathlon.it/p/guanti-sci-500-verdi/347696/c219c382m8937395",
+          ""
+        ],
+        [
+          "Decathlon WEDZE ski gloves 500 · white",
+          "WEDZE / Decathlon",
+          "€24.99",
+          "Sport",
+          "https://www.decathlon.it/p/guanti-sci-adulto-500-bianchi/347696/c335m8988588",
+          ""
+        ],
+        [
+          "Decathlon fleece gloves 100 · black",
+          "Decathlon",
+          "€9.99",
+          "Budget",
+          "https://www.decathlon.it/p/guanti-invernali-ciclismo-100-giallo-fluo/_/R-p-4684",
+          ""
+        ],
+        [
+          "Cornelia James Inès leather gloves with cashmere cuff · taupe",
+          "Cornelia James",
+          "£165.00",
+          "Luxury",
+          "https://www.corneliajames.com/products/ines-leather-glove-with-cashmere-cuff",
+          ""
         ]
       ],
       "sources": [
@@ -626,7 +748,8 @@
           "V&A · Costume collections",
           "https://www.vam.ac.uk/collections/fashion"
         ]
-      ]
+      ],
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
     },
     {
       "slug": "home-utensils",
@@ -782,7 +905,7 @@
           "Alessi",
           "€120.00",
           "Premium",
-          "https://alessi.com/it/collections/plisse",
+          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
           ""
         ],
         [
@@ -816,6 +939,30 @@
           "High-end cookware",
           "https://www.lecreuset.it/",
           ""
+        ],
+        [
+          "Alessi Citrus citrus squeezer · Eero Aarnio",
+          "Alessi",
+          "€45.00",
+          "Design",
+          "https://alessi.com/it/products/citrus-citrus-squeezer",
+          ""
+        ],
+        [
+          "Alessi 9090/3 CP black PVD espresso maker",
+          "Alessi",
+          "€275.00",
+          "Luxury",
+          "https://alessi.com/it/products/9090-3-cp-espresso-coffee-maker",
+          ""
+        ],
+        [
+          "Alessi Plissé electric citrus squeezer · EU plug",
+          "Alessi",
+          "€120.00",
+          "Premium",
+          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
+          ""
         ]
       ],
       "sources": [
@@ -831,7 +978,8 @@
           "Bartolomeo Scappi's Renaissance implements",
           "https://www.livre-rare-book.com/book/16810016/LCS-18359"
         ]
-      ]
+      ],
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
     },
     {
       "slug": "venetian-glass",
@@ -968,7 +1116,7 @@
           "NasonMoretti",
           "€136.00",
           "Artisan",
-          "https://www.nasonmoretti.com/shop/complex/category/22615882/brand/-",
+          "https://nasonmoretti.com/collections/gigolo",
           ""
         ],
         [
@@ -1018,6 +1166,54 @@
           "Collector design",
           "https://artemest.com/products/multicolor-murrina-vase-3",
           ""
+        ],
+        [
+          "Venini Fazzoletto Opalino small vase 700.04",
+          "Venini via Mohd",
+          "€420.00",
+          "Luxury",
+          "https://shop.mohd.it/it/fazzoletto-opalino-piccolo-700-04.html",
+          ""
+        ],
+        [
+          "Venini Fazzoletto vase 700.02",
+          "Venini via Mohd",
+          "€696.00",
+          "Luxury",
+          "https://shop.mohd.it/it/fazzoletto-70002-vaso.html",
+          ""
+        ],
+        [
+          "Venini Fazzoletto Opalino large vase 700.00",
+          "Venini via Mohd",
+          "€960.00",
+          "Collector",
+          "https://shop.mohd.it/it/fazzoletto-opalino-grande-70000.html",
+          ""
+        ],
+        [
+          "Venini Clessidra hourglass 420.06",
+          "Venini via Mohd",
+          "€832.00",
+          "Collector",
+          "https://shop.mohd.it/it/clessidra-420-06.html",
+          ""
+        ],
+        [
+          "Vaporetto Glass Sonetto filigree vase",
+          "Vaporetto Glass",
+          "€200.00",
+          "Artisan",
+          "https://vaporettoglass.it/products/sonetto",
+          ""
+        ],
+        [
+          "NasonMoretti Gigolo Tumbler · from",
+          "NasonMoretti",
+          "from €62.00",
+          "Artisan",
+          "https://nasonmoretti.com/collections/gigolo",
+          ""
         ]
       ],
       "sources": [
@@ -1033,7 +1229,8 @@
           "Museo del Vetro · museum history",
           "https://museovetro.visitmuve.it/la-sede-e-la-storia/"
         ]
-      ]
+      ],
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
     },
     {
       "slug": "fine-tableware",
@@ -1223,6 +1420,46 @@
           "Ultra luxury",
           "https://generic.cms.live.aws.ginori1735.com/it/it/vedi-tutto/per-il-servizio",
           ""
+        ],
+        [
+          "IKEA OFTAST white bowl 15 cm",
+          "IKEA",
+          "€0.65 each",
+          "Budget",
+          "https://www.ikea.com/it/it/p/oftast-ciotola-bianco-80258915/",
+          ""
+        ],
+        [
+          "IKEA DYRGRIP tumbler 36 cl · clear",
+          "IKEA",
+          "€2.95 each",
+          "Everyday",
+          "https://www.ikea.com/it/it/p/dyrgrip-bicchiere-vetro-trasparente-40309304/",
+          ""
+        ],
+        [
+          "IKEA FÄRGKLAR 18-piece dinner set · blue",
+          "IKEA",
+          "€39.95 set",
+          "Everyday",
+          "https://www.ikea.com/it/it/p/faergklar-servizio-18-pezzi-azzurro-40600608/",
+          ""
+        ],
+        [
+          "Villeroy & Boch Manufacture Rock espresso saucers, set of six",
+          "Villeroy & Boch",
+          "€84.00 / 6",
+          "Premium",
+          "https://www.villeroy-boch.it/p/manufacture-piattino-per-tazzina-da-caffe-1042396007/",
+          ""
+        ],
+        [
+          "Villeroy & Boch Manufacture Rock blanc espresso saucers, set of six",
+          "Villeroy & Boch",
+          "€67.20 / 6",
+          "Premium",
+          "https://www.villeroy-boch.it/p/manufacture-piattino-per-tazzina-da-caffe-1042406005/",
+          ""
         ]
       ],
       "sources": [
@@ -1238,10 +1475,11 @@
           "Villeroy & Boch Manufacture",
           "https://www.villeroy-boch.it/p/manufacture-piatto-piano-1042392620/"
         ]
-      ]
+      ],
+      "editorialImagePolicy": "Distinct thematic and historical photography; no repeated commercial product images."
     }
   ],
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "currency": "EUR",
-  "pricingNote": "Historical price snapshots, not live quotes. Product photos are sourced from each exact item page; mismatched stock photos and AI illustrations are excluded from shopping cards."
+  "pricingNote": "Editorial price snapshots checked on 3 November 2026. The original store page is authoritative for price, variant, availability and currency. A few imported listings use pounds sterling. Retail cards must only display exact-product photography; never use AI illustrations or another SKU's image."
 }
