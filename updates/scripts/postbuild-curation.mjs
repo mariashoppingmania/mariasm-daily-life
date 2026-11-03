@@ -99,7 +99,7 @@ if(rel==='index.html'){
 const cards='<section class="wrap section" id="mariasm-craft-ateliers"><div class="section-head"><div><p class="eyebrow">MariaSM illustrated library</p><h2>Fashion &amp; Home Ateliers</h2></div><p>Six in-depth stories from ancient Rome to today, including real-world shopping references and luxury editions.</p></div><div class="ma-cards-photo">'+ateliers.map(a=>'<a href="'+a[0]+'/index.html"><img loading="lazy" src="'+esc(a[3])+'" alt="'+esc(a[1])+' photographic reference"><strong>'+esc(a[1])+'</strong><small>History · Types · Materials · Shopping</small></a>').join('')+'</div></section>';
 html=html.replace(/<section class="wrap section" id="mariasm-craft-ateliers">[\s\S]*?<\/section>/,cards);
 }
-for(const a of ateliers){if(rel===a[0]+'/index.html'){html=html.replace('<section id="types" class="ma-section">',gallery(a[0])+'<section id="types" class="ma-section">');html=html.replace('<section id="shopping" class="ma-section">',detail(a[0])+'<section id="shopping" class="ma-section">');}}
+for(const a of ateliers){if(rel===a[0]+'/index.html'){// Avoid repeating a reference photo already used by the section timelines and typology.html=html.replace('<section id="shopping" class="ma-section">',detail(a[0])+'<section id="shopping" class="ma-section">');}}
 html=html.replace('</head>',css+'</head>');
 html=updateNavigation(html,rel,prefix);
 fs.writeFileSync(f,html);}}
