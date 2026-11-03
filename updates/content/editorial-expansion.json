@@ -390,7 +390,7 @@
         [
           "H&M Premium black split-leather belt, gold buckle",
           "H&M",
-          "€22.99 (regular)",
+          "€22.99 reference",
           "Budget",
           "https://www2.hm.com/it_it/productpage.1255192001.html",
           ""
@@ -580,11 +580,11 @@
           "https://assets.hermes.com/is/image/hermesproduct/kelly-18-belt--069853CD89-worn-1-0-0-1000-1000_g.jpg"
         ],
         [
-          "Ferragamo reversible Gancini navy leather belt",
+          "Ferragamo reversible adjustable Gancini leather belt · black/hickory",
           "Ferragamo",
-          "Price on official boutique",
+          "€480.00",
           "Luxury",
-          "https://www.ferragamo.com/shop/aus/en/men/men-belts/detailed-buckle-belts/double-adjus-796230--24",
+          "https://www.ferragamo.com/shop/ita/it/uomo/cinture-uomo-it/cintura-reversibile-e-regolabile-doppio-gancio-586940",
           ""
         ],
         [
@@ -716,7 +716,7 @@
       "editorialTypePhotos": [
         [
           "https://media.gucci.com/style/DarkGray_Center_0_0_700x700/1752655542/414516_AP00T_1000_001_100_0000_Light-cintura-gg-marmont.jpg",
-          "Black leather dress belt with polished metal GG buckle; contemporary product photograph"
+          "Contemporary polished leather dress belt. Official Gucci photograph."
         ],
         [
           "https://ae01.alicdn.com/kf/S0fa1025fde534190b462f90ad7b9fb78c.jpg",
@@ -747,7 +747,8 @@
           "Contemporary corset-inspired belt"
         ]
       ],
-      "imagesDate": "Photographic editorial references checked November 2026. Historical replicas and modern interpretations are explicitly identified. Images of shopping products must correspond to their precise SKU; no AI product images."
+      "imagesDate": "Photographic editorial references checked November 2026. Historical replicas and modern interpretations are explicitly identified. Images of shopping products must correspond to their precise SKU; no AI product images.",
+      "photoPolicy": "Never substitute another product image for a product listing. Historical and type photos use curated links with precise descriptions; if the original link fails, show link to the source rather than a broken image. The specific H&M and Ferragamo product photos must come from retailer metadata of their exact item pages."
     },
     {
       "slug": "scarves",
