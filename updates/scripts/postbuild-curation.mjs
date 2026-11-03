@@ -60,7 +60,23 @@ const css=`<style id="maria-curation-css">.maria-catalogue-nav{position:relative
 @media(max-width:1220px){.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;min-width:0;max-width:100%;margin:0;padding:5px 3px 7px;border:0;border-radius:10px;background:#fff5f8;box-shadow:none}}
 @media(max-width:650px){.ma-top{flex-wrap:wrap}.ma-top .ma-navigation{justify-content:flex-start;gap:8px}.ma-top .ms-nav-group .ms-nav-panel{left:0;right:auto}}
 @media(max-width:450px){.ms-site-header .ms-nav-group[data-menu="accessories-home"] .ms-nav-panel{grid-template-columns:1fr}}
-.ma-curation figure.ma-photo-unavailable{min-height:210px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#f9f1f4,#eadde3)}.ma-curation figure.ma-photo-unavailable figcaption:before{content:"Photograph unavailable — please refer to the original source. ";font-weight:700}.ma-curation figure img{object-position:center}.ma-cards-photo img{object-position:center}\n</style>`;
+.ma-curation figure.ma-photo-unavailable{min-height:210px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#f9f1f4,#eadde3)}.ma-curation figure.ma-photo-unavailable figcaption:before{content:"Photograph unavailable — please refer to the original source. ";font-weight:700}.ma-curation figure img{object-position:center}.ma-cards-photo img{object-position:center}\n
+/* MariaSM homepage: six new craft and accessory galleries. */
+.ma-cards-photo{gap:19px;margin-top:25px}
+.ma-cards-photo a{display:flex;flex-direction:column;min-width:0;box-shadow:0 8px 26px #68465a12;transition:transform .2s,box-shadow .2s;border-radius:20px;overflow:hidden}
+.ma-cards-photo a:hover{transform:translateY(-3px);box-shadow:0 15px 35px #68465a24}
+.ma-cards-photo img{height:190px;object-fit:cover;object-position:center;background:#f5e9ed}
+.ma-cards-photo strong{font:normal 23px/1.25 Georgia,serif;padding:15px 17px 7px}
+.ma-cards-photo small{margin-top:auto;font-size:12px;padding:0 17px 18px;color:#825c6c}
+#mariasm-craft-ateliers{padding-top:32px;padding-bottom:48px}
+#mariasm-craft-ateliers .section-head{align-items:end;gap:20px}
+#mariasm-craft-ateliers .section-head p{max-width:500px;line-height:1.7}
+.ma-top .ms-nav-group .ms-nav-panel{box-sizing:border-box}
+.ma-top .ms-nav-group .ms-nav-panel a{display:block}
+@media(max-width:700px){.ma-cards-photo{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ma-cards-photo img{height:145px}.ma-cards-photo strong{font-size:18px;padding:10px 12px 6px}.ma-cards-photo small{padding:0 12px 13px}.ma-top .ma-navigation{width:100%}}
+@media(max-width:430px){.ma-cards-photo{grid-template-columns:1fr}.ma-cards-photo img{height:205px}}
+@media(prefers-reduced-motion:reduce){.ma-cards-photo a{transition:none}.ma-cards-photo a:hover{transform:none}}
+</style>`;
 // Place the six new guides in a true dropdown beside the existing Ateliers menu.
 const mainAteliers=[
 ['fashion','Fashion Atlas'],['fragrance','Fragrance'],['makeup','Makeup'],
