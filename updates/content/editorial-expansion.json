@@ -2601,6 +2601,86 @@
           "",
           null,
           "Tools & serving"
+        ],
+        [
+          "Alessi Moka espresso maker, David Chipperfield",
+          "Alessi",
+          "From €35",
+          "Coffee, tea & juice",
+          "https://alessi.com/it/products/moka-espresso-coffee-maker",
+          "",
+          null,
+          "Coffee, tea & juice"
+        ],
+        [
+          "Alessi Pulcina espresso maker, Michele De Lucchi",
+          "Alessi",
+          "From €68",
+          "Coffee, tea & juice",
+          "https://alessi.com/it/products/pulcina-espresso-coffee-maker-1",
+          "",
+          null,
+          "Coffee, tea & juice"
+        ],
+        [
+          "Alessi Menhir espresso maker, Michael Anastassiades",
+          "Alessi",
+          "From €200",
+          "Luxury design",
+          "https://alessi.com/it/products/menhir-espresso-coffee-maker",
+          "",
+          null,
+          "Coffee, tea & juice"
+        ],
+        [
+          "Alessi DC09 automatic coffee machine, EU plug",
+          "Alessi",
+          "€1,200",
+          "Luxury appliances",
+          "https://alessi.com/it/products/dc09-automatic-coffee-machine-european-plug",
+          "",
+          null,
+          "Electric appliances"
+        ],
+        [
+          "Alessi Plissé drip coffee maker, EU plug",
+          "Alessi",
+          "€190",
+          "Premium appliances",
+          "https://alessi.com/it/products/plisse-drip-coffee-maker-european-plug",
+          "",
+          null,
+          "Electric appliances"
+        ],
+        [
+          "Alessi Michael Graves 9093 bird-whistle kettle",
+          "Alessi",
+          "€170",
+          "Iconic design",
+          "https://alessi.com/it/products/9093-kettle",
+          "",
+          null,
+          "Coffee, tea & juice"
+        ],
+        [
+          "Alessi Michael Graves 9093/1 kettle",
+          "Alessi",
+          "€150",
+          "Iconic design",
+          "https://alessi.com/it/products/9093-1-kettle",
+          "",
+          null,
+          "Coffee, tea & juice"
+        ],
+        [
+          "Alessi 9093 BB bird-whistle kettle",
+          "Alessi",
+          "€190",
+          "Iconic design",
+          "https://alessi.com/it/products/9093-bb-kettle",
+          "",
+          null,
+          "Coffee, tea & juice"
         ]
       ],
       "sources": [
@@ -2653,8 +2733,8 @@
       "editorialMuseumRecords": [
         {
           "index": 0,
-          "id": 568591,
-          "caption": "Ancient Egyptian limestone mortar and pestle, ca. 1300–1080 BCE · Metropolitan Museum of Art; public domain"
+          "id": 561580,
+          "caption": "Grinding stone from Egypt, ca. 1300–1080 BCE · Metropolitan Museum of Art. A documented later example illustrating ancient grinding."
         },
         {
           "index": 1,
@@ -2688,8 +2768,8 @@
         },
         {
           "index": 7,
-          "id": 471343,
-          "caption": "Medieval cauldron, 13th–14th century · Metropolitan Museum of Art; illustration of multi-purpose cooking"
+          "id": 468675,
+          "caption": "North German bell-metal mortar, 15th century · Metropolitan Museum of Art."
         },
         {
           "index": 8,
@@ -2726,20 +2806,20 @@
         null,
         null,
         [
-          "https://alessi.com/it/products/mami-casserole",
-          "Modern steel cookware as an industrial-era materials comparison; not an antique"
-        ],
-        [
-          "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
-          "Contemporary electric citrus press as a comparison to early domestic electrification"
-        ],
-        [
           "https://alessi.com/it/products/9090-espresso-coffee-maker",
-          "Alessi 9090 espresso maker as a twentieth-century design comparison, not a Moka Express"
+          "Alessi 9090 as a modern stainless steel technique comparison, not a nineteenth-century object"
+        ],
+        [
+          "https://alessi.com/it/products/plisse-drip-coffee-maker-european-plug",
+          "Modern powered drip machine as a comparison; not an appliance from 1910–1940"
+        ],
+        [
+          "https://alessi.com/it/products/moka-espresso-coffee-maker",
+          "Contemporary Moka, representing the stovetop coffee-maker type created in the 1930s"
         ],
         [
           "https://alessi.com/it/products/plisse-electric-citrus-squeezer-european-plug",
-          "Modern countertop appliance; an illustration of later electrification, not an object from 1960"
+          "Contemporary electric small appliance; illustrates the later trend"
         ],
         [
           "https://alessi.com/it/products/juicy-salif-citrus-squeezer",
@@ -2747,7 +2827,7 @@
         ],
         [
           "https://alessi.com/it/products/ajm19-kitchen-cutlery-set",
-          "Modern stainless-steel kitchen cutlery from Alessi"
+          "Modern stainless-steel kitchen utensils"
         ],
         [
           "https://alessi.com/it/products/kitchentools-kitchen-cutlery",
