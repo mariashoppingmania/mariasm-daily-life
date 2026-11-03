@@ -202,7 +202,9 @@ const verifiedProductStats={};
 async function productCard(d,p,i){
  const [title,brand,price,tier,url]=p;
  if(!url||!/^https:\/\//.test(url))return '';
- const candidate=p[5]||exactRetailImages[url]||await tryProductImage(p)||(p[6]?await tryProductImage([title,brand,price,tier,p[6]]):null);
+ // Prefer an exact-SKU specialist retailer when the official designer page blocks image extraction.
+ const alternative=p[6]&&/^https:\/\//.test(p[6])?await tryProductImage([title,brand,price,tier,p[6]]):null;
+ const candidate=(brand==='Ferragamo'&&alternative)||p[5]||exactRetailImages[url]||await tryProductImage(p)||alternative;
  if(d.slug==='belts-suspenders'){
    if(!candidate||usedRetailPhotos.has(candidate))return '';
    const local=await localProductPhoto(candidate,d.slug,i);
@@ -210,7 +212,8 @@ async function productCard(d,p,i){
    // Exact-image URLs are retained as fallback when a retailer blocks server-side downloads.
    // Browser-side image failures expose the official product page rather than a false picture.
    const shown=local||candidate;
-   const image='<img loading="lazy" decoding="async" src="'+esc(shown)+'" alt="Retailer photograph of '+esc(title)+'" onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the exact product photography on the official seller page</a>';
+   const fit=brand==='Ferragamo'?'ma-product-fit-luxury':'ma-product-fit-standard';
+   const image='<img class="'+fit+'" loading="lazy" decoding="async" src="'+esc(shown)+'" alt="Retailer photograph of '+esc(title)+'" onerror="this.onerror=null;this.style.display=&#39;none&#39;;this.nextElementSibling.hidden=false"><a hidden class="ma-missing-photo" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">See the exact product photography on the official seller page</a>';
    const category=/braces|suspenders/i.test(title)?'Braces &amp; Suspenders':/chain|ornament/i.test(title)?'Chain &amp; Ornament':/corset|waist/i.test(title)?'Wide Waist &amp; Corset':/utility|webbing/i.test(title)?'Utility &amp; Webbing':/braided|woven/i.test(title)?'Braided &amp; Woven':'Classic &amp; Designer Belts';
    const name=category.replaceAll('&amp;','&');
    verifiedProductStats[d.slug]=(verifiedProductStats[d.slug]||0)+1;
@@ -232,6 +235,11 @@ function extra(slug){
 }
 async function buildOne(d){
  const dir=path.join(docs,d.slug);fs.mkdirSync(dir,{recursive:true});
+ if(d.slug==='belts-suspenders'&&d.editorialTypePhotos?.[0]){
+  const target='https://www2.hm.com/it_it/productpage.1255195001.html';
+  const photo=await tryProductImage(['H&M leather belt with oval buckle','H&M','','Budget',target]);
+  if(photo)d.editorialTypePhotos[0]=[photo,'Original black leather dress belt with oval buckle, official H&M product photograph'];
+ }
  if(d.slug==='belts-suspenders'){
   // Museum records are authentic documentary imagery and only used for the correct historical period.
   const museum=[{id:465060,era:1,label:'7th-century Frankish belt buckle · Metropolitan Museum of Art'},{id:470278,era:2,label:'Early medieval Langobardic belt fitting · Metropolitan Museum of Art'},{id:122485,era:3,label:'European suspenders, 1840–1859 · Metropolitan Museum of Art'},{id:121811,era:4,label:'American 19th-century suspenders · Metropolitan Museum of Art'}];
