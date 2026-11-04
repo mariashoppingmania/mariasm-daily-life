@@ -55,6 +55,9 @@ const alternateMerchants={
   'https://it.pandora.net/it/hidden/bracciale-tennis/591469C01.html'
  ],
  'SAIW99':[
+  'https://www.slowatch.si/en/fashion/morellato/uhani-morellato-saiw99',
+  'https://www.bluespirit.com/en/morellato-tesori-earrings-saiw99-P76040.htm',
+  'https://www.damante.it/gioielli-morellato-tesori-C4B42N1394.htm',
   'https://www.morellato.com/orecchini-morellato-tesori-saiw99-P57180.htm',
   'https://www.morellato.com/en/morellato-tesori-earrings-saiw99-P57180.htm'
  ],
