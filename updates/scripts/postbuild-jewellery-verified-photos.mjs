@@ -45,6 +45,18 @@ function exactReferenceInUrl(url,p){
  return normalized.includes(token);
 }
 const alternateMerchants={
+ '591469C01':[
+  'https://it.pandora.net/it/bracciali/bracciali-tennis/bracciale-tennis-scintillante/591469C01.html',
+  'https://it.pandora.net/it/hidden/bracciale-tennis/591469C01.html'
+ ],
+ 'SAIW99':[
+  'https://www.morellato.com/orecchini-morellato-tesori-saiw99-P57180.htm',
+  'https://www.morellato.com/en/morellato-tesori-earrings-saiw99-P57180.htm'
+ ],
+ 'Chunky Medium Hoops':[
+  'https://www.nordstrom.com/s/chunky-hoops/8671989',
+  'https://mejuri.com/eu/en/products/chunky-medium-hoops?Material=18k+Gold+Vermeil'
+ ],
  'CO02-512':[
   'https://joyeriacalvo.com/products/collar-mini-letter-a-pdpaola-plata',
   'https://www.mes-bijoux.fr/pdpaola/23026-pdpaola-collier-en-argent-mini-lettre-a-co02-512-u.html',
@@ -134,6 +146,8 @@ async function getExactImage(p){
  return null;
 }
 const photoResults=await Promise.all(catalog.map(getExactImage));
+for(let i=0;i<catalog.length;i++)console.log('Jewellery product photo audit: '+catalog[i].sku+' '+(photoResults[i]?'ARCHIVED':'UNAVAILABLE'));
+
 const productRows=catalog.map((p,i)=>({p,img:photoResults[i]}));
 const verified=productRows.filter(x=>x.img);
 const cards=productRows.map(({p,img})=>{
