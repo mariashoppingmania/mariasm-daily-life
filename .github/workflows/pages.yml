@@ -57,6 +57,8 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-fine-tableware-photo-audit.mjs
       - name: Verify jewellery product photography and remove AI shop placeholders
         run: node source/mariasm-site/scripts/postbuild-jewellery-verified-photos.mjs
+      - name: Restore high jewellery authentic photographs and official collection links
+        run: node source/mariasm-site/scripts/postbuild-high-jewellery-real-photos.mjs
       - name: Verify homepage and six editorial ateliers
         run: |
           test -s source/mariasm-site/docs/index.html
