@@ -97,8 +97,11 @@ async function archiveExactImage(url,p){
 async function getExactImage(p){
  // Primary source: exact official product page and its original SKU-coded image.
  const primary=await merchantImageCandidates(p.url);
- for(const candidate of [...new Set([...primary,p.img])]){
+ // A verified retailer photo whose URL contains the exact SKU takes priority over generic OG logos.
+ const trusted=(p.sku==='591469C01')?'https://static.e-pandora.ua/20417/PNGTRPNT_591469C01_RGB.png':null;
+ for(const candidate of [...new Set([trusted,p.img,...primary].filter(Boolean))]){
    if(candidate===p.img&&!exactReferenceInUrl(candidate,p))continue;
+   if(candidate!==p.img&&candidate!==trusted&&/logo|favicon|brandmark|placeholder|social[_-]?default/i.test(candidate))continue;
    const result=await archiveExactImage(candidate,p);if(result)return result;
  }
  // A named alternative merchant must have a specifically documented matching SKU.
