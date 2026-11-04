@@ -101,6 +101,7 @@ async function getExactImage(p){
  const trusted=(p.sku==='591469C01')?'https://static.e-pandora.ua/20417/PNGTRPNT_591469C01_RGB.png':null;
  for(const candidate of [...new Set([trusted,p.img,...primary].filter(Boolean))]){
    if(candidate===p.img&&!exactReferenceInUrl(candidate,p))continue;
+   if(p.sku==='591469C01'&&!exactReferenceInUrl(candidate,p))continue; // Never accept generic Pandora logo as bracelet photo.
    if(candidate!==p.img&&candidate!==trusted&&/logo|favicon|brandmark|placeholder|social[_-]?default/i.test(candidate))continue;
    const result=await archiveExactImage(candidate,p);if(result)return result;
  }
