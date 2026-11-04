@@ -10,7 +10,11 @@ const products=[
  ['Bvlgari Serpenti Viper yellow-gold ring','362500','€4,450','https://www.bulgari.com/it-it/product/362500'],
  ['Bvlgari Serpenti Viper diamond ring','AN858970','€5,950','https://www.bulgari.com/it-it/product/AN858970'],
  ['Bvlgari Serpenti Viper bracelet','Serpenti','€7,900','https://www.bulgari.com/it-it/gioielli/serpenti'],
- ['Bvlgari Serpenti Viper white-gold pavé ring','AN858111','€12,400','https://www.bulgari.com/it-it/AN858111.html']
+ ['Bvlgari Serpenti Viper white-gold pavé ring','AN858111','€12,400','https://www.bulgari.com/it-it/AN858111.html'],
+ ['Bvlgari Serpenti Viper white-gold ring','358648','See official store','https://www.bulgari.com/pt-br/AN859379.html'],
+ ['Bvlgari Serpenti Viper yellow-gold ring','362148','See official store','https://www.bulgari.com/en-hk/jewellery/rings/serpenti-viper-ring-yellow-gold-yellow-362148'],
+ ['Bvlgari Serpenti Viper white-gold coil ring','362143','See official store','https://www.bulgari.com/en-th/362143.html'],
+ ['Bvlgari Serpenti Viper rose-gold coil ring','358640','See official store','https://www.bulgari.com/pt-br/AN859178.html']
 ];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function fetcher(url){
@@ -38,8 +42,23 @@ function getPhotos(source,pageUrl){
  const cleaned=links.map(s=>s?.replaceAll('&amp;','&')).filter(Boolean).map(s=>{try{return new URL(s,pageUrl).href}catch{return null}}).filter(Boolean);
  return [...new Set(cleaned)].filter(u=>/^https:\/\//.test(u)&&!/logo|favicon|placeholder|brandmark|social-?share|default/i.test(u));
 }
+const curatedExactPhotos={
+ '358648':'https://media.bulgari.com/image/upload/c_fill%2Ch_490%2Cw_490/q_auto/f_auto/1337156.png',
+ '362148':'https://www.bulgari.com/on/demandware.static/-/Sites-masterCatalog/default/dw254899c1/images/images/1712972.png',
+ '362143':'https://media2.bulgari.com/f_auto%2Cq_auto%2Cc_pad%2Ch_520%2Cw_520/production/dwa0d05b5d/images/images/1712607.png',
+ '358640':'https://media.bulgari.com/image/upload/c_fill%2Ch_490%2Cw_490/q_auto/f_auto/1337147.png'
+};
+async function archiveKnownImage(url,index){
+ const r=await fetcher(url);if(!r)return null;
+ const mime=(r.headers.get('content-type')||'').toLowerCase();
+ const ext=mime.includes('jpeg')?'jpg':mime.includes('png')?'png':mime.includes('webp')?'webp':null;if(!ext)return null;
+ const data=Buffer.from(await r.arrayBuffer());if(data.length<12000||data.length>9000000)return null;
+ const name='bvlgari-'+index+'.'+ext;fs.writeFileSync(path.join(dir,name),data);
+ return 'assets/high-jewellery-photos/'+name;
+}
 async function photo(item,index){
  const [title,sku,price,url]=item;
+ if(curatedExactPhotos[sku])return archiveKnownImage(curatedExactPhotos[sku],index);
  // This catalog includes boutique-category links: do not falsely portray a random
  // collection item as an exact product photo.
  if(!/\d{5,}|AN\d{5,}/i.test(sku))return null;
