@@ -43,6 +43,8 @@ function getPhotos(source,pageUrl){
  return [...new Set(cleaned)].filter(u=>/^https:\/\//.test(u)&&!/logo|favicon|placeholder|brandmark|social-?share|default/i.test(u));
 }
 const curatedExactPhotos={
+ // Verified official photo of Serpenti Viper AN858970, 0.1 ct yellow-gold diamond ring.
+ 'AN858970':'https://media.bulgari.com/image/upload/c_pad%2Ch_800%2Cw_800/q_auto/f_auto/1281838.png',
  // Exact AN858111 Bvlgari product photograph from authorised retailer Kessaris.
  'AN858111':'https://www.kessaris.gr/sites/default/files/import/one_drive/BVL.354708/Bulgari-Serpenti-Viper-AN858111-White-Gold.jpg',
  // Bvlgari official product photograph for white-gold Serpenti Viper band, AN856869 / size reference 349680.
