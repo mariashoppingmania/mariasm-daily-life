@@ -109,7 +109,7 @@ async function photoWithFallback(item,index){
  const known=visualSources[sku];
  if(!known)return {src:null,archived:false,exact:false,description:'No source photograph'};
  const downloaded=await archiveKnownImage(known.url,index) || await archiveKnownImage(proxyFor(known.url),index);
- return {src:downloaded||known.url,archived:!!downloaded,exact:known.exact,description:known.description,fallback:known.url};
+ return {src:downloaded||known.url,archived:!!downloaded,exact:known.exact,description:known.description,fallback:downloaded?known.url:proxyFor(known.url)};
 }
 async function photo(item,index){
  const [title,sku,price,url]=item;
