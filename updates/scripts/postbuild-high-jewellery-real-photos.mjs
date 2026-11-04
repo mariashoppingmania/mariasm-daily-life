@@ -56,23 +56,39 @@ async function archiveKnownImage(url,index){
  const name='bvlgari-'+index+'.'+ext;fs.writeFileSync(path.join(dir,name),data);
  return 'assets/high-jewellery-photos/'+name;
 }
+
+const alternateProductPages={
+ '349680':['https://www.bulgari.com/en-mt/349680.html','https://www.bartorelli.it/it/gioielli/marca-bulgari/anello-serpenti-viper-in-oro-bianco-an856869/'],
+ '358771':['https://www.bulgari.com/en-at/358771.html','https://www.bulgari.com/en-gb/358771.html'],
+ '362500':['https://www.bulgari.com/it-ch/gioielli/anelli/serpenti-viper-anello-oro-giallo-362500'],
+ 'AN858970':['https://www.bulgari.com/en-us/product/AN858970'],
+ 'AN858111':['https://www.bulgari.com/en-us/AN858111.html']
+};
+async function verifySitePhoto(url,index,sku){
+ const result=await fetcher(url);if(!result)return null;
+ const source=(await result.text()).slice(0,850000);
+ const skuKey=sku.toLowerCase().replace(/\W/g,'');
+ const verifiedPage=source.toLowerCase().replace(/\W/g,'').includes(skuKey) ||
+  (sku==='349680'&&source.includes('AN856869')&&source.includes('Serpenti'));
+ if(!verifiedPage)return null;
+ const urls=getPhotos(source,url).slice(0,10);
+ for(const candidate of urls){
+  const archived=await archiveKnownImage(candidate,index);
+  if(archived)return archived;
+ }
+ return null;
+}
 async function photo(item,index){
  const [title,sku,price,url]=item;
- if(curatedExactPhotos[sku])return archiveKnownImage(curatedExactPhotos[sku],index);
- // This catalog includes boutique-category links: do not falsely portray a random
- // collection item as an exact product photo.
+ // Curated photos are exact-reference product images from Bvlgari's media servers.
+ if(curatedExactPhotos[sku]){
+  const archived=await archiveKnownImage(curatedExactPhotos[sku],index);
+  if(archived)return archived;
+ }
  if(!/\d{5,}|AN\d{5,}/i.test(sku))return null;
- const result=await fetcher(url);if(!result)return null;
- const src=await result.text();if(!src.toLowerCase().replace(/\W/g,'').includes(sku.toLowerCase().replace(/\W/g,'')))return null;
- const sources=getPhotos(src,url);
- for(const photoUrl of sources.slice(0,8)){
-  const r=await fetcher(photoUrl);if(!r)continue;
-  const mime=(r.headers.get('content-type')||'').toLowerCase();
-  const ext=mime.includes('jpeg')?'jpg':mime.includes('png')?'png':mime.includes('webp')?'webp':null;
-  if(!ext)continue;
-  const bytes=Buffer.from(await r.arrayBuffer());if(bytes.length<12000||bytes.length>9000000)continue;
-  const filename='bvlgari-'+index+'.'+ext;fs.writeFileSync(path.join(dir,filename),bytes);
-  return 'assets/high-jewellery-photos/'+filename;
+ for(const page of [url,...(alternateProductPages[sku]||[])]){
+  const archived=await verifySitePhoto(page,index,sku);
+  if(archived)return archived;
  }
  return null;
 }
