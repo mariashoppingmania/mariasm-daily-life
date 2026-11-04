@@ -45,6 +45,11 @@ function exactReferenceInUrl(url,p){
  return normalized.includes(token);
 }
 const alternateMerchants={
+ '590719':[
+  'https://maiocchistore.it/en/products/pandora-moments-bracelet-with-heart-clasp-590719',
+  'https://gioielleriadepatto.com/products/bracciale-donna-pandora-moments-con-chiusura-a-cuore-590719',
+  'https://casadeigioielli.it/en/products/bracciale-pandora-componibile-con-chiusura-a-cuore-590719'
+ ],
  '591469C01':[
   'https://it.pandora.net/it/bracciali/bracciali-tennis/bracciale-tennis-scintillante/591469C01.html',
   'https://it.pandora.net/it/hidden/bracciale-tennis/591469C01.html'
@@ -110,7 +115,12 @@ async function getExactImage(p){
  // Primary source: exact official product page and its original SKU-coded image.
  const primary=await merchantImageCandidates(p.url);
  // A verified retailer photo whose URL contains the exact SKU takes priority over generic OG logos.
- const trusted=(p.sku==='591469C01')?'https://static.e-pandora.ua/20417/PNGTRPNT_591469C01_RGB.png':null;
+ const trustedPhotos={
+  '591469C01':'https://static.e-pandora.ua/20417/PNGTRPNT_591469C01_RGB.png',
+  '590719':'https://shop.malbasic.biz/wp-content/uploads/2021/03/590719-1.jpg',
+  'SAIW99':'https://cdn.morellato.com/i/huge/75559/morellato-tesori-earrings-saiw99_v1n68e.jpg'
+ };
+ const trusted=trustedPhotos[p.sku]||null;
  for(const candidate of [...new Set([trusted,p.img,...primary].filter(Boolean))]){
    if(candidate===p.img&&!exactReferenceInUrl(candidate,p))continue;
    if(p.sku==='591469C01'&&!exactReferenceInUrl(candidate,p))continue; // Never accept generic Pandora logo as bracelet photo.
