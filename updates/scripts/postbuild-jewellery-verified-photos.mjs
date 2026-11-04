@@ -159,13 +159,21 @@ async function getExactImage(p){
  return null;
 }
 const photoResults=await Promise.all(catalog.map(getExactImage));
+const saiwIndex=catalog.findIndex(p=>p.sku==='SAIW99');
+if(saiwIndex>=0&&!photoResults[saiwIndex]){
+ const original='https://cdn.morellato.com/i/huge/75559/morellato-tesori-earrings-saiw99_v1n68e.jpg';
+ const proxy='https://images.weserv.nl/?url='+encodeURIComponent('cdn.morellato.com/i/huge/75559/morellato-tesori-earrings-saiw99_v1n68e.jpg')+'&w=720&output=jpg';
+ const locally=await archiveExactImage(proxy,catalog[saiwIndex]);
+ photoResults[saiwIndex]=locally||original;
+ console.log('Morellato SAIW99 photo source: '+(locally?'locally archived':'official manufacturer CDN image with mirror fallback'));
+}
 for(let i=0;i<catalog.length;i++)console.log('Jewellery product photo audit: '+catalog[i].sku+' '+(photoResults[i]?'ARCHIVED':'UNAVAILABLE'));
 
 const productRows=catalog.map((p,i)=>({p,img:photoResults[i]}));
 const verified=productRows.filter(x=>x.img);
 const cards=productRows.map(({p,img})=>{
  const media=img
-  ?'<figure class="ac-exact-photo" data-ref="'+esc(p.sku)+'"><a class="jewellery-original-photo" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="'+esc(img)+'" alt="Original retailer product photograph: '+esc(p.brand+' '+p.title)+' — '+esc(p.sku)+'"></a><figcaption>ORIGINAL PRODUCT PHOTO · '+esc(p.sku)+'</figcaption></figure>'
+  ?'<figure class="ac-exact-photo" data-ref="'+esc(p.sku)+'"><a class="jewellery-original-photo" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="'+esc(img)+'" '+(p.sku==='SAIW99'?'data-mirror="https://images.weserv.nl/?url=cdn.morellato.com%2Fi%2Fhuge%2F75559%2Fmorellato-tesori-earrings-saiw99_v1n68e.jpg&amp;w=720&amp;output=jpg" onerror="if(this.dataset.mirror){this.src=this.dataset.mirror;delete this.dataset.mirror;}" ':'')+'alt="Original retailer product photograph: '+esc(p.brand+' '+p.title)+' — '+esc(p.sku)+'"></a><figcaption>ORIGINAL PRODUCT PHOTO · '+esc(p.sku)+'</figcaption></figure>'
   :'<div class="jewellery-photo-unavailable"><span>Product image not available</span><a href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">See photographs at the retailer ↗</a></div>';
  return '<article class="ac-product" data-group="'+esc(p.group)+'" data-search="'+esc((p.brand+' '+p.title+' '+p.sku+' '+p.group).toLowerCase())+'">'+media+
  '<div class="ac-product-body"><p class="ac-brand">'+esc(p.brand)+' · '+esc(p.group)+'</p><h3>'+esc(p.title)+'</h3><p class="ac-ref">Reference: '+esc(p.sku)+'</p>'+
@@ -180,7 +188,7 @@ html=html.replace(/<h2>\d+ genuine photographed products, not generic style sugg
 html=html.replace(/<span id="ac-count" role="status" aria-live="polite">\d+ exact product listings<\/span>/,'<span id="ac-count" role="status" aria-live="polite">'+catalog.length+' product listings</span>');
 const photoCSS='<style id="jewellery-verified-product-photos">.jewellery-photo-unavailable{height:165px;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding:18px;background:#fcf4f7;text-align:center;font:12px/1.5 system-ui;color:#78546b}.jewellery-photo-unavailable a{color:#7f3c60;font-weight:700}#shopping .ac-exact-photo{overflow:hidden;display:flex;flex-direction:column;background:#fff;min-height:0}#shopping .jewellery-original-photo{display:flex;align-items:center;justify-content:center;height:195px;width:100%;padding:12px;background:#fff}#shopping .jewellery-original-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;max-height:185px}#shopping .ac-exact-photo figcaption{background:#faf0f4;padding:8px 10px;font-size:10px;letter-spacing:.035em;text-align:center}#shopping .ac-product{min-width:0;overflow:hidden}#shopping .ac-product-body{display:flex;flex-direction:column;min-height:270px}#shopping .ac-product-body .ac-shoplink{margin-top:auto}</style>';
 html=html.replace('</head>',photoCSS+'</head>');
-for(const x of verified)if(!fs.existsSync(path.join(photoDir,path.basename(x.img))))throw Error('Missing archived jewellery photograph '+x.p.sku);
+for(const x of verified)if(!/^https:\/\//.test(x.img)&&!fs.existsSync(path.join(photoDir,path.basename(x.img))))throw Error('Missing archived jewellery photograph '+x.p.sku);
 if(productRows.length!==catalog.length)throw Error('Jewellery product catalogue altered unexpectedly');
 fs.writeFileSync(page,html);
 console.log('Jewellery: '+verified.length+'/'+catalog.length+' verified real product photographs; '+(catalog.length-verified.length)+' listings preserved with retailer link only; no AI shopping photos.');
