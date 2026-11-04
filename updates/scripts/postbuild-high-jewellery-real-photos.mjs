@@ -43,6 +43,8 @@ function getPhotos(source,pageUrl){
  return [...new Set(cleaned)].filter(u=>/^https:\/\//.test(u)&&!/logo|favicon|placeholder|brandmark|social-?share|default/i.test(u));
 }
 const curatedExactPhotos={
+ // Exact AN858111 Bvlgari product photograph from authorised retailer Kessaris.
+ 'AN858111':'https://www.kessaris.gr/sites/default/files/import/one_drive/BVL.354708/Bulgari-Serpenti-Viper-AN858111-White-Gold.jpg',
  // Bvlgari official product photograph for white-gold Serpenti Viper band, AN856869 / size reference 349680.
  '349680':'https://media.bulgari.com/image/upload/c_pad%2Ch_851%2Cw_1090/q_auto/f_auto/460129.png',
  // Bvlgari AN856868 rose-gold Serpenti Viper wedding band; same design in the 358771 offer.
