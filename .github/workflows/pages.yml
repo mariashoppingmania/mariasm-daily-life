@@ -59,6 +59,15 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-jewellery-verified-photos.mjs
       - name: Restore high jewellery authentic photographs and official collection links
         run: node source/mariasm-site/scripts/postbuild-high-jewellery-real-photos.mjs
+      - name: Create Hair Atelier and integrate with site menus
+        run: node source/mariasm-site/scripts/postbuild-hair-atelier.mjs
+      - name: Verify Hair Atelier and homepage navigation
+        run: |
+          test -s source/mariasm-site/docs/hair/index.html
+          grep -q 'id="cuts"' source/mariasm-site/docs/hair/index.html
+          grep -q 'id="colour"' source/mariasm-site/docs/hair/index.html
+          grep -q 'id="hair-atelier-home-feature"' source/mariasm-site/docs/index.html
+          grep -q 'class="hair-nav-added"' source/mariasm-site/docs/index.html
       - name: Verify homepage and six editorial ateliers
         run: |
           test -s source/mariasm-site/docs/index.html
