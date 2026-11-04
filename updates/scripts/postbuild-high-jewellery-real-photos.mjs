@@ -131,7 +131,7 @@ console.log('High jewellery source photos: '+results.filter(x=>x.src).length+'/'
 const cards=products.map((p,i)=>({p,visual:results[i]})).map(({p,visual})=>{
  const has=!!visual.src, note=has&&!visual.exact;
  const fallback=has?visual.fallback||visual.src:'';
- const media=has?'<a class="ms-jewel-photo" href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(visual.src)+'" data-original="'+esc(fallback)+'" alt="'+esc(visual.description)+'" loading="lazy" decoding="async" onerror="if(this.dataset.original&&this.src!==this.dataset.original){this.src=this.dataset.original;this.dataset.original='';}"></a>':
+ const media=has?'<a class="ms-jewel-photo" href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(visual.src)+'" data-original="'+esc(fallback)+'" alt="'+esc(visual.description)+'" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=this.dataset.original"></a>':
  '<div class="ms-jewel-photo-unavailable"><span>Photograph not available</span><a href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer">View on Bvlgari ↗</a></div>';
  return '<article class="ms-jewel-card">'+media+'<div class="ms-jewel-card-copy"><h3>'+esc(p[0])+'</h3><p class="ms-jewel-sku">Reference '+esc(p[1])+'</p>'+(note?'<p class="ms-jewel-context">Collection photograph (different variant); see exact item at the official store.</p>':'')+'<strong>'+esc(p[2])+'</strong><small>Price snapshot; confirm the current variant and price with the boutique.</small><a href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer">View model or collection ↗</a></div></article>';
 }).join('');
