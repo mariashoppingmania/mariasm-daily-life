@@ -9,7 +9,7 @@ const products=[
  ['Bvlgari Serpenti Viper rose-gold ring','358771','€2,460','https://www.bulgari.com/it-it/358771.html'],
  ['Bvlgari Serpenti Viper yellow-gold ring','362500','€4,450','https://www.bulgari.com/it-it/product/362500'],
  ['Bvlgari Serpenti Viper diamond ring','AN858970','€5,950','https://www.bulgari.com/it-it/product/AN858970'],
- ['Bvlgari Serpenti Viper bracelet','Serpenti','€7,900','https://www.bulgari.com/it-it/gioielli/serpenti'],
+ ['Bvlgari Serpenti Viper yellow-gold bracelet','Serpenti','See official store','https://www.bulgari.com/en-us/product/BR860041'],
  ['Bvlgari Serpenti Viper white-gold pavé ring','AN858111','€12,400','https://www.bulgari.com/it-it/AN858111.html'],
  ['Bvlgari Serpenti Viper white-gold ring','358648','See official store','https://www.bulgari.com/pt-br/AN859379.html'],
  ['Bvlgari Serpenti Viper yellow-gold ring','362148','See official store','https://www.bulgari.com/en-hk/jewellery/rings/serpenti-viper-ring-yellow-gold-yellow-362148'],
@@ -86,6 +86,31 @@ async function verifySitePhoto(url,index,sku){
  }
  return null;
 }
+
+// Verified source photographs: exact reference when available; otherwise a
+// visibly labelled example from the same Serpenti Viper product family.
+// A cloud image proxy is tried for local archiving when manufacturer CDNs
+// refuse GitHub Actions requests; clients can still load the original URL.
+const visualSources={
+ '358771':{url:'https://media.bulgari.com/image/upload/c_fill%2Ch_490%2Cw_490/q_auto/f_auto/1361754_mobile.png',exact:false,description:'Serpenti Viper rose-gold thick-band collection example (AN859325)'},
+ '362500':{url:'https://media.bulgari.com/image/upload/c_fill%2Ch_1090%2Cw_1090/q_auto/f_auto/1533891.png',exact:false,description:'Serpenti Viper yellow-gold diamond ring, 0.14 ct (AN859916)'},
+ 'Serpenti':{url:'https://media.bulgari.com/image/upload/c_pad%2Ch_800%2Cw_800/q_auto/f_auto/1556898.png',exact:true,description:'Bvlgari Serpenti Viper yellow-gold bracelet BR860041'},
+ 'AN858111':{url:'https://www.kessaris.gr/sites/default/files/import/one_drive/BVL.354708/Bulgari-Serpenti-Viper-AN858111-White-Gold.jpg',exact:true,description:'Bvlgari Serpenti Viper AN858111 white-gold pavé ring'},
+ '362148':{url:'https://www.bulgari.com/on/demandware.static/-/Sites-masterCatalog/default/dw254899c1/images/images/1712972.png',exact:true,description:'Bvlgari Serpenti Viper 362148 yellow-gold ring'}
+};
+function proxyFor(url){
+ const parsed=new URL(url);
+ return 'https://images.weserv.nl/?url='+encodeURIComponent(parsed.hostname+parsed.pathname+parsed.search)+'&w=720&output=jpg';
+}
+async function photoWithFallback(item,index){
+ const [title,sku]=item;
+ const found=await photo(item,index);
+ if(found)return {src:found,archived:true,exact:true,description:'Original product photograph'};
+ const known=visualSources[sku];
+ if(!known)return {src:null,archived:false,exact:false,description:'No source photograph'};
+ const downloaded=await archiveKnownImage(known.url,index) || await archiveKnownImage(proxyFor(known.url),index);
+ return {src:downloaded||known.url,archived:!!downloaded,exact:known.exact,description:known.description,fallback:known.url};
+}
 async function photo(item,index){
  const [title,sku,price,url]=item;
  // Curated photos are exact-reference product images from Bvlgari's media servers.
@@ -100,12 +125,15 @@ async function photo(item,index){
  }
  return null;
 }
-const results=await Promise.all(products.map(photo));
-let count=results.filter(Boolean).length;
-const cards=products.map((p,i)=>({p,img:results[i]})).map(({p,img})=>{
- const media=img?'<a class="ms-jewel-photo" href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(img)+'" alt="Official product photograph: '+esc(p[0])+'" loading="lazy" decoding="async"></a>':
- '<div class="ms-jewel-photo-unavailable"><span>Official photograph unavailable</span><a href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer">View product on Bvlgari ↗</a></div>';
- return '<article class="ms-jewel-card">'+media+'<div class="ms-jewel-card-copy"><h3>'+esc(p[0])+'</h3><p class="ms-jewel-sku">Reference '+esc(p[1])+'</p><strong>'+esc(p[2])+'</strong><small>Price snapshot; confirm current offer and exact variant with the official boutique.</small><a href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer">View model or collection ↗</a></div></article>';
+const results=await Promise.all(products.map(photoWithFallback));
+let count=results.filter(x=>x.archived).length;
+console.log('High jewellery source photos: '+results.filter(x=>x.src).length+'/'+products.length+' cards with photographic sources, '+count+' locally archived');
+const cards=products.map((p,i)=>({p,visual:results[i]})).map(({p,visual})=>{
+ const has=!!visual.src, note=has&&!visual.exact;
+ const fallback=has?visual.fallback||visual.src:'';
+ const media=has?'<a class="ms-jewel-photo" href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer"><img src="'+esc(visual.src)+'" data-original="'+esc(fallback)+'" alt="'+esc(visual.description)+'" loading="lazy" decoding="async" onerror="if(this.dataset.original&&this.src!==this.dataset.original){this.src=this.dataset.original;this.dataset.original='';}"></a>':
+ '<div class="ms-jewel-photo-unavailable"><span>Photograph not available</span><a href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer">View on Bvlgari ↗</a></div>';
+ return '<article class="ms-jewel-card">'+media+'<div class="ms-jewel-card-copy"><h3>'+esc(p[0])+'</h3><p class="ms-jewel-sku">Reference '+esc(p[1])+'</p>'+(note?'<p class="ms-jewel-context">Collection photograph (different variant); see exact item at the official store.</p>':'')+'<strong>'+esc(p[2])+'</strong><small>Price snapshot; confirm the current variant and price with the boutique.</small><a href="'+esc(p[3])+'" target="_blank" rel="noopener noreferrer">View model or collection ↗</a></div></article>';
 }).join('');
 const boutiques=[
  ['Cartier LOVE collection','https://www.cartier.com/it-it/'],
@@ -115,7 +143,7 @@ const boutiques=[
 const section='<section id="mariasm-high-jewellery-edit" class="ms-jewel-real-edit"><header><p class="ms-jewel-kicker">THE EXCEPTIONAL JEWELLERY EDIT</p><h2>Cartier &amp; Bvlgari · High jewellery</h2><p>Discover original product photographs for the exact models available, and explore the official Cartier collections. No synthetic representations are used as merchandise photos.</p></header>'+'<div class="ms-jewel-grid">'+cards+'</div>'+'<div class="ms-jewel-boutiques">'+boutiques+'</div></section>';
 const first=html.indexOf('<section id="mariasm-high-jewellery-edit"'),last=html.indexOf('</section>',first);
 if(first<0||last<0)throw Error('Could not find high jewellery section');html=html.slice(0,first)+section+html.slice(last+10);
-const style='<style id="ms-jewel-real-style">.ms-jewel-photo-unavailable{min-height:158px;background:#fff8fa;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;gap:10px;color:#744963;font:12px/1.5 system-ui;text-align:center}.ms-jewel-photo-unavailable a{color:#793c5b;font-weight:700}.ms-jewel-real-edit{max-width:1200px;margin:32px auto;padding:clamp(18px,3vw,34px);border-radius:24px;background:#f7e9f0;border:1px solid #e8d2dc}.ms-jewel-real-edit header>h2{font:normal clamp(25px,3vw,38px)/1.2 Georgia,serif;color:#693b54;margin:12px 0}.ms-jewel-real-edit header>p:not(.ms-jewel-kicker){line-height:1.7;color:#714b60}.ms-jewel-kicker{font:700 11px/1.6 system-ui;letter-spacing:.14em;color:#965b76}.ms-jewel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:24px 0}.ms-jewel-card,.ms-jewel-boutique{background:white;border:1px solid #e7d1da;border-radius:16px;overflow:hidden;min-width:0}.ms-jewel-photo{height:210px;background:white;display:flex;align-items:center;justify-content:center;padding:12px}.ms-jewel-photo img{display:block;width:100%;height:100%;object-fit:contain}.ms-jewel-card-copy{padding:17px;display:flex;flex-direction:column;gap:12px}.ms-jewel-card h3,.ms-jewel-boutique h3{font:normal 21px/1.25 Georgia,serif;color:#683950;margin:0}.ms-jewel-card strong{color:#703d5b}.ms-jewel-sku,.ms-jewel-card small{font:12px/1.5 system-ui;color:#79526c;margin:0}.ms-jewel-card-copy>a,.ms-jewel-boutique a{color:#7d3b60;font-weight:700}.ms-jewel-boutiques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:24px}.ms-jewel-boutique{padding:20px}.ms-jewel-boutique p,.ms-jewel-note{font:13px/1.65 system-ui;color:#79546a}</style>';
+const style='<style id="ms-jewel-real-style">.ms-jewel-context{font:11px/1.5 system-ui;color:#80516b;background:#f8eef3;padding:8px;border-radius:8px}.ms-jewel-photo-unavailable{min-height:158px;background:#fff8fa;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px;gap:10px;color:#744963;font:12px/1.5 system-ui;text-align:center}.ms-jewel-photo-unavailable a{color:#793c5b;font-weight:700}.ms-jewel-real-edit{max-width:1200px;margin:32px auto;padding:clamp(18px,3vw,34px);border-radius:24px;background:#f7e9f0;border:1px solid #e8d2dc}.ms-jewel-real-edit header>h2{font:normal clamp(25px,3vw,38px)/1.2 Georgia,serif;color:#693b54;margin:12px 0}.ms-jewel-real-edit header>p:not(.ms-jewel-kicker){line-height:1.7;color:#714b60}.ms-jewel-kicker{font:700 11px/1.6 system-ui;letter-spacing:.14em;color:#965b76}.ms-jewel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:24px 0}.ms-jewel-card,.ms-jewel-boutique{background:white;border:1px solid #e7d1da;border-radius:16px;overflow:hidden;min-width:0}.ms-jewel-photo{height:210px;background:white;display:flex;align-items:center;justify-content:center;padding:12px}.ms-jewel-photo img{display:block;width:100%;height:100%;object-fit:contain}.ms-jewel-card-copy{padding:17px;display:flex;flex-direction:column;gap:12px}.ms-jewel-card h3,.ms-jewel-boutique h3{font:normal 21px/1.25 Georgia,serif;color:#683950;margin:0}.ms-jewel-card strong{color:#703d5b}.ms-jewel-sku,.ms-jewel-card small{font:12px/1.5 system-ui;color:#79526c;margin:0}.ms-jewel-card-copy>a,.ms-jewel-boutique a{color:#7d3b60;font-weight:700}.ms-jewel-boutiques{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:24px}.ms-jewel-boutique{padding:20px}.ms-jewel-boutique p,.ms-jewel-note{font:13px/1.65 system-ui;color:#79546a}</style>';
 html=html.replace('</head>',style+'</head>');
 fs.writeFileSync(page,html);
-console.log('High jewellery curated original photographs: '+count+'/'+products.length+'; '+(products.length-count)+' product cards preserved without images, no icons, no AI merchandise.');
+console.log('High jewellery curated original photographs: '+count+'/'+products.length+';  source photographs available: '+results.filter(x=>x.src).length+', locally archived: '+count+'. No AI merchandise.');
