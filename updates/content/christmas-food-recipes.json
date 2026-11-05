@@ -676,5 +676,647 @@
       "Rest 20 minutes before carving."
     ],
     "tip": "Use a thermometer, not elapsed time alone."
+  },
+  {
+    "region": "Italy",
+    "name": "Cappelletti in Brodo",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "2 hr",
+    "article": "Cappelletti",
+    "story": "Small filled pasta from Emilia-Romagna, often served in Christmas broth.",
+    "ingredients": [
+      "400 g fresh egg pasta",
+      "200 g ricotta",
+      "100 g grated Parmigiano",
+      "Nutmeg",
+      "2 litres capon or chicken broth"
+    ],
+    "steps": [
+      "Mix ricotta with Parmigiano and nutmeg.",
+      "Cut pasta into little squares and add a spoon of filling.",
+      "Fold into cappelletti, sealing the edges firmly.",
+      "Simmer in broth until pasta is cooked through."
+    ],
+    "tip": "Keep the filled pasta covered to avoid drying."
+  },
+  {
+    "region": "Italy",
+    "name": "Torrone",
+    "kind": "Sweet",
+    "serves": "18 pieces",
+    "time": "1 hr + cooling",
+    "article": "Turrón",
+    "story": "Italian nougat with honey and toasted nuts, familiar at Christmas fairs.",
+    "ingredients": [
+      "250 g honey",
+      "200 g sugar",
+      "2 egg whites",
+      "350 g almonds",
+      "80 g pistachios",
+      "Edible wafer paper"
+    ],
+    "steps": [
+      "Toast nuts and line a tin with wafer paper.",
+      "Heat honey and sugar carefully to the soft-ball stage.",
+      "Beat whites and gradually blend in hot syrup, following safe sugar-handling practices.",
+      "Fold in nuts, spread firmly and let set before cutting."
+    ],
+    "tip": "Hot sugar syrup can cause severe burns."
+  },
+  {
+    "region": "Italy",
+    "name": "Mostaccioli",
+    "kind": "Sweet",
+    "serves": "24",
+    "time": "1 hr",
+    "article": "Mostaccioli",
+    "story": "Dark, spiced Italian Christmas biscuits often covered with chocolate.",
+    "ingredients": [
+      "300 g flour",
+      "180 g honey",
+      "50 g cocoa",
+      "100 g sugar",
+      "Orange zest",
+      "1 tsp baking powder",
+      "180 g dark chocolate"
+    ],
+    "steps": [
+      "Mix flour, cocoa, baking powder and orange zest.",
+      "Work in honey and sugar until a stiff dough forms.",
+      "Shape diamonds and bake at 175°C for 12–15 minutes.",
+      "Cool and dip in melted chocolate."
+    ],
+    "tip": "Allow the chocolate coating to harden completely."
+  },
+  {
+    "region": "Italy",
+    "name": "Cotechino con Lenticchie",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "1 hr 30 min",
+    "article": "Cotechino",
+    "story": "A favourite Italian New Year holiday dish pairing rich sausage with lentils.",
+    "ingredients": [
+      "1 precooked cotechino",
+      "350 g dried lentils",
+      "1 carrot",
+      "1 onion",
+      "1 celery stalk",
+      "Olive oil",
+      "Bay leaves"
+    ],
+    "steps": [
+      "Simmer lentils with chopped vegetables and bay until tender.",
+      "Heat cotechino according to its package directions.",
+      "Slice the sausage and arrange over warm lentils.",
+      "Season with oil and pepper before serving."
+    ],
+    "tip": "Traditionally associated especially with New Year's Eve."
+  },
+  {
+    "region": "Italy",
+    "name": "Roccocò",
+    "kind": "Sweet",
+    "serves": "24",
+    "time": "1 hr",
+    "article": "Roccocò",
+    "story": "Neapolitan ring biscuits with almonds and warming winter spices.",
+    "ingredients": [
+      "400 g flour",
+      "250 g sugar",
+      "220 g almonds",
+      "Orange zest",
+      "Cinnamon",
+      "Mixed spice",
+      "160 ml water",
+      "1 egg"
+    ],
+    "steps": [
+      "Mix flour, sugar, nuts, zest and spices.",
+      "Add enough water for a firm dough.",
+      "Shape into small rings, brush with egg and bake at 180°C for 18–22 minutes.",
+      "Cool before storing."
+    ],
+    "tip": "Traditionally crunchy; soften by dipping in a warm drink."
+  },
+  {
+    "region": "Italy",
+    "name": "Polenta e Baccalà",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "1 hr 15 min",
+    "article": "Baccalà",
+    "story": "Soft polenta with tender salt cod, especially fitting for winter gatherings.",
+    "ingredients": [
+      "300 g polenta flour",
+      "700 g fully desalted cod",
+      "1 onion",
+      "350 g chopped tomatoes",
+      "Olive oil",
+      "Parsley",
+      "1.2 litres water"
+    ],
+    "steps": [
+      "Make polenta in salted boiling water according to packet.",
+      "Sauté onion in olive oil and add tomatoes.",
+      "Add the desalted cod and cook gently until it flakes.",
+      "Serve cod sauce over warm polenta."
+    ],
+    "tip": "Adjust salt only after tasting the cod."
+  },
+  {
+    "region": "Italy",
+    "name": "Zelten",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "1 hr 30 min",
+    "article": "Zelten",
+    "story": "A festive fruit-and-nut cake from Trentino-Alto Adige.",
+    "ingredients": [
+      "250 g flour",
+      "200 g dried figs",
+      "120 g walnuts",
+      "100 g raisins",
+      "100 g sugar",
+      "2 eggs",
+      "120 ml milk",
+      "Baking powder",
+      "Orange zest"
+    ],
+    "steps": [
+      "Soak and chop dried fruit.",
+      "Mix eggs, sugar and milk; fold in flour and baking powder.",
+      "Add fruit, nuts and zest, spread in a lined tin.",
+      "Bake at 175°C for 40–50 minutes."
+    ],
+    "tip": "Different valleys use very different Zelten recipes."
+  },
+  {
+    "region": "Italy",
+    "name": "Broccoli di Natale",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "40 min",
+    "article": "Broccoli",
+    "story": "A southern Italian Christmas side of greens with garlic, olive oil and citrus.",
+    "ingredients": [
+      "900 g broccoli",
+      "3 garlic cloves",
+      "4 tbsp olive oil",
+      "Lemon",
+      "Chilli flakes optional",
+      "Salt"
+    ],
+    "steps": [
+      "Steam broccoli until just tender.",
+      "Warm sliced garlic gently in oil.",
+      "Toss broccoli with fragrant oil and lemon.",
+      "Finish with chilli if desired and serve warm."
+    ],
+    "tip": "Avoid overcooking to keep the greens vivid."
+  },
+  {
+    "region": "Philippines",
+    "name": "Ube Halaya",
+    "kind": "Sweet",
+    "serves": "10",
+    "time": "1 hr",
+    "article": "Ube halaya",
+    "story": "Silky purple-yam jam beloved in Filipino desserts and holiday sharing.",
+    "ingredients": [
+      "500 g cooked mashed ube",
+      "400 ml coconut milk",
+      "200 g condensed milk",
+      "60 g butter",
+      "Pinch salt"
+    ],
+    "steps": [
+      "Combine ube, coconut milk and condensed milk in a heavy pan.",
+      "Cook slowly with constant stirring to prevent scorching.",
+      "Work in butter and stir until thick and glossy.",
+      "Transfer to a dish and cool before serving."
+    ],
+    "tip": "Use genuine ube for its characteristic flavour."
+  },
+  {
+    "region": "Philippines",
+    "name": "Kutsinta",
+    "kind": "Sweet",
+    "serves": "18 pieces",
+    "time": "1 hr",
+    "article": "Kutsinta",
+    "story": "Chewy steamed Filipino rice cakes topped with freshly grated coconut.",
+    "ingredients": [
+      "150 g rice flour",
+      "90 g all-purpose flour",
+      "150 g brown sugar",
+      "450 ml water",
+      "Food-grade lye water according to recipe",
+      "Grated coconut"
+    ],
+    "steps": [
+      "Mix the flours, sugar and water to make a smooth batter.",
+      "Add only food-grade lye water in the small quantity directed on its label, or use a reliable lye-free formulation.",
+      "Pour into greased small moulds.",
+      "Steam 20–30 minutes until set; cool and top with coconut."
+    ],
+    "tip": "Never substitute household chemical lye for food-grade ingredients."
+  },
+  {
+    "region": "Philippines",
+    "name": "Sapin-Sapin",
+    "kind": "Sweet",
+    "serves": "12 pieces",
+    "time": "1 hr 30 min",
+    "article": "Sapin-sapin",
+    "story": "Colourful layered rice-and-coconut cake for the Christmas buffet.",
+    "ingredients": [
+      "300 g glutinous rice flour",
+      "400 ml coconut milk",
+      "300 ml water",
+      "120 g sugar",
+      "Ube and pandan flavouring",
+      "Coconut flakes"
+    ],
+    "steps": [
+      "Mix rice flour, coconut milk, water and sugar.",
+      "Divide batter and flavour portions with ube and pandan.",
+      "Steam each thin layer until just set before adding the next.",
+      "Cool completely and serve with toasted coconut."
+    ],
+    "tip": "Grease the pan lightly for clean layers."
+  },
+  {
+    "region": "Philippines",
+    "name": "Buko Pandan",
+    "kind": "Sweet",
+    "serves": "10",
+    "time": "45 min + chilling",
+    "article": "Buko pandan",
+    "story": "Creamy coconut-and-pandan dessert with jelly, young coconut and condensed milk.",
+    "ingredients": [
+      "400 g young coconut strips",
+      "1 pack green gelatin",
+      "Pandan extract",
+      "250 ml cream",
+      "180 g condensed milk",
+      "200 g nata de coco"
+    ],
+    "steps": [
+      "Prepare pandan jelly according to the packet and allow it to set.",
+      "Cut jelly into cubes and combine with coconut and nata de coco.",
+      "Fold in cream and condensed milk.",
+      "Chill thoroughly before serving."
+    ],
+    "tip": "Reduce condensed milk if the coconut is already sweet."
+  },
+  {
+    "region": "Philippines",
+    "name": "Chicken Afritada",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "1 hr",
+    "article": "Afritada",
+    "story": "Comforting Filipino tomato-braised chicken with potatoes, carrots and peppers.",
+    "ingredients": [
+      "900 g chicken pieces",
+      "400 g tomatoes or passata",
+      "2 potatoes",
+      "2 carrots",
+      "1 red pepper",
+      "1 onion",
+      "Garlic",
+      "Olive oil"
+    ],
+    "steps": [
+      "Brown chicken lightly and remove.",
+      "Cook garlic and onion, then add tomato and return chicken.",
+      "Simmer gently until chicken is thoroughly cooked.",
+      "Add potatoes, carrots and peppers until tender."
+    ],
+    "tip": "Check chicken doneness with a thermometer."
+  },
+  {
+    "region": "Philippines",
+    "name": "Beef Caldereta",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "2 hr 30 min",
+    "article": "Kaldereta",
+    "story": "Festive slow-braised beef with tomato, peppers and potatoes.",
+    "ingredients": [
+      "1 kg beef chuck",
+      "500 ml tomato sauce",
+      "2 potatoes",
+      "1 carrot",
+      "1 red pepper",
+      "1 onion",
+      "2 tbsp liver spread optional",
+      "Bay leaf"
+    ],
+    "steps": [
+      "Brown beef and sauté aromatics.",
+      "Add sauce, bay leaf and water, then simmer until beef tender.",
+      "Add potatoes, carrot and pepper.",
+      "Stir in liver spread if used; simmer until vegetables soften."
+    ],
+    "tip": "Gentle braising gives the most tender result."
+  },
+  {
+    "region": "Philippines",
+    "name": "Pancit Malabon",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "1 hr 20 min",
+    "article": "Pancit Malabon",
+    "story": "Rich rice noodles with seafood, vibrant sauce and festive garnishes.",
+    "ingredients": [
+      "500 g thick rice noodles",
+      "250 g shrimp",
+      "250 g squid",
+      "3 eggs",
+      "300 ml seafood stock",
+      "Annatto",
+      "Garlic",
+      "Fish sauce",
+      "Spring onions"
+    ],
+    "steps": [
+      "Cook noodles separately and drain.",
+      "Sauté garlic and seafood until cooked; set aside.",
+      "Simmer stock with annatto and seasoning, then toss with noodles.",
+      "Top with seafood, hard-boiled eggs and spring onions."
+    ],
+    "tip": "Check for shellfish and egg allergens."
+  },
+  {
+    "region": "Philippines",
+    "name": "Cassava Cake",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "1 hr 30 min",
+    "article": "Cassava cake",
+    "story": "A classic baked Filipino coconut-and-cassava dessert.",
+    "ingredients": [
+      "800 g grated cassava",
+      "400 ml coconut milk",
+      "350 g condensed milk",
+      "2 eggs",
+      "80 g butter",
+      "150 ml evaporated milk"
+    ],
+    "steps": [
+      "Mix grated cassava, coconut milk, some condensed milk, butter and eggs.",
+      "Pour into a greased baking dish and bake at 180°C until nearly set.",
+      "Combine remaining condensed and evaporated milk as topping.",
+      "Bake again until golden and fully cooked."
+    ],
+    "tip": "Use edible, correctly prepared cassava."
+  },
+  {
+    "region": "Philippines",
+    "name": "Maja Blanca",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "40 min + chilling",
+    "article": "Maja blanca",
+    "story": "Coconut-milk pudding traditionally cut into squares and topped with toasted coconut.",
+    "ingredients": [
+      "800 ml coconut milk",
+      "160 g cornflour",
+      "130 g sugar",
+      "150 g sweetcorn",
+      "Toasted coconut"
+    ],
+    "steps": [
+      "Dissolve cornflour in a little cool coconut milk.",
+      "Heat remaining milk with sugar, then gradually whisk in slurry.",
+      "Stir constantly until thick; fold in corn.",
+      "Pour into dish, cool, then top with toasted coconut."
+    ],
+    "tip": "Avoid stopping the stirring while the pudding thickens."
+  },
+  {
+    "region": "World",
+    "name": "Swedish Lussekatter",
+    "kind": "Sweet",
+    "serves": "18 buns",
+    "time": "2 hr 30 min",
+    "article": "Lussekatt",
+    "story": "Golden saffron buns with raisins, associated with Saint Lucia in Sweden.",
+    "ingredients": [
+      "500 g flour",
+      "250 ml milk",
+      "80 g butter",
+      "80 g sugar",
+      "7 g yeast",
+      "Saffron",
+      "Raisins",
+      "1 egg"
+    ],
+    "steps": [
+      "Warm milk with saffron and dissolve yeast in it once lukewarm.",
+      "Knead flour, sugar, butter and milk into dough; let rise.",
+      "Shape S-shaped buns and add raisins.",
+      "Brush with egg and bake at 200°C for 10–12 minutes."
+    ],
+    "tip": "Keep the dough soft, not stiff."
+  },
+  {
+    "region": "World",
+    "name": "Spanish Turrón de Alicante",
+    "kind": "Sweet",
+    "serves": "18",
+    "time": "1 hr + setting",
+    "article": "Turrón",
+    "story": "Crunchy Spanish almond-and-honey nougat enjoyed at Christmas.",
+    "ingredients": [
+      "300 g toasted almonds",
+      "160 g honey",
+      "120 g sugar",
+      "1 egg white",
+      "Wafer paper"
+    ],
+    "steps": [
+      "Line a tin with edible wafer paper.",
+      "Cook honey and sugar carefully into syrup.",
+      "Beat egg white and gradually blend with hot syrup.",
+      "Fold in nuts, press flat and let set before slicing."
+    ],
+    "tip": "Sugar syrup is extremely hot; handle carefully."
+  },
+  {
+    "region": "World",
+    "name": "Greek Melomakarona",
+    "kind": "Sweet",
+    "serves": "24",
+    "time": "1 hr 30 min",
+    "article": "Melomakarono",
+    "story": "Greek honey-dipped orange-and-spice Christmas cookies.",
+    "ingredients": [
+      "350 g flour",
+      "120 ml olive oil",
+      "90 ml orange juice",
+      "100 g sugar",
+      "1 tsp cinnamon",
+      "250 g honey",
+      "100 g walnuts"
+    ],
+    "steps": [
+      "Mix olive oil, orange juice, sugar and flour with spices.",
+      "Shape small ovals, mark tops and bake at 180°C for 22 minutes.",
+      "Warm honey with a little water and dip warm cookies briefly.",
+      "Scatter with chopped walnuts."
+    ],
+    "tip": "Do not soak cookies too long or they may crumble."
+  },
+  {
+    "region": "World",
+    "name": "Norwegian Krumkake",
+    "kind": "Sweet",
+    "serves": "20",
+    "time": "1 hr",
+    "article": "Krumkake",
+    "story": "Delicate patterned wafer cookies rolled into elegant cones.",
+    "ingredients": [
+      "2 eggs",
+      "120 g sugar",
+      "120 g melted butter",
+      "120 g flour",
+      "1 tsp cardamom",
+      "2 tbsp water"
+    ],
+    "steps": [
+      "Whisk eggs and sugar, then mix in butter, flour and cardamom.",
+      "Heat a krumkake iron and add a spoon of batter.",
+      "Cook until golden, according to iron instructions.",
+      "Roll immediately into cones and cool crisp."
+    ],
+    "tip": "The wafers become brittle as they cool."
+  },
+  {
+    "region": "World",
+    "name": "Puerto Rican Coquito",
+    "kind": "Sweet",
+    "serves": "8 drinks",
+    "time": "15 min + chilling",
+    "article": "Coquito",
+    "story": "Creamy coconut-based festive drink; this family version is non-alcoholic.",
+    "ingredients": [
+      "400 ml coconut milk",
+      "250 ml coconut cream",
+      "250 ml evaporated milk",
+      "200 g condensed milk",
+      "1 tsp cinnamon",
+      "Vanilla",
+      "Nutmeg"
+    ],
+    "steps": [
+      "Blend all milks and coconut cream until smooth.",
+      "Add vanilla and spices.",
+      "Chill thoroughly for at least two hours.",
+      "Shake before serving over ice."
+    ],
+    "tip": "This recipe omits rum and is suitable for a family celebration."
+  },
+  {
+    "region": "World",
+    "name": "Ukrainian Kutia",
+    "kind": "Sweet",
+    "serves": "8",
+    "time": "2 hr",
+    "article": "Kutia",
+    "story": "Ceremonial sweet wheat-berry dish for Ukrainian Christmas Eve.",
+    "ingredients": [
+      "250 g wheat berries",
+      "100 g poppy seeds",
+      "100 g walnuts",
+      "100 g raisins",
+      "100 g honey",
+      "Water"
+    ],
+    "steps": [
+      "Cook soaked wheat berries in water until tender.",
+      "Soften poppy seeds in hot water and drain.",
+      "Mix wheat with poppy seeds, raisins, nuts and honey.",
+      "Adjust with a little cooking liquid and chill or serve cool."
+    ],
+    "tip": "Cooking time for wheat berries varies widely."
+  },
+  {
+    "region": "World",
+    "name": "German Lebkuchen",
+    "kind": "Sweet",
+    "serves": "24",
+    "time": "1 hr 30 min",
+    "article": "Lebkuchen",
+    "story": "Spiced German Christmas biscuits enriched with honey and nuts.",
+    "ingredients": [
+      "280 g flour",
+      "140 g honey",
+      "100 g brown sugar",
+      "100 g ground almonds",
+      "1 egg",
+      "2 tsp gingerbread spice",
+      "Baking powder"
+    ],
+    "steps": [
+      "Warm honey and sugar, then cool slightly.",
+      "Mix with remaining ingredients to form a dough.",
+      "Chill and form small rounds.",
+      "Bake at 175°C for 12–15 minutes, then glaze if desired."
+    ],
+    "tip": "Resting the dough enhances flavour."
+  },
+  {
+    "region": "World",
+    "name": "French Gratin Dauphinois",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "1 hr 30 min",
+    "article": "Gratin dauphinois",
+    "story": "Velvety French potato gratin suitable as a Christmas side dish.",
+    "ingredients": [
+      "1.2 kg potatoes",
+      "500 ml cream",
+      "250 ml milk",
+      "2 garlic cloves",
+      "Nutmeg",
+      "Butter",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Slice potatoes thinly and preheat the oven to 170°C.",
+      "Rub the baking dish with garlic and butter.",
+      "Layer potatoes with seasoned milk and cream.",
+      "Bake 60–75 minutes until tender and golden."
+    ],
+    "tip": "Traditional versions do not always include cheese."
+  },
+  {
+    "region": "World",
+    "name": "Japanese Christmas Strawberry Shortcake",
+    "kind": "Sweet",
+    "serves": "8",
+    "time": "1 hr 30 min",
+    "article": "Japanese Christmas cake",
+    "story": "Light sponge, whipped cream and strawberries are a festive Japanese favourite.",
+    "ingredients": [
+      "4 eggs",
+      "120 g sugar",
+      "120 g flour",
+      "40 g melted butter",
+      "400 ml whipping cream",
+      "400 g strawberries",
+      "2 tbsp sugar syrup"
+    ],
+    "steps": [
+      "Beat eggs and sugar until thick, then fold in flour and butter.",
+      "Bake at 175°C for 25–30 minutes, cool and split into layers.",
+      "Brush lightly with syrup and fill with whipped cream and sliced berries.",
+      "Cover with cream, decorate and chill."
+    ],
+    "tip": "Keep chilled because the cake contains fresh cream."
   }
 ]
