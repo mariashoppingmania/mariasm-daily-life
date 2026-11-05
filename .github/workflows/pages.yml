@@ -277,7 +277,8 @@ jobs:
           const dir='source/mariasm-site/docs/christmas-food';
           const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
           const recipes=[...html.matchAll(/<article class="recipe" data-kind="/g)];
-          if(recipes.length<35)throw Error('Fewer than 35 photographed recipes, found '+recipes.length);
+          const all=JSON.parse(fs.readFileSync('source/mariasm-site/content/christmas-food-recipes.json','utf8'));
+          if(recipes.length!==all.length)throw Error('Recipe cards missing: '+recipes.length+' of '+all.length);
           const urls=[...html.matchAll(/<img[^>]+src="(photos\/[^"]+)"/g)].map(x=>x[1]);
           if(urls.length!==recipes.length)throw Error('Recipe without photo: '+urls.length+' photos for '+recipes.length+' recipes');
           for(const url of urls){
@@ -287,7 +288,7 @@ jobs:
           if(!html.includes('Pork Morcon'))throw Error('Pork Morcon recipe missing');
           const home=fs.readFileSync('source/mariasm-site/docs/index.html','utf8');
           if(home.includes('mariasm-anime-logo-installer'))throw Error('Original Maria SM logo should remain in place');
-          console.log('Christmas special validated:',recipes.length,'photographed recipes and',urls.length,'verified local food images');
+          console.log('Christmas special validated:',recipes.length,'illustrated recipe cards and',urls.length,'verified local food images');
           JS
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
