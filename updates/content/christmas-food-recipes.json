@@ -1318,5 +1318,499 @@
       "Cover with cream, decorate and chill."
     ],
     "tip": "Keep chilled because the cake contains fresh cream."
+  },
+  {
+    "region": "Italy",
+    "name": "Tiramisù",
+    "kind": "Sweet",
+    "serves": "8",
+    "time": "35 min + chilling",
+    "article": "Tiramisu",
+    "story": "Coffee-soaked sponge fingers and mascarpone cream; a much-loved Italian celebration dessert.",
+    "ingredients": [
+      "300 g savoiardi",
+      "500 g mascarpone",
+      "4 pasteurised eggs",
+      "100 g sugar",
+      "300 ml coffee",
+      "Cocoa powder"
+    ],
+    "steps": [
+      "Beat pasteurised egg yolks and sugar until thick and mix in mascarpone.",
+      "Fold in separately beaten pasteurised whites.",
+      "Dip biscuits quickly in coffee and layer with cream.",
+      "Chill for at least four hours and dust with cocoa."
+    ],
+    "tip": "Use pasteurised eggs for no-bake preparation."
+  },
+  {
+    "region": "Italy",
+    "name": "Cannoli Siciliani",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "1 hr",
+    "article": "Cannoli",
+    "story": "Crisp Sicilian pastry tubes filled with sweetened ricotta.",
+    "ingredients": [
+      "12 cannoli shells",
+      "500 g well-drained ricotta",
+      "150 g icing sugar",
+      "Orange zest",
+      "Chocolate chips",
+      "Chopped pistachios"
+    ],
+    "steps": [
+      "Drain ricotta and beat with sugar and zest until smooth.",
+      "Fold in chocolate chips.",
+      "Fill cannoli shells just before serving.",
+      "Dip ends in pistachios or decorate with candied peel."
+    ],
+    "tip": "Keep shells separate until the last moment."
+  },
+  {
+    "region": "Italy",
+    "name": "Arancini di Riso",
+    "kind": "Savoury",
+    "serves": "12",
+    "time": "2 hr",
+    "article": "Arancini",
+    "story": "Golden rice croquettes with a fragrant ragù and cheese filling.",
+    "ingredients": [
+      "500 g risotto rice",
+      "1 litre stock",
+      "250 g beef ragù",
+      "100 g mozzarella",
+      "2 eggs",
+      "Breadcrumbs",
+      "Frying oil"
+    ],
+    "steps": [
+      "Cook rice in stock and cool until firm.",
+      "Wrap spoonfuls of rice around ragù and mozzarella.",
+      "Dip in egg and roll in breadcrumbs.",
+      "Fry at 170°C until deeply golden and heated through."
+    ],
+    "tip": "Chill shaped arancini before frying."
+  },
+  {
+    "region": "Italy",
+    "name": "Zabaglione",
+    "kind": "Sweet",
+    "serves": "6",
+    "time": "25 min",
+    "article": "Zabaione",
+    "story": "Airy custard made by whisking egg yolks over gentle heat, served with Christmas biscuits.",
+    "ingredients": [
+      "6 egg yolks",
+      "100 g sugar",
+      "100 ml Marsala or grape juice",
+      "Biscuits for serving"
+    ],
+    "steps": [
+      "Whisk egg yolks and sugar in a heatproof bowl.",
+      "Gradually add Marsala or grape juice.",
+      "Set over barely simmering water and whisk continuously until thick and safely heated.",
+      "Serve warm in small glasses."
+    ],
+    "tip": "Avoid boiling the egg mixture."
+  },
+  {
+    "region": "Italy",
+    "name": "Risotto alla Milanese",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "45 min",
+    "article": "Risotto alla milanese",
+    "story": "Golden saffron risotto that brings elegance to a winter celebration.",
+    "ingredients": [
+      "480 g risotto rice",
+      "1.4 litres hot stock",
+      "1 onion",
+      "A pinch saffron",
+      "80 g butter",
+      "100 g Parmigiano"
+    ],
+    "steps": [
+      "Soften finely chopped onion in butter.",
+      "Toast rice and gradually add hot stock, stirring.",
+      "Infuse saffron in stock and add partway through.",
+      "Finish creamy with butter and Parmigiano."
+    ],
+    "tip": "Serve immediately for the best texture."
+  },
+  {
+    "region": "Italy",
+    "name": "Frittelle di Mele",
+    "kind": "Sweet",
+    "serves": "6",
+    "time": "40 min",
+    "article": "Apple fritter",
+    "story": "Apple slices in a light golden batter with cinnamon sugar.",
+    "ingredients": [
+      "3 apples",
+      "180 g flour",
+      "1 egg",
+      "180 ml milk",
+      "1 tsp baking powder",
+      "Cinnamon sugar",
+      "Frying oil"
+    ],
+    "steps": [
+      "Peel and core apples and cut rings.",
+      "Whisk flour, egg, milk and baking powder into batter.",
+      "Dip apple rings and fry at 170°C until golden.",
+      "Drain and roll lightly in cinnamon sugar."
+    ],
+    "tip": "Dry the apples well before battering."
+  },
+  {
+    "region": "Philippines",
+    "name": "Chicken Adobo",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "1 hr 15 min",
+    "article": "Philippine adobo",
+    "story": "Chicken simmered in soy, vinegar, garlic and bay leaves; a Filipino family favourite.",
+    "ingredients": [
+      "1 kg chicken thighs",
+      "100 ml soy sauce",
+      "100 ml vinegar",
+      "6 garlic cloves",
+      "2 bay leaves",
+      "Black peppercorns",
+      "250 ml water"
+    ],
+    "steps": [
+      "Brown the chicken lightly.",
+      "Add soy sauce, vinegar, garlic, bay, peppercorns and water.",
+      "Simmer uncovered until chicken is safely cooked and sauce has reduced.",
+      "Serve over steamed rice."
+    ],
+    "tip": "Taste before adding any salt."
+  },
+  {
+    "region": "Philippines",
+    "name": "Sinigang na Baboy",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "1 hr 30 min",
+    "article": "Sinigang",
+    "story": "Tamarind-sour pork soup with tender vegetables.",
+    "ingredients": [
+      "800 g pork shoulder",
+      "2 litres water",
+      "2 tomatoes",
+      "1 onion",
+      "150 g radish",
+      "200 g string beans",
+      "Tamarind seasoning",
+      "Leafy greens"
+    ],
+    "steps": [
+      "Simmer pork with onion and tomatoes until tender.",
+      "Add radish and string beans; cook until just soft.",
+      "Season gradually with tamarind to taste.",
+      "Stir in leafy greens and finish briefly."
+    ],
+    "tip": "Adjust the sourness to your family preference."
+  },
+  {
+    "region": "Philippines",
+    "name": "Kare-Kare",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "2 hr 30 min",
+    "article": "Kare-kare",
+    "story": "Rich Filipino peanut stew, often served with vegetables and shrimp paste on the side.",
+    "ingredients": [
+      "1 kg beef shank",
+      "170 g smooth peanut butter",
+      "1 aubergine",
+      "250 g string beans",
+      "1 banana heart optional",
+      "Annatto",
+      "Garlic and onion",
+      "Shrimp paste optional"
+    ],
+    "steps": [
+      "Simmer beef until tender, reserving its broth.",
+      "Sauté garlic, onion and annatto; add broth and peanut butter.",
+      "Add beef and vegetables, simmering until cooked.",
+      "Serve with rice and optional shrimp paste separately."
+    ],
+    "tip": "Contains peanut allergen; shrimp paste contains shellfish."
+  },
+  {
+    "region": "Philippines",
+    "name": "Halo-Halo",
+    "kind": "Sweet",
+    "serves": "6",
+    "time": "30 min",
+    "article": "Halo-halo",
+    "story": "Layered shaved-ice dessert with sweet beans, fruit, jellies and milk.",
+    "ingredients": [
+      "6 cups shaved ice",
+      "250 ml evaporated milk",
+      "200 g sweetened beans",
+      "200 g nata de coco",
+      "200 g sweetened jackfruit",
+      "100 g ube halaya",
+      "Leche flan optional"
+    ],
+    "steps": [
+      "Divide chilled beans, fruits and jellies among glasses.",
+      "Pile on fresh shaved ice.",
+      "Pour milk around the ice.",
+      "Top with ube halaya and optional leche flan."
+    ],
+    "tip": "Serve immediately before the ice melts."
+  },
+  {
+    "region": "Philippines",
+    "name": "Ensaymada",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "3 hr",
+    "article": "Ensaymada",
+    "story": "Soft buttery sweet bread coils finished with sugar and grated cheese.",
+    "ingredients": [
+      "500 g bread flour",
+      "7 g yeast",
+      "200 ml warm milk",
+      "100 g sugar",
+      "3 eggs",
+      "120 g butter",
+      "Grated Edam or cheddar",
+      "Icing sugar"
+    ],
+    "steps": [
+      "Knead flour, yeast, milk, eggs and sugar until elastic.",
+      "Add butter gradually and let rise until doubled.",
+      "Shape coiled buns and let rise again.",
+      "Bake at 175°C for 15–20 minutes, brush with butter and add cheese and sugar."
+    ],
+    "tip": "A soft dough gives the buns their signature texture."
+  },
+  {
+    "region": "Philippines",
+    "name": "Puto Cheese",
+    "kind": "Sweet",
+    "serves": "18",
+    "time": "45 min",
+    "article": "Puto",
+    "story": "Small steamed Filipino rice cakes topped with cheese.",
+    "ingredients": [
+      "250 g rice flour",
+      "100 g sugar",
+      "1 tbsp baking powder",
+      "300 ml milk",
+      "1 egg",
+      "40 g butter",
+      "Cheese slices"
+    ],
+    "steps": [
+      "Mix flour, sugar and baking powder.",
+      "Beat in milk, egg and melted butter.",
+      "Fill greased small moulds two-thirds full.",
+      "Steam 12–15 minutes and add a cheese sliver near the end."
+    ],
+    "tip": "Keep the steam gentle to avoid collapsing."
+  },
+  {
+    "region": "Philippines",
+    "name": "Lechon",
+    "kind": "Savoury",
+    "serves": "10",
+    "time": "3 hr",
+    "article": "Lechon",
+    "story": "Crisp roasted pork is a lavish feast centrepiece in many Filipino celebrations.",
+    "ingredients": [
+      "2 kg pork belly",
+      "2 tbsp salt",
+      "Garlic",
+      "Lemongrass",
+      "Black pepper",
+      "Vinegar"
+    ],
+    "steps": [
+      "Score and dry the pork skin thoroughly.",
+      "Season meat with garlic, lemongrass, salt and pepper.",
+      "Roast at moderate heat until the meat is safely cooked.",
+      "Finish at higher heat to crisp the skin; rest before cutting."
+    ],
+    "tip": "This is a home-oven pork belly adaptation of whole-pig lechon."
+  },
+  {
+    "region": "World",
+    "name": "Christmas Pudding",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "4 hr",
+    "article": "Christmas pudding",
+    "story": "Steamed British winter pudding packed with fruit and spice.",
+    "ingredients": [
+      "300 g mixed dried fruit",
+      "120 g breadcrumbs",
+      "120 g flour",
+      "100 g brown sugar",
+      "120 g butter",
+      "2 eggs",
+      "Orange zest",
+      "Mixed spice"
+    ],
+    "steps": [
+      "Mix dried fruit, dry ingredients and grated butter.",
+      "Beat in eggs and zest.",
+      "Pack into a well-greased pudding basin and cover securely.",
+      "Steam gently for 3 hours, topping up water as needed."
+    ],
+    "tip": "Let cool before unmoulding and reheating."
+  },
+  {
+    "region": "World",
+    "name": "Eggnog — Non-Alcoholic",
+    "kind": "Sweet",
+    "serves": "6 drinks",
+    "time": "25 min + cooling",
+    "article": "Eggnog",
+    "story": "Creamy, nutmeg-scented holiday drink for the whole family.",
+    "ingredients": [
+      "4 egg yolks",
+      "500 ml milk",
+      "200 ml cream",
+      "80 g sugar",
+      "Nutmeg",
+      "Vanilla"
+    ],
+    "steps": [
+      "Whisk yolks with sugar until creamy.",
+      "Warm milk and cream with nutmeg and vanilla.",
+      "Gradually temper yolks with warm milk and heat gently until safely cooked.",
+      "Cool thoroughly and refrigerate."
+    ],
+    "tip": "Use pasteurised eggs if serving without fully cooked custard."
+  },
+  {
+    "region": "World",
+    "name": "Potato Latkes",
+    "kind": "Savoury",
+    "serves": "16",
+    "time": "45 min",
+    "article": "Latke",
+    "story": "Crisp potato pancakes enjoyed during Hanukkah.",
+    "ingredients": [
+      "800 g potatoes",
+      "1 onion",
+      "2 eggs",
+      "60 g flour",
+      "Salt and pepper",
+      "Frying oil",
+      "Applesauce or sour cream"
+    ],
+    "steps": [
+      "Grate potato and onion; squeeze out liquid.",
+      "Mix with eggs, flour and seasoning.",
+      "Fry spoonfuls in shallow oil until golden on both sides.",
+      "Drain and serve with applesauce or sour cream."
+    ],
+    "tip": "An overlapping winter holiday tradition, not specifically Christmas."
+  },
+  {
+    "region": "World",
+    "name": "American Pecan Pie",
+    "kind": "Sweet",
+    "serves": "10",
+    "time": "1 hr 20 min",
+    "article": "Pecan pie",
+    "story": "A rich nut pie served through the American holiday season.",
+    "ingredients": [
+      "1 pie crust",
+      "250 g pecans",
+      "3 eggs",
+      "150 g brown sugar",
+      "180 ml golden syrup",
+      "60 g butter",
+      "Vanilla"
+    ],
+    "steps": [
+      "Line a pie tin with pastry and chill.",
+      "Whisk eggs, sugar, syrup, butter and vanilla.",
+      "Scatter pecans in shell and pour filling over.",
+      "Bake at 175°C for 45–55 minutes until just set."
+    ],
+    "tip": "Cool before slicing to let filling firm up."
+  },
+  {
+    "region": "World",
+    "name": "Roast Beef with Yorkshire Pudding",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "2 hr 30 min",
+    "article": "Sunday roast",
+    "story": "A British-style roast dinner with crisp, airy Yorkshire puddings.",
+    "ingredients": [
+      "1.5 kg beef roast",
+      "250 g flour",
+      "4 eggs",
+      "350 ml milk",
+      "Beef drippings or oil",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Season and roast beef until it reaches your desired safe doneness; rest.",
+      "Whisk flour, eggs and milk into a smooth batter.",
+      "Heat a little fat in a muffin tin until very hot.",
+      "Pour batter into tin and bake at 220°C for 20–25 minutes without opening oven."
+    ],
+    "tip": "Use a meat thermometer to check doneness."
+  },
+  {
+    "region": "World",
+    "name": "Baklava",
+    "kind": "Sweet",
+    "serves": "20 pieces",
+    "time": "1 hr 30 min",
+    "article": "Baklava",
+    "story": "Layers of flaky pastry, nuts and fragrant syrup enjoyed across many cultures.",
+    "ingredients": [
+      "400 g filo pastry",
+      "300 g chopped walnuts",
+      "150 g melted butter",
+      "180 g sugar",
+      "180 ml water",
+      "120 g honey",
+      "Lemon juice"
+    ],
+    "steps": [
+      "Layer filo sheets with butter and walnuts in a baking tin.",
+      "Cut diamonds before baking.",
+      "Bake at 180°C for 35–45 minutes until golden.",
+      "Pour cooled honey syrup over hot pastry and leave to absorb."
+    ],
+    "tip": "Keep filo covered while working to prevent drying."
+  },
+  {
+    "region": "World",
+    "name": "Hot Chocolate",
+    "kind": "Sweet",
+    "serves": "6 drinks",
+    "time": "20 min",
+    "article": "Hot chocolate",
+    "story": "Thick winter cocoa topped with whipped cream or marshmallows.",
+    "ingredients": [
+      "1 litre milk",
+      "180 g dark chocolate",
+      "3 tbsp cocoa",
+      "3 tbsp sugar",
+      "Vanilla",
+      "Whipped cream optional"
+    ],
+    "steps": [
+      "Heat milk gently in a saucepan.",
+      "Whisk in cocoa, sugar and chopped chocolate until smooth.",
+      "Add vanilla and warm through without boiling.",
+      "Serve in mugs with optional cream."
+    ],
+    "tip": "Use good-quality dark chocolate for depth."
   }
 ]
