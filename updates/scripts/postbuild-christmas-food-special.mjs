@@ -44,6 +44,7 @@ const recipesInOrder=[...recipes.entries()],queue=recipesInOrder.slice();let pho
 await Promise.all(Array.from({length:7},async()=>{while(queue.length){
  const [i,r]=queue.shift();
  const candidates=[];
+ if(researchedPhotos[r.name]){const [filename,author,license]=researchedPhotos[r.name];const url=await wikimediaFile(filename);if(url)candidates.push({url,title:'File:'+filename,author,license});}
  if(r.name==='Pork Morcon')candidates.push({url:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Morc%C3%B3n_%28Filipino_cuisine%29_1.jpg/960px-Morc%C3%B3n_%28Filipino_cuisine%29_1.jpg',title:'Morcón (Filipino cuisine) 1.jpg, Obsidian Soul, CC BY 4.0'});
  if(photoOverrides[r.name]){
   for(const filename of photoOverrides[r.name]){const u=await wikimediaFile(filename);if(u)candidates.push({url:u,title:'File:'+filename})}
