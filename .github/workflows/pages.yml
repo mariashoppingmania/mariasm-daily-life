@@ -184,6 +184,29 @@ jobs:
           }
           console.log('Verified eyewear photo files:',sources.length);
           JS
+      - name: Expand Swimwear and Lingerie editorial with photo-audited products
+        run: node source/mariasm-site/scripts/postbuild-swimwear-lingerie-expansion.mjs
+      - name: Validate expanded Swimwear collections and original product photos
+        run: |
+          PAGE=source/mariasm-site/docs/swimwear-lingerie/index.html
+          test -s "$PAGE"
+          grep -q 'id="swim-edit-2026"' "$PAGE"
+          for section in swx-styles swx-bikini swx-bottoms swx-onepiece swx-accessories swx-lingerie; do
+            grep -q "id=\"$section\"" "$PAGE"
+          done
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const root='source/mariasm-site/docs/swimwear-lingerie';
+          const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+          const edit=html.split('<section id="swim-edit-2026">')[1]||'';
+          const files=[...edit.matchAll(/src="(assets\/expanded-shop\/[^"]+)"/g)].map(m=>m[1]);
+          for(const file of files){
+            const full=path.join(root,file);
+            if(!fs.existsSync(full)||fs.statSync(full).size<4500)throw Error('Missing or truncated original product photo: '+file);
+          }
+          console.log('Swimwear and lingerie photograph audit:',files.length,'valid locally hosted product photos');
+          JS
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
