@@ -162,6 +162,28 @@ jobs:
           grep -q 'id="sun-shop"' "$PAGE"
           grep -q 'href="#depilation"' "$PAGE"
           grep -q 'href="#sun-care"' "$PAGE"
+      - name: Build Eyewear editorial and photo-verified product shop in Hats Atelier
+        run: node source/mariasm-site/scripts/postbuild-eyewear-hats.mjs
+      - name: Validate eyewear section and local images
+        run: |
+          PAGE=source/mariasm-site/docs/hats/index.html
+          test -s "$PAGE"
+          grep -q 'id="eyewear-guide"' "$PAGE"
+          grep -q 'id="eyewear-types"' "$PAGE"
+          grep -q 'id="eyewear-lenses"' "$PAGE"
+          grep -q 'id="eyewear-shop"' "$PAGE"
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const html=fs.readFileSync('source/mariasm-site/docs/hats/index.html','utf8');
+          const chunk=html.split('<section id="eyewear-guide">')[1]||'';
+          const sources=[...chunk.matchAll(/src="(assets\/eyewear\/[^"]+)"/g)].map(x=>x[1]);
+          for(const rel of sources){
+            const full=path.join('source/mariasm-site/docs/hats',rel);
+            if(!fs.existsSync(full)||fs.statSync(full).size<4000)throw Error('Eyewear image missing: '+rel);
+          }
+          console.log('Verified eyewear photo files:',sources.length);
+          JS
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
