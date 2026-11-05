@@ -41,8 +41,33 @@ async function commons(name,limit=8){
   return Object.values(data.query?.pages??{}).filter(p=>/\.(jpe?g|png|webp)$/i.test(p.title??'')&&p.imageinfo?.[0]?.thumburl).map(p=>({url:p.imageinfo[0].thumburl,title:p.title}));
  }catch{return []}
 }
-const recipesInOrder=[...recipes.entries()],queue=recipesInOrder.slice();let photoCount=0;
-await Promise.all(Array.from({length:7},async()=>{while(queue.length){
+let photoCount=0;
+// Preserve successful photographs from the currently published edition.
+// This prevents a transient Wikimedia outage from degrading existing cards.
+const publishedPrefix='https://mariashoppingmania.github.io/mariasm-daily-life/christmas-food/photos/';
+let preservedPhotos=0;
+const missingPhotos=recipes.map((r,i)=>({r,i})).filter(x=>!x.r.photo);
+await Promise.all(Array.from({length:8},async()=>{while(missingPhotos.length){
+ const {r,i}=missingPhotos.shift();const index=String(i+1).padStart(2,'0');
+ for(const ext of ['jpg','png','webp']){
+  try{
+   const response=await get(publishedPrefix+'dish-'+index+'.'+ext,8500);
+   if(!response.ok)continue;
+   const bytes=Buffer.from(await response.arrayBuffer()),dim=imageInfo(bytes);
+   if(!dim||dim[1]<240||dim[2]<240)continue;
+   const name='dish-'+index+'.'+dim[0];fs.writeFileSync(path.join(photoDir,name),bytes);
+   if(fs.statSync(path.join(photoDir,name)).size!==bytes.length)throw Error('Old photo copy incomplete');
+   r.photo='photos/'+name;r.credit='Previously published verified photograph';
+   preservedPhotos++;photoCount++;
+   sources.push({recipe:r.name,source:'Prior Maria SM published photo (verified local image)',title:r.credit});
+   break;
+  }catch(e){console.warn('Previous photo not accessible for',r.name,String(e).slice(0,70))}
+ }
+}}));
+console.log('Previously published photographs preserved:',preservedPhotos);
+
+const recipesInOrder=[...recipes.entries()],queue=recipesInOrder.filter(([i,r])=>!r.photo);
+await Promise.all(Array.from({length:3},async()=>{while(queue.length){
  const [i,r]=queue.shift();
  const candidates=[];
  if(directPhotos[r.name]){const entry=researchedPhotos[r.name]??[];candidates.push({url:directPhotos[r.name],title:'File:'+(entry[0]??r.name),author:entry[1],license:entry[2]});}
@@ -71,29 +96,6 @@ await Promise.all(Array.from({length:7},async()=>{while(queue.length){
  }
  if(!r.photo)console.warn('NO VERIFIED PHOTO - withheld recipe:',r.name);
 }}));
-// Preserve successful photographs from the currently published edition.
-// This prevents a transient Wikimedia outage from degrading existing cards.
-const publishedPrefix='https://mariashoppingmania.github.io/mariasm-daily-life/christmas-food/photos/';
-let preservedPhotos=0;
-const missingPhotos=recipes.map((r,i)=>({r,i})).filter(x=>!x.r.photo);
-await Promise.all(Array.from({length:8},async()=>{while(missingPhotos.length){
- const {r,i}=missingPhotos.shift();const index=String(i+1).padStart(2,'0');
- for(const ext of ['jpg','png','webp']){
-  try{
-   const response=await get(publishedPrefix+'dish-'+index+'.'+ext,8500);
-   if(!response.ok)continue;
-   const bytes=Buffer.from(await response.arrayBuffer()),dim=imageInfo(bytes);
-   if(!dim||dim[1]<240||dim[2]<240)continue;
-   const name='dish-'+index+'.'+dim[0];fs.writeFileSync(path.join(photoDir,name),bytes);
-   if(fs.statSync(path.join(photoDir,name)).size!==bytes.length)throw Error('Old photo copy incomplete');
-   r.photo='photos/'+name;r.credit='Previously published verified photograph';
-   preservedPhotos++;photoCount++;
-   sources.push({recipe:r.name,source:'Prior Maria SM published photo (verified local image)',title:r.credit});
-   break;
-  }catch(e){console.warn('Previous photo not accessible for',r.name,String(e).slice(0,70))}
- }
-}}));
-console.log('Previously published photographs preserved:',preservedPhotos);
 // A locally created parchment-style food illustration is used ONLY when
 // licensed photographs cannot be downloaded. Never leave a recipe image blank.
 function makeRecipeIllustration(recipe,index){
