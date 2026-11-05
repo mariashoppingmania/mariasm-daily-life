@@ -5,10 +5,10 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const file=path.join(root,'docs/swimwear-lingerie/index.html');
 let html=fs.readFileSync(file,'utf8');
 const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\x27':'&#39;'}[c]));
-const source=html.match(/<section id="swim-edit-2026">[\s\S]*?<\/section>/);
-if(!source)throw Error('Missing verified swimwear gallery');
+const source=html.slice(html.indexOf('<section id="swim-edit-2026">'));
+if(!source.startsWith('<section id="swim-edit-2026">'))throw Error('Missing verified swimwear gallery');
 const candidates={};
-for(const match of source[0].matchAll(/<section class="swx-group" id="swx-([^"]+)">([\s\S]*?)<\/section>/g)){
+for(const match of source.matchAll(/<section class="swx-group" id="swx-([^"]+)">([\s\S]*?)<\/section>/g)){
  const group=match[1],products=[];
  for(const card of match[2].matchAll(/<article class="swx-product">([\s\S]*?)<\/article>/g)){
   const body=card[1],img=body.match(/<img\b[^>]*\bsrc="([^"]+)"/)?.[1];
