@@ -64,7 +64,7 @@ await Promise.all(Array.from({length:7},async()=>{while(queue.length){
    if(!dim||dim[1]<240||dim[2]<240||dim[1]>9000||dim[2]>9000)continue;
    const file='dish-'+String(i+1).padStart(2,'0')+'.'+dim[0],local=path.join(photoDir,file);
    fs.writeFileSync(local,b);if(fs.statSync(local).size!==b.length)throw Error('Photo corrupted');
-   r.photo='photos/'+file;r.credit=item.title;photoCount++;sources.push({recipe:r.name,source:u,title:item.title});break;
+   r.photo='photos/'+file;r.credit=item.title;photoCount++;sources.push({recipe:r.name,source:u,title:item.title,author:item.author??null,license:item.license??null,original_file:item.title?.startsWith('File:')?'https://commons.wikimedia.org/wiki/'+encodeURIComponent(item.title.replaceAll(' ','_')):null});break;
   }catch(e){console.warn('Photo candidate failed:',r.name,String(e).slice(0,70))}
  }
  if(!r.photo)console.warn('NO VERIFIED PHOTO - withheld recipe:',r.name);
