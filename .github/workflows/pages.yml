@@ -251,27 +251,11 @@ jobs:
           }
           console.log('Both missing-photo cards replaced with validated product images');
           JS
-      - name: Generate colorful anime-inspired animated Maria SM GIF logo
+      - name: Verify original Maria SM branding remains untouched
         run: |
-          python -m pip install --disable-pip-version-check Pillow
-          python source/mariasm-site/scripts/build-anime-logo.py
-      - name: Replace Maria SM logo across every site page
-        run: node source/mariasm-site/scripts/postbuild-global-anime-logo.mjs
-      - name: Validate anime GIF and consistent responsive site header
-        run: |
-          test -s source/mariasm-site/docs/assets/maria-anime-logo.gif
-          test -s source/mariasm-site/docs/assets/maria-anime-logo-still.png
-          grep -q 'id="mariasm-anime-logo-installer"' source/mariasm-site/docs/index.html
-          grep -q 'id="mariasm-anime-logo-installer"' source/mariasm-site/docs/swimwear-lingerie/index.html
-          grep -q 'id="mariasm-anime-logo-installer"' source/mariasm-site/docs/hats/index.html
-          node --input-type=module <<'JS'
-          import fs from 'node:fs';
-          const bytes=fs.readFileSync('source/mariasm-site/docs/assets/maria-anime-logo.gif');
-          if(bytes.toString('ascii',0,6)!=='GIF89a')throw Error('Animated logo is not a GIF89a image');
-          const text=fs.readFileSync('source/mariasm-site/docs/index.html','utf8');
-          if(!text.includes('mariasm-anime-brand'))throw Error('Brand style not injected');
-          console.log('Anime GIF header validation passed,',bytes.length,'bytes');
-          JS
+          ! grep -q 'id="mariasm-anime-logo-installer"' source/mariasm-site/docs/index.html
+          ! grep -q 'id="mariasm-anime-logo-installer"' source/mariasm-site/docs/swimwear-lingerie/index.html
+          ! grep -q 'id="mariasm-anime-logo-installer"' source/mariasm-site/docs/hats/index.html
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
