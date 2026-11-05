@@ -61,6 +61,18 @@ jobs:
         run: node source/mariasm-site/scripts/postbuild-high-jewellery-real-photos.mjs
       - name: Create Hair Atelier and integrate with site menus
         run: node source/mariasm-site/scripts/postbuild-hair-atelier.mjs
+      - name: Build photograph-verified Hair Atelier product catalogue
+        run: node source/mariasm-site/scripts/postbuild-hair-shop.mjs
+      - name: Audit Hair Shop photographs and actual product files
+        run: |
+          PAGE=source/mariasm-site/docs/hair/index.html
+          test -s "$PAGE"
+          grep -q 'id="products"' "$PAGE"
+          PHOTO_COUNT=$(grep -o 'class="hair-shop-card"' "$PAGE" | wc -l | tr -d ' ')
+          echo "Hair Shop verified photographed products: $PHOTO_COUNT"
+          if [ "$PHOTO_COUNT" -lt 12 ]; then
+            echo "::warning::Only $PHOTO_COUNT product photos were verified; more catalogue sources need access."
+          fi
       - name: Verify Hair Atelier and homepage navigation
         run: |
           test -s source/mariasm-site/docs/hair/index.html
