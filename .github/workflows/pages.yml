@@ -129,6 +129,29 @@ jobs:
           grep -q 'class="ms-new-beauty-link"' source/mariasm-site/docs/index.html
           grep -q 'skin-care/index.html' source/mariasm-site/docs/index.html
           grep -q 'oral-care/index.html' source/mariasm-site/docs/index.html
+      - name: Add body depilation, technique and verified-photo shop to Skincare Atelier
+        run: node source/mariasm-site/scripts/postbuild-skin-depilation.mjs
+      - name: Audit body hair removal page and image files
+        run: |
+          PAGE=source/mariasm-site/docs/skin-care/index.html
+          test -s "$PAGE"
+          grep -q 'id="depilation"' "$PAGE"
+          grep -q 'id="hr-methods"' "$PAGE"
+          grep -q 'id="hr-technique"' "$PAGE"
+          grep -q 'id="hr-shop"' "$PAGE"
+          grep -q 'id="hr-faq"' "$PAGE"
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const page=fs.readFileSync('source/mariasm-site/docs/skin-care/index.html','utf8');
+          const chunk=page.split('<section id="depilation">')[1]?.split('</section>')[0]||'';
+          const refs=[...chunk.matchAll(/<img[^>]*src="(assets\/hair-removal\/[^"]+)"/g)].map(m=>m[1]);
+          for(const ref of refs){
+            const file=path.join('source/mariasm-site/docs/skin-care',ref);
+            if(!fs.existsSync(file)||fs.statSync(file).size<4000)throw new Error('Missing or invalid product photo: '+ref);
+          }
+          console.log('Depilation image file audit passed:',refs.length,'verified local photographs');
+          JS
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
