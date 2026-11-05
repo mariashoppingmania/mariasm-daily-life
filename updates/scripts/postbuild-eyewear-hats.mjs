@@ -61,8 +61,8 @@ function dims(b){
 const candidates=[];
 await Promise.all(catalogues.map(async([brand,url,currency])=>{try{
  const r=await fetcher(url);if(!r.ok)return;const x=await r.json();let n=0;
- for(const p of x.products??[]){if(n>=11)break;
- const title=String(p.title??'');if(/case|cloth|kit|gift card|accessor|chain|cord|cleaner|replacement|lens only/i.test(title))continue;
+ for(const p of x.products??[]){if(n>=28)break;
+ const title=String(p.title??'');if(/case|cloth|kit|gift card|accessor|chain|cord|cleaner|replacement|lens only|mystery|blind[ -]?box|surprise|random|grab bag|secret drop/i.test(title))continue;
  const photo=p.images?.find(i=>/^https:\/\//.test(i.src??''))?.src,variant=p.variants?.find(v=>v.available!==false&&Number(v.price)>0)??p.variants?.find(v=>Number(v.price)>0);
  if(!photo||!variant||Number(variant.price)>900)continue;
  if(!/sun|glass|frame|optic|aviator|wayfarer|cat.eye|round|square|polar|eyewear|shade/i.test(title+' '+String(p.product_type??'')))continue;
@@ -70,14 +70,18 @@ await Promise.all(catalogues.map(async([brand,url,currency])=>{try{
  }
 }catch(e){console.warn('Eyewear catalogue unavailable',brand,String(e).slice(0,90))}}));
 const verified=[],seen=new Set();
-for(const p of candidates){if(verified.length>=48)break;const key=(p.brand+p.title).toLowerCase();if(seen.has(key))continue;seen.add(key);
+const brandCounts=new Map();
+for(const p of candidates){if(verified.length>=60)break;const key=(p.brand+p.title).toLowerCase();if(seen.has(key))continue;if((brandCounts.get(p.brand)||0)>=9)continue;seen.add(key);
  try{const r=await fetcher(p.photo,14000);if(!r.ok)continue;const b=Buffer.from(await r.arrayBuffer()),d=dims(b);
  if(!d||b.length<4000||b.length>6000000||d[1]<250||d[2]<250||d[1]>9000||d[2]>9000)continue;
  const filename='eyewear-'+String(verified.length+1).padStart(2,'0')+'.'+d[0],full=path.join(assets,filename);fs.writeFileSync(full,b);
  const test=fs.readFileSync(full),d2=dims(test);if(test.length!==b.length||!d2||d2[1]!==d[1]||d2[2]!==d[2]){fs.unlinkSync(full);continue;}
- verified.push({...p,image:'assets/eyewear/'+filename,width:d[1],height:d[2]});
+ verified.push({...p,image:'assets/eyewear/'+filename,width:d[1],height:d[2]});brandCounts.set(p.brand,(brandCounts.get(p.brand)||0)+1);
  }catch(e){console.warn('Eyewear photo skipped',p.title,String(e).slice(0,90))}
 }
+if(verified.some(p=>/mystery|surprise|blind[ -]?box|random/i.test(p.title)))throw Error('Uncertain eyewear listings survived product filter');
+if(verified.length<10)throw Error('Not enough real eyewear models with locally verified photographs: '+verified.length);
+console.log('Eyewear photo audit: no mystery products,',verified.length,'named models from',brandCounts.size,'brands');
 const types=styles.map(([name,body])=>'<article class="ew-card"><h3>'+E(name)+'</h3><p>'+E(body)+'</p></article>').join('');
 const guide=guidance.map(([name,body])=>'<article class="ew-card"><h3>'+E(name)+'</h3><p>'+E(body)+'</p></article>').join('');
 const products=verified.map(p=>'<article class="ew-product"><img src="'+E(p.image)+'" loading="lazy" decoding="async" width="'+p.width+'" height="'+p.height+'" alt="'+E(p.brand+' '+p.title)+'"><div><small>'+E(p.brand)+'</small><h3>'+E(p.title)+'</h3><p>'+E(p.description)+'</p><strong>'+new Intl.NumberFormat('en',{style:'currency',currency:p.currency}).format(p.price)+'</strong><a href="'+E(p.url)+'" target="_blank" rel="noopener noreferrer">View at official store ↗</a></div></article>').join('');
