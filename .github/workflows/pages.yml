@@ -228,6 +228,29 @@ jobs:
           }
           console.log('Authentic editorial cards audited:',photos.length);
           JS
+      - name: Fix two remaining unavailable swimwear photographs
+        run: node source/mariasm-site/scripts/postbuild-swimwear-last-missing-photos.mjs
+      - name: Assert missing swimsuit product photos have real matching replacements
+        run: |
+          PAGE=source/mariasm-site/docs/swimwear-lingerie/index.html
+          grep -q 'data-replaced-editorial="High-Waist Bikini Bottoms"' "$PAGE"
+          grep -q 'data-replaced-editorial="Bella Underwire Bikini Set Sea Blue"' "$PAGE"
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const dir='source/mariasm-site/docs/swimwear-lingerie';
+          const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
+          const cards=[...html.matchAll(/<article class="ms-authentic-swim-product"[^>]*data-replaced-editorial="([^"]+)"[\s\S]*?<\/article>/g)].filter(x=>/High-Waist Bikini Bottoms|Bella Underwire Bikini Set Sea Blue/.test(x[1]));
+          if(cards.length!==2)throw Error('Expected exactly two corrected product cards');
+          for(const card of cards){
+            const img=card[0].match(/src="([^"]+)"/)?.[1];
+            const asset=path.join(dir,img??'');
+            if(!img||!fs.existsSync(asset)||fs.statSync(asset).size<4500)throw Error('Invalid replacement product image: '+card[1]);
+            if(/IMAGE UNAVAILABLE|image unavailable|ACTUAL PRODUCT IMAGE/.test(card[0]))throw Error('Placeholder persisted: '+card[1]);
+            if(!card[0].includes('View this exact product'))throw Error('Matching shopping link missing: '+card[1]);
+          }
+          console.log('Both missing-photo cards replaced with validated product images');
+          JS
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
