@@ -83,5 +83,6 @@ for t in range(10):
             d.line((x-8,y,x+8,y),fill=(255,222,241,180),width=1)
             d.line((x,y-8,x,y+8),fill=(255,222,241,180),width=1)
     frames.append(im.convert('RGB').quantize(colors=96,method=Image.Quantize.FASTOCTREE))
+frames[0].convert('RGB').save(out.with_name('maria-anime-logo-still.png'),format='PNG')
 frames[0].save(out,save_all=True,append_images=frames[1:],duration=170,loop=0,optimize=True,disposal=2)
 print('Generated animated Maria SM logo:',out,out.stat().st_size,'bytes',len(frames),'frames')
