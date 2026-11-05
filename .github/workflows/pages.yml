@@ -182,7 +182,13 @@ jobs:
             const full=path.join('source/mariasm-site/docs/hats',rel);
             if(!fs.existsSync(full)||fs.statSync(full).size<4000)throw Error('Eyewear image missing: '+rel);
           }
-          console.log('Verified eyewear photo files:',sources.length);
+          const products=[...chunk.matchAll(/<article class="ew-product">([\s\S]*?)<\/article>/g)].map(x=>x[1]);
+          if(products.length<10)throw Error('Not enough specific eyewear products: '+products.length);
+          if(sources.length!==products.length)throw Error('Eyewear product/photo count mismatch');
+          if(products.some(x=>/<h3>[^<]*(mystery|surprise|blind box|random)/i.test(x)))throw Error('Mystery or placeholder sunglasses remain');
+          const brands=new Set(products.map(x=>x.match(/<small>([^<]+)<\/small>/)?.[1]).filter(Boolean));
+          if(brands.size<2)throw Error('Eyewear choices not diversified by brand');
+          console.log('Verified eyewear product images:',sources.length,'across',brands.size,'brands, no mystery product photos');
           JS
       - name: Expand Swimwear and Lingerie editorial with photo-audited products
         run: node source/mariasm-site/scripts/postbuild-swimwear-lingerie-expansion.mjs
