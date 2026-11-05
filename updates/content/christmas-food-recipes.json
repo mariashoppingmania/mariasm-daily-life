@@ -1,0 +1,680 @@
+[
+  {
+    "region": "Italy",
+    "name": "Panettone",
+    "kind": "Sweet",
+    "serves": "10 slices",
+    "time": "18–24 hr",
+    "article": "Panettone",
+    "story": "Milan’s lofty Christmas bread, enriched with butter, candied citrus and raisins.",
+    "ingredients": [
+      "500 g bread flour",
+      "120 g sugar",
+      "7 g instant yeast",
+      "4 eggs",
+      "150 ml milk",
+      "150 g butter",
+      "130 g raisins",
+      "100 g candied citrus",
+      "Orange zest"
+    ],
+    "steps": [
+      "Mix flour, sugar, yeast, eggs and milk; knead until stretchy.",
+      "Knead in soft butter, raisins and peel; let rise until doubled.",
+      "Place in a tall mould and allow to rise again.",
+      "Bake at 170°C for 40–55 minutes; cool thoroughly."
+    ],
+    "tip": "This is a home-style adaptation of traditional long-fermented panettone."
+  },
+  {
+    "region": "Italy",
+    "name": "Pandoro",
+    "kind": "Sweet",
+    "serves": "10 slices",
+    "time": "6–8 hr",
+    "article": "Pandoro",
+    "story": "Verona’s golden, star-shaped buttery cake is finished with powdered sugar.",
+    "ingredients": [
+      "450 g strong flour",
+      "120 g sugar",
+      "7 g yeast",
+      "3 eggs and 2 yolks",
+      "130 ml milk",
+      "170 g butter",
+      "Vanilla",
+      "Icing sugar"
+    ],
+    "steps": [
+      "Knead flour, yeast, sugar, eggs and milk into a soft dough.",
+      "Work in butter gradually and let rise until doubled.",
+      "Proof in a buttered star-shaped mould until puffy.",
+      "Bake at 170°C for 35–45 minutes; cool and dust with sugar."
+    ],
+    "tip": "A simplified home dough rather than the classic multi-stage pastry method."
+  },
+  {
+    "region": "Italy",
+    "name": "Struffoli",
+    "kind": "Sweet",
+    "serves": "8",
+    "time": "1 hr 20 min",
+    "article": "Struffoli",
+    "story": "Neapolitan fried pastry pearls dressed in warm honey and colourful sprinkles.",
+    "ingredients": [
+      "300 g flour",
+      "3 eggs",
+      "30 g butter",
+      "1 tbsp sugar",
+      "Orange zest",
+      "200 g honey",
+      "Neutral frying oil",
+      "Sprinkles"
+    ],
+    "steps": [
+      "Knead flour, eggs, butter, sugar and zest; rest 25 minutes.",
+      "Roll into thin ropes and cut small nuggets.",
+      "Fry in batches at roughly 170°C until golden, then drain.",
+      "Coat in gently warmed honey and decorate in a wreath."
+    ],
+    "tip": "Avoid overcrowding the frying pan."
+  },
+  {
+    "region": "Italy",
+    "name": "Panforte di Siena",
+    "kind": "Sweet",
+    "serves": "12 wedges",
+    "time": "1 hr",
+    "article": "Panforte",
+    "story": "Dense Tuscan festive cake of nuts, candied peel, honey and spices.",
+    "ingredients": [
+      "180 g almonds",
+      "120 g hazelnuts",
+      "180 g candied citrus",
+      "150 g honey",
+      "110 g sugar",
+      "80 g flour",
+      "2 tsp cinnamon",
+      "½ tsp ginger"
+    ],
+    "steps": [
+      "Toast and roughly chop the nuts.",
+      "Combine nuts, peel, flour and spices.",
+      "Warm honey with sugar, mix everything and press into a lined tin.",
+      "Bake at 150°C for 25–30 minutes; cool before slicing."
+    ],
+    "tip": "Keep airtight and serve in small, rich wedges."
+  },
+  {
+    "region": "Italy",
+    "name": "Ricciarelli",
+    "kind": "Sweet",
+    "serves": "20 biscuits",
+    "time": "50 min",
+    "article": "Ricciarelli",
+    "story": "Siena’s soft almond sweets, delicately cracked beneath white icing sugar.",
+    "ingredients": [
+      "250 g ground almonds",
+      "180 g icing sugar",
+      "2 egg whites",
+      "Almond essence",
+      "Orange zest",
+      "Extra icing sugar"
+    ],
+    "steps": [
+      "Mix almonds with sugar and zest, then fold in egg whites and essence.",
+      "Chill for 30 minutes; shape oval biscuits.",
+      "Dust generously in icing sugar.",
+      "Bake at 155°C for 15–18 minutes and let cool fully."
+    ],
+    "tip": "The centre should stay soft."
+  },
+  {
+    "region": "Italy",
+    "name": "Tortellini in Brodo",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "2 hr",
+    "article": "Tortellini",
+    "story": "Small filled pasta served in fragrant clear chicken or capon broth.",
+    "ingredients": [
+      "400 g pasta sheets",
+      "180 g cooked pork",
+      "100 g prosciutto",
+      "80 g mortadella",
+      "80 g Parmigiano",
+      "1 egg",
+      "Nutmeg",
+      "2 litres broth"
+    ],
+    "steps": [
+      "Mince pork and cured meats finely and mix with cheese, egg and nutmeg.",
+      "Cut pasta squares and fill, folding into tortellini.",
+      "Bring broth to a gentle simmer.",
+      "Cook the pasta in broth for 3–5 minutes, until tender, then serve."
+    ],
+    "tip": "Keep the filling cold while assembling."
+  },
+  {
+    "region": "Italy",
+    "name": "Lasagne al Forno",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "2 hr 30 min",
+    "article": "Lasagna",
+    "story": "Layers of pasta, beef ragù and béchamel for Christmas lunch.",
+    "ingredients": [
+      "300 g lasagne sheets",
+      "500 g minced beef",
+      "Onion, carrot and celery",
+      "500 ml passata",
+      "600 ml béchamel",
+      "120 g Parmigiano"
+    ],
+    "steps": [
+      "Soften chopped vegetables, brown beef and simmer with tomato for 45–60 minutes.",
+      "Layer pasta, ragù, béchamel and cheese in a deep baking dish.",
+      "Repeat to fill, ending with béchamel and cheese.",
+      "Bake at 180°C for 35–45 minutes and rest before cutting."
+    ],
+    "tip": "Check whether your pasta sheets need preboiling."
+  },
+  {
+    "region": "Italy",
+    "name": "Baccalà al Forno",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "1 hr",
+    "article": "Baccalà",
+    "story": "Salt cod roasted with potatoes, olives and tomatoes, inspired by Christmas Eve traditions.",
+    "ingredients": [
+      "800 g fully desalinated salt cod",
+      "600 g potatoes",
+      "300 g tomatoes",
+      "1 red onion",
+      "80 g black olives",
+      "Olive oil",
+      "Parsley and lemon"
+    ],
+    "steps": [
+      "Desalt cod beforehand as instructed by the fishmonger.",
+      "Roast sliced potatoes, onion and tomatoes with oil at 190°C for 20 minutes.",
+      "Add cod and olives, and roast 20–25 minutes more until fish flakes.",
+      "Finish with parsley and lemon; salt only if needed."
+    ],
+    "tip": "Salt cod can remain quite salty."
+  },
+  {
+    "region": "Italy",
+    "name": "Cartellate",
+    "kind": "Sweet",
+    "serves": "25 pastries",
+    "time": "2 hr",
+    "article": "Cartellate",
+    "story": "Puglian rose-shaped fried pastries dipped in vincotto or honey.",
+    "ingredients": [
+      "350 g flour",
+      "60 ml olive oil",
+      "120 ml white wine or water",
+      "Pinch salt",
+      "Frying oil",
+      "180 ml vincotto or honey"
+    ],
+    "steps": [
+      "Knead flour, oil, wine or water and salt; rest 30 minutes.",
+      "Roll thin strips and coil into rosette shapes.",
+      "Fry at around 170°C until lightly golden; drain.",
+      "Dip in warm vincotto or honey."
+    ],
+    "tip": "Handmade shapes need not be identical."
+  },
+  {
+    "region": "Philippines",
+    "name": "Bibingka",
+    "kind": "Sweet",
+    "serves": "6",
+    "time": "50 min",
+    "article": "Bibingka",
+    "story": "Banana-leaf-scented rice cake warmly associated with Simbang Gabi.",
+    "ingredients": [
+      "200 g fine rice flour",
+      "70 g sugar",
+      "1 tbsp baking powder",
+      "2 eggs",
+      "250 ml coconut milk",
+      "50 g melted butter",
+      "Banana leaves",
+      "Cheese or salted egg"
+    ],
+    "steps": [
+      "Line a small tin with banana leaves or baking paper; heat oven to 190°C.",
+      "Mix rice flour, sugar, baking powder, eggs, coconut milk and butter.",
+      "Pour into tin and top with cheese or salted egg if desired.",
+      "Bake 25–30 minutes, brush with butter and serve with coconut."
+    ],
+    "tip": "Use fine rice flour for a tender result."
+  },
+  {
+    "region": "Philippines",
+    "name": "Puto Bumbong — Home Style",
+    "kind": "Sweet",
+    "serves": "6",
+    "time": "45 min",
+    "article": "Puto bumbong",
+    "story": "Purple steamed rice delicacy finished with coconut, muscovado and butter.",
+    "ingredients": [
+      "200 g glutinous rice flour",
+      "50 g purple rice flour or ube colouring",
+      "160–190 ml water",
+      "2 tbsp butter",
+      "100 g grated coconut",
+      "Muscovado sugar",
+      "Banana leaves"
+    ],
+    "steps": [
+      "Add water gradually to the flour until moist and crumbly.",
+      "Pack into a suitable steaming mould lined with muslin.",
+      "Steam for 8–12 minutes until cooked.",
+      "Serve hot with butter, grated coconut and muscovado."
+    ],
+    "tip": "The classic version is steamed in bamboo tubes."
+  },
+  {
+    "region": "Philippines",
+    "name": "Leche Flan",
+    "kind": "Sweet",
+    "serves": "8",
+    "time": "1 hr + chilling",
+    "article": "Leche flan",
+    "story": "Glossy caramel custard that is a Filipino holiday favourite.",
+    "ingredients": [
+      "8 egg yolks",
+      "397 g condensed milk",
+      "370 ml evaporated milk",
+      "100 g sugar for caramel",
+      "Vanilla"
+    ],
+    "steps": [
+      "Melt sugar to an amber caramel and coat the base of a mould.",
+      "Combine yolks, milks and vanilla gently; strain over caramel.",
+      "Cover and steam gently or bake in a water bath at 160°C for 40–55 minutes.",
+      "Cool and refrigerate thoroughly before unmoulding."
+    ],
+    "tip": "Gentle heat prevents a bubbly custard."
+  },
+  {
+    "region": "Philippines",
+    "name": "Hamon with Pineapple Glaze",
+    "kind": "Savoury",
+    "serves": "10",
+    "time": "1 hr 30 min",
+    "article": "Ham",
+    "story": "Sweet-savoury Noche Buena ham, often shared with queso de bola.",
+    "ingredients": [
+      "1.5 kg fully cooked ham",
+      "250 ml pineapple juice",
+      "100 g brown sugar",
+      "2 tbsp honey",
+      "1 tbsp mustard",
+      "Cloves optional"
+    ],
+    "steps": [
+      "Heat the oven to 165°C and place the cooked ham in a roasting dish.",
+      "Simmer juice, sugar, honey and mustard into a glaze.",
+      "Brush ham and heat covered, basting regularly.",
+      "Uncover briefly to caramelise; rest before slicing."
+    ],
+    "tip": "Raw ham requires a different cooking procedure; check the label."
+  },
+  {
+    "region": "Philippines",
+    "name": "Pancit Bihon",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "45 min",
+    "article": "Pancit bihon",
+    "story": "Rice noodles tossed with colourful vegetables and chicken for a family feast.",
+    "ingredients": [
+      "350 g rice vermicelli",
+      "300 g chicken",
+      "Carrot and cabbage",
+      "100 g beans",
+      "Garlic and onion",
+      "80 ml soy sauce",
+      "500 ml chicken stock",
+      "Calamansi"
+    ],
+    "steps": [
+      "Soak noodles according to the packet.",
+      "Cook aromatics and chicken thoroughly, then add sliced vegetables.",
+      "Add stock and soy sauce, then toss in noodles until liquid is absorbed.",
+      "Serve hot with calamansi wedges."
+    ],
+    "tip": "Add broth gradually because noodles absorb different amounts."
+  },
+  {
+    "region": "Philippines",
+    "name": "Lumpiang Shanghai",
+    "kind": "Savoury",
+    "serves": "30 rolls",
+    "time": "1 hr 15 min",
+    "article": "Lumpiang Shanghai",
+    "story": "Crispy small spring rolls with savoury minced pork filling.",
+    "ingredients": [
+      "500 g minced pork",
+      "1 grated carrot",
+      "1 chopped onion",
+      "2 tbsp soy sauce",
+      "1 egg",
+      "30 spring roll wrappers",
+      "Frying oil"
+    ],
+    "steps": [
+      "Mix the pork, vegetables, soy sauce and egg.",
+      "Roll narrow portions in wrappers and seal tightly.",
+      "Fry in batches at 170°C until crisp and fully cooked inside.",
+      "Drain and serve with a sweet chilli dip."
+    ],
+    "tip": "Cook a little filling first to check seasoning."
+  },
+  {
+    "region": "Philippines",
+    "name": "Pork Morcon",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "2 hr 30 min",
+    "article": "Morcon (Filipino cuisine)",
+    "story": "Festive pork roulade with a colourful filling of sausage, egg and vegetables.",
+    "ingredients": [
+      "1 kg thin pork slices",
+      "2 cooked sausages",
+      "2 hard-boiled eggs",
+      "1 carrot",
+      "Pickles",
+      "150 ml soy sauce",
+      "Lemon juice",
+      "300 ml tomato sauce"
+    ],
+    "steps": [
+      "Marinate pork in soy and lemon for 30 minutes.",
+      "Lay sausage, eggs, carrot and pickles on the meat; roll and tie.",
+      "Brown the roll, then gently simmer in tomato sauce until tender and fully cooked.",
+      "Rest, remove twine and slice into rounds."
+    ],
+    "tip": "Some households also prepare beef versions."
+  },
+  {
+    "region": "Philippines",
+    "name": "Creamy Fruit Salad",
+    "kind": "Sweet",
+    "serves": "10",
+    "time": "20 min + chilling",
+    "article": "Fruit salad",
+    "story": "Chilled, creamy fruit salad is a colourful Christmas buffet classic.",
+    "ingredients": [
+      "800 g drained canned fruit",
+      "250 g nata de coco",
+      "200 g kaong optional",
+      "250 ml cream",
+      "200 g condensed milk",
+      "Diced cheese optional"
+    ],
+    "steps": [
+      "Drain the canned fruit very well.",
+      "Combine fruit, nata de coco and kaong.",
+      "Fold in cream and condensed milk; add diced cheese if preferred.",
+      "Chill for at least two hours and keep refrigerated."
+    ],
+    "tip": "Keep dairy desserts cold during long gatherings."
+  },
+  {
+    "region": "Philippines",
+    "name": "Embutido",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "1 hr 30 min",
+    "article": "Embutido (Filipino cuisine)",
+    "story": "Steamed meatloaf that reveals eggs and sausage when cut into festive slices.",
+    "ingredients": [
+      "700 g minced pork",
+      "Carrot and onion",
+      "2 raw eggs",
+      "3 hard-boiled eggs",
+      "2 cooked sausages",
+      "80 g breadcrumbs",
+      "2 tbsp pickle relish"
+    ],
+    "steps": [
+      "Mix minced pork, grated carrot, onion, raw eggs, crumbs and relish.",
+      "Flatten on greased foil, add eggs and sausage and roll tightly.",
+      "Steam 45–60 minutes, ensuring meat is fully cooked.",
+      "Cool slightly, unwrap and slice; optionally pan-brown."
+    ],
+    "tip": "Refrigerate prepared leftovers promptly."
+  },
+  {
+    "region": "Philippines",
+    "name": "Queso de Bola Holiday Platter",
+    "kind": "Savoury",
+    "serves": "8",
+    "time": "15 min",
+    "article": "Edam cheese",
+    "story": "The famous red-waxed cheese becomes an easy Noche Buena platter.",
+    "ingredients": [
+      "300 g queso de bola",
+      "250 g cooked ham",
+      "8 pandesal",
+      "Grapes",
+      "Crackers",
+      "Mango chutney optional"
+    ],
+    "steps": [
+      "Completely remove the red wax and cut cheese into wedges.",
+      "Arrange cheese, cooked ham and bread attractively.",
+      "Add grapes, crackers and optional chutney.",
+      "Serve cool and refrigerate leftovers promptly."
+    ],
+    "tip": "An assembled serving idea rather than a cooked dish."
+  },
+  {
+    "region": "World",
+    "name": "German Christstollen",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "4 hr",
+    "article": "Stollen",
+    "story": "German enriched fruit bread with almonds and a snowy sugar finish.",
+    "ingredients": [
+      "500 g bread flour",
+      "7 g yeast",
+      "230 ml milk",
+      "80 g sugar",
+      "120 g butter",
+      "220 g dried fruit",
+      "80 g almonds",
+      "Cinnamon",
+      "Marzipan optional"
+    ],
+    "steps": [
+      "Mix flour, yeast, sugar and milk, then knead in butter.",
+      "Fold in fruit, nuts and cinnamon; let rise until puffy.",
+      "Shape an oval, with marzipan in the centre if desired.",
+      "Bake at 175°C for 35–45 minutes; brush with butter and coat in icing sugar."
+    ],
+    "tip": "Wrap overnight to deepen the flavour."
+  },
+  {
+    "region": "World",
+    "name": "British Mince Pies",
+    "kind": "Sweet",
+    "serves": "12",
+    "time": "1 hr",
+    "article": "Mince pie",
+    "story": "Buttery pastry bites with aromatic fruit mincemeat.",
+    "ingredients": [
+      "300 g shortcrust pastry",
+      "300 g fruit mincemeat",
+      "1 beaten egg",
+      "Icing sugar",
+      "Orange zest optional"
+    ],
+    "steps": [
+      "Cut pastry rounds to line a muffin tin.",
+      "Spoon mincemeat into cases without overfilling.",
+      "Cover with pastry stars and brush with egg.",
+      "Bake at 190°C for 18–22 minutes until golden and dust when cool."
+    ],
+    "tip": "Check fillings for alcohol or animal suet if avoiding them."
+  },
+  {
+    "region": "World",
+    "name": "French Bûche de Noël",
+    "kind": "Sweet",
+    "serves": "10",
+    "time": "2 hr",
+    "article": "Yule log (cake)",
+    "story": "Chocolate sponge roll decorated like a Christmas log.",
+    "ingredients": [
+      "4 eggs",
+      "120 g sugar",
+      "90 g flour",
+      "25 g cocoa",
+      "250 ml cream",
+      "180 g dark chocolate",
+      "30 g butter"
+    ],
+    "steps": [
+      "Whisk eggs and sugar; fold in flour and cocoa, then bake a thin sponge at 180°C for 10–12 minutes.",
+      "Roll warm sponge in parchment and cool.",
+      "Unroll, spread with whipped cream and reroll.",
+      "Coat in chocolate ganache and mark bark lines."
+    ],
+    "tip": "Use edible decorations only."
+  },
+  {
+    "region": "World",
+    "name": "Gingerbread Cookies",
+    "kind": "Sweet",
+    "serves": "25",
+    "time": "1 hr 20 min",
+    "article": "Gingerbread",
+    "story": "Spiced star and tree biscuits, lovely for decorating or gifting.",
+    "ingredients": [
+      "350 g flour",
+      "120 g butter",
+      "120 g brown sugar",
+      "130 g golden syrup",
+      "1 egg",
+      "2 tsp ginger",
+      "1 tsp cinnamon",
+      "½ tsp baking soda"
+    ],
+    "steps": [
+      "Cream butter and sugar, beat in syrup and egg.",
+      "Mix in flour, spices and soda; chill for 30 minutes.",
+      "Roll thin and cut festive shapes.",
+      "Bake at 175°C for 9–12 minutes; decorate after cooling."
+    ],
+    "tip": "Bake a little less for softer centres."
+  },
+  {
+    "region": "World",
+    "name": "Mexican Christmas Tamales",
+    "kind": "Savoury",
+    "serves": "18",
+    "time": "3 hr",
+    "article": "Tamale",
+    "story": "Corn-husk parcels stuffed with chicken and chile sauce.",
+    "ingredients": [
+      "350 g masa harina",
+      "160 g shortening",
+      "400–500 ml stock",
+      "2 tsp baking powder",
+      "450 g cooked chicken",
+      "250 ml red chile sauce",
+      "18 soaked corn husks"
+    ],
+    "steps": [
+      "Beat shortening; add masa, baking powder and warm stock for a spreadable dough.",
+      "Mix cooked shredded chicken with sauce.",
+      "Spread masa onto husks, add filling and fold closed.",
+      "Steam upright 60–90 minutes until the dough releases from the husk."
+    ],
+    "tip": "Rest ten minutes before opening."
+  },
+  {
+    "region": "World",
+    "name": "Australian Summer Pavlova",
+    "kind": "Sweet",
+    "serves": "8",
+    "time": "2 hr + cooling",
+    "article": "Pavlova (dessert)",
+    "story": "Crisp meringue topped with cream and bright fruit for a summery Christmas.",
+    "ingredients": [
+      "4 egg whites",
+      "220 g caster sugar",
+      "1 tsp cornflour",
+      "1 tsp vinegar",
+      "250 ml cream",
+      "300 g berries or kiwi",
+      "Passion fruit optional"
+    ],
+    "steps": [
+      "Whisk whites to soft peaks, gradually add sugar, then cornflour and vinegar.",
+      "Shape a round meringue with a shallow centre.",
+      "Bake at 120°C for 75–90 minutes; cool in the oven.",
+      "Top with whipped cream and fresh fruit just before serving."
+    ],
+    "tip": "Moisture softens crisp meringue; assemble at the last minute."
+  },
+  {
+    "region": "World",
+    "name": "Polish Cabbage & Mushroom Pierogi",
+    "kind": "Savoury",
+    "serves": "6",
+    "time": "2 hr",
+    "article": "Pierogi",
+    "story": "Tender dumplings filled with cabbage and mushrooms, a popular Christmas Eve option.",
+    "ingredients": [
+      "400 g flour",
+      "200 ml warm water",
+      "2 tbsp oil",
+      "400 g sauerkraut",
+      "250 g mushrooms",
+      "1 onion",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Knead flour, water and oil; rest for 25 minutes.",
+      "Sauté onion and mushrooms and cook with drained sauerkraut until dry.",
+      "Roll pastry circles, fill and seal edges.",
+      "Boil until floating and cooked through, then dress with onions."
+    ],
+    "tip": "Make sure the filling is not too wet."
+  },
+  {
+    "region": "World",
+    "name": "Herb-Roast Christmas Turkey",
+    "kind": "Savoury",
+    "serves": "10",
+    "time": "3–4 hr",
+    "article": "Roast turkey",
+    "story": "A centrepiece for many North American holiday meals.",
+    "ingredients": [
+      "1 fully thawed 4–5 kg turkey",
+      "100 g butter",
+      "Rosemary and thyme",
+      "1 lemon",
+      "2 onions",
+      "2 carrots",
+      "Stock",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Heat oven to 165°C; pat turkey dry and rub in seasoned herb butter.",
+      "Place turkey over vegetables in a roasting dish, adding stock as needed.",
+      "Roast until the thickest breast and thigh parts reach 74°C (165°F) using a food thermometer.",
+      "Rest 20 minutes before carving."
+    ],
+    "tip": "Use a thermometer, not elapsed time alone."
+  }
+]
