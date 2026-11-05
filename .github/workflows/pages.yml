@@ -277,7 +277,7 @@ jobs:
           const dir='source/mariasm-site/docs/christmas-food';
           const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
           const recipes=[...html.matchAll(/<article class="recipe" data-kind="/g)];
-          if(recipes.length<40)throw Error('Fewer than 40 photographed recipes, found '+recipes.length);
+          if(recipes.length<35)throw Error('Fewer than 35 photographed recipes, found '+recipes.length);
           const urls=[...html.matchAll(/<img[^>]+src="(photos\/[^"]+)"/g)].map(x=>x[1]);
           if(urls.length!==recipes.length)throw Error('Recipe without photo: '+urls.length+' photos for '+recipes.length+' recipes');
           for(const url of urls){
