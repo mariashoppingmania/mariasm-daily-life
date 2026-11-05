@@ -10,7 +10,7 @@ for(const p of pages(docs)){
  let s=fs.readFileSync(p,'utf8');
  if(s.includes('id="mariasm-anime-logo-installer"'))continue;
  const rel=path.relative(path.dirname(p),docs).replaceAll(path.sep,'/');
- const prefix=rel==='.'?'./':rel+'/';
+ const prefix=(!rel||rel==='.')?'./':rel+'/';
  const asset=prefix+'assets/maria-anime-logo.gif';
  const still=prefix+'assets/maria-anime-logo-still.png';
  const homepage=prefix+'index.html';
