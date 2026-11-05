@@ -12,6 +12,7 @@ function imageInfo(b){
  return null
 }
 const wiki={};const sources=[];const researchedPhotos=JSON.parse(fs.readFileSync(path.join(root,'content/christmas-food-photo-files.json'),'utf8'));
+const directPhotos=JSON.parse(fs.readFileSync(path.join(root,'content/christmas-food-direct-photos.json'),'utf8'));
 const titles=[...new Set(recipes.map(r=>r.article))];
 for(let k=0;k<titles.length;k+=30){
  try{
@@ -44,6 +45,7 @@ const recipesInOrder=[...recipes.entries()],queue=recipesInOrder.slice();let pho
 await Promise.all(Array.from({length:7},async()=>{while(queue.length){
  const [i,r]=queue.shift();
  const candidates=[];
+ if(directPhotos[r.name]){const entry=researchedPhotos[r.name]??[];candidates.push({url:directPhotos[r.name],title:'File:'+(entry[0]??r.name),author:entry[1],license:entry[2]});}
  if(researchedPhotos[r.name]){const [filename,author,license]=researchedPhotos[r.name];const url=await wikimediaFile(filename);if(url)candidates.push({url,title:'File:'+filename,author,license});}
  if(r.name==='Pork Morcon')candidates.push({url:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Morc%C3%B3n_%28Filipino_cuisine%29_1.jpg/960px-Morc%C3%B3n_%28Filipino_cuisine%29_1.jpg',title:'Morcón (Filipino cuisine) 1.jpg, Obsidian Soul, CC BY 4.0'});
  if(photoOverrides[r.name]){
