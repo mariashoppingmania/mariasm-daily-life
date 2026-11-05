@@ -152,6 +152,16 @@ jobs:
           }
           console.log('Depilation image file audit passed:',refs.length,'verified local photographs');
           JS
+      - name: Add Sun Care and SPF guide with product photography
+        run: node source/mariasm-site/scripts/postbuild-skin-sun-care.mjs
+      - name: Verify sun care and depilation are visible and linked
+        run: |
+          PAGE=source/mariasm-site/docs/skin-care/index.html
+          grep -q 'id="depilation"' "$PAGE"
+          grep -q 'id="sun-care"' "$PAGE"
+          grep -q 'id="sun-shop"' "$PAGE"
+          grep -q 'href="#depilation"' "$PAGE"
+          grep -q 'href="#sun-care"' "$PAGE"
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
