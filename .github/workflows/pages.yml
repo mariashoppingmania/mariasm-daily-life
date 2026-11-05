@@ -115,6 +115,17 @@ jobs:
           test "$BVLGARI_COUNT" -ge 6
           test "$CARTIER_COUNT" -eq 3
           ! grep -q 'Illustrative jewellery icon' "$PAGE"
+      - name: Build Skincare and Oral Care ateliers with photo-verified shop products
+        run: node source/mariasm-site/scripts/postbuild-wellness-ateliers.mjs
+      - name: Validate skincare and oral-care navigation and assets
+        run: |
+          for slug in skin-care oral-care; do
+            test -s "source/mariasm-site/docs/$slug/index.html"
+            grep -q 'id="guide"' "source/mariasm-site/docs/$slug/index.html"
+            grep -q 'id="shop"' "source/mariasm-site/docs/$slug/index.html"
+            grep -q 'id="faq"' "source/mariasm-site/docs/$slug/index.html"
+          done
+          grep -q 'id="mariasm-skincare-oral-home"' source/mariasm-site/docs/index.html
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Configure GitHub Pages
