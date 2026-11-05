@@ -11,7 +11,7 @@ function imageInfo(b){
  if(b.toString('ascii',0,4)==='RIFF'&&b.toString('ascii',8,12)==='WEBP'&&b.toString('ascii',12,16)==='VP8X')return ['webp',1+b.readUIntLE(24,3),1+b.readUIntLE(27,3)];
  return null
 }
-const wiki={};const sources=[];
+const wiki={};const sources=[];const researchedPhotos=JSON.parse(fs.readFileSync(path.join(root,'content/christmas-food-photo-files.json'),'utf8'));
 const titles=[...new Set(recipes.map(r=>r.article))];
 for(let k=0;k<titles.length;k+=30){
  try{
