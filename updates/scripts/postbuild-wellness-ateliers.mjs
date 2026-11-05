@@ -96,15 +96,26 @@ for(const sec of sections){
 function pages(d){return fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?pages(path.join(d,e.name)):e.isFile()&&e.name.endsWith('.html')?[path.join(d,e.name)]:[])}
 let altered=0;
 for(const p of pages(docs)){
- if(sections.some(s=>p===path.join(docs,s.slug,'index.html')))continue;
- let html=fs.readFileSync(p,'utf8');if(html.includes('class="ms-new-beauty-link"'))continue;
+ let html=fs.readFileSync(p,'utf8');
  const links=sections.map(s=>{let href=path.relative(path.dirname(p),path.join(docs,s.slug,'index.html')).split(path.sep).join('/');if(!href.startsWith('.'))href='./'+href;return '<a class="ms-new-beauty-link" href="'+href+'">'+s.label+'</a>'}).join('');
- const watch=/(<a\b[^>]*href=["'][^"']*watches\/index\.html[^"']*["'][^>]*>[\s\S]*?<\/a>)/;
- if(watch.test(html))html=html.replace(watch,m=>m+links);
- else if(/class="hair-nav-added"/.test(html))html=html.replace(/(<a class="hair-nav-added"[^>]*>[\s\S]*?<\/a>)/,m=>m+links);
- else if(p===path.join(docs,'index.html'))html=html.replace('</main>','<div class="wrap">'+links+'</div></main>');
- else continue;
- fs.writeFileSync(p,html);altered++;
+ // Place both entries INSIDE every Ateliers dropdown, not adjacent to the menu.
+ let changed=false;
+ html=html.replace(/(<details\b[^>]*data-menu=["']ateliers["'][^>]*>[\s\S]*?<div class=["']ms-nav-panel["'][^>]*>)([\s\S]*?)(<\/div>)/g,(whole,open,inside,close)=>{
+   const cleaned=inside.replace(/<a\b[^>]*class=["']ms-new-beauty-link["'][^>]*>[\s\S]*?<\/a>/g,'');
+   changed=true;
+   return open+cleaned+links+close;
+ });
+ // Other templates may render direct atelier link clusters without the details menu.
+ if(!changed && !html.includes('class="ms-new-beauty-link"')){
+   const anchor=/(<a\b[^>]*class=["']hair-nav-added["'][^>]*>[\s\S]*?<\/a>)/g;
+   if(anchor.test(html)){html=html.replace(anchor,m=>m+links);changed=true;}
+ }
+ // Ensure the new pages also have a discoverable menu for cross-atelier navigation.
+ if(sections.some(s=>p===path.join(docs,s.slug,'index.html'))&&!html.includes('class="ms-new-beauty-link"')){
+   html=html.replace('</header>','<nav aria-label="Beauty ateliers" class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;padding:12px 0">'+links+'<a href="../hair/index.html">Hair Atelier</a></nav></header>');
+   changed=true;
+ }
+ if(changed){fs.writeFileSync(p,html);altered++;}
 }
 const home=path.join(docs,'index.html');let html=fs.readFileSync(home,'utf8');
 if(!html.includes('id="mariasm-skincare-oral-home"')){
