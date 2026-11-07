@@ -3,6 +3,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Refresh the public YouTube Videos and Shorts collections every morning.
+  # The build preserves verified entries if YouTube temporarily blocks discovery.
+  schedule:
+    - cron: '15 7 * * *'
 permissions:
   contents: read
   pages: write
