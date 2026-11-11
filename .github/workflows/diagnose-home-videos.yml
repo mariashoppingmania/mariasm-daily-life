@@ -31,5 +31,17 @@ jobs:
           console.log('videos length',j.videos?.length);
           console.log('first 3',j.videos?.slice(0,3));
           JS
+          echo '=== Live GitHub Pages rendered HTML (cache-busted) ==='
+          node --input-type=module <<'JS'
+          const url='https://mariashoppingmania.github.io/mariasm-daily-life/?check='+Date.now();
+          const r=await fetch(url,{headers:{'Cache-Control':'no-cache'}});
+          const html=await r.text();
+          console.log('HTTP',r.status,'bytes',html.length,'revision/header',r.headers.get('etag'));
+          for(const term of ['Press play. Stay a little.', 'Press Play,', 'From my YouTube diary', 'All moments','ms-pp-videos','id="watch"', 'Fs-q0p0bleU','55PhDN7lB9E']){
+            let i=html.toLowerCase().indexOf(term.toLowerCase());
+            console.log('term',term,'index',i,'near',i>=0?html.slice(Math.max(0,i-350),i+1000):'');
+          }
+          console.log('section ids',Array.from(html.matchAll(/<section[^>]*\bid="([^"]+)"[^>]*>/g)).map(x=>x[1]).slice(0,40));
+          JS
           echo '=== Home build source watch anchors ==='
           grep -Rni 'watch' source/mariasm-site/scripts/build.mjs | cut -c1-750 | head -n 8 || true
