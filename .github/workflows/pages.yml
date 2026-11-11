@@ -359,6 +359,28 @@ jobs:
           for(const card of cards){const image=card[0].match(/<img src="([^"]+)"/)?.[1];if(!image?.startsWith('photos/'))throw Error('Gift photo must be archived on site');}
           console.log('Gift guide audit passed:',men.length,'for him,',women.length,'for her,',photos.size,'product photos,',urls.size,'retailer links');
           JS
+      - name: Refresh original Press Play diary from newest YouTube uploads
+        run: |
+          node --check source/mariasm-site/scripts/postbuild-refresh-watch.mjs
+          node source/mariasm-site/scripts/postbuild-refresh-watch.mjs
+      - name: Verify filtered Press Play includes current newest video and no duplicate
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const dir='source/mariasm-site/';
+          const html=fs.readFileSync(dir+'docs/index.html','utf8');
+          const data=JSON.parse(fs.readFileSync(dir+'content/site.json','utf8'));
+          const watch=html.match(/<section[^>]*id="watch"[^>]*>[\s\S]*?<\/section>/)?.[0]||'';
+          if(!watch.includes('Press play. Stay a little.'))throw Error('Original Press Play section missing');
+          const ids=[...watch.matchAll(/data-video-id="([^"]+)"/g)].map(x=>x[1]);
+          if(!ids.length||ids[0]!==data.newVideos[0])throw Error('Press Play first video stale: '+ids[0]+' versus '+data.newVideos[0]);
+          if(ids.length!==data.newVideos.length)throw Error('Missing current uploads in Press Play: '+ids.length);
+          if(html.includes('id="press-play-stay-a-little"'))throw Error('Duplicate video section was not removed');
+          for(const key of ['all','shopping','beauty','accessories','style','life']){
+            if(!watch.includes('data-filter="'+key+'"'))throw Error('Filter missing: '+key);
+          }
+          console.log('Verified Press Play newest-first:',ids.join(', '),'without duplicate section; filters retained');
+          JS
       - name: Check pages and local links
         run: node source/mariasm-site/scripts/check.mjs
       - name: Optimize website photos before Pages upload
