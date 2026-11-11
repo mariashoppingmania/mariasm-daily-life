@@ -1,3 +1,4 @@
 Manual YouTube publication refresh requests for Maria Shopping.
 
 2026-11-09 17:17 UTC — Refresh public video and Shorts feeds and rebuild GitHub Pages.
+2026-11-11 16:49 UTC — User-requested refresh of latest public videos and Shorts, preserving all site sections.
