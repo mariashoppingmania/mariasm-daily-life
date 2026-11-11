@@ -1,0 +1,35 @@
+name: Diagnose Press Play section source
+on:
+  push:
+    paths:
+      - .github/workflows/diagnose-home-videos.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract project and inspect video sections
+        shell: bash
+        run: |
+          unzip -q mariasm-site.zip -d source
+          cp -R updates/. source/mariasm-site/
+          echo '=== Original and updated project text occurrences ==='
+          grep -rniE 'Press play|Stay a little|From my YouTube diary|All moments|Shopping finds|id="watch"|id=.[wW]atch' source/mariasm-site --include='*.mjs' --include='*.js' --include='*.json' --include='*.html' | cut -c1-1100 | head -n 75 || true
+          echo '=== Full project JS assets list ==='
+          find source/mariasm-site/docs/assets -maxdepth 1 -type f -name '*.js' | head -n 50
+          echo '=== Inspect site data video lists ==='
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const p='source/mariasm-site/content/site.json';
+          const j=JSON.parse(fs.readFileSync(p,'utf8'));
+          console.log('newVideos',j.newVideos);
+          console.log('shoppingVideos',j.shoppingVideos);
+          console.log('featuredVideo',j.featuredVideo);
+          console.log('videos length',j.videos?.length);
+          console.log('first 3',j.videos?.slice(0,3));
+          JS
+          echo '=== Home build source watch anchors ==='
+          grep -Rni 'watch' source/mariasm-site/scripts/build.mjs | cut -c1-750 | head -n 8 || true
