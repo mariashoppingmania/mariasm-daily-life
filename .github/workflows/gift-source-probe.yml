@@ -1,0 +1,21 @@
+name: Gift Source Probe
+on:
+  push:
+    paths:
+      - .github/workflows/gift-source-probe.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe retailers for actual product records
+        shell: bash
+        run: |
+          cat > /tmp/probe.mjs <<'NODE'
+          const sites=["www.hisgifts.it","www.latestbuy.it","oddlyepic.com","www.firebox.com","ohhdeer.com","kikkerland.com","www.nativeunion.com","www.orbitkey.com","www.cabaia.com","www.rains.com","bellroy.com","www.puravidabracelets.com","www.papier.com","www.menkind.co.uk","www.giftrepublic.com","www.paladone.com","www.legami.com","www.32conceptstore.it","www.divoom.com","www.theoodie.com","www.analuisa.com","www.rosefieldwatches.com","www.suck.uk.com","www.getdigital.eu","www.numskull.com","www.stance.eu","eu.keychron.com","www.8bitdo.com","www.fossil.com","www.stanley1913.com","www.paperchase.com"];
+          await Promise.all(sites.map(async d=>{const c=new AbortController(),timer=setTimeout(()=>c.abort(),12500);try{const r=await fetch('https://'+d+'/products.json?limit=10',{headers:{'User-Agent':'Mozilla/5.0 (compatible; MariaSM Gift Catalog research)'},signal:c.signal});const v=await r.json();const ps=v.products||[];console.log(JSON.stringify({host:d,status:r.status,count:ps.length,first:ps.slice(0,3).map(p=>({title:p.title,handle:p.handle,price:p.variants?.[0]?.price,img:p.images?.[0]?.src}))}))}catch(e){console.log(JSON.stringify({host:d,error:String(e).slice(0,110)}))}finally{clearTimeout(timer)}}));
+          NODE
+          node /tmp/probe.mjs
