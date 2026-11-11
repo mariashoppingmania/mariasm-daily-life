@@ -325,6 +325,8 @@ jobs:
         run: |
           node --check source/mariasm-site/scripts/postbuild-christmas-gift-guide.mjs
           node source/mariasm-site/scripts/postbuild-christmas-gift-guide.mjs
+          node --check source/mariasm-site/scripts/refresh-gift-catalog.mjs
+          node source/mariasm-site/scripts/refresh-gift-catalog.mjs
       - name: Audit 100 Christmas gifts, shopping links and homepage news
         run: |
           node --input-type=module <<'JS'
@@ -333,7 +335,8 @@ jobs:
           const dir='source/mariasm-site/docs/';
           const html=fs.readFileSync(dir+'christmas-gifts/index.html','utf8');
           const home=fs.readFileSync(dir+'index.html','utf8');
-          for(const id of ['mariasm-christmas-gifts-news','mariasm-christmas-gift-button'])if(!home.includes('id="'+id+'"'))throw Error('Missing gift promotion: '+id);
+          if(!home.includes('id="mariasm-christmas-gift-button"'))throw Error('Missing Christmas gift button next to food');
+          if(home.includes('id="mariasm-christmas-gifts-news"'))throw Error('Duplicate Christmas gift banner still on homepage');
           if(!home.includes('href="christmas-gifts/index.html"'))throw Error('Gift guide button missing');
           const cards=[...html.matchAll(/<article class="gift-card" data-audience="(him|her)"[\s\S]*?<\/article>/g)];
           const men=cards.filter(x=>x[1]==='him'),women=cards.filter(x=>x[1]==='her');
@@ -350,6 +353,10 @@ jobs:
             photos.add(img);
             if(!/<p class="gift-price">[^<]*\d/.test(c[0]))throw Error('Missing product price reference');
           }
+          const sources=JSON.parse(fs.readFileSync(dir+'christmas-gifts/gift-sources.json','utf8'));
+          if(sources.forHim!==50||sources.forHer!==50||sources.retailers.length<9)throw Error('External shop diversity or counts failed');
+          if(photos.size!==100)throw Error('Gift images must be distinct');
+          for(const card of cards){const image=card[0].match(/<img src="([^"]+)"/)?.[1];if(!image?.startsWith('photos/'))throw Error('Gift photo must be archived on site');}
           console.log('Gift guide audit passed:',men.length,'for him,',women.length,'for her,',photos.size,'product photos,',urls.size,'retailer links');
           JS
       - name: Check pages and local links
