@@ -69,6 +69,8 @@ if(videos){
   }
   site.videos=[...before.values()];
   site.newVideos=videos.map(x=>x.id);
+  // Keep the four-card homepage topic row in sync with the newest verified uploads.
+  site.shoppingVideos=videos.slice(0,4).map(x=>x.id);
   site.featuredVideo=videos[0].id;
   site.verifiedOn=today;
   site.videoScope='Public YouTube Videos tab; Shorts and live streams excluded. Freshness check '+today+'.';
