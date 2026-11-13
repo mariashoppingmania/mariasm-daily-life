@@ -80,7 +80,31 @@ for(const p of candidates){if(verified.length>=60)break;const key=(p.brand+p.tit
  }catch(e){console.warn('Eyewear photo skipped',p.title,String(e).slice(0,90))}
 }
 if(verified.some(p=>/mystery|surprise|blind[ -]?box|random/i.test(p.title)))throw Error('Uncertain eyewear listings survived product filter');
-if(verified.length<10)throw Error('Not enough real eyewear models with locally verified photographs: '+verified.length);
+if(verified.length<10){
+ // A temporary retailer outage must not block unrelated channel updates.
+ // Restore the existing published selection only after checking every photo.
+ const liveBase='https://mariashoppingmania.github.io/mariasm-daily-life/hats/';
+ const response=await fetcher(liveBase+'index.html',20000);
+ if(!response.ok)throw Error('Published eyewear fallback unavailable');
+ const previous=await response.text();
+ const section=previous.match(/<section id="eyewear-guide">[\s\S]*?<\/section>/)?.[0];
+ const css=previous.match(/<style id="mariasm-eyewear-css">[\s\S]*?<\/style>/)?.[0];
+ const photos=[...new Set([...String(section).matchAll(/<img[^>]*src="(assets\/eyewear\/[^"<>]+)"/g)].map(m=>m[1]))];
+ if(!section||!css||photos.length<10)throw Error('Published eyewear fallback incomplete');
+ await Promise.all(photos.map(async relative=>{
+  if(!/^assets\/eyewear\/[A-Za-z0-9_.-]+$/.test(relative))throw Error('Invalid archived eyewear path');
+  const r=await fetcher(new URL(relative,liveBase).href,20000);
+  if(!r.ok)throw Error('Archived eyewear photo unavailable: '+relative);
+  const b=Buffer.from(await r.arrayBuffer()),d=dims(b);
+  if(!d||b.length<4000||d[1]<250||d[2]<250)throw Error('Invalid archived eyewear photo: '+relative);
+  fs.writeFileSync(path.join(docs,'hats',relative),b);
+ }));
+ const end=html.lastIndexOf('</body>');
+ if(end<0)throw Error('No page insertion point');
+ fs.writeFileSync(target,html.slice(0,end)+css+section+html.slice(end));
+ console.log('Preserved published eyewear selection with',photos.length,'verified local photographs; retailers temporarily unavailable');
+ process.exit(0);
+}
 console.log('Eyewear photo audit: no mystery products,',verified.length,'named models from',brandCounts.size,'brands');
 const types=styles.map(([name,body])=>'<article class="ew-card"><h3>'+E(name)+'</h3><p>'+E(body)+'</p></article>').join('');
 const guide=guidance.map(([name,body])=>'<article class="ew-card"><h3>'+E(name)+'</h3><p>'+E(body)+'</p></article>').join('');
