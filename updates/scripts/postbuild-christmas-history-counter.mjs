@@ -6,14 +6,12 @@ const dir=path.join(root,'docs/christmas-food');
 const page=path.join(dir,'index.html');
 let html=fs.readFileSync(page,'utf8');
 const E=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const urls=[
- 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Roccoc%C3%B2_-_1.JPG/960px-Roccoc%C3%B2_-_1.JPG',
- 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Roccoc%C3%B2_-_1.JPG'
-];
-let downloaded=false;
-const filename='roccoco-napoli-christmas-biscuits.jpg';
-for(const u of urls){for(let attempt=0;attempt<3;attempt++){const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),17000);try{const res=await fetch(u,{signal:controller.signal,headers:{'User-Agent':'MariaSM-Christmas-food-photo-review/1.0','Accept':'image/jpeg,image/*'}});if(!res.ok)continue;const b=Buffer.from(await res.arrayBuffer());if(b.length<16000||b.length>7000000||b[0]!==255||b[1]!==216)continue;fs.writeFileSync(path.join(dir,'photos',filename),b);downloaded=true;break}catch(e){console.warn('Retrying Roccocò:',String(e).slice(0,100))}finally{clearTimeout(timeout)}}if(downloaded)break}
-if(!downloaded)throw Error('Correct roccocò biscuit photo unavailable; keeping previous site rather than publishing wrong image.');
+const originalPhoto = 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Roccoc%C3%B2_-_1.JPG';
+const filename = 'roccoco-napoli-christmas-biscuits.jpg';
+const photograph = fs.readFileSync(path.join(dir, 'photos', filename));
+if (photograph.length < 16000 || photograph.length > 7000000 || photograph[0] !== 0xff || photograph[1] !== 0xd8) {
+  throw Error('Invalid archived photograph of the Neapolitan roccocò biscuits');
+}
 const matches=[...html.matchAll(/<article class="recipe"[\s\S]*?<\/article>/g)];
 const matched=matches.find(x=>x[0].includes('<h3>Roccocò</h3>'));
 if(!matched)throw Error('Roccocò recipe card is absent');
@@ -23,7 +21,7 @@ const revised=matched[0].replace(img[0],'<img loading="lazy" decoding="async" sr
 html=html.slice(0,matched.index)+revised+html.slice(matched.index+matched[0].length);
 const sourcesFile=path.join(dir,'photo-sources.json');
 const sources=JSON.parse(fs.readFileSync(sourcesFile,'utf8')).filter(x=>x.recipe!=='Roccocò');
-sources.push({recipe:'Roccocò',source:urls[1],title:'File:Roccocò - 1.JPG',author:'Rollopack',license:'CC BY-SA 4.0',source_page:'https://commons.wikimedia.org/wiki/File:Roccoc%C3%B2_-_1.JPG'});
+sources.push({recipe:'Roccocò',source:originalPhoto,title:'File:Roccocò - 1.JPG',author:'Rollopack',license:'CC BY-SA 4.0',source_page:'https://commons.wikimedia.org/wiki/File:Roccoc%C3%B2_-_1.JPG'});
 fs.writeFileSync(sourcesFile,JSON.stringify(sources,null,2));
 const eras=[
  ['Ancient winters','Light, evergreen branches and shared feasts','Ancient winter celebrations, including Roman Saturnalia and northern European midwinter customs, used feasting and light to mark the season. These were distinctive observances rather than Christmas itself.'],
