@@ -332,13 +332,16 @@ async function buildOne(d){
    }));
    for(const m of records){if(m)d.editorialEraPhotos[m.index]=[m.image,m.caption]}
    // A period-correct Commons photograph, explicitly licensed and attributed.
-   // Require a successful local download so this chapter never ships a broken image.
+   // Use the archived photograph when available so the page can still build during a source outage.
    for(let i=0;i<(d.editorialEraDirectPhotos||[]).length;i++){
      const item=d.editorialEraDirectPhotos[i];
      if(!item||!item.url)continue;
-     const local=await localProductPhoto(item.url,'scarves-period',i);
+     const archived = item.localImage && fs.statSync(path.resolve(dir, item.localImage), {throwIfNoEntry: false});
+     const local = archived?.isFile() && archived.size > 512
+       ? item.localImage
+       : await localProductPhoto(item.url, 'scarves-period', i);
      if(!local)throw Error('Scarves historical chapter '+(i+1)+' missing its verified licensed photograph: '+item.url);
-     d.editorialEraPhotos[i]=[item.url,item.caption];
+     d.editorialEraPhotos[i]=[local,item.caption];
    }
    const modern=await tryProductImage(['Falconeri braided cashmere','Falconeri','','Premium',d.editorialModernProductPage]);
    if(modern)d.editorialEraPhotos[6]=[modern,'Contemporary cashmere scarf · official Falconeri product photograph, not a historical item'];
