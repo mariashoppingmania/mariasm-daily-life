@@ -128,7 +128,8 @@ html=html.replace(imgPattern,(tag,src)=>{
 });
 html=html.replace('</head>',css+'</head>');
 html=html.replace('<section id="shopping"',research+'<section id="shopping"');
-html=html.replace('href="#shopping">Shop</a>','href="#murano-research-2026">Glassmaking</a><a href="#murano-verified-shop">Extended shop</a><a href="#shopping">Shop</a>');
+const extendedShopLink=shopCards.length?'<a href="#murano-verified-shop">Extended shop</a>':'';
+html=html.replace('href="#shopping">Shop</a>','href="#murano-research-2026">Glassmaking</a>'+extendedShopLink+'<a href="#shopping">Shop</a>');
 fs.writeFileSync(file,html);
 if(!html.includes('id="murano-research-2026"'))throw Error('Murano editorial insert failed');
 console.log('Murano history and technical guides published. Editorial remote images archived: '+verified.size);
