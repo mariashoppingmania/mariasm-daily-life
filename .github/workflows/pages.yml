@@ -15,7 +15,80 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
+  youtube-refresh:
+    if: github.event_name == 'schedule' || contains(github.event.head_commit.message, '[youtube-refresh]')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Get website source
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore the last successfully published website
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const base='https://api.github.com/repos/'+process.env.GITHUB_REPOSITORY;
+          const headers={Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+          async function get(url){const r=await fetch(url,{headers});if(!r.ok)throw Error('Cannot read published website artifact: HTTP '+r.status);return r;}
+          const {artifacts=[]}=await (await get(base+'/actions/artifacts?name=github-pages&per_page=20')).json();
+          let chosen;
+          for(const artifact of artifacts){
+            if(artifact.expired||!artifact.workflow_run?.id)continue;
+            const run=await (await get(base+'/actions/runs/'+artifact.workflow_run.id)).json();
+            if(run.conclusion==='success'&&run.head_branch==='main'){chosen=artifact;break;}
+          }
+          if(!chosen)throw Error('No retained successful Pages artifact; run the complete site build first.');
+          const archive=await get(base+'/actions/artifacts/'+chosen.id+'/zip');
+          fs.writeFileSync('published-site.zip',Buffer.from(await archive.arrayBuffer()));
+          console.log('Restored successful Pages artifact from run',chosen.workflow_run.id);
+          JS
+          mkdir -p published-artifact published
+          unzip -q published-site.zip -d published-artifact
+          tar -xf published-artifact/artifact.tar -C published
+          test -s published/index.html
+      - name: Prepare Python for YouTube upload discovery
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install public-channel metadata reader
+        run: python -m pip install --disable-pip-version-check yt-dlp
+      - name: Prepare the latest channel sections
+        run: |
+          unzip -q mariasm-site.zip -d source
+          cp -R updates/. source/mariasm-site/
+          node source/mariasm-site/scripts/refresh-youtube.mjs
+          node source/mariasm-site/scripts/build.mjs
+          node source/mariasm-site/scripts/postbuild-refresh-watch.mjs
+          node source/mariasm-site/scripts/refresh-published-youtube.mjs published source/mariasm-site/docs source/mariasm-site/content/site.json
+      - name: Verify every published page and local link
+        run: |
+          mv source/mariasm-site/docs source/mariasm-site/generated-docs
+          mv published source/mariasm-site/docs
+          node source/mariasm-site/scripts/check.mjs
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload the refreshed published website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: source/mariasm-site/docs
+          retention-days: 2
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v5
   deploy:
+    if: github.event_name != 'schedule' && !contains(github.event.head_commit.message, '[youtube-refresh]')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
