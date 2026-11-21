@@ -30,7 +30,7 @@ function replaceElement(html, tag, opening) {
   return html.slice(0, old.start) + generated.slice(fresh.start, fresh.end) + html.slice(old.end);
 }
 let result = published;
-for (const id of ['channel', 'new', 'shorts', 'watch']) {
+for (const id of ['channel', 'new', 'shorts', 'watch', 'photo-diary']) {
   result = replaceElement(result, 'section', new RegExp('<section\\b[^>]*\\bid="' + id + '"[^>]*>'));
 }
 // The homepage's first topic row is the four-card shopping video selection.
@@ -50,7 +50,19 @@ for (const [id, expected] of [['new', site.newVideos], ['shorts', site.shortsLat
 }
 assert(result.includes('https://www.youtube.com/shorts/' + site.shortsLatest[0].id));
 assert(!result.includes('views views'));
+const galleryImages = new Set();
+for (const photo of site.photos) {
+  assert(/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(photo.image), 'Invalid gallery image filename');
+  assert(!galleryImages.has(photo.image), 'Duplicate gallery photograph');
+  galleryImages.add(photo.image);
+  const source = path.resolve(generatedDirectory, 'assets', photo.image);
+  const target = path.resolve(publishedDirectory, 'assets', photo.image);
+  assert(fs.existsSync(source) && fs.statSync(source).size > 1000, 'Missing gallery image: ' + photo.image);
+  fs.mkdirSync(path.dirname(target), {recursive:true});
+  fs.copyFileSync(source, target);
+  assert(result.includes('src="assets/' + photo.image + '"'), 'Gallery photo missing from homepage');
+}
 const ids = [...result.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'Duplicate homepage anchor');
 fs.writeFileSync(destination, result);
-console.log('Published homepage refreshed: 10 videos, 10 Shorts, channel spotlight, Press Play and shopping row. Other pages and assets retained.');
+console.log('Published homepage refreshed: 10 videos, 10 Shorts, channel spotlight, Press Play, shopping row and '+site.photos.length+' gallery photographs. Other pages and assets retained.');

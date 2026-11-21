@@ -811,81 +811,88 @@
   "videoScope": "Public YouTube Videos tab; Shorts and live streams excluded. Freshness check 2026-11-19.",
   "photos": [
     {
-      "image": "maria-gallery-13-56.webp",
-      "caption": "A little sunshine, a favourite jacket.",
-      "alt": "Maria in a light cropped trench jacket and denim shorts in dappled sunlight.",
+      "image": "maria-diary-20261121-foggy-harbour.webp",
+      "caption": "A little colour in a foggy harbour.",
+      "alt": "Maria leaning against a wooden harbour railing in a red-and-cream knit and denim overalls, with a fishing boat in the mist.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-peace-in-the-mist.webp",
+      "caption": "A peace sign at the edge of the mist.",
+      "alt": "Maria making a peace sign on a narrow stone breakwater surrounded by a foggy sea.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-jump-by-the-sea.webp",
+      "caption": "A little leap, a lot of sea air.",
+      "alt": "Maria jumping with her arms outstretched on a misty beach, wearing a red-and-cream sweater and denim overalls.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-soft-yellow-at-home.webp",
+      "caption": "Soft yellow, denim, and a cosy day at home.",
+      "alt": "Maria at home in a pale yellow sweatshirt, denim shorts and lilac slippers beside a handpan.",
+      "width": 941,
+      "height": 1671
+    },
+    {
+      "image": "maria-diary-20261121-pearls-and-gold.webp",
+      "caption": "Pearls, golden details, and a little sparkle.",
+      "alt": "An irregular pearl necklace with golden spacers and a gold-coloured coin pendant in a black gift box.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-angel-in-the-sunshine.webp",
+      "caption": "A little sunshine, a little angel magic.",
+      "alt": "Fantasy portrait of Maria in a white dress, with large white feather wings and a glowing halo in a sunlit garden.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-sunset-by-the-sea.webp",
+      "caption": "The sea, the sunset, and a moment to keep.",
+      "alt": "Maria on the beach at sunset in an olive jacket, denim shorts, tan cap and tall black boots.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-new-cowboy-boots.webp",
+      "caption": "New boots, new little adventures.",
+      "alt": "Brown embroidered cowboy boots in an open white shoebox on a patterned bedspread.",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "image": "maria-diary-20261121-blue-skies-and-warm-layers.webp",
+      "caption": "Blue skies and a favourite winter outfit.",
+      "alt": "Maria on a sunny beach in a beige cropped jacket, burgundy hat and scarf, pale jeans and black boots.",
       "width": 941,
       "height": 1672
     },
     {
-      "image": "maria-gallery-14-18.webp",
-      "caption": "Sea air, warm layers, no hurry.",
-      "alt": "Maria relaxing in a beach chair, wearing a hat, sunglasses and wellington boots.",
+      "image": "maria-diary-20261121-a-little-red-sparkle.webp",
+      "caption": "A tiny red sparkle, a precious little find.",
+      "alt": "A delicate gold-coloured ring with a red stone in a pink Stroili box beside its packaging and printed certificate.",
       "width": 1086,
       "height": 1448
     },
     {
-      "image": "maria-gallery-14-20.webp",
-      "caption": "Where the sky meets a quieter day.",
-      "alt": "Maria standing beside gentle waves beneath a softly glowing, cloud-filled sky.",
-      "width": 1448,
-      "height": 1086
-    },
-    {
-      "image": "maria-gallery-14-23.webp",
-      "caption": "A splash of colour by the waves.",
-      "alt": "Maria at the water’s edge in a colourful striped hat and a pale Milano sweatshirt.",
-      "width": 1086,
-      "height": 1448
-    },
-    {
-      "image": "maria-gallery-14-25.webp",
-      "caption": "Comfort is always in style.",
-      "alt": "Maria at home wearing a Milano sweatshirt, green shorts and lilac slippers.",
+      "image": "maria-diary-20261121-cosy-knitwear.webp",
+      "caption": "Warm knits and the comfort of home.",
+      "alt": "Maria indoors in a pale patterned turtleneck sweater, denim shorts, opaque tights and lilac slippers.",
       "width": 941,
       "height": 1672
     },
     {
-      "image": "maria-gallery-14-27.webp",
-      "caption": "Lilac, softness, and a little everyday joy.",
-      "alt": "Close-up of lilac fleece-lined Birkenstock sandals in their box.",
+      "image": "maria-diary-20261121-november-harbour.webp",
+      "caption": "A quiet harbour wrapped in November mist.",
+      "alt": "Maria standing by the wooden railing of a misty harbour in a burgundy hat, red-and-cream knit and denim overalls.",
       "width": 1086,
       "height": 1448
-    },
-    {
-      "image": "maria-gallery-14-29.webp",
-      "caption": "Checks, pearls, and a little confidence.",
-      "alt": "Maria wearing a beige checked strapless top with matching shorts and a pearl necklace.",
-      "width": 941,
-      "height": 1672
-    },
-    {
-      "image": "maria-gallery-14-31.webp",
-      "caption": "One favourite piece, a fresh little pairing.",
-      "alt": "Maria pairing a white textured top with beige checked shorts.",
-      "width": 941,
-      "height": 1672
-    },
-    {
-      "image": "maria-gallery-14-34.webp",
-      "caption": "The little details behind the outfit.",
-      "alt": "A checked top, matching shorts and a white textured top arranged on a quilted bedspread.",
-      "width": 1086,
-      "height": 1448
-    },
-    {
-      "image": "maria-gallery-14-37.webp",
-      "caption": "Barefoot moments and an endless blue.",
-      "alt": "Maria on the sand beside the sea, wearing a straw hat, white sweatshirt and light shorts.",
-      "width": 1086,
-      "height": 1448
-    },
-    {
-      "image": "maria-gallery-14-52.webp",
-      "caption": "A smile, a little red, a moment of me.",
-      "alt": "Close-up portrait of Maria wearing black glasses, red lipstick and a black blouse.",
-      "width": 937,
-      "height": 1678
     }
   ],
   "featuredVideo": "Fs-q0p0bleU",

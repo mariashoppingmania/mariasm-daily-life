@@ -21,7 +21,12 @@ if(site.shortsVerifiedOn === research.checkedOn){
 }
 assert.deepEqual(site.shortsPopular.map(v=>v.id),research.shortsPopular.map(v=>v.id),'Popular Shorts must follow YouTube ranking');
 for(const list of [site.shortsLatest,site.shortsPopular]){assert.equal(list.length,10);assert.equal(new Set(list.map(v=>v.id)).size,10);for(const v of list){assert(/^[A-Za-z0-9_-]{11}$/.test(v.id));assert(v.title&&v.image&&v.views);assert(!site.videos.some(x=>x.id===v.id),'Shorts must be separate from long-form videos');}}
-assert.equal(site.photos.length,11,'Expected eleven owner photographs');
+assert(site.photos.length>0,'Expected an owner photo gallery');
+assert.equal(new Set(site.photos.map(p=>p.image)).size,site.photos.length,'Gallery photographs must be unique');
+for(const photo of site.photos){
+ assert(photo.caption&&photo.alt,'Gallery photograph needs a caption and alternative text');
+ assert(photo.width>0&&photo.height>0,'Gallery photograph needs valid dimensions');
+}
 for(const id of [...site.newVideos,...site.mostWatched])assert(site.videos.some(v=>v.id===id),`Unknown video ${id}`);
 assert.equal(new Set(site.videos.map(v=>v.filter)).size,5,'Expected five browse categories');
 const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
