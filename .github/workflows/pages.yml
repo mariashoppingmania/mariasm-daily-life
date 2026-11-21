@@ -85,10 +85,12 @@ jobs:
           path: source/mariasm-site/docs
           retention-days: 2
       - name: Wait for Pages artifact registration
+        id: pages_artifact
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           node --input-type=module <<'JS'
+          import fs from 'node:fs';
           const url='https://api.github.com/repos/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID+'/artifacts?per_page=100';
           const headers={Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json','Cache-Control':'no-cache'};
           let ready=false;
@@ -96,7 +98,8 @@ jobs:
             const response=await fetch(url,{headers});
             if(!response.ok)throw Error('Cannot verify Pages artifact registration: HTTP '+response.status);
             const data=await response.json();
-            if(data.artifacts?.some(a=>a.name==='github-pages'&&!a.expired)){ready=true;break;}
+            const artifact=data.artifacts?.find(a=>a.name==='github-pages'&&!a.expired);
+            if(artifact){fs.appendFileSync(process.env.GITHUB_OUTPUT,'artifact_id='+artifact.id+'\n');ready=true;break;}
             await new Promise(resolve=>setTimeout(resolve,3000));
           }
           if(!ready)throw Error('Uploaded Pages artifact is not visible yet; retry the publication.');
@@ -104,7 +107,10 @@ jobs:
           JS
       - name: Publish
         id: deployment
-        uses: actions/deploy-pages@v5
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGES_ARTIFACT_ID: ${{ steps.pages_artifact.outputs.artifact_id }}
+        run: node updates/scripts/publish-pages-rest.mjs
   deploy:
     if: github.event_name != 'schedule' && !contains(github.event.head_commit.message, '[youtube-refresh]')
     environment:
