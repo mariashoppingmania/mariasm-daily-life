@@ -487,8 +487,11 @@ jobs:
           from pathlib import Path
           from PIL import Image, ImageOps
           import os
+          import json
 
           root = Path('source/mariasm-site/docs')
+          site = json.loads(Path('source/mariasm-site/content/site.json').read_text())
+          original_gallery = {(root / 'assets' / photo['image']).resolve() for photo in site.get('photos', [])}
           image_types = {'.jpg', '.jpeg', '.png', '.webp'}
           before = after = changed = 0
           for src in root.rglob('*'):
@@ -496,7 +499,7 @@ jobs:
                   continue
               original = src.stat().st_size
               before += original
-              if original < 80000:
+              if src.resolve() in original_gallery or original < 80000:
                   after += original
                   continue
               tmp = src.with_name(src.name + '.optimized')
