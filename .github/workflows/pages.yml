@@ -84,6 +84,24 @@ jobs:
         with:
           path: source/mariasm-site/docs
           retention-days: 2
+      - name: Wait for Pages artifact registration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'JS'
+          const url='https://api.github.com/repos/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID+'/artifacts?per_page=100';
+          const headers={Authorization:'Bearer '+process.env.GH_TOKEN,Accept:'application/vnd.github+json','Cache-Control':'no-cache'};
+          let ready=false;
+          for(let attempt=0;attempt<10;attempt++){
+            const response=await fetch(url,{headers});
+            if(!response.ok)throw Error('Cannot verify Pages artifact registration: HTTP '+response.status);
+            const data=await response.json();
+            if(data.artifacts?.some(a=>a.name==='github-pages'&&!a.expired)){ready=true;break;}
+            await new Promise(resolve=>setTimeout(resolve,3000));
+          }
+          if(!ready)throw Error('Uploaded Pages artifact is not visible yet; retry the publication.');
+          console.log('Uploaded Pages artifact is registered and ready for publication.');
+          JS
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v5
