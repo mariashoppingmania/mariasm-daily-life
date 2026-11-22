@@ -9,6 +9,8 @@ import {readPublicChannelTab} from './read-youtube-channel.mjs';
 const exec = promisify(execFile);
 const file = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../content/site.json');
 const site = JSON.parse(fs.readFileSync(file, 'utf8'));
+const researchFile = path.join(path.dirname(file), 'video-research.json');
+const research = JSON.parse(fs.readFileSync(researchFile, 'utf8'));
 const handle = String(site.youtube || '').replace(/\/+$/, '');
 const today = new Date().toISOString().slice(0, 10);
 const labels = {shopping:'Shopping finds', beauty:'Beauty & fragrance', accessories:'Watches & accessories', style:'Personal style', life:'Daily life & travel'};
@@ -46,6 +48,11 @@ function classify(video, prior) {
 
 const [videos, shorts] = await Promise.all(['videos', 'shorts'].map(readTab));
 if (videos) {
+  research.latest = videos.latest.slice(0, 10);
+  research.latestCheckedOn = today;
+  const observed = new Map((research.catalogue || []).map(video => [video.id, video]));
+  for (const video of [...videos.latest, ...(videos.popular || [])]) observed.set(video.id, video);
+  research.catalogue = [...observed.values()];
   const catalogue = new Map(site.videos.map(video => [video.id, video]));
   for (const video of [...videos.latest, ...(videos.popular || [])]) {
     const prior = catalogue.get(video.id);
@@ -73,21 +80,29 @@ if (videos) {
   site.verifiedOn = today;
   site.videoScope = 'Public YouTube Videos tab; Shorts and live streams excluded. Freshness check ' + today + '.';
   if (videos.popular) {
+    research.popular = videos.popular;
+    research.popularCheckedOn = today;
     site.mostWatched = videos.popular.map(video => video.id);
     site.rankingVerifiedOn = today;
   }
 }
 if (shorts) {
+  research.shortsLatest = shorts.latest.slice(0, 10);
+  research.shortsLatestCheckedOn = today;
   const previous = new Map([...site.shortsLatest, ...site.shortsPopular].map(short => [short.id, short]));
   const shortEntry = short => ({...previous.get(short.id), ...short, views:short.views || previous.get(short.id)?.views || 'View on YouTube'});
   site.shortsLatest = shorts.latest.slice(0, 10).map(shortEntry);
   site.shortsVerifiedOn = today;
   if (shorts.popular) {
+    research.shortsPopular = shorts.popular;
+    research.shortsPopularCheckedOn = today;
     site.shortsPopular = shorts.popular.map(shortEntry);
     site.shortsPopularVerifiedOn = today;
   }
 }
 if (videos || shorts) {
+  if (videos?.popular && shorts?.popular) research.checkedOn = today;
+  fs.writeFileSync(researchFile, JSON.stringify(research, null, 2) + '\n');
   fs.writeFileSync(file, JSON.stringify(site, null, 2) + '\n');
   console.log('[YouTube refresh] All home collections refreshed. Video:', site.newVideos[0], '; Short:', site.shortsLatest[0].id, '; checked:', today);
 }

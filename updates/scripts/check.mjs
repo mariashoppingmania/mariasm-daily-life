@@ -7,14 +7,14 @@ const content=path.resolve(root,'../content');
 const site=JSON.parse(fs.readFileSync(path.join(content,'site.json'),'utf8'));
 const research=JSON.parse(fs.readFileSync(path.join(content,'video-research.json'),'utf8'));
 assert.equal(new Set(site.videos.map(v=>v.id)).size,site.videos.length,'Videos must be unique');
-if(site.verifiedOn === research.checkedOn){
+if(site.verifiedOn === (research.latestCheckedOn || research.checkedOn)){
  assert.deepEqual(site.newVideos,research.latest.slice(0,10).map(v=>v.id),'New must follow the observed newest-first order');
 }else{
  assert.equal(site.newVideos.length,10,'Public video feed should contain ten newest video IDs');
  assert.equal(new Set(site.newVideos).size,10,'Latest video feed must not have duplicate IDs');
 }
 assert.deepEqual(site.mostWatched,research.popular.slice(0,10).map(v=>v.id),'Ranking must follow the observed Popular order');
-if(site.shortsVerifiedOn === research.checkedOn){
+if(site.shortsVerifiedOn === (research.shortsLatestCheckedOn || research.checkedOn)){
  assert.deepEqual(site.shortsLatest.map(v=>v.id),research.shortsLatest.map(v=>v.id),'Latest Shorts must follow YouTube upload order');
 }else{
  assert.equal(site.shortsLatest.length,10,'Public Shorts feed should contain ten newest Short IDs');
