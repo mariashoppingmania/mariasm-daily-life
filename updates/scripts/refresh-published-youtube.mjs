@@ -30,13 +30,27 @@ function replaceElement(html, tag, opening) {
   return html.slice(0, old.start) + generated.slice(fresh.start, fresh.end) + html.slice(old.end);
 }
 let result = published;
-for (const id of ['channel', 'new', 'shorts', 'watch', 'photo-diary']) {
+for (const id of ['channel', 'new', 'most-watched', 'shorts', 'watch', 'photo-diary']) {
   result = replaceElement(result, 'section', new RegExp('<section\\b[^>]*\\bid="' + id + '"[^>]*>'));
 }
-// The homepage's first topic row is the four-card shopping video selection.
-result = replaceElement(result, 'div', /<div\b[^>]*class="wrap topic-videos"[^>]*>/);
+// Refresh both topic rows: shopping discoveries and the daily-life diary.
+const topicPattern = /<div\b[^>]*class="wrap topic-videos"[^>]*>/g;
+const oldTopics = [...result.matchAll(topicPattern)].map(match => {
+  const range = elementRange(result.slice(match.index), 'div', /^<div\b/);
+  return {start:match.index, end:match.index + range.end};
+});
+const freshTopics = [...generated.matchAll(topicPattern)].map(match => {
+  const range = elementRange(generated.slice(match.index), 'div', /^<div\b/);
+  return generated.slice(match.index, match.index + range.end);
+});
+assert.equal(oldTopics.length, 2, 'Expected shopping and daily-life rows');
+assert.equal(freshTopics.length, oldTopics.length);
+for (let index = oldTopics.length - 1; index >= 0; index--) {
+  const row = oldTopics[index];
+  result = result.slice(0, row.start) + freshTopics[index] + result.slice(row.end);
+}
 
-for (const [id, expected] of [['new', site.newVideos], ['shorts', site.shortsLatest.map(v => v.id)]]) {
+for (const [id, expected] of [['new', site.newVideos], ['watch', site.newVideos], ['most-watched', site.mostWatched], ['shorts', site.shortsLatest.map(v => v.id)]]) {
   assert.equal(expected.length, 10);
   assert.equal(new Set(expected).size, 10);
   const range = elementRange(result, 'section', new RegExp('<section\\b[^>]*\\bid="' + id + '"[^>]*>'));
@@ -65,4 +79,4 @@ for (const photo of site.photos) {
 const ids = [...result.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'Duplicate homepage anchor');
 fs.writeFileSync(destination, result);
-console.log('Published homepage refreshed: 10 videos, 10 Shorts, channel spotlight, Press Play, shopping row and '+site.photos.length+' gallery photographs. Other pages and assets retained.');
+console.log('Published homepage refreshed: latest and popular videos and Shorts, channel spotlight, Press Play, shopping and daily-life rows, and '+site.photos.length+' original gallery photographs. Other pages and assets retained.');

@@ -12,6 +12,7 @@ const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt
 const validId=x=>/^[A-Za-z0-9_-]{11}$/.test(String(x));
 const labels={shopping:'Shopping finds',beauty:'Beauty & fragrance',accessories:'Watches & accessories',style:'Personal style',life:'Daily life'};
 function classify(v){
+ if(Object.hasOwn(labels,v.filter)&&v.category!=='Latest upload')return v.filter;
  const title=String(v.title||'').toLowerCase();
  if(/\bwatch(?:es)?\b|timepiece|bracelet|earrings?|necklace|jewellery|jewelry|handbag|bag collection/.test(title))return 'accessories';
  if(/makeup|make-up|perfume|fragrance|beauty|lipstick|skincare|scent|cosmetic/.test(title)&&!/haul|amazon|asos|nk[d]?/.test(title))return 'beauty';
