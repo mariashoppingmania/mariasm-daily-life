@@ -1,14 +1,22 @@
 {
-  "checkedOn": "2026-11-22",
+  "checkedOn": "2026-11-23",
   "source": "YouTube @mariasmmania public Videos and Shorts tabs; Latest and Popular sorting",
   "scope": "Videos and Shorts ranked separately; displayed YouTube view counts may be rounded.",
   "latest": [
     {
+      "id": "r4t3URWaYLc",
+      "title": "KNITWEAR HAUL Asos Takko Fashion Finds.. All Keepers guys!",
+      "views": "7 views",
+      "duration": "26:13",
+      "age": "9 hours ago",
+      "image": "https://img.youtube.com/vi/r4t3URWaYLc/hqdefault.jpg"
+    },
+    {
       "id": "v2r1mTHwccg",
       "title": "The Winter Sea.. loved it!",
-      "views": "1 views",
+      "views": "4 views",
       "duration": "7:44",
-      "age": "17 minutes ago",
+      "age": "1 day ago",
       "image": "https://img.youtube.com/vi/v2r1mTHwccg/hqdefault.jpg"
     },
     {
@@ -16,15 +24,15 @@
       "title": "A Foggy Trip To The ExtraOrdinary 🌊⛄️🍬🥂🌏",
       "views": "6 views",
       "duration": "8:03",
-      "age": "1 day ago",
+      "age": "2 days ago",
       "image": "https://img.youtube.com/vi/p54A70vL3bI/hqdefault.jpg"
     },
     {
       "id": "Fs-q0p0bleU",
       "title": "A Collective Haul from Amazon Asos NKD fashion finds to Fragrances Jewelry",
-      "views": "29 views",
+      "views": "30 views",
       "duration": "25:55",
-      "age": "11 days ago",
+      "age": "12 days ago",
       "image": "https://img.youtube.com/vi/Fs-q0p0bleU/hqdefault.jpg"
     },
     {
@@ -48,7 +56,7 @@
       "title": "Asos Amazon Fashion Haul & Try On Denim Shorts Sweater Tops",
       "views": "85 views",
       "duration": "11:46",
-      "age": "4 weeks ago",
+      "age": "1 month ago",
       "image": "https://img.youtube.com/vi/NtALSpi56iI/hqdefault.jpg"
     },
     {
@@ -74,14 +82,6 @@
       "duration": "29:23",
       "age": "1 month ago",
       "image": "https://img.youtube.com/vi/f0ri1G_-GNQ/hqdefault.jpg"
-    },
-    {
-      "id": "CJgpKWXriRo",
-      "title": "Here we spent our days to escape life.. A Sea Escapade! Our peace and freedom...",
-      "views": "52 views",
-      "duration": "12:47",
-      "age": "1 month ago",
-      "image": "https://img.youtube.com/vi/CJgpKWXriRo/hqdefault.jpg"
     }
   ],
   "popular": [
@@ -330,7 +330,7 @@
     {
       "id": "yvZqrwIiaG4",
       "title": "Flower Knows Berry Enchanted Garden Set... so pretty guys! ❤️💯🎁",
-      "views": "586 views",
+      "views": "589 views",
       "duration": "7:33",
       "age": "3 months ago",
       "image": "https://img.youtube.com/vi/yvZqrwIiaG4/hqdefault.jpg"
@@ -420,7 +420,7 @@
       "title": "Asos Amazon Fashion Haul & Try On Denim Shorts Sweater Tops",
       "views": "85 views",
       "duration": "11:46",
-      "age": "4 weeks ago",
+      "age": "1 month ago",
       "image": "https://img.youtube.com/vi/NtALSpi56iI/hqdefault.jpg"
     },
     {
@@ -642,9 +642,9 @@
     {
       "id": "v2r1mTHwccg",
       "title": "The Winter Sea.. loved it!",
-      "views": "1 views",
+      "views": "4 views",
       "duration": "7:44",
-      "age": "17 minutes ago",
+      "age": "1 day ago",
       "image": "https://img.youtube.com/vi/v2r1mTHwccg/hqdefault.jpg"
     },
     {
@@ -652,15 +652,15 @@
       "title": "A Foggy Trip To The ExtraOrdinary 🌊⛄️🍬🥂🌏",
       "views": "6 views",
       "duration": "8:03",
-      "age": "1 day ago",
+      "age": "2 days ago",
       "image": "https://img.youtube.com/vi/p54A70vL3bI/hqdefault.jpg"
     },
     {
       "id": "Fs-q0p0bleU",
       "title": "A Collective Haul from Amazon Asos NKD fashion finds to Fragrances Jewelry",
-      "views": "29 views",
+      "views": "30 views",
       "duration": "25:55",
-      "age": "11 days ago",
+      "age": "12 days ago",
       "image": "https://img.youtube.com/vi/Fs-q0p0bleU/hqdefault.jpg"
     },
     {
@@ -670,9 +670,33 @@
       "duration": "17:34",
       "age": "3 weeks ago",
       "image": "https://img.youtube.com/vi/GdXVfeCgPgc/hqdefault.jpg"
+    },
+    {
+      "id": "r4t3URWaYLc",
+      "title": "KNITWEAR HAUL Asos Takko Fashion Finds.. All Keepers guys!",
+      "views": "7 views",
+      "duration": "26:13",
+      "age": "9 hours ago",
+      "image": "https://img.youtube.com/vi/r4t3URWaYLc/hqdefault.jpg"
     }
   ],
   "shortsLatest": [
+    {
+      "id": "AUIkXU9Zrxc",
+      "title": "Grocery Shopping run...",
+      "views": "140 views",
+      "duration": "",
+      "age": "",
+      "image": "https://i.ytimg.com/vi/AUIkXU9Zrxc/oardefault.jpg"
+    },
+    {
+      "id": "KtZNuxMI3o0",
+      "title": "Asos And Takko Knitwear Haul + Try On.. love them..",
+      "views": "53 views",
+      "duration": "",
+      "age": "",
+      "image": "https://i.ytimg.com/vi/KtZNuxMI3o0/oardefault.jpg"
+    },
     {
       "id": "rDXU-UJtFcw",
       "title": "Fascinating fog...",
@@ -684,7 +708,7 @@
     {
       "id": "A2QO-5wO2PA",
       "title": "Foggy Sea...",
-      "views": "34 views",
+      "views": "35 views",
       "duration": "",
       "age": "",
       "image": "https://i.ytimg.com/vi/A2QO-5wO2PA/oardefault.jpg"
@@ -732,26 +756,10 @@
     {
       "id": "5bXWmDJlszc",
       "title": "OOTD Outfit Check...",
-      "views": "281 views",
+      "views": "283 views",
       "duration": "",
       "age": "",
       "image": "https://i.ytimg.com/vi/5bXWmDJlszc/oardefault.jpg"
-    },
-    {
-      "id": "m5_TQbUgQZs",
-      "title": "Amazon finds.. Hard disk..",
-      "views": "185 views",
-      "duration": "",
-      "age": "",
-      "image": "https://i.ytimg.com/vi/m5_TQbUgQZs/oardefault.jpg"
-    },
-    {
-      "id": "wkR_9rCEljM",
-      "title": "A Christmas Greetings 2026! Happy Holidays guys!...⛄️🥂🍬",
-      "views": "109 views",
-      "duration": "",
-      "age": "",
-      "image": "https://i.ytimg.com/vi/wkR_9rCEljM/oardefault.jpg"
     }
   ],
   "shortsPopular": [
@@ -774,7 +782,7 @@
     {
       "id": "7AbLZRC_3TQ",
       "title": "Z9 Pro True Wireless Earbuds",
-      "views": "2.4K views",
+      "views": "2.5K views",
       "duration": "",
       "age": "",
       "image": "https://i.ytimg.com/vi/7AbLZRC_3TQ/oardefault.jpg"
@@ -801,7 +809,7 @@
       "views": "1.9K views",
       "duration": "",
       "age": "",
-      "image": "https://i.ytimg.com/vi/fnBEsfTWYH0/oar3.jpg"
+      "image": "https://i.ytimg.com/vi/fnBEsfTWYH0/oar2.jpg"
     },
     {
       "id": "ngQT4o-hIrE",
@@ -836,8 +844,8 @@
       "image": "https://i.ytimg.com/vi/CprnU4tTAro/oardefault.jpg"
     }
   ],
-  "latestCheckedOn": "2026-11-22",
-  "popularCheckedOn": "2026-11-22",
-  "shortsLatestCheckedOn": "2026-11-22",
-  "shortsPopularCheckedOn": "2026-11-22"
+  "latestCheckedOn": "2026-11-23",
+  "popularCheckedOn": "2026-11-23",
+  "shortsLatestCheckedOn": "2026-11-23",
+  "shortsPopularCheckedOn": "2026-11-23"
 }
