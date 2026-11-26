@@ -6,3 +6,5 @@ Manual YouTube publication refresh requests for Maria Shopping.
 2026-11-21 — User-requested refresh of the latest public Videos and Shorts, homepage spotlight and Press Play; preserve published pages and photographs.
 
 2026-11-25 19:36 UTC — User-requested refresh of the latest public Videos and Shorts across the homepage, including Press Play, channel spotlight, popular and topic rows; preserve original photographs and all other site sections.
+
+2026-11-26 18:23 UTC — Refresh all homepage YouTube sections, latest Shorts and videos, popularity rankings, category rows and Press Play. Validate every published page and local reference while retaining all existing editorial sections and original photographs.
